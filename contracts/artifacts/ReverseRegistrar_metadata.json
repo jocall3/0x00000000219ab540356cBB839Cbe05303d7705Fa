@@ -1,0 +1,196 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"name": "resolver",
+						"type": "address"
+					}
+				],
+				"name": "claimWithResolver",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "claim",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "ens",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "defaultResolver",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "addr",
+						"type": "address"
+					}
+				],
+				"name": "node",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "setName",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "ensAddr",
+						"type": "address"
+					},
+					{
+						"name": "resolverAddr",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"claim(address)": {
+					"details": "Transfers ownership of the reverse ENS record associated with the\r     calling account.\r",
+					"params": {
+						"owner": "The address to set as the owner of the reverse record in ENS.\r"
+					},
+					"return": "The ENS node hash of the reverse record.\r"
+				},
+				"claimWithResolver(address,address)": {
+					"details": "Transfers ownership of the reverse ENS record associated with the\r     calling account.\r",
+					"params": {
+						"owner": "The address to set as the owner of the reverse record in ENS.\r",
+						"resolver": "The address of the resolver to set; 0 to leave unchanged.\r"
+					},
+					"return": "The ENS node hash of the reverse record.\r"
+				},
+				"node(address)": {
+					"details": "Returns the node hash for a given account's reverse records.\r",
+					"params": {
+						"addr": "The address to hash\r"
+					},
+					"return": "The ENS node hash.\r"
+				},
+				"setName(string)": {
+					"details": "Sets the `name()` record for the reverse ENS record associated with\r the calling account. First updates the resolver to the default reverse\r resolver if necessary.\r",
+					"params": {
+						"name": "The name to set for this address.\r"
+					},
+					"return": "The ENS node hash of the reverse record.\r"
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ReverseRegistrar.sol": "ReverseRegistrar"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ENS.sol": {
+			"keccak256": "0x323ac7a5b1e5cdf19b5312f91581b08339e1b7aed7fdbe30338596f34fa22127",
+			"urls": [
+				"bzzr://3deb73de2d9c6b25b831e8f0c641df08f4c1f151fedc2780b464c085b49f158c"
+			]
+		},
+		"contracts/ReverseRegistrar.sol": {
+			"keccak256": "0x4a96450e3745cad7aec091c7746460dcced64f1242ba99224f6d7cbca3df9990",
+			"urls": [
+				"bzzr://bcf9905352c22fc16570906409aa1b74a6d7af6aa5319f5ae27dd92c0525faea"
+			]
+		}
+	},
+	"version": 1
+}

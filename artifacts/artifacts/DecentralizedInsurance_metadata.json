@@ -1,0 +1,105 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "claimInsurance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_premium",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_coverage",
+						"type": "uint256"
+					}
+				],
+				"name": "createPolicy",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "policies",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "insured",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "premium",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "coverage",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "active",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"artifacts/Decentralizedinsurance.sol": "DecentralizedInsurance"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"artifacts/Decentralizedinsurance.sol": {
+			"keccak256": "0xcabb3e8371a44e58ff821b7074044b22888fc6db19d362f5ab5de3085c3c32a1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c3f9ca2fb37541f3b6e17abf9c9c7e6f936fe3b3ad000c8b3b706cef54bf58dd",
+				"dweb:/ipfs/QmZCusThrY1edPHPL24UAbHRt9f3hMiEGb9R6SdQ8hxHoC"
+			]
+		}
+	},
+	"version": 1
+}

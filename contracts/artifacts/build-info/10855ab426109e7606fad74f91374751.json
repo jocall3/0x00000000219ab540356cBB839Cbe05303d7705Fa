@@ -1,0 +1,4142 @@
+{
+	"id": "10855ab426109e7606fad74f91374751",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.4.26",
+	"solcLongVersion": "0.4.26+commit.4563c3fc",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/FIFSRegistrar.sol": {
+				"content": "pragma solidity ^0.4.18;\r\n\r\nimport './ENS.sol';\r\n\r\n/**\r\n * A registrar that allocates subdomains to the first person to claim them.\r\n */\r\ncontract FIFSRegistrar {\r\n    ENS ens;\r\n    bytes32 rootNode;\r\n\r\n    modifier only_owner(bytes32 subnode) {\r\n        address currentOwner = ens.owner(keccak256(rootNode, subnode));\r\n        require(currentOwner == 0 || currentOwner == msg.sender);\r\n        _;\r\n    }\r\n\r\n    /**\r\n     * Constructor.\r\n     * @param ensAddr The address of the ENS registry.\r\n     * @param node The node that this registrar administers.\r\n     */\r\n    function FIFSRegistrar(ENS ensAddr, bytes32 node) public {\r\n        ens = ensAddr;\r\n        rootNode = node;\r\n    }\r\n\r\n    /**\r\n     * Register a name, or change the owner of an existing registration.\r\n     * @param subnode The hash of the label to register.\r\n     * @param owner The address of the new owner.\r\n     */\r\n    function register(bytes32 subnode, address owner) public only_owner(subnode) {\r\n        ens.setSubnodeOwner(rootNode, subnode, owner);\r\n    }\r\n}\r\n"
+			},
+			"contracts/ENS.sol": {
+				"content": "pragma solidity ^0.4.18;\r\n\r\ninterface ENS {\r\n\r\n    // Logged when the owner of a node assigns a new owner to a subnode.\r\n    event NewOwner(bytes32 indexed node, bytes32 indexed label, address owner);\r\n\r\n    // Logged when the owner of a node transfers ownership to a new account.\r\n    event Transfer(bytes32 indexed node, address owner);\r\n\r\n    // Logged when the resolver for a node changes.\r\n    event NewResolver(bytes32 indexed node, address resolver);\r\n\r\n    // Logged when the TTL of a node changes\r\n    event NewTTL(bytes32 indexed node, uint64 ttl);\r\n\r\n\r\n    function setSubnodeOwner(bytes32 node, bytes32 label, address owner) public;\r\n    function setResolver(bytes32 node, address resolver) public;\r\n    function setOwner(bytes32 node, address owner) public;\r\n    function setTTL(bytes32 node, uint64 ttl) public;\r\n    function owner(bytes32 node) public view returns (address);\r\n    function resolver(bytes32 node) public view returns (address);\r\n    function ttl(bytes32 node) public view returns (uint64);\r\n\r\n}\r\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": true,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/ENS.sol": {
+				"ENS": {
+					"abi": [
+						{
+							"constant": true,
+							"inputs": [
+								{
+									"name": "node",
+									"type": "bytes32"
+								}
+							],
+							"name": "resolver",
+							"outputs": [
+								{
+									"name": "",
+									"type": "address"
+								}
+							],
+							"payable": false,
+							"stateMutability": "view",
+							"type": "function"
+						},
+						{
+							"constant": true,
+							"inputs": [
+								{
+									"name": "node",
+									"type": "bytes32"
+								}
+							],
+							"name": "owner",
+							"outputs": [
+								{
+									"name": "",
+									"type": "address"
+								}
+							],
+							"payable": false,
+							"stateMutability": "view",
+							"type": "function"
+						},
+						{
+							"constant": false,
+							"inputs": [
+								{
+									"name": "node",
+									"type": "bytes32"
+								},
+								{
+									"name": "label",
+									"type": "bytes32"
+								},
+								{
+									"name": "owner",
+									"type": "address"
+								}
+							],
+							"name": "setSubnodeOwner",
+							"outputs": [],
+							"payable": false,
+							"stateMutability": "nonpayable",
+							"type": "function"
+						},
+						{
+							"constant": false,
+							"inputs": [
+								{
+									"name": "node",
+									"type": "bytes32"
+								},
+								{
+									"name": "ttl",
+									"type": "uint64"
+								}
+							],
+							"name": "setTTL",
+							"outputs": [],
+							"payable": false,
+							"stateMutability": "nonpayable",
+							"type": "function"
+						},
+						{
+							"constant": true,
+							"inputs": [
+								{
+									"name": "node",
+									"type": "bytes32"
+								}
+							],
+							"name": "ttl",
+							"outputs": [
+								{
+									"name": "",
+									"type": "uint64"
+								}
+							],
+							"payable": false,
+							"stateMutability": "view",
+							"type": "function"
+						},
+						{
+							"constant": false,
+							"inputs": [
+								{
+									"name": "node",
+									"type": "bytes32"
+								},
+								{
+									"name": "resolver",
+									"type": "address"
+								}
+							],
+							"name": "setResolver",
+							"outputs": [],
+							"payable": false,
+							"stateMutability": "nonpayable",
+							"type": "function"
+						},
+						{
+							"constant": false,
+							"inputs": [
+								{
+									"name": "node",
+									"type": "bytes32"
+								},
+								{
+									"name": "owner",
+									"type": "address"
+								}
+							],
+							"name": "setOwner",
+							"outputs": [],
+							"payable": false,
+							"stateMutability": "nonpayable",
+							"type": "function"
+						},
+						{
+							"anonymous": false,
+							"inputs": [
+								{
+									"indexed": true,
+									"name": "node",
+									"type": "bytes32"
+								},
+								{
+									"indexed": true,
+									"name": "label",
+									"type": "bytes32"
+								},
+								{
+									"indexed": false,
+									"name": "owner",
+									"type": "address"
+								}
+							],
+							"name": "NewOwner",
+							"type": "event"
+						},
+						{
+							"anonymous": false,
+							"inputs": [
+								{
+									"indexed": true,
+									"name": "node",
+									"type": "bytes32"
+								},
+								{
+									"indexed": false,
+									"name": "owner",
+									"type": "address"
+								}
+							],
+							"name": "Transfer",
+							"type": "event"
+						},
+						{
+							"anonymous": false,
+							"inputs": [
+								{
+									"indexed": true,
+									"name": "node",
+									"type": "bytes32"
+								},
+								{
+									"indexed": false,
+									"name": "resolver",
+									"type": "address"
+								}
+							],
+							"name": "NewResolver",
+							"type": "event"
+						},
+						{
+							"anonymous": false,
+							"inputs": [
+								{
+									"indexed": true,
+									"name": "node",
+									"type": "bytes32"
+								},
+								{
+									"indexed": false,
+									"name": "ttl",
+									"type": "uint64"
+								}
+							],
+							"name": "NewTTL",
+							"type": "event"
+						}
+					],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"deployedBytecode": {
+							"linkReferences": {},
+							"object": "",
+							"opcodes": "",
+							"sourceMap": ""
+						},
+						"gasEstimates": null,
+						"legacyAssembly": null,
+						"methodIdentifiers": {
+							"owner(bytes32)": "02571be3",
+							"resolver(bytes32)": "0178b8bf",
+							"setOwner(bytes32,address)": "5b0fc9c3",
+							"setResolver(bytes32,address)": "1896f70a",
+							"setSubnodeOwner(bytes32,bytes32,address)": "06ab5923",
+							"setTTL(bytes32,uint64)": "14ab9038",
+							"ttl(bytes32)": "16a25cbd"
+						}
+					},
+					"metadata": "",
+					"userdoc": {
+						"methods": {}
+					}
+				}
+			},
+			"contracts/FIFSRegistrar.sol": {
+				"FIFSRegistrar": {
+					"abi": [
+						{
+							"constant": false,
+							"inputs": [
+								{
+									"name": "subnode",
+									"type": "bytes32"
+								},
+								{
+									"name": "owner",
+									"type": "address"
+								}
+							],
+							"name": "register",
+							"outputs": [],
+							"payable": false,
+							"stateMutability": "nonpayable",
+							"type": "function"
+						},
+						{
+							"inputs": [
+								{
+									"name": "ensAddr",
+									"type": "address"
+								},
+								{
+									"name": "node",
+									"type": "bytes32"
+								}
+							],
+							"payable": false,
+							"stateMutability": "nonpayable",
+							"type": "constructor"
+						}
+					],
+					"devdoc": {
+						"methods": {
+							"register(bytes32,address)": {
+								"params": {
+									"owner": "The address of the new owner.\r",
+									"subnode": "The hash of the label to register.\r"
+								}
+							}
+						}
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/FIFSRegistrar.sol\":138:1037  contract FIFSRegistrar {\r... */\n  mstore(0x40, 0x80)\n    /* \"contracts/FIFSRegistrar.sol\":569:684  function FIFSRegistrar(ENS ensAddr, bytes32 node) public {\r... */\n  callvalue\n    /* \"--CODEGEN--\":8:17   */\n  dup1\n    /* \"--CODEGEN--\":5:7   */\n  iszero\n  tag_1\n  jumpi\n    /* \"--CODEGEN--\":30:31   */\n  0x0\n    /* \"--CODEGEN--\":27:28   */\n  dup1\n    /* \"--CODEGEN--\":20:32   */\n  revert\n    /* \"--CODEGEN--\":5:7   */\ntag_1:\n    /* \"contracts/FIFSRegistrar.sol\":569:684  function FIFSRegistrar(ENS ensAddr, bytes32 node) public {\r... */\n  pop\n  mload(0x40)\n  0x40\n  dup1\n  bytecodeSize\n  dup4\n  codecopy\n  dup2\n  add\n  0x40\n  mstore\n  dup1\n  mload\n  0x20\n  swap1\n  swap2\n  add\n  mload\n    /* \"contracts/FIFSRegistrar.sol\":637:640  ens */\n  0x0\n    /* \"contracts/FIFSRegistrar.sol\":637:650  ens = ensAddr */\n  dup1\n  sload\n  not(sub(exp(0x2, 0xa0), 0x1))\n  and\n  sub(exp(0x2, 0xa0), 0x1)\n  swap1\n  swap4\n  and\n  swap3\n  swap1\n  swap3\n  or\n  dup3\n  sstore\n  0x1\n    /* \"contracts/FIFSRegistrar.sol\":661:676  rootNode = node */\n  sstore\n    /* \"contracts/FIFSRegistrar.sol\":138:1037  contract FIFSRegistrar {\r... */\n  dataSize(sub_0)\n  swap1\n  dup2\n  swap1\n  dataOffset(sub_0)\n  swap1\n  codecopy\n  0x0\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/FIFSRegistrar.sol\":138:1037  contract FIFSRegistrar {\r... */\n      mstore(0x40, 0x80)\n      jumpi(tag_1, lt(calldatasize, 0x4))\n      and(div(calldataload(0x0), 0x100000000000000000000000000000000000000000000000000000000), 0xffffffff)\n      0xd22057a9\n      dup2\n      eq\n      tag_2\n      jumpi\n    tag_1:\n      0x0\n      dup1\n      revert\n        /* \"contracts/FIFSRegistrar.sol\":893:1034  function register(bytes32 subnode, address owner) public only_owner(subnode) {\r... */\n    tag_2:\n      callvalue\n        /* \"--CODEGEN--\":8:17   */\n      dup1\n        /* \"--CODEGEN--\":5:7   */\n      iszero\n      tag_3\n      jumpi\n        /* \"--CODEGEN--\":30:31   */\n      0x0\n        /* \"--CODEGEN--\":27:28   */\n      dup1\n        /* \"--CODEGEN--\":20:32   */\n      revert\n        /* \"--CODEGEN--\":5:7   */\n    tag_3:\n      pop\n        /* \"contracts/FIFSRegistrar.sol\":893:1034  function register(bytes32 subnode, address owner) public only_owner(subnode) {\r... */\n      tag_4\n      calldataload(0x4)\n      and(calldataload(0x24), 0xffffffffffffffffffffffffffffffffffffffff)\n      jump(tag_5)\n    tag_4:\n      stop\n    tag_5:\n        /* \"contracts/FIFSRegistrar.sol\":255:275  address currentOwner */\n      0x0\n        /* \"contracts/FIFSRegistrar.sol\":278:281  ens */\n      dup1\n      sload\n      0x1\n        /* \"contracts/FIFSRegistrar.sol\":298:306  rootNode */\n      sload\n        /* \"contracts/FIFSRegistrar.sol\":288:316  keccak256(rootNode, subnode) */\n      0x40\n      dup1\n      mload\n      swap2\n      dup3\n      mstore\n      0x20\n      dup1\n      dup4\n      add\n      dup8\n      swap1\n      mstore\n      dup2\n      mload\n      swap3\n      dup4\n      swap1\n      sub\n      dup3\n      add\n      dup4\n      keccak256\n        /* \"contracts/FIFSRegistrar.sol\":278:317  ens.owner(keccak256(rootNode, subnode)) */\n      0x2571be300000000000000000000000000000000000000000000000000000000\n      dup5\n      mstore\n      0x4\n      dup5\n      add\n      mstore\n      swap1\n      mload\n        /* \"contracts/FIFSRegistrar.sol\":961:968  subnode */\n      dup7\n      swap5\n        /* \"contracts/FIFSRegistrar.sol\":255:275  address currentOwner */\n      swap4\n        /* \"contracts/FIFSRegistrar.sol\":278:281  ens */\n      0xffffffffffffffffffffffffffffffffffffffff\n      and\n      swap3\n        /* \"contracts/FIFSRegistrar.sol\":278:287  ens.owner */\n      0x2571be3\n      swap3\n        /* \"contracts/FIFSRegistrar.sol\":278:317  ens.owner(keccak256(rootNode, subnode)) */\n      0x24\n      dup1\n      dup4\n      add\n      swap4\n        /* \"contracts/FIFSRegistrar.sol\":288:316  keccak256(rootNode, subnode) */\n      swap2\n      swap3\n        /* \"contracts/FIFSRegistrar.sol\":278:317  ens.owner(keccak256(rootNode, subnode)) */\n      dup3\n      swap1\n      sub\n      add\n      dup2\n        /* \"contracts/FIFSRegistrar.sol\":255:275  address currentOwner */\n      dup8\n        /* \"contracts/FIFSRegistrar.sol\":278:281  ens */\n      dup8\n        /* \"contracts/FIFSRegistrar.sol\":278:317  ens.owner(keccak256(rootNode, subnode)) */\n      dup1\n      extcodesize\n      iszero\n        /* \"--CODEGEN--\":5:7   */\n      dup1\n      iszero\n      tag_7\n      jumpi\n        /* \"--CODEGEN--\":30:31   */\n      0x0\n        /* \"--CODEGEN--\":27:28   */\n      dup1\n        /* \"--CODEGEN--\":20:32   */\n      revert\n        /* \"--CODEGEN--\":5:7   */\n    tag_7:\n        /* \"contracts/FIFSRegistrar.sol\":278:317  ens.owner(keccak256(rootNode, subnode)) */\n      pop\n      gas\n      call\n      iszero\n        /* \"--CODEGEN--\":8:17   */\n      dup1\n        /* \"--CODEGEN--\":5:7   */\n      iszero\n      tag_8\n      jumpi\n        /* \"--CODEGEN--\":45:61   */\n      returndatasize\n        /* \"--CODEGEN--\":42:43   */\n      0x0\n        /* \"--CODEGEN--\":39:40   */\n      dup1\n        /* \"--CODEGEN--\":24:62   */\n      returndatacopy\n        /* \"--CODEGEN--\":77:93   */\n      returndatasize\n        /* \"--CODEGEN--\":74:75   */\n      0x0\n        /* \"--CODEGEN--\":67:94   */\n      revert\n        /* \"--CODEGEN--\":5:7   */\n    tag_8:\n        /* \"contracts/FIFSRegistrar.sol\":278:317  ens.owner(keccak256(rootNode, subnode)) */\n      pop\n      pop\n      pop\n      pop\n      mload(0x40)\n      returndatasize\n        /* \"--CODEGEN--\":13:15   */\n      0x20\n        /* \"--CODEGEN--\":8:11   */\n      dup2\n        /* \"--CODEGEN--\":5:16   */\n      lt\n        /* \"--CODEGEN--\":2:4   */\n      iszero\n      tag_9\n      jumpi\n        /* \"--CODEGEN--\":29:30   */\n      0x0\n        /* \"--CODEGEN--\":26:27   */\n      dup1\n        /* \"--CODEGEN--\":19:31   */\n      revert\n        /* \"--CODEGEN--\":2:4   */\n    tag_9:\n      pop\n        /* \"contracts/FIFSRegistrar.sol\":278:317  ens.owner(keccak256(rootNode, subnode)) */\n      mload\n      swap1\n      pop\n        /* \"contracts/FIFSRegistrar.sol\":336:353  currentOwner == 0 */\n      0xffffffffffffffffffffffffffffffffffffffff\n      dup2\n      and\n      iszero\n      dup1\n        /* \"contracts/FIFSRegistrar.sol\":336:383  currentOwner == 0 || currentOwner == msg.sender */\n      tag_10\n      jumpi\n      pop\n        /* \"contracts/FIFSRegistrar.sol\":357:383  currentOwner == msg.sender */\n      0xffffffffffffffffffffffffffffffffffffffff\n      dup2\n      and\n        /* \"contracts/FIFSRegistrar.sol\":373:383  msg.sender */\n      caller\n        /* \"contracts/FIFSRegistrar.sol\":357:383  currentOwner == msg.sender */\n      eq\n        /* \"contracts/FIFSRegistrar.sol\":336:383  currentOwner == 0 || currentOwner == msg.sender */\n    tag_10:\n        /* \"contracts/FIFSRegistrar.sol\":328:384  require(currentOwner == 0 || currentOwner == msg.sender) */\n      iszero\n      iszero\n      tag_11\n      jumpi\n      0x0\n      dup1\n      revert\n    tag_11:\n        /* \"contracts/FIFSRegistrar.sol\":981:984  ens */\n      0x0\n      dup1\n      sload\n      0x1\n        /* \"contracts/FIFSRegistrar.sol\":1001:1009  rootNode */\n      sload\n        /* \"contracts/FIFSRegistrar.sol\":981:1026  ens.setSubnodeOwner(rootNode, subnode, owner) */\n      0x40\n      dup1\n      mload\n      0x6ab592300000000000000000000000000000000000000000000000000000000\n      dup2\n      mstore\n      0x4\n      dup2\n      add\n      swap3\n      swap1\n      swap3\n      mstore\n      0x24\n      dup3\n      add\n      dup9\n      swap1\n      mstore\n        /* \"contracts/FIFSRegistrar.sol\":981:984  ens */\n      0xffffffffffffffffffffffffffffffffffffffff\n        /* \"contracts/FIFSRegistrar.sol\":981:1026  ens.setSubnodeOwner(rootNode, subnode, owner) */\n      dup8\n      dup2\n      and\n      0x44\n      dup5\n      add\n      mstore\n      swap1\n      mload\n        /* \"contracts/FIFSRegistrar.sol\":981:984  ens */\n      swap3\n      and\n      swap3\n        /* \"contracts/FIFSRegistrar.sol\":981:1000  ens.setSubnodeOwner */\n      0x6ab5923\n      swap3\n        /* \"contracts/FIFSRegistrar.sol\":981:1026  ens.setSubnodeOwner(rootNode, subnode, owner) */\n      0x64\n      dup1\n      dup5\n      add\n      swap4\n      dup3\n      swap1\n      sub\n      add\n      dup2\n        /* \"contracts/FIFSRegistrar.sol\":981:984  ens */\n      dup4\n      dup8\n        /* \"contracts/FIFSRegistrar.sol\":981:1026  ens.setSubnodeOwner(rootNode, subnode, owner) */\n      dup1\n      extcodesize\n      iszero\n        /* \"--CODEGEN--\":5:7   */\n      dup1\n      iszero\n      tag_13\n      jumpi\n        /* \"--CODEGEN--\":30:31   */\n      0x0\n        /* \"--CODEGEN--\":27:28   */\n      dup1\n        /* \"--CODEGEN--\":20:32   */\n      revert\n        /* \"--CODEGEN--\":5:7   */\n    tag_13:\n        /* \"contracts/FIFSRegistrar.sol\":981:1026  ens.setSubnodeOwner(rootNode, subnode, owner) */\n      pop\n      gas\n      call\n      iszero\n        /* \"--CODEGEN--\":8:17   */\n      dup1\n        /* \"--CODEGEN--\":5:7   */\n      iszero\n      tag_14\n      jumpi\n        /* \"--CODEGEN--\":45:61   */\n      returndatasize\n        /* \"--CODEGEN--\":42:43   */\n      0x0\n        /* \"--CODEGEN--\":39:40   */\n      dup1\n        /* \"--CODEGEN--\":24:62   */\n      returndatacopy\n        /* \"--CODEGEN--\":77:93   */\n      returndatasize\n        /* \"--CODEGEN--\":74:75   */\n      0x0\n        /* \"--CODEGEN--\":67:94   */\n      revert\n        /* \"--CODEGEN--\":5:7   */\n    tag_14:\n        /* \"contracts/FIFSRegistrar.sol\":981:1026  ens.setSubnodeOwner(rootNode, subnode, owner) */\n      pop\n      pop\n      pop\n      pop\n        /* \"contracts/FIFSRegistrar.sol\":893:1034  function register(bytes32 subnode, address owner) public only_owner(subnode) {\r... */\n      pop\n      pop\n      pop\n      pop\n      jump\t// out\n\n    auxdata: 0xa165627a7a72305820401d067dca408f3d7bbb50ee4247e0ad187fea1eb3fd5136eb768848bbd7f0de0029\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "608060405234801561001057600080fd5b5060405160408061029583398101604052805160209091015160008054600160a060020a031916600160a060020a0390931692909217825560015561023a90819061005b90396000f3006080604052600436106100405763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663d22057a98114610045575b600080fd5b34801561005157600080fd5b5061007660043573ffffffffffffffffffffffffffffffffffffffff60243516610078565b005b60008054600154604080519182526020808301879052815192839003820183207f02571be30000000000000000000000000000000000000000000000000000000084526004840152905186949373ffffffffffffffffffffffffffffffffffffffff16926302571be392602480830193919282900301818787803b1580156100ff57600080fd5b505af1158015610113573d6000803e3d6000fd5b505050506040513d602081101561012957600080fd5b5051905073ffffffffffffffffffffffffffffffffffffffff81161580610165575073ffffffffffffffffffffffffffffffffffffffff811633145b151561017057600080fd5b60008054600154604080517f06ab592300000000000000000000000000000000000000000000000000000000815260048101929092526024820188905273ffffffffffffffffffffffffffffffffffffffff878116604484015290519216926306ab59239260648084019382900301818387803b1580156101f057600080fd5b505af1158015610204573d6000803e3d6000fd5b50505050505050505600a165627a7a72305820401d067dca408f3d7bbb50ee4247e0ad187fea1eb3fd5136eb768848bbd7f0de0029",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x40 MLOAD PUSH1 0x40 DUP1 PUSH2 0x295 DUP4 CODECOPY DUP2 ADD PUSH1 0x40 MSTORE DUP1 MLOAD PUSH1 0x20 SWAP1 SWAP2 ADD MLOAD PUSH1 0x0 DUP1 SLOAD PUSH1 0x1 PUSH1 0xA0 PUSH1 0x2 EXP SUB NOT AND PUSH1 0x1 PUSH1 0xA0 PUSH1 0x2 EXP SUB SWAP1 SWAP4 AND SWAP3 SWAP1 SWAP3 OR DUP3 SSTORE PUSH1 0x1 SSTORE PUSH2 0x23A SWAP1 DUP2 SWAP1 PUSH2 0x5B SWAP1 CODECOPY PUSH1 0x0 RETURN STOP PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH2 0x40 JUMPI PUSH4 0xFFFFFFFF PUSH29 0x100000000000000000000000000000000000000000000000000000000 PUSH1 0x0 CALLDATALOAD DIV AND PUSH4 0xD22057A9 DUP2 EQ PUSH2 0x45 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0x51 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0x76 PUSH1 0x4 CALLDATALOAD PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF PUSH1 0x24 CALLDATALOAD AND PUSH2 0x78 JUMP JUMPDEST STOP JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH1 0x1 SLOAD PUSH1 0x40 DUP1 MLOAD SWAP2 DUP3 MSTORE PUSH1 0x20 DUP1 DUP4 ADD DUP8 SWAP1 MSTORE DUP2 MLOAD SWAP3 DUP4 SWAP1 SUB DUP3 ADD DUP4 KECCAK256 PUSH32 0x2571BE300000000000000000000000000000000000000000000000000000000 DUP5 MSTORE PUSH1 0x4 DUP5 ADD MSTORE SWAP1 MLOAD DUP7 SWAP5 SWAP4 PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND SWAP3 PUSH4 0x2571BE3 SWAP3 PUSH1 0x24 DUP1 DUP4 ADD SWAP4 SWAP2 SWAP3 DUP3 SWAP1 SUB ADD DUP2 DUP8 DUP8 DUP1 EXTCODESIZE ISZERO DUP1 ISZERO PUSH2 0xFF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP GAS CALL ISZERO DUP1 ISZERO PUSH2 0x113 JUMPI RETURNDATASIZE PUSH1 0x0 DUP1 RETURNDATACOPY RETURNDATASIZE PUSH1 0x0 REVERT JUMPDEST POP POP POP POP PUSH1 0x40 MLOAD RETURNDATASIZE PUSH1 0x20 DUP2 LT ISZERO PUSH2 0x129 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP MLOAD SWAP1 POP PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DUP2 AND ISZERO DUP1 PUSH2 0x165 JUMPI POP PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DUP2 AND CALLER EQ JUMPDEST ISZERO ISZERO PUSH2 0x170 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH1 0x1 SLOAD PUSH1 0x40 DUP1 MLOAD PUSH32 0x6AB592300000000000000000000000000000000000000000000000000000000 DUP2 MSTORE PUSH1 0x4 DUP2 ADD SWAP3 SWAP1 SWAP3 MSTORE PUSH1 0x24 DUP3 ADD DUP9 SWAP1 MSTORE PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DUP8 DUP2 AND PUSH1 0x44 DUP5 ADD MSTORE SWAP1 MLOAD SWAP3 AND SWAP3 PUSH4 0x6AB5923 SWAP3 PUSH1 0x64 DUP1 DUP5 ADD SWAP4 DUP3 SWAP1 SUB ADD DUP2 DUP4 DUP8 DUP1 EXTCODESIZE ISZERO DUP1 ISZERO PUSH2 0x1F0 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP GAS CALL ISZERO DUP1 ISZERO PUSH2 0x204 JUMPI RETURNDATASIZE PUSH1 0x0 DUP1 RETURNDATACOPY RETURNDATASIZE PUSH1 0x0 REVERT JUMPDEST POP POP POP POP POP POP POP POP JUMP STOP LOG1 PUSH6 0x627A7A723058 KECCAK256 BLOCKHASH SAR MOD PUSH30 0xCA408F3D7BBB50EE4247E0AD187FEA1EB3FD5136EB768848BBD7F0DE0029 ",
+							"sourceMap": "138:899:1:-;;;569:115;8:9:-1;5:2;;;30:1;27;20:12;5:2;569:115:1;;;;;;;;;;;;;;;;;;;637:3;:13;;-1:-1:-1;;;;;;637:13:1;-1:-1:-1;;;;;637:13:1;;;;;;;;;-1:-1:-1;661:15:1;138:899;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"linkReferences": {},
+							"object": "6080604052600436106100405763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663d22057a98114610045575b600080fd5b34801561005157600080fd5b5061007660043573ffffffffffffffffffffffffffffffffffffffff60243516610078565b005b60008054600154604080519182526020808301879052815192839003820183207f02571be30000000000000000000000000000000000000000000000000000000084526004840152905186949373ffffffffffffffffffffffffffffffffffffffff16926302571be392602480830193919282900301818787803b1580156100ff57600080fd5b505af1158015610113573d6000803e3d6000fd5b505050506040513d602081101561012957600080fd5b5051905073ffffffffffffffffffffffffffffffffffffffff81161580610165575073ffffffffffffffffffffffffffffffffffffffff811633145b151561017057600080fd5b60008054600154604080517f06ab592300000000000000000000000000000000000000000000000000000000815260048101929092526024820188905273ffffffffffffffffffffffffffffffffffffffff878116604484015290519216926306ab59239260648084019382900301818387803b1580156101f057600080fd5b505af1158015610204573d6000803e3d6000fd5b50505050505050505600a165627a7a72305820401d067dca408f3d7bbb50ee4247e0ad187fea1eb3fd5136eb768848bbd7f0de0029",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH2 0x40 JUMPI PUSH4 0xFFFFFFFF PUSH29 0x100000000000000000000000000000000000000000000000000000000 PUSH1 0x0 CALLDATALOAD DIV AND PUSH4 0xD22057A9 DUP2 EQ PUSH2 0x45 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0x51 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0x76 PUSH1 0x4 CALLDATALOAD PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF PUSH1 0x24 CALLDATALOAD AND PUSH2 0x78 JUMP JUMPDEST STOP JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH1 0x1 SLOAD PUSH1 0x40 DUP1 MLOAD SWAP2 DUP3 MSTORE PUSH1 0x20 DUP1 DUP4 ADD DUP8 SWAP1 MSTORE DUP2 MLOAD SWAP3 DUP4 SWAP1 SUB DUP3 ADD DUP4 KECCAK256 PUSH32 0x2571BE300000000000000000000000000000000000000000000000000000000 DUP5 MSTORE PUSH1 0x4 DUP5 ADD MSTORE SWAP1 MLOAD DUP7 SWAP5 SWAP4 PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND SWAP3 PUSH4 0x2571BE3 SWAP3 PUSH1 0x24 DUP1 DUP4 ADD SWAP4 SWAP2 SWAP3 DUP3 SWAP1 SUB ADD DUP2 DUP8 DUP8 DUP1 EXTCODESIZE ISZERO DUP1 ISZERO PUSH2 0xFF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP GAS CALL ISZERO DUP1 ISZERO PUSH2 0x113 JUMPI RETURNDATASIZE PUSH1 0x0 DUP1 RETURNDATACOPY RETURNDATASIZE PUSH1 0x0 REVERT JUMPDEST POP POP POP POP PUSH1 0x40 MLOAD RETURNDATASIZE PUSH1 0x20 DUP2 LT ISZERO PUSH2 0x129 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP MLOAD SWAP1 POP PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DUP2 AND ISZERO DUP1 PUSH2 0x165 JUMPI POP PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DUP2 AND CALLER EQ JUMPDEST ISZERO ISZERO PUSH2 0x170 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH1 0x1 SLOAD PUSH1 0x40 DUP1 MLOAD PUSH32 0x6AB592300000000000000000000000000000000000000000000000000000000 DUP2 MSTORE PUSH1 0x4 DUP2 ADD SWAP3 SWAP1 SWAP3 MSTORE PUSH1 0x24 DUP3 ADD DUP9 SWAP1 MSTORE PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF DUP8 DUP2 AND PUSH1 0x44 DUP5 ADD MSTORE SWAP1 MLOAD SWAP3 AND SWAP3 PUSH4 0x6AB5923 SWAP3 PUSH1 0x64 DUP1 DUP5 ADD SWAP4 DUP3 SWAP1 SUB ADD DUP2 DUP4 DUP8 DUP1 EXTCODESIZE ISZERO DUP1 ISZERO PUSH2 0x1F0 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP GAS CALL ISZERO DUP1 ISZERO PUSH2 0x204 JUMPI RETURNDATASIZE PUSH1 0x0 DUP1 RETURNDATACOPY RETURNDATASIZE PUSH1 0x0 REVERT JUMPDEST POP POP POP POP POP POP POP POP JUMP STOP LOG1 PUSH6 0x627A7A723058 KECCAK256 BLOCKHASH SAR MOD PUSH30 0xCA408F3D7BBB50EE4247E0AD187FEA1EB3FD5136EB768848BBD7F0DE0029 ",
+							"sourceMap": "138:899:1:-;;;;;;;;;;;;;;;;;;;;;;;893:141;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;893:141:1;;;;;;;;;;;;255:20;278:3;;;298:8;288:28;;;;;;;;;;;;;;;;;;;;;;;278:39;;;;;;;;;961:7;;255:20;278:3;;;:9;;:39;;;;;288:28;;278:39;;;;;255:20;278:3;:39;;;5:2:-1;;;;30:1;27;20:12;5:2;278:39:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;278:39:1;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;278:39:1;;-1:-1:-1;336:17:1;;;;;:47;;-1:-1:-1;357:26:1;;;373:10;357:26;336:47;328:56;;;;;;;;981:3;;;;1001:8;981:45;;;;;;;;;;;;;;;;;;;:3;:45;;;;;;;;;:3;;;:19;;:45;;;;;;;;;;:3;;:45;;;5:2:-1;;;;30:1;27;20:12;5:2;981:45:1;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;981:45:1;;;;893:141;;;;:::o"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "114000",
+								"executionCost": "40608",
+								"totalCost": "154608"
+							},
+							"external": {
+								"register(bytes32,address)": "infinite"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 138,
+									"end": 1037,
+									"name": "PUSH",
+									"value": "80"
+								},
+								{
+									"begin": 138,
+									"end": 1037,
+									"name": "PUSH",
+									"value": "40"
+								},
+								{
+									"begin": 138,
+									"end": 1037,
+									"name": "MSTORE"
+								},
+								{
+									"begin": 569,
+									"end": 684,
+									"name": "CALLVALUE"
+								},
+								{
+									"begin": 8,
+									"end": 17,
+									"name": "DUP1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "ISZERO"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "PUSH [tag]",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPI"
+								},
+								{
+									"begin": 30,
+									"end": 31,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 27,
+									"end": 28,
+									"name": "DUP1"
+								},
+								{
+									"begin": 20,
+									"end": 32,
+									"name": "REVERT"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "tag",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPDEST"
+								},
+								{
+									"begin": 569,
+									"end": 684,
+									"name": "POP"
+								},
+								{
+									"begin": 569,
+									"end": 684,
+									"name": "PUSH",
+									"value": "40"
+								},
+								{
+									"begin": 569,
+									"end": 684,
+									"name": "MLOAD"
+								},
+								{
+									"begin": 569,
+									"end": 684,
+									"name": "PUSH",
+									"value": "40"
+								},
+								{
+									"begin": 569,
+									"end": 684,
+									"name": "DUP1"
+								},
+								{
+									"begin": 569,
+									"end": 684,
+									"name": "PUSHSIZE"
+								},
+								{
+									"begin": 569,
+									"end": 684,
+									"name": "DUP4"
+								},
+								{
+									"begin": 569,
+									"end": 684,
+									"name": "CODECOPY"
+								},
+								{
+									"begin": 569,
+									"end": 684,
+									"name": "DUP2"
+								},
+								{
+									"begin": 569,
+									"end": 684,
+									"name": "ADD"
+								},
+								{
+									"begin": 569,
+									"end": 684,
+									"name": "PUSH",
+									"value": "40"
+								},
+								{
+									"begin": 569,
+									"end": 684,
+									"name": "MSTORE"
+								},
+								{
+									"begin": 569,
+									"end": 684,
+									"name": "DUP1"
+								},
+								{
+									"begin": 569,
+									"end": 684,
+									"name": "MLOAD"
+								},
+								{
+									"begin": 569,
+									"end": 684,
+									"name": "PUSH",
+									"value": "20"
+								},
+								{
+									"begin": 569,
+									"end": 684,
+									"name": "SWAP1"
+								},
+								{
+									"begin": 569,
+									"end": 684,
+									"name": "SWAP2"
+								},
+								{
+									"begin": 569,
+									"end": 684,
+									"name": "ADD"
+								},
+								{
+									"begin": 569,
+									"end": 684,
+									"name": "MLOAD"
+								},
+								{
+									"begin": 637,
+									"end": 640,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 637,
+									"end": 650,
+									"name": "DUP1"
+								},
+								{
+									"begin": 637,
+									"end": 650,
+									"name": "SLOAD"
+								},
+								{
+									"begin": -1,
+									"end": -1,
+									"name": "PUSH",
+									"value": "1"
+								},
+								{
+									"begin": -1,
+									"end": -1,
+									"name": "PUSH",
+									"value": "A0"
+								},
+								{
+									"begin": -1,
+									"end": -1,
+									"name": "PUSH",
+									"value": "2"
+								},
+								{
+									"begin": -1,
+									"end": -1,
+									"name": "EXP"
+								},
+								{
+									"begin": -1,
+									"end": -1,
+									"name": "SUB"
+								},
+								{
+									"begin": -1,
+									"end": -1,
+									"name": "NOT"
+								},
+								{
+									"begin": 637,
+									"end": 650,
+									"name": "AND"
+								},
+								{
+									"begin": -1,
+									"end": -1,
+									"name": "PUSH",
+									"value": "1"
+								},
+								{
+									"begin": -1,
+									"end": -1,
+									"name": "PUSH",
+									"value": "A0"
+								},
+								{
+									"begin": -1,
+									"end": -1,
+									"name": "PUSH",
+									"value": "2"
+								},
+								{
+									"begin": -1,
+									"end": -1,
+									"name": "EXP"
+								},
+								{
+									"begin": -1,
+									"end": -1,
+									"name": "SUB"
+								},
+								{
+									"begin": 637,
+									"end": 650,
+									"name": "SWAP1"
+								},
+								{
+									"begin": 637,
+									"end": 650,
+									"name": "SWAP4"
+								},
+								{
+									"begin": 637,
+									"end": 650,
+									"name": "AND"
+								},
+								{
+									"begin": 637,
+									"end": 650,
+									"name": "SWAP3"
+								},
+								{
+									"begin": 637,
+									"end": 650,
+									"name": "SWAP1"
+								},
+								{
+									"begin": 637,
+									"end": 650,
+									"name": "SWAP3"
+								},
+								{
+									"begin": 637,
+									"end": 650,
+									"name": "OR"
+								},
+								{
+									"begin": 637,
+									"end": 650,
+									"name": "DUP3"
+								},
+								{
+									"begin": 637,
+									"end": 650,
+									"name": "SSTORE"
+								},
+								{
+									"begin": -1,
+									"end": -1,
+									"name": "PUSH",
+									"value": "1"
+								},
+								{
+									"begin": 661,
+									"end": 676,
+									"name": "SSTORE"
+								},
+								{
+									"begin": 138,
+									"end": 1037,
+									"name": "PUSH #[$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 138,
+									"end": 1037,
+									"name": "SWAP1"
+								},
+								{
+									"begin": 138,
+									"end": 1037,
+									"name": "DUP2"
+								},
+								{
+									"begin": 138,
+									"end": 1037,
+									"name": "SWAP1"
+								},
+								{
+									"begin": 138,
+									"end": 1037,
+									"name": "PUSH [$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 138,
+									"end": 1037,
+									"name": "SWAP1"
+								},
+								{
+									"begin": 138,
+									"end": 1037,
+									"name": "CODECOPY"
+								},
+								{
+									"begin": 138,
+									"end": 1037,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 138,
+									"end": 1037,
+									"name": "RETURN"
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a165627a7a72305820401d067dca408f3d7bbb50ee4247e0ad187fea1eb3fd5136eb768848bbd7f0de0029",
+									".code": [
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "PUSH",
+											"value": "80"
+										},
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "PUSH",
+											"value": "40"
+										},
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "PUSH",
+											"value": "4"
+										},
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "CALLDATASIZE"
+										},
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "LT"
+										},
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "PUSH [tag]",
+											"value": "1"
+										},
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "JUMPI"
+										},
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "PUSH",
+											"value": "FFFFFFFF"
+										},
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "PUSH",
+											"value": "100000000000000000000000000000000000000000000000000000000"
+										},
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "CALLDATALOAD"
+										},
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "DIV"
+										},
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "AND"
+										},
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "PUSH",
+											"value": "D22057A9"
+										},
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "DUP2"
+										},
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "EQ"
+										},
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "PUSH [tag]",
+											"value": "2"
+										},
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "JUMPI"
+										},
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "tag",
+											"value": "1"
+										},
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "JUMPDEST"
+										},
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "DUP1"
+										},
+										{
+											"begin": 138,
+											"end": 1037,
+											"name": "REVERT"
+										},
+										{
+											"begin": 893,
+											"end": 1034,
+											"name": "tag",
+											"value": "2"
+										},
+										{
+											"begin": 893,
+											"end": 1034,
+											"name": "JUMPDEST"
+										},
+										{
+											"begin": 893,
+											"end": 1034,
+											"name": "CALLVALUE"
+										},
+										{
+											"begin": 8,
+											"end": 17,
+											"name": "DUP1"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "ISZERO"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "PUSH [tag]",
+											"value": "3"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "JUMPI"
+										},
+										{
+											"begin": 30,
+											"end": 31,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 27,
+											"end": 28,
+											"name": "DUP1"
+										},
+										{
+											"begin": 20,
+											"end": 32,
+											"name": "REVERT"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "tag",
+											"value": "3"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "JUMPDEST"
+										},
+										{
+											"begin": -1,
+											"end": -1,
+											"name": "POP"
+										},
+										{
+											"begin": 893,
+											"end": 1034,
+											"name": "PUSH [tag]",
+											"value": "4"
+										},
+										{
+											"begin": 893,
+											"end": 1034,
+											"name": "PUSH",
+											"value": "4"
+										},
+										{
+											"begin": 893,
+											"end": 1034,
+											"name": "CALLDATALOAD"
+										},
+										{
+											"begin": 893,
+											"end": 1034,
+											"name": "PUSH",
+											"value": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+										},
+										{
+											"begin": 893,
+											"end": 1034,
+											"name": "PUSH",
+											"value": "24"
+										},
+										{
+											"begin": 893,
+											"end": 1034,
+											"name": "CALLDATALOAD"
+										},
+										{
+											"begin": 893,
+											"end": 1034,
+											"name": "AND"
+										},
+										{
+											"begin": 893,
+											"end": 1034,
+											"name": "PUSH [tag]",
+											"value": "5"
+										},
+										{
+											"begin": 893,
+											"end": 1034,
+											"name": "JUMP"
+										},
+										{
+											"begin": 893,
+											"end": 1034,
+											"name": "tag",
+											"value": "4"
+										},
+										{
+											"begin": 893,
+											"end": 1034,
+											"name": "JUMPDEST"
+										},
+										{
+											"begin": 893,
+											"end": 1034,
+											"name": "STOP"
+										},
+										{
+											"begin": 893,
+											"end": 1034,
+											"name": "tag",
+											"value": "5"
+										},
+										{
+											"begin": 893,
+											"end": 1034,
+											"name": "JUMPDEST"
+										},
+										{
+											"begin": 255,
+											"end": 275,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 278,
+											"end": 281,
+											"name": "DUP1"
+										},
+										{
+											"begin": 278,
+											"end": 281,
+											"name": "SLOAD"
+										},
+										{
+											"begin": 278,
+											"end": 281,
+											"name": "PUSH",
+											"value": "1"
+										},
+										{
+											"begin": 298,
+											"end": 306,
+											"name": "SLOAD"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "PUSH",
+											"value": "40"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "DUP1"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "MLOAD"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "SWAP2"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "DUP3"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "PUSH",
+											"value": "20"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "DUP1"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "DUP4"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "ADD"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "DUP8"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "SWAP1"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "DUP2"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "MLOAD"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "SWAP3"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "DUP4"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "SWAP1"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "SUB"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "DUP3"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "ADD"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "DUP4"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "KECCAK256"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "PUSH",
+											"value": "2571BE300000000000000000000000000000000000000000000000000000000"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "DUP5"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "PUSH",
+											"value": "4"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "DUP5"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "ADD"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "SWAP1"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "MLOAD"
+										},
+										{
+											"begin": 961,
+											"end": 968,
+											"name": "DUP7"
+										},
+										{
+											"begin": 961,
+											"end": 968,
+											"name": "SWAP5"
+										},
+										{
+											"begin": 255,
+											"end": 275,
+											"name": "SWAP4"
+										},
+										{
+											"begin": 278,
+											"end": 281,
+											"name": "PUSH",
+											"value": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+										},
+										{
+											"begin": 278,
+											"end": 281,
+											"name": "AND"
+										},
+										{
+											"begin": 278,
+											"end": 281,
+											"name": "SWAP3"
+										},
+										{
+											"begin": 278,
+											"end": 287,
+											"name": "PUSH",
+											"value": "2571BE3"
+										},
+										{
+											"begin": 278,
+											"end": 287,
+											"name": "SWAP3"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "PUSH",
+											"value": "24"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "DUP1"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "DUP4"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "ADD"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "SWAP4"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "SWAP2"
+										},
+										{
+											"begin": 288,
+											"end": 316,
+											"name": "SWAP3"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "DUP3"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "SWAP1"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "SUB"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "ADD"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "DUP2"
+										},
+										{
+											"begin": 255,
+											"end": 275,
+											"name": "DUP8"
+										},
+										{
+											"begin": 278,
+											"end": 281,
+											"name": "DUP8"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "DUP1"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "EXTCODESIZE"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "ISZERO"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "DUP1"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "ISZERO"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "PUSH [tag]",
+											"value": "7"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "JUMPI"
+										},
+										{
+											"begin": 30,
+											"end": 31,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 27,
+											"end": 28,
+											"name": "DUP1"
+										},
+										{
+											"begin": 20,
+											"end": 32,
+											"name": "REVERT"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "tag",
+											"value": "7"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "JUMPDEST"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "POP"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "GAS"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "CALL"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "ISZERO"
+										},
+										{
+											"begin": 8,
+											"end": 17,
+											"name": "DUP1"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "ISZERO"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "PUSH [tag]",
+											"value": "8"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "JUMPI"
+										},
+										{
+											"begin": 45,
+											"end": 61,
+											"name": "RETURNDATASIZE"
+										},
+										{
+											"begin": 42,
+											"end": 43,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 39,
+											"end": 40,
+											"name": "DUP1"
+										},
+										{
+											"begin": 24,
+											"end": 62,
+											"name": "RETURNDATACOPY"
+										},
+										{
+											"begin": 77,
+											"end": 93,
+											"name": "RETURNDATASIZE"
+										},
+										{
+											"begin": 74,
+											"end": 75,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 67,
+											"end": 94,
+											"name": "REVERT"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "tag",
+											"value": "8"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "JUMPDEST"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "POP"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "POP"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "POP"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "POP"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "PUSH",
+											"value": "40"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "MLOAD"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "RETURNDATASIZE"
+										},
+										{
+											"begin": 13,
+											"end": 15,
+											"name": "PUSH",
+											"value": "20"
+										},
+										{
+											"begin": 8,
+											"end": 11,
+											"name": "DUP2"
+										},
+										{
+											"begin": 5,
+											"end": 16,
+											"name": "LT"
+										},
+										{
+											"begin": 2,
+											"end": 4,
+											"name": "ISZERO"
+										},
+										{
+											"begin": 2,
+											"end": 4,
+											"name": "PUSH [tag]",
+											"value": "9"
+										},
+										{
+											"begin": 2,
+											"end": 4,
+											"name": "JUMPI"
+										},
+										{
+											"begin": 29,
+											"end": 30,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 26,
+											"end": 27,
+											"name": "DUP1"
+										},
+										{
+											"begin": 19,
+											"end": 31,
+											"name": "REVERT"
+										},
+										{
+											"begin": 2,
+											"end": 4,
+											"name": "tag",
+											"value": "9"
+										},
+										{
+											"begin": 2,
+											"end": 4,
+											"name": "JUMPDEST"
+										},
+										{
+											"begin": -1,
+											"end": -1,
+											"name": "POP"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "MLOAD"
+										},
+										{
+											"begin": 278,
+											"end": 317,
+											"name": "SWAP1"
+										},
+										{
+											"begin": -1,
+											"end": -1,
+											"name": "POP"
+										},
+										{
+											"begin": 336,
+											"end": 353,
+											"name": "PUSH",
+											"value": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+										},
+										{
+											"begin": 336,
+											"end": 353,
+											"name": "DUP2"
+										},
+										{
+											"begin": 336,
+											"end": 353,
+											"name": "AND"
+										},
+										{
+											"begin": 336,
+											"end": 353,
+											"name": "ISZERO"
+										},
+										{
+											"begin": 336,
+											"end": 353,
+											"name": "DUP1"
+										},
+										{
+											"begin": 336,
+											"end": 383,
+											"name": "PUSH [tag]",
+											"value": "10"
+										},
+										{
+											"begin": 336,
+											"end": 383,
+											"name": "JUMPI"
+										},
+										{
+											"begin": -1,
+											"end": -1,
+											"name": "POP"
+										},
+										{
+											"begin": 357,
+											"end": 383,
+											"name": "PUSH",
+											"value": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+										},
+										{
+											"begin": 357,
+											"end": 383,
+											"name": "DUP2"
+										},
+										{
+											"begin": 357,
+											"end": 383,
+											"name": "AND"
+										},
+										{
+											"begin": 373,
+											"end": 383,
+											"name": "CALLER"
+										},
+										{
+											"begin": 357,
+											"end": 383,
+											"name": "EQ"
+										},
+										{
+											"begin": 336,
+											"end": 383,
+											"name": "tag",
+											"value": "10"
+										},
+										{
+											"begin": 336,
+											"end": 383,
+											"name": "JUMPDEST"
+										},
+										{
+											"begin": 328,
+											"end": 384,
+											"name": "ISZERO"
+										},
+										{
+											"begin": 328,
+											"end": 384,
+											"name": "ISZERO"
+										},
+										{
+											"begin": 328,
+											"end": 384,
+											"name": "PUSH [tag]",
+											"value": "11"
+										},
+										{
+											"begin": 328,
+											"end": 384,
+											"name": "JUMPI"
+										},
+										{
+											"begin": 328,
+											"end": 384,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 328,
+											"end": 384,
+											"name": "DUP1"
+										},
+										{
+											"begin": 328,
+											"end": 384,
+											"name": "REVERT"
+										},
+										{
+											"begin": 328,
+											"end": 384,
+											"name": "tag",
+											"value": "11"
+										},
+										{
+											"begin": 328,
+											"end": 384,
+											"name": "JUMPDEST"
+										},
+										{
+											"begin": 981,
+											"end": 984,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 981,
+											"end": 984,
+											"name": "DUP1"
+										},
+										{
+											"begin": 981,
+											"end": 984,
+											"name": "SLOAD"
+										},
+										{
+											"begin": 981,
+											"end": 984,
+											"name": "PUSH",
+											"value": "1"
+										},
+										{
+											"begin": 1001,
+											"end": 1009,
+											"name": "SLOAD"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "PUSH",
+											"value": "40"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "DUP1"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "MLOAD"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "PUSH",
+											"value": "6AB592300000000000000000000000000000000000000000000000000000000"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "DUP2"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "PUSH",
+											"value": "4"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "DUP2"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "ADD"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "SWAP3"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "SWAP1"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "SWAP3"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "PUSH",
+											"value": "24"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "DUP3"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "ADD"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "DUP9"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "SWAP1"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 981,
+											"end": 984,
+											"name": "PUSH",
+											"value": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "DUP8"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "DUP2"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "AND"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "PUSH",
+											"value": "44"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "DUP5"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "ADD"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "SWAP1"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "MLOAD"
+										},
+										{
+											"begin": 981,
+											"end": 984,
+											"name": "SWAP3"
+										},
+										{
+											"begin": 981,
+											"end": 984,
+											"name": "AND"
+										},
+										{
+											"begin": 981,
+											"end": 984,
+											"name": "SWAP3"
+										},
+										{
+											"begin": 981,
+											"end": 1000,
+											"name": "PUSH",
+											"value": "6AB5923"
+										},
+										{
+											"begin": 981,
+											"end": 1000,
+											"name": "SWAP3"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "PUSH",
+											"value": "64"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "DUP1"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "DUP5"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "ADD"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "SWAP4"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "DUP3"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "SWAP1"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "SUB"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "ADD"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "DUP2"
+										},
+										{
+											"begin": 981,
+											"end": 984,
+											"name": "DUP4"
+										},
+										{
+											"begin": 981,
+											"end": 984,
+											"name": "DUP8"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "DUP1"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "EXTCODESIZE"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "ISZERO"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "DUP1"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "ISZERO"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "PUSH [tag]",
+											"value": "13"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "JUMPI"
+										},
+										{
+											"begin": 30,
+											"end": 31,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 27,
+											"end": 28,
+											"name": "DUP1"
+										},
+										{
+											"begin": 20,
+											"end": 32,
+											"name": "REVERT"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "tag",
+											"value": "13"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "JUMPDEST"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "POP"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "GAS"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "CALL"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "ISZERO"
+										},
+										{
+											"begin": 8,
+											"end": 17,
+											"name": "DUP1"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "ISZERO"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "PUSH [tag]",
+											"value": "14"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "JUMPI"
+										},
+										{
+											"begin": 45,
+											"end": 61,
+											"name": "RETURNDATASIZE"
+										},
+										{
+											"begin": 42,
+											"end": 43,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 39,
+											"end": 40,
+											"name": "DUP1"
+										},
+										{
+											"begin": 24,
+											"end": 62,
+											"name": "RETURNDATACOPY"
+										},
+										{
+											"begin": 77,
+											"end": 93,
+											"name": "RETURNDATASIZE"
+										},
+										{
+											"begin": 74,
+											"end": 75,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 67,
+											"end": 94,
+											"name": "REVERT"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "tag",
+											"value": "14"
+										},
+										{
+											"begin": 5,
+											"end": 7,
+											"name": "JUMPDEST"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "POP"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "POP"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "POP"
+										},
+										{
+											"begin": 981,
+											"end": 1026,
+											"name": "POP"
+										},
+										{
+											"begin": 893,
+											"end": 1034,
+											"name": "POP"
+										},
+										{
+											"begin": 893,
+											"end": 1034,
+											"name": "POP"
+										},
+										{
+											"begin": 893,
+											"end": 1034,
+											"name": "POP"
+										},
+										{
+											"begin": 893,
+											"end": 1034,
+											"name": "POP"
+										},
+										{
+											"begin": 893,
+											"end": 1034,
+											"name": "JUMP",
+											"value": "[out]"
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {
+							"register(bytes32,address)": "d22057a9"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.4.26+commit.4563c3fc\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"subnode\",\"type\":\"bytes32\"},{\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"register\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"ensAddr\",\"type\":\"address\"},{\"name\":\"node\",\"type\":\"bytes32\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{\"register(bytes32,address)\":{\"params\":{\"owner\":\"The address of the new owner.\\r\",\"subnode\":\"The hash of the label to register.\\r\"}}}},\"userdoc\":{\"methods\":{\"register(bytes32,address)\":{\"notice\":\"Register a name, or change the owner of an existing registration.\\r\"}}}},\"settings\":{\"compilationTarget\":{\"contracts/FIFSRegistrar.sol\":\"FIFSRegistrar\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/ENS.sol\":{\"keccak256\":\"0x323ac7a5b1e5cdf19b5312f91581b08339e1b7aed7fdbe30338596f34fa22127\",\"urls\":[\"bzzr://3deb73de2d9c6b25b831e8f0c641df08f4c1f151fedc2780b464c085b49f158c\"]},\"contracts/FIFSRegistrar.sol\":{\"keccak256\":\"0xf5d9609710e025edad4005f3dff740e4a645ffe4ab74dca64b48da5146d6f915\",\"urls\":[\"bzzr://a2b8201959be3e5a9f352c6bbdf8f0ba60c812d97858522887a4223eb6109b54\"]}},\"version\":1}",
+					"userdoc": {
+						"methods": {
+							"register(bytes32,address)": {
+								"notice": "Register a name, or change the owner of an existing registration.\r"
+							}
+						}
+					}
+				}
+			}
+		},
+		"errors": [
+			{
+				"component": "general",
+				"formattedMessage": "contracts/FIFSRegistrar.sol:23:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use \"constructor(...) { ... }\" instead.\n    function FIFSRegistrar(ENS ensAddr, bytes32 node) public {\r\n    ^ (Relevant source part starts here and spans across multiple lines).\n",
+				"message": "Defining constructors as functions with the same name as the contract is deprecated. Use \"constructor(...) { ... }\" instead.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": 684,
+					"file": "contracts/FIFSRegistrar.sol",
+					"start": 569
+				},
+				"type": "Warning"
+			},
+			{
+				"component": "general",
+				"formattedMessage": "contracts/ENS.sol:18:5: Warning: Functions in interfaces should be declared external.\n    function setSubnodeOwner(bytes32 node, bytes32 label, address owner) public;\r\n    ^--------------------------------------------------------------------------^\n",
+				"message": "Functions in interfaces should be declared external.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": 644,
+					"file": "contracts/ENS.sol",
+					"start": 568
+				},
+				"type": "Warning"
+			},
+			{
+				"component": "general",
+				"formattedMessage": "contracts/ENS.sol:19:5: Warning: Functions in interfaces should be declared external.\n    function setResolver(bytes32 node, address resolver) public;\r\n    ^----------------------------------------------------------^\n",
+				"message": "Functions in interfaces should be declared external.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": 710,
+					"file": "contracts/ENS.sol",
+					"start": 650
+				},
+				"type": "Warning"
+			},
+			{
+				"component": "general",
+				"formattedMessage": "contracts/ENS.sol:20:5: Warning: Functions in interfaces should be declared external.\n    function setOwner(bytes32 node, address owner) public;\r\n    ^----------------------------------------------------^\n",
+				"message": "Functions in interfaces should be declared external.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": 770,
+					"file": "contracts/ENS.sol",
+					"start": 716
+				},
+				"type": "Warning"
+			},
+			{
+				"component": "general",
+				"formattedMessage": "contracts/ENS.sol:21:5: Warning: Functions in interfaces should be declared external.\n    function setTTL(bytes32 node, uint64 ttl) public;\r\n    ^-----------------------------------------------^\n",
+				"message": "Functions in interfaces should be declared external.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": 825,
+					"file": "contracts/ENS.sol",
+					"start": 776
+				},
+				"type": "Warning"
+			},
+			{
+				"component": "general",
+				"formattedMessage": "contracts/ENS.sol:22:5: Warning: Functions in interfaces should be declared external.\n    function owner(bytes32 node) public view returns (address);\r\n    ^---------------------------------------------------------^\n",
+				"message": "Functions in interfaces should be declared external.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": 890,
+					"file": "contracts/ENS.sol",
+					"start": 831
+				},
+				"type": "Warning"
+			},
+			{
+				"component": "general",
+				"formattedMessage": "contracts/ENS.sol:23:5: Warning: Functions in interfaces should be declared external.\n    function resolver(bytes32 node) public view returns (address);\r\n    ^------------------------------------------------------------^\n",
+				"message": "Functions in interfaces should be declared external.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": 958,
+					"file": "contracts/ENS.sol",
+					"start": 896
+				},
+				"type": "Warning"
+			},
+			{
+				"component": "general",
+				"formattedMessage": "contracts/ENS.sol:24:5: Warning: Functions in interfaces should be declared external.\n    function ttl(bytes32 node) public view returns (uint64);\r\n    ^------------------------------------------------------^\n",
+				"message": "Functions in interfaces should be declared external.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": 1020,
+					"file": "contracts/ENS.sol",
+					"start": 964
+				},
+				"type": "Warning"
+			},
+			{
+				"component": "general",
+				"formattedMessage": "contracts/FIFSRegistrar.sol:13:42: Warning: This function only accepts a single \"bytes\" argument. Please use \"abi.encodePacked(...)\" or a similar function to encode the data.\n        address currentOwner = ens.owner(keccak256(rootNode, subnode));\r\n                                         ^--------------------------^\n",
+				"message": "This function only accepts a single \"bytes\" argument. Please use \"abi.encodePacked(...)\" or a similar function to encode the data.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": 316,
+					"file": "contracts/FIFSRegistrar.sol",
+					"start": 288
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"contracts/ENS.sol": {
+				"ast": {
+					"absolutePath": "contracts/ENS.sol",
+					"exportedSymbols": {
+						"ENS": [
+							79
+						]
+					},
+					"id": 80,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.4",
+								".18"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:24:0"
+						},
+						{
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "interface",
+							"documentation": null,
+							"fullyImplemented": false,
+							"id": 79,
+							"linearizedBaseContracts": [
+								79
+							],
+							"name": "ENS",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"anonymous": false,
+									"documentation": null,
+									"id": 9,
+									"name": "NewOwner",
+									"nodeType": "EventDefinition",
+									"parameters": {
+										"id": 8,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 3,
+												"indexed": true,
+												"name": "node",
+												"nodeType": "VariableDeclaration",
+												"scope": 9,
+												"src": "140:20:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes32",
+													"typeString": "bytes32"
+												},
+												"typeName": {
+													"id": 2,
+													"name": "bytes32",
+													"nodeType": "ElementaryTypeName",
+													"src": "140:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes32",
+														"typeString": "bytes32"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 5,
+												"indexed": true,
+												"name": "label",
+												"nodeType": "VariableDeclaration",
+												"scope": 9,
+												"src": "162:21:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes32",
+													"typeString": "bytes32"
+												},
+												"typeName": {
+													"id": 4,
+													"name": "bytes32",
+													"nodeType": "ElementaryTypeName",
+													"src": "162:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes32",
+														"typeString": "bytes32"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 7,
+												"indexed": false,
+												"name": "owner",
+												"nodeType": "VariableDeclaration",
+												"scope": 9,
+												"src": "185:13:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 6,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "185:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "139:60:0"
+									},
+									"src": "125:75:0"
+								},
+								{
+									"anonymous": false,
+									"documentation": null,
+									"id": 15,
+									"name": "Transfer",
+									"nodeType": "EventDefinition",
+									"parameters": {
+										"id": 14,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 11,
+												"indexed": true,
+												"name": "node",
+												"nodeType": "VariableDeclaration",
+												"scope": 15,
+												"src": "301:20:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes32",
+													"typeString": "bytes32"
+												},
+												"typeName": {
+													"id": 10,
+													"name": "bytes32",
+													"nodeType": "ElementaryTypeName",
+													"src": "301:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes32",
+														"typeString": "bytes32"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 13,
+												"indexed": false,
+												"name": "owner",
+												"nodeType": "VariableDeclaration",
+												"scope": 15,
+												"src": "323:13:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 12,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "323:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "300:37:0"
+									},
+									"src": "286:52:0"
+								},
+								{
+									"anonymous": false,
+									"documentation": null,
+									"id": 21,
+									"name": "NewResolver",
+									"nodeType": "EventDefinition",
+									"parameters": {
+										"id": 20,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 17,
+												"indexed": true,
+												"name": "node",
+												"nodeType": "VariableDeclaration",
+												"scope": 21,
+												"src": "417:20:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes32",
+													"typeString": "bytes32"
+												},
+												"typeName": {
+													"id": 16,
+													"name": "bytes32",
+													"nodeType": "ElementaryTypeName",
+													"src": "417:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes32",
+														"typeString": "bytes32"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 19,
+												"indexed": false,
+												"name": "resolver",
+												"nodeType": "VariableDeclaration",
+												"scope": 21,
+												"src": "439:16:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 18,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "439:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "416:40:0"
+									},
+									"src": "399:58:0"
+								},
+								{
+									"anonymous": false,
+									"documentation": null,
+									"id": 27,
+									"name": "NewTTL",
+									"nodeType": "EventDefinition",
+									"parameters": {
+										"id": 26,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 23,
+												"indexed": true,
+												"name": "node",
+												"nodeType": "VariableDeclaration",
+												"scope": 27,
+												"src": "524:20:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes32",
+													"typeString": "bytes32"
+												},
+												"typeName": {
+													"id": 22,
+													"name": "bytes32",
+													"nodeType": "ElementaryTypeName",
+													"src": "524:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes32",
+														"typeString": "bytes32"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 25,
+												"indexed": false,
+												"name": "ttl",
+												"nodeType": "VariableDeclaration",
+												"scope": 27,
+												"src": "546:10:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint64",
+													"typeString": "uint64"
+												},
+												"typeName": {
+													"id": 24,
+													"name": "uint64",
+													"nodeType": "ElementaryTypeName",
+													"src": "546:6:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_uint64",
+														"typeString": "uint64"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "523:34:0"
+									},
+									"src": "511:47:0"
+								},
+								{
+									"body": null,
+									"documentation": null,
+									"id": 36,
+									"implemented": false,
+									"isConstructor": false,
+									"isDeclaredConst": false,
+									"modifiers": [],
+									"name": "setSubnodeOwner",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 34,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 29,
+												"name": "node",
+												"nodeType": "VariableDeclaration",
+												"scope": 36,
+												"src": "593:12:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes32",
+													"typeString": "bytes32"
+												},
+												"typeName": {
+													"id": 28,
+													"name": "bytes32",
+													"nodeType": "ElementaryTypeName",
+													"src": "593:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes32",
+														"typeString": "bytes32"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 31,
+												"name": "label",
+												"nodeType": "VariableDeclaration",
+												"scope": 36,
+												"src": "607:13:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes32",
+													"typeString": "bytes32"
+												},
+												"typeName": {
+													"id": 30,
+													"name": "bytes32",
+													"nodeType": "ElementaryTypeName",
+													"src": "607:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes32",
+														"typeString": "bytes32"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 33,
+												"name": "owner",
+												"nodeType": "VariableDeclaration",
+												"scope": 36,
+												"src": "622:13:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 32,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "622:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "592:44:0"
+									},
+									"payable": false,
+									"returnParameters": {
+										"id": 35,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "643:0:0"
+									},
+									"scope": 79,
+									"src": "568:76:0",
+									"stateMutability": "nonpayable",
+									"superFunction": null,
+									"visibility": "public"
+								},
+								{
+									"body": null,
+									"documentation": null,
+									"id": 43,
+									"implemented": false,
+									"isConstructor": false,
+									"isDeclaredConst": false,
+									"modifiers": [],
+									"name": "setResolver",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 41,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 38,
+												"name": "node",
+												"nodeType": "VariableDeclaration",
+												"scope": 43,
+												"src": "671:12:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes32",
+													"typeString": "bytes32"
+												},
+												"typeName": {
+													"id": 37,
+													"name": "bytes32",
+													"nodeType": "ElementaryTypeName",
+													"src": "671:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes32",
+														"typeString": "bytes32"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 40,
+												"name": "resolver",
+												"nodeType": "VariableDeclaration",
+												"scope": 43,
+												"src": "685:16:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 39,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "685:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "670:32:0"
+									},
+									"payable": false,
+									"returnParameters": {
+										"id": 42,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "709:0:0"
+									},
+									"scope": 79,
+									"src": "650:60:0",
+									"stateMutability": "nonpayable",
+									"superFunction": null,
+									"visibility": "public"
+								},
+								{
+									"body": null,
+									"documentation": null,
+									"id": 50,
+									"implemented": false,
+									"isConstructor": false,
+									"isDeclaredConst": false,
+									"modifiers": [],
+									"name": "setOwner",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 48,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 45,
+												"name": "node",
+												"nodeType": "VariableDeclaration",
+												"scope": 50,
+												"src": "734:12:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes32",
+													"typeString": "bytes32"
+												},
+												"typeName": {
+													"id": 44,
+													"name": "bytes32",
+													"nodeType": "ElementaryTypeName",
+													"src": "734:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes32",
+														"typeString": "bytes32"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 47,
+												"name": "owner",
+												"nodeType": "VariableDeclaration",
+												"scope": 50,
+												"src": "748:13:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 46,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "748:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "733:29:0"
+									},
+									"payable": false,
+									"returnParameters": {
+										"id": 49,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "769:0:0"
+									},
+									"scope": 79,
+									"src": "716:54:0",
+									"stateMutability": "nonpayable",
+									"superFunction": null,
+									"visibility": "public"
+								},
+								{
+									"body": null,
+									"documentation": null,
+									"id": 57,
+									"implemented": false,
+									"isConstructor": false,
+									"isDeclaredConst": false,
+									"modifiers": [],
+									"name": "setTTL",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 55,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 52,
+												"name": "node",
+												"nodeType": "VariableDeclaration",
+												"scope": 57,
+												"src": "792:12:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes32",
+													"typeString": "bytes32"
+												},
+												"typeName": {
+													"id": 51,
+													"name": "bytes32",
+													"nodeType": "ElementaryTypeName",
+													"src": "792:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes32",
+														"typeString": "bytes32"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 54,
+												"name": "ttl",
+												"nodeType": "VariableDeclaration",
+												"scope": 57,
+												"src": "806:10:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint64",
+													"typeString": "uint64"
+												},
+												"typeName": {
+													"id": 53,
+													"name": "uint64",
+													"nodeType": "ElementaryTypeName",
+													"src": "806:6:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_uint64",
+														"typeString": "uint64"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "791:26:0"
+									},
+									"payable": false,
+									"returnParameters": {
+										"id": 56,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "824:0:0"
+									},
+									"scope": 79,
+									"src": "776:49:0",
+									"stateMutability": "nonpayable",
+									"superFunction": null,
+									"visibility": "public"
+								},
+								{
+									"body": null,
+									"documentation": null,
+									"id": 64,
+									"implemented": false,
+									"isConstructor": false,
+									"isDeclaredConst": true,
+									"modifiers": [],
+									"name": "owner",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 60,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 59,
+												"name": "node",
+												"nodeType": "VariableDeclaration",
+												"scope": 64,
+												"src": "846:12:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes32",
+													"typeString": "bytes32"
+												},
+												"typeName": {
+													"id": 58,
+													"name": "bytes32",
+													"nodeType": "ElementaryTypeName",
+													"src": "846:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes32",
+														"typeString": "bytes32"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "845:14:0"
+									},
+									"payable": false,
+									"returnParameters": {
+										"id": 63,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 62,
+												"name": "",
+												"nodeType": "VariableDeclaration",
+												"scope": 64,
+												"src": "881:7:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 61,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "881:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "880:9:0"
+									},
+									"scope": 79,
+									"src": "831:59:0",
+									"stateMutability": "view",
+									"superFunction": null,
+									"visibility": "public"
+								},
+								{
+									"body": null,
+									"documentation": null,
+									"id": 71,
+									"implemented": false,
+									"isConstructor": false,
+									"isDeclaredConst": true,
+									"modifiers": [],
+									"name": "resolver",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 67,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 66,
+												"name": "node",
+												"nodeType": "VariableDeclaration",
+												"scope": 71,
+												"src": "914:12:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes32",
+													"typeString": "bytes32"
+												},
+												"typeName": {
+													"id": 65,
+													"name": "bytes32",
+													"nodeType": "ElementaryTypeName",
+													"src": "914:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes32",
+														"typeString": "bytes32"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "913:14:0"
+									},
+									"payable": false,
+									"returnParameters": {
+										"id": 70,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 69,
+												"name": "",
+												"nodeType": "VariableDeclaration",
+												"scope": 71,
+												"src": "949:7:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 68,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "949:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "948:9:0"
+									},
+									"scope": 79,
+									"src": "896:62:0",
+									"stateMutability": "view",
+									"superFunction": null,
+									"visibility": "public"
+								},
+								{
+									"body": null,
+									"documentation": null,
+									"id": 78,
+									"implemented": false,
+									"isConstructor": false,
+									"isDeclaredConst": true,
+									"modifiers": [],
+									"name": "ttl",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 74,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 73,
+												"name": "node",
+												"nodeType": "VariableDeclaration",
+												"scope": 78,
+												"src": "977:12:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes32",
+													"typeString": "bytes32"
+												},
+												"typeName": {
+													"id": 72,
+													"name": "bytes32",
+													"nodeType": "ElementaryTypeName",
+													"src": "977:7:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes32",
+														"typeString": "bytes32"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "976:14:0"
+									},
+									"payable": false,
+									"returnParameters": {
+										"id": 77,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 76,
+												"name": "",
+												"nodeType": "VariableDeclaration",
+												"scope": 78,
+												"src": "1012:6:0",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint64",
+													"typeString": "uint64"
+												},
+												"typeName": {
+													"id": 75,
+													"name": "uint64",
+													"nodeType": "ElementaryTypeName",
+													"src": "1012:6:0",
+													"typeDescriptions": {
+														"typeIdentifier": "t_uint64",
+														"typeString": "uint64"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "1011:8:0"
+									},
+									"scope": 79,
+									"src": "964:56:0",
+									"stateMutability": "view",
+									"superFunction": null,
+									"visibility": "public"
+								}
+							],
+							"scope": 80,
+							"src": "28:997:0"
+						}
+					],
+					"src": "0:1027:0"
+				},
+				"id": 0
+			},
+			"contracts/FIFSRegistrar.sol": {
+				"ast": {
+					"absolutePath": "contracts/FIFSRegistrar.sol",
+					"exportedSymbols": {
+						"FIFSRegistrar": [
+							149
+						]
+					},
+					"id": 150,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 81,
+							"literals": [
+								"solidity",
+								"^",
+								"0.4",
+								".18"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:24:1"
+						},
+						{
+							"absolutePath": "contracts/ENS.sol",
+							"file": "./ENS.sol",
+							"id": 82,
+							"nodeType": "ImportDirective",
+							"scope": 150,
+							"sourceUnit": 80,
+							"src": "28:19:1",
+							"symbolAliases": [],
+							"unitAlias": ""
+						},
+						{
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"documentation": "A registrar that allocates subdomains to the first person to claim them.\r",
+							"fullyImplemented": true,
+							"id": 149,
+							"linearizedBaseContracts": [
+								149
+							],
+							"name": "FIFSRegistrar",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"constant": false,
+									"id": 84,
+									"name": "ens",
+									"nodeType": "VariableDeclaration",
+									"scope": 149,
+									"src": "168:7:1",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_contract$_ENS_$79",
+										"typeString": "contract ENS"
+									},
+									"typeName": {
+										"contractScope": null,
+										"id": 83,
+										"name": "ENS",
+										"nodeType": "UserDefinedTypeName",
+										"referencedDeclaration": 79,
+										"src": "168:3:1",
+										"typeDescriptions": {
+											"typeIdentifier": "t_contract$_ENS_$79",
+											"typeString": "contract ENS"
+										}
+									},
+									"value": null,
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 86,
+									"name": "rootNode",
+									"nodeType": "VariableDeclaration",
+									"scope": 149,
+									"src": "182:16:1",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_bytes32",
+										"typeString": "bytes32"
+									},
+									"typeName": {
+										"id": 85,
+										"name": "bytes32",
+										"nodeType": "ElementaryTypeName",
+										"src": "182:7:1",
+										"typeDescriptions": {
+											"typeIdentifier": "t_bytes32",
+											"typeString": "bytes32"
+										}
+									},
+									"value": null,
+									"visibility": "internal"
+								},
+								{
+									"body": {
+										"id": 112,
+										"nodeType": "Block",
+										"src": "244:160:1",
+										"statements": [
+											{
+												"assignments": [
+													91
+												],
+												"declarations": [
+													{
+														"constant": false,
+														"id": 91,
+														"name": "currentOwner",
+														"nodeType": "VariableDeclaration",
+														"scope": 113,
+														"src": "255:20:1",
+														"stateVariable": false,
+														"storageLocation": "default",
+														"typeDescriptions": {
+															"typeIdentifier": "t_address",
+															"typeString": "address"
+														},
+														"typeName": {
+															"id": 90,
+															"name": "address",
+															"nodeType": "ElementaryTypeName",
+															"src": "255:7:1",
+															"typeDescriptions": {
+																"typeIdentifier": "t_address",
+																"typeString": "address"
+															}
+														},
+														"value": null,
+														"visibility": "internal"
+													}
+												],
+												"id": 99,
+												"initialValue": {
+													"argumentTypes": null,
+													"arguments": [
+														{
+															"argumentTypes": null,
+															"arguments": [
+																{
+																	"argumentTypes": null,
+																	"id": 95,
+																	"name": "rootNode",
+																	"nodeType": "Identifier",
+																	"overloadedDeclarations": [],
+																	"referencedDeclaration": 86,
+																	"src": "298:8:1",
+																	"typeDescriptions": {
+																		"typeIdentifier": "t_bytes32",
+																		"typeString": "bytes32"
+																	}
+																},
+																{
+																	"argumentTypes": null,
+																	"id": 96,
+																	"name": "subnode",
+																	"nodeType": "Identifier",
+																	"overloadedDeclarations": [],
+																	"referencedDeclaration": 88,
+																	"src": "308:7:1",
+																	"typeDescriptions": {
+																		"typeIdentifier": "t_bytes32",
+																		"typeString": "bytes32"
+																	}
+																}
+															],
+															"expression": {
+																"argumentTypes": [
+																	{
+																		"typeIdentifier": "t_bytes32",
+																		"typeString": "bytes32"
+																	},
+																	{
+																		"typeIdentifier": "t_bytes32",
+																		"typeString": "bytes32"
+																	}
+																],
+																"id": 94,
+																"name": "keccak256",
+																"nodeType": "Identifier",
+																"overloadedDeclarations": [],
+																"referencedDeclaration": 158,
+																"src": "288:9:1",
+																"typeDescriptions": {
+																	"typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
+																	"typeString": "function () pure returns (bytes32)"
+																}
+															},
+															"id": 97,
+															"isConstant": false,
+															"isLValue": false,
+															"isPure": false,
+															"kind": "functionCall",
+															"lValueRequested": false,
+															"names": [],
+															"nodeType": "FunctionCall",
+															"src": "288:28:1",
+															"typeDescriptions": {
+																"typeIdentifier": "t_bytes32",
+																"typeString": "bytes32"
+															}
+														}
+													],
+													"expression": {
+														"argumentTypes": [
+															{
+																"typeIdentifier": "t_bytes32",
+																"typeString": "bytes32"
+															}
+														],
+														"expression": {
+															"argumentTypes": null,
+															"id": 92,
+															"name": "ens",
+															"nodeType": "Identifier",
+															"overloadedDeclarations": [],
+															"referencedDeclaration": 84,
+															"src": "278:3:1",
+															"typeDescriptions": {
+																"typeIdentifier": "t_contract$_ENS_$79",
+																"typeString": "contract ENS"
+															}
+														},
+														"id": 93,
+														"isConstant": false,
+														"isLValue": false,
+														"isPure": false,
+														"lValueRequested": false,
+														"memberName": "owner",
+														"nodeType": "MemberAccess",
+														"referencedDeclaration": 64,
+														"src": "278:9:1",
+														"typeDescriptions": {
+															"typeIdentifier": "t_function_external_view$_t_bytes32_$returns$_t_address_$",
+															"typeString": "function (bytes32) view external returns (address)"
+														}
+													},
+													"id": 98,
+													"isConstant": false,
+													"isLValue": false,
+													"isPure": false,
+													"kind": "functionCall",
+													"lValueRequested": false,
+													"names": [],
+													"nodeType": "FunctionCall",
+													"src": "278:39:1",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"nodeType": "VariableDeclarationStatement",
+												"src": "255:62:1"
+											},
+											{
+												"expression": {
+													"argumentTypes": null,
+													"arguments": [
+														{
+															"argumentTypes": null,
+															"commonType": {
+																"typeIdentifier": "t_bool",
+																"typeString": "bool"
+															},
+															"id": 108,
+															"isConstant": false,
+															"isLValue": false,
+															"isPure": false,
+															"lValueRequested": false,
+															"leftExpression": {
+																"argumentTypes": null,
+																"commonType": {
+																	"typeIdentifier": "t_address",
+																	"typeString": "address"
+																},
+																"id": 103,
+																"isConstant": false,
+																"isLValue": false,
+																"isPure": false,
+																"lValueRequested": false,
+																"leftExpression": {
+																	"argumentTypes": null,
+																	"id": 101,
+																	"name": "currentOwner",
+																	"nodeType": "Identifier",
+																	"overloadedDeclarations": [],
+																	"referencedDeclaration": 91,
+																	"src": "336:12:1",
+																	"typeDescriptions": {
+																		"typeIdentifier": "t_address",
+																		"typeString": "address"
+																	}
+																},
+																"nodeType": "BinaryOperation",
+																"operator": "==",
+																"rightExpression": {
+																	"argumentTypes": null,
+																	"hexValue": "30",
+																	"id": 102,
+																	"isConstant": false,
+																	"isLValue": false,
+																	"isPure": true,
+																	"kind": "number",
+																	"lValueRequested": false,
+																	"nodeType": "Literal",
+																	"src": "352:1:1",
+																	"subdenomination": null,
+																	"typeDescriptions": {
+																		"typeIdentifier": "t_rational_0_by_1",
+																		"typeString": "int_const 0"
+																	},
+																	"value": "0"
+																},
+																"src": "336:17:1",
+																"typeDescriptions": {
+																	"typeIdentifier": "t_bool",
+																	"typeString": "bool"
+																}
+															},
+															"nodeType": "BinaryOperation",
+															"operator": "||",
+															"rightExpression": {
+																"argumentTypes": null,
+																"commonType": {
+																	"typeIdentifier": "t_address",
+																	"typeString": "address"
+																},
+																"id": 107,
+																"isConstant": false,
+																"isLValue": false,
+																"isPure": false,
+																"lValueRequested": false,
+																"leftExpression": {
+																	"argumentTypes": null,
+																	"id": 104,
+																	"name": "currentOwner",
+																	"nodeType": "Identifier",
+																	"overloadedDeclarations": [],
+																	"referencedDeclaration": 91,
+																	"src": "357:12:1",
+																	"typeDescriptions": {
+																		"typeIdentifier": "t_address",
+																		"typeString": "address"
+																	}
+																},
+																"nodeType": "BinaryOperation",
+																"operator": "==",
+																"rightExpression": {
+																	"argumentTypes": null,
+																	"expression": {
+																		"argumentTypes": null,
+																		"id": 105,
+																		"name": "msg",
+																		"nodeType": "Identifier",
+																		"overloadedDeclarations": [],
+																		"referencedDeclaration": 164,
+																		"src": "373:3:1",
+																		"typeDescriptions": {
+																			"typeIdentifier": "t_magic_message",
+																			"typeString": "msg"
+																		}
+																	},
+																	"id": 106,
+																	"isConstant": false,
+																	"isLValue": false,
+																	"isPure": false,
+																	"lValueRequested": false,
+																	"memberName": "sender",
+																	"nodeType": "MemberAccess",
+																	"referencedDeclaration": null,
+																	"src": "373:10:1",
+																	"typeDescriptions": {
+																		"typeIdentifier": "t_address",
+																		"typeString": "address"
+																	}
+																},
+																"src": "357:26:1",
+																"typeDescriptions": {
+																	"typeIdentifier": "t_bool",
+																	"typeString": "bool"
+																}
+															},
+															"src": "336:47:1",
+															"typeDescriptions": {
+																"typeIdentifier": "t_bool",
+																"typeString": "bool"
+															}
+														}
+													],
+													"expression": {
+														"argumentTypes": [
+															{
+																"typeIdentifier": "t_bool",
+																"typeString": "bool"
+															}
+														],
+														"id": 100,
+														"name": "require",
+														"nodeType": "Identifier",
+														"overloadedDeclarations": [
+															167,
+															168
+														],
+														"referencedDeclaration": 167,
+														"src": "328:7:1",
+														"typeDescriptions": {
+															"typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+															"typeString": "function (bool) pure"
+														}
+													},
+													"id": 109,
+													"isConstant": false,
+													"isLValue": false,
+													"isPure": false,
+													"kind": "functionCall",
+													"lValueRequested": false,
+													"names": [],
+													"nodeType": "FunctionCall",
+													"src": "328:56:1",
+													"typeDescriptions": {
+														"typeIdentifier": "t_tuple$__$",
+														"typeString": "tuple()"
+													}
+												},
+												"id": 110,
+												"nodeType": "ExpressionStatement",
+												"src": "328:56:1"
+											},
+											{
+												"id": 111,
+												"nodeType": "PlaceholderStatement",
+												"src": "395:1:1"
+											}
+										]
+									},
+									"documentation": null,
+									"id": 113,
+									"name": "only_owner",
+									"nodeType": "ModifierDefinition",
+									"parameters": {
+										"id": 89,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 88,
+												"name": "subnode",
+												"nodeType": "VariableDeclaration",
+												"scope": 113,
+												"src": "227:15:1",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes32",
+													"typeString": "bytes32"
+												},
+												"typeName": {
+													"id": 87,
+													"name": "bytes32",
+													"nodeType": "ElementaryTypeName",
+													"src": "227:7:1",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes32",
+														"typeString": "bytes32"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "226:17:1"
+									},
+									"src": "207:197:1",
+									"visibility": "internal"
+								},
+								{
+									"body": {
+										"id": 128,
+										"nodeType": "Block",
+										"src": "626:58:1",
+										"statements": [
+											{
+												"expression": {
+													"argumentTypes": null,
+													"id": 122,
+													"isConstant": false,
+													"isLValue": false,
+													"isPure": false,
+													"lValueRequested": false,
+													"leftHandSide": {
+														"argumentTypes": null,
+														"id": 120,
+														"name": "ens",
+														"nodeType": "Identifier",
+														"overloadedDeclarations": [],
+														"referencedDeclaration": 84,
+														"src": "637:3:1",
+														"typeDescriptions": {
+															"typeIdentifier": "t_contract$_ENS_$79",
+															"typeString": "contract ENS"
+														}
+													},
+													"nodeType": "Assignment",
+													"operator": "=",
+													"rightHandSide": {
+														"argumentTypes": null,
+														"id": 121,
+														"name": "ensAddr",
+														"nodeType": "Identifier",
+														"overloadedDeclarations": [],
+														"referencedDeclaration": 115,
+														"src": "643:7:1",
+														"typeDescriptions": {
+															"typeIdentifier": "t_contract$_ENS_$79",
+															"typeString": "contract ENS"
+														}
+													},
+													"src": "637:13:1",
+													"typeDescriptions": {
+														"typeIdentifier": "t_contract$_ENS_$79",
+														"typeString": "contract ENS"
+													}
+												},
+												"id": 123,
+												"nodeType": "ExpressionStatement",
+												"src": "637:13:1"
+											},
+											{
+												"expression": {
+													"argumentTypes": null,
+													"id": 126,
+													"isConstant": false,
+													"isLValue": false,
+													"isPure": false,
+													"lValueRequested": false,
+													"leftHandSide": {
+														"argumentTypes": null,
+														"id": 124,
+														"name": "rootNode",
+														"nodeType": "Identifier",
+														"overloadedDeclarations": [],
+														"referencedDeclaration": 86,
+														"src": "661:8:1",
+														"typeDescriptions": {
+															"typeIdentifier": "t_bytes32",
+															"typeString": "bytes32"
+														}
+													},
+													"nodeType": "Assignment",
+													"operator": "=",
+													"rightHandSide": {
+														"argumentTypes": null,
+														"id": 125,
+														"name": "node",
+														"nodeType": "Identifier",
+														"overloadedDeclarations": [],
+														"referencedDeclaration": 117,
+														"src": "672:4:1",
+														"typeDescriptions": {
+															"typeIdentifier": "t_bytes32",
+															"typeString": "bytes32"
+														}
+													},
+													"src": "661:15:1",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes32",
+														"typeString": "bytes32"
+													}
+												},
+												"id": 127,
+												"nodeType": "ExpressionStatement",
+												"src": "661:15:1"
+											}
+										]
+									},
+									"documentation": "Constructor.\r\n@param ensAddr The address of the ENS registry.\r\n@param node The node that this registrar administers.\r",
+									"id": 129,
+									"implemented": true,
+									"isConstructor": true,
+									"isDeclaredConst": false,
+									"modifiers": [],
+									"name": "FIFSRegistrar",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 118,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 115,
+												"name": "ensAddr",
+												"nodeType": "VariableDeclaration",
+												"scope": 129,
+												"src": "592:11:1",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_contract$_ENS_$79",
+													"typeString": "contract ENS"
+												},
+												"typeName": {
+													"contractScope": null,
+													"id": 114,
+													"name": "ENS",
+													"nodeType": "UserDefinedTypeName",
+													"referencedDeclaration": 79,
+													"src": "592:3:1",
+													"typeDescriptions": {
+														"typeIdentifier": "t_contract$_ENS_$79",
+														"typeString": "contract ENS"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 117,
+												"name": "node",
+												"nodeType": "VariableDeclaration",
+												"scope": 129,
+												"src": "605:12:1",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes32",
+													"typeString": "bytes32"
+												},
+												"typeName": {
+													"id": 116,
+													"name": "bytes32",
+													"nodeType": "ElementaryTypeName",
+													"src": "605:7:1",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes32",
+														"typeString": "bytes32"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "591:27:1"
+									},
+									"payable": false,
+									"returnParameters": {
+										"id": 119,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "626:0:1"
+									},
+									"scope": 149,
+									"src": "569:115:1",
+									"stateMutability": "nonpayable",
+									"superFunction": null,
+									"visibility": "public"
+								},
+								{
+									"body": {
+										"id": 147,
+										"nodeType": "Block",
+										"src": "970:64:1",
+										"statements": [
+											{
+												"expression": {
+													"argumentTypes": null,
+													"arguments": [
+														{
+															"argumentTypes": null,
+															"id": 142,
+															"name": "rootNode",
+															"nodeType": "Identifier",
+															"overloadedDeclarations": [],
+															"referencedDeclaration": 86,
+															"src": "1001:8:1",
+															"typeDescriptions": {
+																"typeIdentifier": "t_bytes32",
+																"typeString": "bytes32"
+															}
+														},
+														{
+															"argumentTypes": null,
+															"id": 143,
+															"name": "subnode",
+															"nodeType": "Identifier",
+															"overloadedDeclarations": [],
+															"referencedDeclaration": 131,
+															"src": "1011:7:1",
+															"typeDescriptions": {
+																"typeIdentifier": "t_bytes32",
+																"typeString": "bytes32"
+															}
+														},
+														{
+															"argumentTypes": null,
+															"id": 144,
+															"name": "owner",
+															"nodeType": "Identifier",
+															"overloadedDeclarations": [],
+															"referencedDeclaration": 133,
+															"src": "1020:5:1",
+															"typeDescriptions": {
+																"typeIdentifier": "t_address",
+																"typeString": "address"
+															}
+														}
+													],
+													"expression": {
+														"argumentTypes": [
+															{
+																"typeIdentifier": "t_bytes32",
+																"typeString": "bytes32"
+															},
+															{
+																"typeIdentifier": "t_bytes32",
+																"typeString": "bytes32"
+															},
+															{
+																"typeIdentifier": "t_address",
+																"typeString": "address"
+															}
+														],
+														"expression": {
+															"argumentTypes": null,
+															"id": 139,
+															"name": "ens",
+															"nodeType": "Identifier",
+															"overloadedDeclarations": [],
+															"referencedDeclaration": 84,
+															"src": "981:3:1",
+															"typeDescriptions": {
+																"typeIdentifier": "t_contract$_ENS_$79",
+																"typeString": "contract ENS"
+															}
+														},
+														"id": 141,
+														"isConstant": false,
+														"isLValue": false,
+														"isPure": false,
+														"lValueRequested": false,
+														"memberName": "setSubnodeOwner",
+														"nodeType": "MemberAccess",
+														"referencedDeclaration": 36,
+														"src": "981:19:1",
+														"typeDescriptions": {
+															"typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$_t_bytes32_$_t_address_$returns$__$",
+															"typeString": "function (bytes32,bytes32,address) external"
+														}
+													},
+													"id": 145,
+													"isConstant": false,
+													"isLValue": false,
+													"isPure": false,
+													"kind": "functionCall",
+													"lValueRequested": false,
+													"names": [],
+													"nodeType": "FunctionCall",
+													"src": "981:45:1",
+													"typeDescriptions": {
+														"typeIdentifier": "t_tuple$__$",
+														"typeString": "tuple()"
+													}
+												},
+												"id": 146,
+												"nodeType": "ExpressionStatement",
+												"src": "981:45:1"
+											}
+										]
+									},
+									"documentation": "Register a name, or change the owner of an existing registration.\r\n@param subnode The hash of the label to register.\r\n@param owner The address of the new owner.\r",
+									"id": 148,
+									"implemented": true,
+									"isConstructor": false,
+									"isDeclaredConst": false,
+									"modifiers": [
+										{
+											"arguments": [
+												{
+													"argumentTypes": null,
+													"id": 136,
+													"name": "subnode",
+													"nodeType": "Identifier",
+													"overloadedDeclarations": [],
+													"referencedDeclaration": 131,
+													"src": "961:7:1",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes32",
+														"typeString": "bytes32"
+													}
+												}
+											],
+											"id": 137,
+											"modifierName": {
+												"argumentTypes": null,
+												"id": 135,
+												"name": "only_owner",
+												"nodeType": "Identifier",
+												"overloadedDeclarations": [],
+												"referencedDeclaration": 113,
+												"src": "950:10:1",
+												"typeDescriptions": {
+													"typeIdentifier": "t_modifier$_t_bytes32_$",
+													"typeString": "modifier (bytes32)"
+												}
+											},
+											"nodeType": "ModifierInvocation",
+											"src": "950:19:1"
+										}
+									],
+									"name": "register",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 134,
+										"nodeType": "ParameterList",
+										"parameters": [
+											{
+												"constant": false,
+												"id": 131,
+												"name": "subnode",
+												"nodeType": "VariableDeclaration",
+												"scope": 148,
+												"src": "911:15:1",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_bytes32",
+													"typeString": "bytes32"
+												},
+												"typeName": {
+													"id": 130,
+													"name": "bytes32",
+													"nodeType": "ElementaryTypeName",
+													"src": "911:7:1",
+													"typeDescriptions": {
+														"typeIdentifier": "t_bytes32",
+														"typeString": "bytes32"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											},
+											{
+												"constant": false,
+												"id": 133,
+												"name": "owner",
+												"nodeType": "VariableDeclaration",
+												"scope": 148,
+												"src": "928:13:1",
+												"stateVariable": false,
+												"storageLocation": "default",
+												"typeDescriptions": {
+													"typeIdentifier": "t_address",
+													"typeString": "address"
+												},
+												"typeName": {
+													"id": 132,
+													"name": "address",
+													"nodeType": "ElementaryTypeName",
+													"src": "928:7:1",
+													"typeDescriptions": {
+														"typeIdentifier": "t_address",
+														"typeString": "address"
+													}
+												},
+												"value": null,
+												"visibility": "internal"
+											}
+										],
+										"src": "910:32:1"
+									},
+									"payable": false,
+									"returnParameters": {
+										"id": 138,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "970:0:1"
+									},
+									"scope": 149,
+									"src": "893:141:1",
+									"stateMutability": "nonpayable",
+									"superFunction": null,
+									"visibility": "public"
+								}
+							],
+							"scope": 150,
+							"src": "138:899:1"
+						}
+					],
+					"src": "0:1039:1"
+				},
+				"id": 1
+			}
+		}
+	}
+}

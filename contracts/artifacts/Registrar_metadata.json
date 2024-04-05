@@ -1,0 +1,729 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_hash",
+						"type": "bytes32"
+					}
+				],
+				"name": "releaseDeed",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_hash",
+						"type": "bytes32"
+					}
+				],
+				"name": "getAllowedTime",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "unhashedName",
+						"type": "string"
+					}
+				],
+				"name": "invalidateName",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "hash",
+						"type": "bytes32"
+					},
+					{
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"name": "salt",
+						"type": "bytes32"
+					}
+				],
+				"name": "shaBid",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "bidder",
+						"type": "address"
+					},
+					{
+						"name": "seal",
+						"type": "bytes32"
+					}
+				],
+				"name": "cancelBid",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_hash",
+						"type": "bytes32"
+					}
+				],
+				"name": "entries",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					},
+					{
+						"name": "",
+						"type": "address"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "ens",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_hash",
+						"type": "bytes32"
+					},
+					{
+						"name": "_value",
+						"type": "uint256"
+					},
+					{
+						"name": "_salt",
+						"type": "bytes32"
+					}
+				],
+				"name": "unsealBid",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_hash",
+						"type": "bytes32"
+					}
+				],
+				"name": "transferRegistrars",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "address"
+					},
+					{
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"name": "sealedBids",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_hash",
+						"type": "bytes32"
+					}
+				],
+				"name": "state",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_hash",
+						"type": "bytes32"
+					},
+					{
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transfer",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_hash",
+						"type": "bytes32"
+					},
+					{
+						"name": "_timestamp",
+						"type": "uint256"
+					}
+				],
+				"name": "isAllowed",
+				"outputs": [
+					{
+						"name": "allowed",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_hash",
+						"type": "bytes32"
+					}
+				],
+				"name": "finalizeAuction",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "registryStarted",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "launchLength",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "sealedBid",
+						"type": "bytes32"
+					}
+				],
+				"name": "newBid",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "labels",
+						"type": "bytes32[]"
+					}
+				],
+				"name": "eraseNode",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_hashes",
+						"type": "bytes32[]"
+					}
+				],
+				"name": "startAuctions",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "hash",
+						"type": "bytes32"
+					},
+					{
+						"name": "deed",
+						"type": "address"
+					},
+					{
+						"name": "registrationDate",
+						"type": "uint256"
+					}
+				],
+				"name": "acceptRegistrarTransfer",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_hash",
+						"type": "bytes32"
+					}
+				],
+				"name": "startAuction",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "rootNode",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "hashes",
+						"type": "bytes32[]"
+					},
+					{
+						"name": "sealedBid",
+						"type": "bytes32"
+					}
+				],
+				"name": "startAuctionsAndBid",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "_ens",
+						"type": "address"
+					},
+					{
+						"name": "_rootNode",
+						"type": "bytes32"
+					},
+					{
+						"name": "_startDate",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "hash",
+						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"name": "registrationDate",
+						"type": "uint256"
+					}
+				],
+				"name": "AuctionStarted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "hash",
+						"type": "bytes32"
+					},
+					{
+						"indexed": true,
+						"name": "bidder",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "deposit",
+						"type": "uint256"
+					}
+				],
+				"name": "NewBid",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "hash",
+						"type": "bytes32"
+					},
+					{
+						"indexed": true,
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"name": "status",
+						"type": "uint8"
+					}
+				],
+				"name": "BidRevealed",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "hash",
+						"type": "bytes32"
+					},
+					{
+						"indexed": true,
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"name": "registrationDate",
+						"type": "uint256"
+					}
+				],
+				"name": "HashRegistered",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "hash",
+						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "HashReleased",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "hash",
+						"type": "bytes32"
+					},
+					{
+						"indexed": true,
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"name": "registrationDate",
+						"type": "uint256"
+					}
+				],
+				"name": "HashInvalidated",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"acceptRegistrarTransfer(bytes32,address,uint256)": {
+					"details": "Accepts a transfer from a previous registrar; stubbed out here since there\r     is no previous registrar implementing this interface.\r ",
+					"params": {
+						"deed": "The Deed object for the name being transferred in.\r",
+						"hash": "The sha3 hash of the label to transfer.\r",
+						"registrationDate": "The date at which the name was originally registered.\r"
+					}
+				},
+				"cancelBid(address,bytes32)": {
+					"details": "Cancel a bid\r ",
+					"params": {
+						"seal": "The value returned by the shaBid function\r"
+					}
+				},
+				"eraseNode(bytes32[])": {
+					"details": "Allows anyone to delete the owner and resolver records for a (subdomain of) a\r     name that is not currently owned in the registrar. If passing, eg, 'foo.bar.eth',\r     the owner and resolver fields on 'foo.bar.eth' and 'bar.eth' will all be cleared.\r ",
+					"params": {
+						"labels": "A series of label hashes identifying the name to zero out, rooted at the\r       registrar's root. Must contain at least one element. For instance, to zero \r       'foo.bar.eth' on a registrar that owns '.eth', pass an array containing\r       [keccak256('foo'), keccak256('bar')].\r"
+					}
+				},
+				"finalizeAuction(bytes32)": {
+					"details": "Finalize an auction after the registration date has passed\r ",
+					"params": {
+						"_hash": "The hash of the name the auction is for\r"
+					}
+				},
+				"getAllowedTime(bytes32)": {
+					"details": "Returns available date for hash\r      * The available time from the `registryStarted` for a hash is proportional\r to its numeric value.\r ",
+					"params": {
+						"_hash": "The hash to start an auction on\r"
+					}
+				},
+				"invalidateName(string)": {
+					"details": "Submit a name 6 characters long or less. If it has been registered,\r     the submitter will earn 50% of the deed value. \r \r We are purposefully handicapping the simplified registrar as a way \r to force it into being restructured in a few years.\r ",
+					"params": {
+						"unhashedName": "An invalid name to search for in the registry.\r"
+					}
+				},
+				"isAllowed(bytes32,uint256)": {
+					"details": "Determines if a name is available for registration yet\r      * Each name will be assigned a random date in which its auction\r can be started, from 0 to 8 weeks\r ",
+					"params": {
+						"_hash": "The hash to start an auction on\r",
+						"_timestamp": "The timestamp to query about\r"
+					}
+				},
+				"newBid(bytes32)": {
+					"details": "Submit a new sealed bid on a desired hash in a blind auction\r      * Bids are sent by sending a message to the main contract with a hash and an amount. The hash\r contains information about the bid, including the bidded hash, the bid amount, and a random\r salt. Bids are not tied to any one auction until they are revealed. The value of the bid\r itself can be masqueraded by sending more than the value of your actual bid. This is\r followed by a 48h reveal period. Bids revealed after this period will be burned and the ether unrecoverable.\r Since this is an auction, it is expected that most public hashes, like known domains and common dictionary\r words, will have multiple bidders pushing the price up.\r ",
+					"params": {
+						"sealedBid": "A sealedBid, created by the shaBid function\r"
+					}
+				},
+				"releaseDeed(bytes32)": {
+					"details": "After some time, or if we're no longer the registrar, the owner can release\r     the name and get their ether back.\r ",
+					"params": {
+						"_hash": "The node to release\r"
+					}
+				},
+				"shaBid(bytes32,address,uint256,bytes32)": {
+					"details": "Hash the values required for a secret bid\r ",
+					"params": {
+						"hash": "The node corresponding to the desired namehash\r",
+						"salt": "A random value to ensure secrecy of the bid\r",
+						"value": "The bid amount\r"
+					},
+					"return": "The hash of the bid values\r"
+				},
+				"startAuction(bytes32)": {
+					"details": "Start an auction for an available hash\r ",
+					"params": {
+						"_hash": "The hash to start an auction on\r"
+					}
+				},
+				"startAuctions(bytes32[])": {
+					"details": "Start multiple auctions for better anonymity\r      * Anyone can start an auction by sending an array of hashes that they want to bid for.\r Arrays are sent so that someone can open up an auction for X dummy hashes when they\r are only really interested in bidding for one. This will increase the cost for an\r attacker to simply bid blindly on all new auctions. Dummy auctions that are\r open but not bid on are closed after a week.\r ",
+					"params": {
+						"_hashes": "An array of hashes, at least one of which you presumably want to bid on\r"
+					}
+				},
+				"startAuctionsAndBid(bytes32[],bytes32)": {
+					"details": "Start a set of auctions and bid on one of them\r      * This method functions identically to calling `startAuctions` followed by `newBid`,\r but all in one transaction.\r ",
+					"params": {
+						"hashes": "A list of hashes to start auctions on.\r",
+						"sealedBid": "A sealed bid for one of the auctions.\r"
+					}
+				},
+				"transfer(bytes32,address)": {
+					"details": "The owner of a domain may transfer it to someone else at any time.\r ",
+					"params": {
+						"_hash": "The node to transfer\r",
+						"newOwner": "The address to transfer ownership to\r"
+					}
+				},
+				"transferRegistrars(bytes32)": {
+					"details": "Transfers the deed to the current registrar, if different from this one.\r      * Used during the upgrade process to a permanent registrar.\r ",
+					"params": {
+						"_hash": "The name hash to transfer.\r"
+					}
+				},
+				"unsealBid(bytes32,uint256,bytes32)": {
+					"details": "Submit the properties of a bid to reveal them\r ",
+					"params": {
+						"_hash": "The node in the sealedBid\r",
+						"_salt": "The sale in the sealedBid\r",
+						"_value": "The bid amount in the sealedBid\r"
+					}
+				}
+			},
+			"title": "Registrar\r"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/HashRegistrarSimplified.sol": "Registrar"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Deed.sol": {
+			"keccak256": "0xda3d91d1c52743be21a02d09d8707725ebaca12c46bf12c243a1020d8e36fc7b",
+			"urls": [
+				"bzzr://2a1e7aef257d002ed1107c9e97bdf5a4fcec6a11b53876043672a6a59d11ab93"
+			]
+		},
+		"contracts/ENS.sol": {
+			"keccak256": "0x323ac7a5b1e5cdf19b5312f91581b08339e1b7aed7fdbe30338596f34fa22127",
+			"urls": [
+				"bzzr://3deb73de2d9c6b25b831e8f0c641df08f4c1f151fedc2780b464c085b49f158c"
+			]
+		},
+		"contracts/HashRegistrarSimplified.sol": {
+			"keccak256": "0xd24b4ba312a12cf927233ec6354d3d5b22531c827ce4ca476ef44157fa9c56d3",
+			"urls": [
+				"bzzr://8dbbeba4aab0db3d5b59801047cc5703cec19d2df521446ac279a6401ebd6986"
+			]
+		}
+	},
+	"version": 1
+}

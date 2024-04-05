@@ -1,0 +1,87 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "subnode",
+						"type": "bytes32"
+					},
+					{
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "register",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "ensAddr",
+						"type": "address"
+					},
+					{
+						"name": "node",
+						"type": "bytes32"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"register(bytes32,address)": {
+					"params": {
+						"owner": "The address of the new owner.\r",
+						"subnode": "The hash of the label to register.\r"
+					}
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {
+				"register(bytes32,address)": {
+					"notice": "Register a name, or change the owner of an existing registration.\r"
+				}
+			}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/FIFSRegistrar.sol": "FIFSRegistrar"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ENS.sol": {
+			"keccak256": "0x323ac7a5b1e5cdf19b5312f91581b08339e1b7aed7fdbe30338596f34fa22127",
+			"urls": [
+				"bzzr://3deb73de2d9c6b25b831e8f0c641df08f4c1f151fedc2780b464c085b49f158c"
+			]
+		},
+		"contracts/FIFSRegistrar.sol": {
+			"keccak256": "0xf5d9609710e025edad4005f3dff740e4a645ffe4ab74dca64b48da5146d6f915",
+			"urls": [
+				"bzzr://a2b8201959be3e5a9f352c6bbdf8f0ba60c812d97858522887a4223eb6109b54"
+			]
+		}
+	},
+	"version": 1
+}

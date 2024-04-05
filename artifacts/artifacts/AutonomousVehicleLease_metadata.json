@@ -1,0 +1,115 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_vehicleId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_duration",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_cost",
+						"type": "uint256"
+					}
+				],
+				"name": "createLease",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_vehicleId",
+						"type": "uint256"
+					}
+				],
+				"name": "endLease",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "vehicleLeases",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "lessee",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "leaseDuration",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "leaseCost",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isActive",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"artifacts/Carlease.sol": "AutonomousVehicleLease"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"artifacts/Carlease.sol": {
+			"keccak256": "0x24d2b308591becc5641379ad85e2fe6a6726a6121f61dd97a174a0c861e22328",
+			"urls": [
+				"bzz-raw://ae4294ab45b6d154afe65faf4a779be6f1c162f0cf078e970e9675e7045a17dd",
+				"dweb:/ipfs/QmZjE3AmgENwNcWgQUPn8ZwMdmsn4ZTAswQhUWvEgAEDug"
+			]
+		}
+	},
+	"version": 1
+}

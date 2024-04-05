@@ -1,0 +1,118 @@
+{
+	"compiler": {
+		"version": "0.4.18+commit.9cf6e910"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "ens",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"name": "name",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "node",
+						"type": "bytes32"
+					},
+					{
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "setName",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "ensAddr",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"setName(bytes32,string)": {
+					"details": "Sets the name for a node.\r",
+					"params": {
+						"_name": "The name to set.\r",
+						"node": "The node to update.\r"
+					}
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"DefaultReverseResolver.sol": "DefaultReverseResolver"
+		},
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"DefaultReverseResolver.sol": {
+			"keccak256": "0x57c6e3384a48da28685e216880a79e61d1e995e57af68f3ad01d0eb52e3f877c",
+			"urls": [
+				"bzzr://3f7ddfbdf89521a957b355a709e2da7e3b28871066c0634c87ecfa61ff1662f9"
+			]
+		},
+		"ENS.sol": {
+			"keccak256": "0x323ac7a5b1e5cdf19b5312f91581b08339e1b7aed7fdbe30338596f34fa22127",
+			"urls": [
+				"bzzr://3deb73de2d9c6b25b831e8f0c641df08f4c1f151fedc2780b464c085b49f158c"
+			]
+		},
+		"ReverseRegistrar.sol": {
+			"keccak256": "0x4a96450e3745cad7aec091c7746460dcced64f1242ba99224f6d7cbca3df9990",
+			"urls": [
+				"bzzr://bcf9905352c22fc16570906409aa1b74a6d7af6aa5319f5ae27dd92c0525faea"
+			]
+		}
+	},
+	"version": 1
+}
