@@ -1,0 +1,554 @@
+{
+  "general": {
+    "userAgentRegexes": [],
+    "replaceStrings": [],
+    "publicKey": "ryxlqm",
+    "deviceRegKey": "5jd2f6wf3ypx731bq9ujye8hg8",
+    "appName": "dev.citibankdemobusiness.app",
+    "initialUrl": "https://citibankdemobusiness.dev",
+    "keepScreenOn": true,
+    "iosFullScreenWebview": true,
+    "androidFullScreen": true,
+    "screenOrientation": {
+      "iphone": null,
+      "ipad": null,
+      "androidPhone": null,
+      "androidTablet": null
+    },
+    "enableWindowOpen": true,
+    "userAgentAdd": "median",
+    "forceUserAgent": "",
+    "iosUserAgentAdd": "median",
+    "iosForceUserAgent": "",
+    "androidUserAgentAdd": "median",
+    "androidForceUserAgent": "",
+    "languages": [],
+    "nativeBridgeUrls": [],
+    "iosBundleId": "co.median.ios.ryxlqm",
+    "package_name": "co.median.android.ryxlqm",
+    "androidVersionName": "84",
+    "androidSigningKey": "upload",
+    "iosCustomHeaders": {},
+    "androidCustomHeaders": {}
+  },
+  "navigation": {
+    "ignorePageFinishedRegexes": [],
+    "redirects": [],
+    "iosSettings": {},
+    "iosPullToRefresh": true,
+    "androidPullToRefresh": false,
+    "swipeGestures": true,
+    "iosConnectionOfflineTime": 10,
+    "androidConnectionOfflineTime": 10,
+    "iosOfflinePageUrl": "https://s3.amazonaws.com/gonativeio/app_files/ryxlqm/ios_offline_html.html",
+    "androidOfflinePageUrl": "https://s3.amazonaws.com/gonativeio/app_files/ryxlqm/ios_offline_html.html",
+    "iosOfflinePageUrlExternal": "https://citibankdemobusiness.dev/",
+    "androidOfflinePageUrlExternal": "https://citibankdemobusiness.dev/",
+    "regexInternalExternal": {
+      "active": true,
+      "rules": [
+        {
+          "internal": true,
+          "label": "Non-web links",
+          "regex": "^(?!https?://).*"
+        },
+        {
+          "internal": false,
+          "label": "Facebook",
+          "regex": "https?://([-\\w]+\\.)*facebook\\.com.*"
+        },
+        {
+          "internal": false,
+          "label": "Twitter",
+          "regex": "https?://([-\\w]+\\.)*twitter\\.com/.*"
+        },
+        {
+          "internal": false,
+          "label": "Instagram",
+          "regex": "https?://([-\\w]+\\.)*instagram\\.com/.*"
+        },
+        {
+          "internal": false,
+          "label": "Google Maps",
+          "regex": "https?://maps\\.google\\.com.*"
+        },
+        {
+          "internal": false,
+          "label": "Google Maps Search",
+          "regex": "https?://([-\\w]+\\.)*google\\.com/maps/search/.*"
+        },
+        {
+          "internal": false,
+          "label": "LinkedIn",
+          "regex": "https?://([-\\w]+\\.)*linkedin\\.com/.*"
+        },
+        {
+          "internal": true,
+          "label": "All Other Links",
+          "regex": ".*"
+        }
+      ]
+    },
+    "deepLinkDomains": {
+      "enableAndroidApplinks": true,
+      "domains": []
+    },
+    "customUrlScheme": "https://median.co/app/95kbv4rxm8xphh4yecp60m63qg/link-handling#url-scheme-protocol.https://",
+    "navigationTitles": {
+      "active": true,
+      "titles": []
+    },
+    "iosShowRefreshButton": true,
+    "androidShowRefreshButton": true,
+    "actionConfig": {
+      "active": true,
+      "actions": [],
+      "actionSelection": []
+    },
+    "navigationLevels": {
+      "active": true,
+      "levels": []
+    },
+    "sidebarNavigation": {
+      "menuSelectionConfig": {
+        "redirectLocations": [
+          {
+            "regex": ".*",
+            "menuName": "default",
+            "loggedIn": true
+          }
+        ]
+      },
+      "menus": [
+        {
+          "active": true,
+          "items": [
+            {
+              "url": "https://citibankdemobusiness.dev/",
+              "label": "Home",
+              "subLinks": []
+            },
+            {
+              "url": "https://github.dev/CitibankDemoBusiness/billiondollars",
+              "label": "Our_code",
+              "subLinks": []
+            },
+            {
+              "url": "https://pay.citibankdemobusiness.dev/",
+              "label": "Payme",
+              "subLinks": []
+            },
+            {
+              "url": "https://huggingface.co/Admin08077",
+              "label": "Our_ai",
+              "subLinks": []
+            },
+            {
+              "url": "https://chat.openai.com/",
+              "label": "Gpt4",
+              "subLinks": []
+            },
+            {
+              "url": "https://bigml.com/dashboard/sources",
+              "label": "Bigml",
+              "subLinks": []
+            },
+            {
+              "url": "https://shell.cloud.google.com/",
+              "label": "Terminal",
+              "subLinks": []
+            },
+            {
+              "url": "https://www.icloud.com/",
+              "label": "Icloud",
+              "subLinks": []
+            },
+            {
+              "url": "https://drive.google.com/drive/u/3/quota",
+              "label": "Google_drive",
+              "subLinks": []
+            },
+            {
+              "url": "https://colab.research.google.com/?utm_source=scs-index",
+              "label": "Google_colaboratory",
+              "subLinks": []
+            },
+            {
+              "url": "https://pipedream.com/",
+              "label": "Pipedream",
+              "subLinks": []
+            },
+            {
+              "url": "https://azure.microsoft.com/en-us/get-started/azure-portal",
+              "label": "Azure",
+              "subLinks": []
+            },
+            {
+              "url": "https://app.moderntreasury.com/",
+              "label": "Modern_treasury",
+              "subLinks": []
+            },
+            {
+              "url": "https://dashboard.stripe.com/",
+              "label": "Stripe",
+              "subLinks": []
+            },
+            {
+              "url": "https://bard.google.com/",
+              "label": "Bard",
+              "subLinks": []
+            },
+            {
+              "url": "https://citibankdemobusiness.dev/my-blog",
+              "label": "My_blog",
+              "subLinks": []
+            },
+            {
+              "url": "https://citibankdemobusiness.dev/#",
+              "label": "More",
+              "subLinks": []
+            },
+            {
+              "url": "https://citibankdemobusiness.dev/m/account",
+              "label": "Sign in",
+              "subLinks": []
+            },
+            {
+              "url": "https://citibankdemobusiness.dev/m/create-account",
+              "label": "Create account",
+              "subLinks": []
+            },
+            {
+              "url": "https://citibankdemobusiness.dev/m/bookings",
+              "label": "Bookings",
+              "subLinks": []
+            }
+          ],
+          "name": "default"
+        }
+      ]
+    },
+    "tabNavigation": {
+      "active": true,
+      "tabMenus": [],
+      "tabSelectionConfig": []
+    },
+    "androidShowOfflinePage": true,
+    "iosShowOfflinePage": true,
+    "toolbarNavigation": {
+      "enabled": false,
+      "visibilityByPages": "allPages",
+      "visibilityByBackButton": "backButtonActive",
+      "regexes": [
+        {
+          "enabled": true,
+          "regex": ".*"
+        }
+      ],
+      "items": [
+        {
+          "system": "back",
+          "titleType": "defaultText",
+          "visibility": "allPages",
+          "urlRegex": [
+            {
+              "enabled": true,
+              "regex": ".*"
+            }
+          ]
+        },
+        {
+          "system": "refresh",
+          "enabled": true,
+          "visibility": "allPages",
+          "urlRegex": [
+            {
+              "enabled": true,
+              "regex": ".*"
+            }
+          ]
+        },
+        {
+          "system": "forward",
+          "enabled": true,
+          "titleType": "defaultText",
+          "visibility": "allPages",
+          "urlRegex": [
+            {
+              "enabled": true,
+              "regex": ".*"
+            }
+          ]
+        }
+      ]
+    },
+    "maxWindows": {
+      "enabled": true,
+      "numWindows": 55555,
+      "autoClose": false
+    }
+  },
+  "styling": {
+    "iosLaunchScreen": {
+      "backgroundImage": "assets/defaults/ios_launch_screen_background_default_light_1_2x2.png",
+      "backgroundImageDark": "assets/defaults/ios_launch_screen_background_default_dark_1_2x2.png",
+      "backgroundColor": "#FFFFFF",
+      "backgroundColorDark": "#ffffff",
+      "centerImage": "https://gonativeio.s3.amazonaws.com/uploads/rq5gw3rfyxagm_1700118831476.png",
+      "centerImageDark": "https://gonativeio.s3.amazonaws.com/uploads/rq5gw3rfyxagm_1700118831476.png"
+    },
+    "transitionInteractiveDelayMax": 0.2,
+    "menuAnimationDuration": 0.15,
+    "iosTheme": "default",
+    "androidLaunchImages": {
+      "mdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1700960036941_vgfjwgz9bv95y_180x180.png",
+      "hdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1700960036971_42azgy82jkwwe_270x270.png",
+      "xhdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1700960036991_fajzkghby2xey_360x360.png",
+      "xxhdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1700960037012_063pne3ut3ttj_540x540.png",
+      "xxxhdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1700960037055_9wdfu0nu2kvrj_720x720.png"
+    },
+    "androidLaunchImagesDark": {
+      "mdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1700960037088_2g7cmqvyd4nb4_180x180.png",
+      "hdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1700960037133_cq2b1hdznb2m0_270x270.png",
+      "xhdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1700960037173_zk67vqrjqrt66_360x360.png",
+      "xxhdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1700960037193_3qen10y9rpzm4_540x540.png",
+      "xxxhdpi": "https://s3.amazonaws.com/gonativeio/images_generated/1700960037230_88pvxrjnf2ab6_720x720.png"
+    },
+    "androidTabPressedBackgroundColor": "#CCCCCC",
+    "androidTabPressedBackgroundColorDark": "#999999",
+    "androidBackgroundColor": "#FFFFFF",
+    "androidBackgroundColorDark": "#333333",
+    "icon": "https://gonativeio.s3.amazonaws.com/uploads/rq5gw3rfyxagm_1700118831476.png",
+    "iosIcon": "https://gonativeio.s3.amazonaws.com/uploads/rq5gw3rfyxagm_1700118831476.png",
+    "customIcons": {},
+    "iosDarkMode": "auto",
+    "iosEnableBlurInStatusBar": false,
+    "iosStatusBarStyle": "auto",
+    "iosEnableOverlayInStatusBar": false,
+    "iosStatusBarBackgroundColor": "#ffffffff",
+    "iosStatusBarBackgroundColorDark": "#000000",
+    "androidStatusBarStyle": "auto",
+    "androidEnableOverlayInStatusBar": false,
+    "androidStatusBarBackgroundColor": "#5C5C5C",
+    "androidStatusBarBackgroundColorDark": "#333333",
+    "iosTintColor": "#0E0D08",
+    "iosTintColorDark": "#ffffff",
+    "customCSSUrl": "https://s3.amazonaws.com/gonativeio/app_files/ryxlqm/base_custom_css.css",
+    "iosCustomCSSUrl": "https://s3.amazonaws.com/gonativeio/app_files/ryxlqm/ios_custom_css.css",
+    "androidCustomCSSUrl": "https://s3.amazonaws.com/gonativeio/app_files/ryxlqm/android_custom_css.css",
+    "androidIcon": "https://gonativeio.s3.amazonaws.com/uploads/rq5gw3rfyxagm_1700118831476.png",
+    "androidSplashBackgroundColor": "#FFFFFF",
+    "androidSplashBackgroundColorDark": "#ffffff",
+    "androidTheme": "auto",
+    "androidAccentColor": "#009688",
+    "androidAccentColorDark": "#80cbc4",
+    "androidPullToRefreshColor": "#1A100B",
+    "androidPullToRefreshColorDark": "#FFFFFF",
+    "androidWebviewTextZoom": null,
+    "hideWebviewAlpha": 0.5,
+    "forceViewportWidth": 600,
+    "pinchToZoom": true,
+    "iosDynamicType": true,
+    "androidSwipeNavigationBackgroundColor": "#FFFFFF",
+    "androidSwipeNavigationBackgroundColorDark": "#333333",
+    "androidSwipeNavigationActiveColor": "#000000",
+    "androidSwipeNavigationActiveColorDark": "#FFFFFF",
+    "androidSwipeNavigationInactiveColor": "#666666",
+    "androidSwipeNavigationInactiveColorDark": "#666666",
+    "navigationTitleImageLocation": "assets/defaults/app-icon-placeholder.png",
+    "navigationTitleImageLocationDark": "assets/defaults/app-icon-placeholder.png",
+    "iosTitleColor": "#0E0D08",
+    "iosTitleColorDark": "#ffffff",
+    "iosNavigationBarTintColor": "#f8f8f8",
+    "iosNavigationBarTintColorDark": "#202020",
+    "androidActionBarBackgroundColor": "#FFFFFF",
+    "androidActionBarBackgroundColorDark": "#333333",
+    "androidHeaderImage": "assets/defaults/app-icon-placeholder.png",
+    "androidHeaderImageDark": "assets/defaults/app-icon-placeholder.png",
+    "androidActionBarForegroundColor": "#1A100B",
+    "androidActionBarForegroundColorDark": "#FFFFFF",
+    "iosSidebarBackgroundColor": "#f8f8f8",
+    "iosSidebarBackgroundColorDark": "#202020",
+    "iosSidebarFont": "Default",
+    "iosHeaderImage": "https://gonativeio.s3.amazonaws.com/uploads/rq5gw3rfyxagm_1700118831476.png",
+    "iosHeaderImageDark": "https://gonativeio.s3.amazonaws.com/uploads/rq5gw3rfyxagm_1700118831476.png",
+    "iosSidebarTextColor": "#0E0D08",
+    "iosSidebarTextColorDark": "#ffffff",
+    "androidSidebarBackgroundColor": "#FFFFFF",
+    "androidSidebarBackgroundColorDark": "#333333",
+    "androidSidebarForegroundColor": "#1A100B",
+    "androidSidebarForegroundColorDark": "#FFFFFF",
+    "androidSidebarSeparatorColor": "#CCCCCC",
+    "androidSidebarSeparatorColorDark": "#666666",
+    "androidSidebarHighlightColor": "#1A100B",
+    "androidSidebarHighlightColorDark": "#FFFFFF",
+    "androidShowLogoInSideBar": true,
+    "androidShowAppNameInSideBar": true,
+    "androidTabBarBackgroundColor": "#FFFFFF",
+    "androidTabBarBackgroundColorDark": "#333333",
+    "androidTabBarTextColor": "#949494",
+    "androidTabBarTextColorDark": "#FFFFFF",
+    "androidTabBarIndicatorColor": "#1A100B",
+    "androidTabBarIndicatorColorDark": "#666666",
+    "iosTabBarTintColor": "#f8f8f8",
+    "iosTabBarTintColorDark": "#000000",
+    "androidNotificationIcon": "https://gonativeio.s3.amazonaws.com/uploads/fwq0uf4xunux6_1699852729630.jpeg",
+    "androidShowSplash": true,
+    "disableAnimations": false,
+    "navigationTitleImage": true,
+    "androidHideTitleInActionBar": false,
+    "showNavigationBar": true,
+    "showActionBar": true
+  },
+  "script": {
+    "customJSUrl": "https://s3.amazonaws.com/gonativeio/app_files/ryxlqm/base_custom_js.js"
+  },
+  "allowZoom": true,
+  "permissions": {
+    "iosBackgroundAudio": true,
+    "usesGeolocation": true,
+    "iosLocationUsageDescription": "",
+    "iosCameraUsageDescription": "",
+    "enableWebRTCamera": true,
+    "enableWebRTCMicrophone": true,
+    "androidDownloadToPublicStorage": false,
+    "iOSATTUserTrackingDescription": "",
+    "iOSRequestATTConsentOnLoad": false
+  },
+  "developmentTools": {
+    "enableWebConsoleLogs": false
+  },
+  "services": {
+    "oneSignal": {
+      "active": true,
+      "autoRegister": true,
+      "applicationId": "32487741-7897-4022-821e-517d53587e46"
+    }
+  },
+  "security": {
+    "network": {
+      "allowInsecure": false
+    }
+  },
+  "project_info": {
+    "project_number": "917012345792",
+    "firebase_url": "https://citibank-hyperspace-financials-default-rtdb.firebaseio.com",
+    "project_id": "citibank-hyperspace-financials",
+    "storage_bucket": "citibank-hyperspace-financials.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917012345792:android:65da41a440aa65a7ea4e25",
+        "android_client_info": {
+          "package_name": "co.median.android.pdynde"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917012345792-7vucoc6i72gc5mclbroipf39g17a9iqf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.median.android.pdynde",
+            "certificate_hash": "7bbeb19fd5efe9a4d21da42a7dcf7ef7e2fd5907"
+          }
+        },
+        {
+          "client_id": "917012345792-u8tj631m8355sbrtstlnvo9qq5bpufpr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8Uf0YFYBXWrwzglb208fWWxZESz7bK18"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "108124622072356340386",
+              "client_type": 3
+            },
+            {
+              "client_id": "917012345792-h6pndao0pn82q08dht8bn98s87v1tnfl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "co.median.ios.ryxlqm"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917012345792:android:27010c7579923767ea4e25",
+        "android_client_info": {
+          "package_name": "co.median.android.ryxlqm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917012345792-cvupkj1o9ed6d84ou20i1c1d406m0kvk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.median.android.ryxlqm",
+            "certificate_hash": "67cf5c5e56f20c93e854c73f393f6b7fda26d943"
+          }
+        },
+        {
+          "client_id": "917012345792-lahohvtmpi1d11ucm7sgvv9odprich94.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.median.android.ryxlqm",
+            "certificate_hash": "0000000000000000000000000000000000000000"
+          }
+        },
+        {
+          "client_id": "917012345792-odu65cf5is6ca14aifgii6ve7ta6nhtg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.median.android.ryxlqm",
+            "certificate_hash": "86f681b668d80e79adfe3ce1a170b2b09e54accf"
+          }
+        },
+        {
+          "client_id": "917012345792-qc827hetji0ies1tea97m0nctgorb7nj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.median.android.ryxlqm",
+            "certificate_hash": "51e66a34998416a4d132eef29d09d2ddc7f2a8c1"
+          }
+        },
+        {
+          "client_id": "917012345792-u8tj631m8355sbrtstlnvo9qq5bpufpr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8Uf0YFYBXWrwzglb208fWWxZESz7bK18"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "108124622072356340386",
+              "client_type": 3
+            },
+            {
+              "client_id": "917012345792-h6pndao0pn82q08dht8bn98s87v1tnfl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "co.median.ios.ryxlqm"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

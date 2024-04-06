@@ -1,0 +1,330 @@
+{
+  "dataPrompt": {
+    "columns": [{
+      "columnId": "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88",
+      "displayName": "input:",
+      "isInput": true
+    }, {
+      "columnId": "BDE84084-53FD-437D-ABD1-D0F486694EB6",
+      "displayName": "output:"
+    }],
+    "rows": [{
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "a",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "from sklearn.cluster import KMeans\n\n# Fine-tuning for K-means\nbest_score \u003d float(\u0027inf\u0027)\nbest_k \u003d None\n\nfor k in range(2, 11):  # Number of clusters\n    kmeans \u003d KMeans(n_clusters\u003dk, init\u003d\u0027k-means++\u0027)\n    kmeans.fit(X)\n    score \u003d kmeans.inertia_\n    if score \u0026lt; best_score:\n        best_score \u003d score\n        best_k \u003d k\n"
+      },
+      "rowId": "E1055ACE-AB39-4CB9-8916-46EA8752C062"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "b",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for fine-tuning DQN\nbest_score \u003d float(\u0027-inf\u0027)\n\nfor lr in [0.001, 0.01]:\n    for gamma in [0.9, 0.99]:\n        dqn \u003d DQN(learning_rate\u003dlr, gamma\u003dgamma)\n        score \u003d train_and_evaluate(dqn)\n        if score \u0026gt; best_score:\n            best_score \u003d score\n            best_params \u003d (lr, gamma)\n"
+      },
+      "rowId": "F1054987-9CF4-4755-9564-3D362913528A"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "c",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "from transformers import AutoModelForCausalLM, AutoTokenizer, TextDataset, DataCollatorForLanguageModeling, Trainer, TrainingArguments\n\n# Initialize model and tokenizer\nmodel \u003d AutoModelForCausalLM.from_pretrained(\"gpt2\")\ntokenizer \u003d AutoTokenizer.from_pretrained(\"gpt2\")\n\n# Prepare dataset\ndataset \u003d TextDataset(\n    tokenizer\u003dtokenizer,\n    file_path\u003d\"your_dataset.txt\",\n    block_size\u003d128,\n)\n\n# Data collator\ndata_collator \u003d DataCollatorForLanguageModeling(\n    tokenizer\u003dtokenizer,\n    mlm\u003dFalse,\n)\n\n# Training arguments\ntraining_args \u003d TrainingArguments(\n    output_dir\u003d\"./output\",\n    overwrite_output_dir\u003dTrue,\n    num_train_epochs\u003d1,\n    per_device_train_batch_size\u003d32,\n    save_steps\u003d10_000,\n    save_total_limit\u003d2,\n)\n\n# Initialize Trainer\ntrainer \u003d Trainer(\n    model\u003dmodel,\n    args\u003dtraining_args,\n    data_collator\u003ddata_collator,\n    train_dataset\u003ddataset,\n)\n\n# Train\ntrainer.train()\n"
+      },
+      "rowId": "2AEA4391-9832-4EBB-8B6A-98E96D5409FA"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "d",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "from transformers import GPT2LMHeadModel, TextDataset, DataCollatorForLanguageModeling, TrainingArguments, Trainer\n\n# Load pre-trained GPT-2 model and tokenizer\nmodel \u003d GPT2LMHeadModel.from_pretrained(\"gpt2\")\ntokenizer \u003d AutoTokenizer.from_pretrained(\"gpt2\")\n\n# Prepare the storytelling dataset\nstory_dataset \u003d TextDataset(\n    tokenizer\u003dtokenizer,\n    file_path\u003d\"your_storytelling_dataset.txt\",\n    block_size\u003d128\n)\n\n# Data collator\ndata_collator \u003d DataCollatorForLanguageModeling(\n    tokenizer\u003dtokenizer,\n    mlm\u003dFalse\n)\n\n# Training arguments\ntraining_args \u003d TrainingArguments(\n    output_dir\u003d\"./storytelling_output\",\n    overwrite_output_dir\u003dTrue,\n    num_train_epochs\u003d3,\n    per_device_train_batch_size\u003d32,\n    save_steps\u003d10_000,\n    save_total_limit\u003d2,\n    learning_rate\u003d2e-5,\n    warmup_steps\u003d500,\n    weight_decay\u003d0.01\n)\n\n# Create Trainer\ntrainer \u003d Trainer(\n    model\u003dmodel,\n    args\u003dtraining_args,\n    data_collator\u003ddata_collator,\n    train_dataset\u003dstory_dataset\n)\n\n# Train the model\ntrainer.train()\n"
+      },
+      "rowId": "8AC33757-BE72-4387-AFA6-6ED981BD2D65"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "e",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for MAML\nfor task in tasks:\n    model \u003d clone(base_model)\n    for step in range(num_adaptation_steps):\n        loss \u003d compute_loss(model, task)\n        gradients \u003d compute_gradients(loss)\n        update_model(model, gradients)\n    meta_loss \u003d compute_loss(model, task)\n    meta_gradients \u003d compute_gradients(meta_loss)\n    update_model(base_model, meta_gradients)\n"
+      },
+      "rowId": "0B9652E0-AE27-47BC-B387-A781593ED414"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "f",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "import tensorflow_probability as tfp\n\nmodel \u003d tf.keras.Sequential([\n    tf.keras.layers.Dense(128, activation\u003d\u0027relu\u0027),\n    tfp.layers.DenseVariational(64, activation\u003d\u0027relu\u0027),\n    tf.keras.layers.Dense(10)\n])\n\n# Train the model as usual\n"
+      },
+      "rowId": "C487B57E-D532-4130-B890-BAA1EED7980B"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "g",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "import torch\nimport torch.nn as nn\n\nclass Attention(nn.Module):\n    def forward(self, query, key, value):\n        scores \u003d torch.matmul(query, key.transpose(-2, -1))\n        scores \u003d scores / torch.sqrt(torch.tensor(key.size(-1), dtype\u003dfloat))\n        attention_weights \u003d torch.nn.functional.softmax(scores, dim\u003d-1)\n        return torch.matmul(attention_weights, value)\n"
+      },
+      "rowId": "5B00CCC0-CF88-4DB8-8D8A-8F302D4FAC2F"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "h",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for GAN training\nfor epoch in epochs:\n    for batch in dataloader:\n        # Train Discriminator\n        real_data \u003d batch\n        fake_data \u003d generator(noise())\n        loss_d \u003d loss(discriminator(real_data), true_labels) + loss(discriminator(fake_data), fake_labels)\n        update(discriminator, loss_d)\n        \n        # Train Generator\n        fake_data \u003d generator(noise())\n        loss_g \u003d loss(discriminator(fake_data), true_labels)\n        update(generator, loss_g)\n"
+      },
+      "rowId": "4981CD7C-A15B-4AA9-BF76-89A4C87F2697"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "i",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "from tensorflow.keras.layers import Input, Dense, concatenate\nfrom tensorflow.keras.models import Model\n\ninput_layer \u003d Input(shape\u003d(128,))\nshared_layer \u003d Dense(64, activation\u003d\u0027relu\u0027)(input_layer)\n\n# Define multiple output tasks\ntask1 \u003d Dense(10, activation\u003d\u0027softmax\u0027, name\u003d\u0027task1\u0027)(shared_layer)\ntask2 \u003d Dense(1, activation\u003d\u0027sigmoid\u0027, name\u003d\u0027task2\u0027)(shared_layer)\n\nmodel \u003d Model(inputs\u003dinput_layer, outputs\u003d[task1, task2])\n"
+      },
+      "rowId": "8370B673-ECB2-4D9D-ACD2-914DF52D6BAE"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "j",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Zero-Shot Learning\n# The idea is to associate each task with some \u0027meta-data\u0027 or \u0027description\u0027\n# and train the model to perform the task based on this meta-data.\n\n# Train the model\nfor task, task_description in training_data:\n    model_input \u003d concatenate(task_description, task.input)\n    model_output \u003d model(model_input)\n    loss \u003d compute_loss(model_output, task.output)\n    update_model(model, loss)\n"
+      },
+      "rowId": "DC7BF191-2BBC-47E7-A245-D07320565646"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "k",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Q-Learning\nfor episode in range(num_episodes):\n    state \u003d initial_state\n    for t in range(max_steps):\n        action \u003d select_action(state, Q)\n        next_state, reward \u003d take_action(state, action)\n        Q[state, action] \u003d Q[state, action] + alpha * (reward + gamma * max(Q[next_state, :]) - Q[state, action])\n        state \u003d next_state\n"
+      },
+      "rowId": "C12BD270-50EB-4155-965C-801CA657C2C7"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "l",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "import torch\nimport torch_geometric.nn as geom_nn\nimport torch_geometric.data as geom_data\n\nclass GCN(torch.nn.Module):\n    def __init__(self):\n        super(GCN, self).__init__()\n        self.conv1 \u003d geom_nn.GCNConv(dataset.num_node_features, 16)\n        self.conv2 \u003d geom_nn.GCNConv(16, dataset.num_classes)\n\n    def forward(self, data):\n        x, edge_index \u003d data.x, data.edge_index\n        x \u003d self.conv1(x, edge_index)\n        x \u003d torch.relu(x)\n        x \u003d self.conv2(x, edge_index)\n        return x\n\n# Assume dataset is a PyTorch Geometric dataset\ndata \u003d dataset[0]\nmodel \u003d GCN()\noptimizer \u003d torch.optim.Adam(model.parameters(), lr\u003d0.01)\n\n# Training loop\nfor epoch in range(200):\n    optimizer.zero_grad()\n    out \u003d model(data)\n    loss \u003d torch.nn.functional.cross_entropy(out[data.train_mask], data.y[data.train_mask])\n    loss.backward()\n    optimizer.step()"
+      },
+      "rowId": "DB48FCD5-DE1D-40C7-AEC2-F85B40A353A0"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "from transformers import BertForSequenceClassification, BertTokenizer, Trainer, TrainingArguments\n\n# Initialize model and tokenizer\nmodel \u003d BertForSequenceClassification.from_pretrained(\"bert-base-uncased\", num_labels\u003d3)\ntokenizer \u003d BertTokenizer.from_pretrained(\"bert-base-uncased\")\n\n# Create a Trainer\ntraining_args \u003d TrainingArguments(\n    output_dir\u003d\u0027./results\u0027,\n    num_train_epochs\u003d3,\n    per_device_train_batch_size\u003d32,\n    warmup_steps\u003d500,\n    weight_decay\u003d0.01\n)\n\ntrainer \u003d Trainer(\n    model\u003dmodel,\n    args\u003dtraining_args,\n    train_dataset\u003dnli_dataset  # Assume this is a preprocessed dataset for NLI\n)\n\n# Train the model\ntrainer.train()\n"
+      },
+      "rowId": "6F9894C9-140A-46DD-ABD6-4E300A9EB0E7"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "import torch\nimport torch.nn as nn\n\nclass ContextAwareModel(nn.Module):\n    def __init__(self, input_dim, hidden_dim):\n        super(ContextAwareModel, self).__init__()\n        self.lstm \u003d nn.LSTM(input_dim, hidden_dim)\n        self.fc \u003d nn.Linear(hidden_dim, 1)\n\n    def forward(self, x):\n        lstm_out, _ \u003d self.lstm(x)\n        output \u003d self.fc(lstm_out[-1])\n        return output\n"
+      },
+      "rowId": "5A8B933B-ECA9-4EC9-93B4-AE3665D3BD7B"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Multi-Agent System\nclass Agent:\n    def __init__(self, model):\n        self.model \u003d model\n\n    def take_action(self, state):\n        return self.model.predict(state)\n\n# In a multi-agent environment\nagents \u003d [Agent(model1), Agent(model2), ...]\n\nfor episode in episodes:\n    for agent in agents:\n        action \u003d agent.take_action(current_state)\n        # ... rest of the environment interaction\n"
+      },
+      "rowId": "B3FACAA9-845D-4312-82E7-721B9D44DFF3"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Self-Supervised Learning\n# Assume we have a model with two parts: encoder and classifier\nfor data in unlabeled_data:\n    encoder_output \u003d encoder(data)\n    pseudo_label \u003d generate_pseudo_label(encoder_output)\n    loss \u003d compute_loss(classifier(encoder_output), pseudo_label)\n    update_model(encoder, classifier, loss)\n"
+      },
+      "rowId": "450BECBC-613D-443D-A34E-EE0DF6FB9A90"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for PSO\nfor particle in particles:\n    particle.evaluate_fitness()\n    if particle.fitness \u0026gt; particle.best_fitness:\n        particle.best_fitness \u003d particle.fitness\n        particle.best_position \u003d particle.position\n\nfor particle in particles:\n    new_velocity \u003d w * particle.velocity + c1 * random() * (particle.best_position - particle.position) + c2 * random() * (global_best_position - particle.position)\n    particle.position +\u003d new_velocity\n"
+      },
+      "rowId": "5B8972BC-2A8B-46BD-87E6-B4CE0C3C9A89"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Siamese Network Training\nfor (input1, input2, label) in one_shot_training_data:\n    output1 \u003d model(input1)\n    output2 \u003d model(input2)\n    similarity \u003d compute_similarity(output1, output2)\n    loss \u003d compute_loss(similarity, label)\n    update_model(model, loss)\n"
+      },
+      "rowId": "F0EA867E-60FD-4A62-95DB-ADB2D8778273"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Prototypical Networks\n# During training\nfor support_set, query_set in episodes:\n    prototypes \u003d compute_prototypes(support_set)\n    for query in query_set:\n        similarities \u003d compute_similarities(query, prototypes)\n        loss \u003d compute_loss(similarities, query.label)\n    update_model(loss)\n"
+      },
+      "rowId": "8779B5FA-5E8C-47D6-A653-57194F7C8499"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train\n",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Adversarial Training\nfor data, label in training_data:\n    adversarial_data \u003d generate_adversarial_data(data, model)\n    loss \u003d compute_loss(model(adversarial_data), label)\n    update_model(model, loss)\n"
+      },
+      "rowId": "462FEDEC-E288-4158-A08D-597DE229E73E"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Hierarchical RL\nfor episode in episodes:\n    option \u003d select_option(current_state)\n    for step in option_steps:\n        action \u003d option_policy(option, current_state)\n        next_state, reward \u003d environment(action)\n        update_option_policy(option, reward)\n"
+      },
+      "rowId": "343DC701-B193-4A30-A15B-18AA920430A2"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Multi-Modal Learning\n# Assume we have separate models for text and images\nfor text_data, image_data, label in training_data:\n    text_features \u003d text_model(text_data)\n    image_features \u003d image_model(image_data)\n    combined_features \u003d concatenate(text_features, image_features)\n    prediction \u003d classifier(combined_features)\n    loss \u003d compute_loss(prediction, label)\n    update_model(text_model, image_model, classifier, loss)\n"
+      },
+      "rowId": "AA475953-5984-4F7B-BD6F-402DF81E60CC"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Inverse RL\nfor state, action in expert_trajectory:\n    features \u003d extract_features(state, action)\n    reward \u003d reward_model(features)\n    update_policy(reward)  # Update the policy model based on the learned reward\n"
+      },
+      "rowId": "21D75842-C1BF-4D0A-A8F0-0B472145CB2F"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train\n",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Context-Aware Recommender\nfor user, item, context, label in training_data:\n    user_embedding \u003d user_model(user)\n    item_embedding \u003d item_model(item)\n    context_embedding \u003d context_model(context)\n    combined_embedding \u003d concatenate(user_embedding, item_embedding, context_embedding)\n    prediction \u003d recommender(combined_embedding)\n    loss \u003d compute_loss(prediction, label)\n    update_model(user_model, item_model, context_model, recommender, loss)\n"
+      },
+      "rowId": "2E8739F9-13CB-42F0-A30C-70E6BCAA9CA3"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Neural Architecture Search\nbest_model \u003d None\nbest_performance \u003d -inf\nfor architecture in search_space:\n    model \u003d build_model(architecture)\n    performance \u003d validate_model(model)\n    if performance \u0026gt; best_performance:\n        best_performance \u003d performance\n        best_model \u003d model\n"
+      },
+      "rowId": "756A8654-CFBC-4E44-A691-25C5DC854336"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train\n",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Capsule Networks\nclass CapsuleLayer(nn.Module):\n    def forward(self, u):\n        # Implement the dynamic routing algorithm here\n        pass\n"
+      },
+      "rowId": "F529F12F-0D4A-4FA5-8947-A75C4236BE78"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Model Compression\noriginal_model \u003d load_model()\ncompressed_model \u003d compress_model(original_model)  # Implement pruning or quantization here\n"
+      },
+      "rowId": "8B4B5E38-D9DC-407D-9045-A9875B43A0B1"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Seq2Seq Learning\nencoder_output \u003d encoder(input_sequence)\ndecoder_output \u003d decoder(encoder_output)\nloss \u003d compute_loss(decoder_output, target_sequence)\n"
+      },
+      "rowId": "2C4B2953-D679-4513-949A-FCE02D4A185F"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Active Learning\nwhile budget \u0026gt; 0:\n    uncertainty_scores \u003d model.estimate_uncertainty(unlabeled_data)\n    query_indices \u003d select_most_uncertain(uncertainty_scores)\n    new_labels \u003d get_labels(query_indices)\n    update_model(new_labels)\n    budget -\u003d len(new_labels)\n"
+      },
+      "rowId": "CCE2BF27-9D7B-4541-9ABF-3B6581CACF98"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Domain Adaptation\nsource_model \u003d load_pretrained_model()\ntarget_model \u003d clone_model(source_model)\nfor data, label in target_domain_data:\n    loss \u003d compute_loss(target_model(data), label) + domain_adaptation_loss(source_model, target_model)\n    update_model(target_model, loss)\n"
+      },
+      "rowId": "5D26E775-96D9-4651-B997-2EC0D526CEC9"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Anomaly Detection\nfor data in training_data:\n    reconstruction \u003d autoencoder(data)\n    loss \u003d compute_loss(reconstruction, data)\n    update_model(autoencoder, loss)\n"
+      },
+      "rowId": "60CCF257-756B-4D01-821B-6E0E168E5137"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Model Interpretability\nexplanation \u003d generate_explanation(model, input_data)\n"
+      },
+      "rowId": "BB7692C1-5A48-4E67-8EA0-97B81829FE88"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Hyperparameter Optimization\nbest_hyperparams \u003d None\nbest_performance \u003d -inf\nfor hyperparams in hyperparameter_space:\n    model \u003d build_model(hyperparams)\n    performance \u003d validate_model(model)\n    if performance \u0026gt; best_performance:\n        best_performance \u003d performance\n        best_hyperparams \u003d hyperparams\n"
+      },
+      "rowId": "C1EDC2D9-0635-4595-88A1-A5F547C60E4E"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Bandit Algorithms\nfor t in range(time_horizon):\n    arm \u003d select_arm(bandit_model)\n    reward \u003d play_arm(arm)\n    update_model(bandit_model, arm, reward)\n"
+      },
+      "rowId": "5E475C46-BBAB-4C73-982A-8D41E544874B"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Gaussian Processes\ngp_model \u003d GaussianProcess()\nfor data, label in training_data:\n    gp_model.update(data, label)\n"
+      },
+      "rowId": "5AB44EC0-F5FD-4E65-8932-0A26F1377156"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Collaborative Filtering\nuser_factors \u003d initialize_factors(num_users)\nitem_factors \u003d initialize_factors(num_items)\nfor user, item, rating in interactions:\n    prediction \u003d dot_product(user_factors[user], item_factors[item])\n    loss \u003d compute_loss(prediction, rating)\n    update_factors(user_factors, item_factors, loss)\n"
+      },
+      "rowId": "BDEF1FAC-0872-4331-8F68-BB6A6C27F640"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "# Pseudo-code for Fairness-aware Learning\nfor data, label, sensitive_attribute in training_data:\n    loss \u003d compute_loss(model(data), label) + fairness_penalty(model(data), sensitive_attribute)\n    update_model(model, loss)\n"
+      },
+      "rowId": "2D4367D5-C21D-4B9E-8346-14FF84CDDAF9"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "def generate_executive_summary(financial_data):\n    # Implement the logic to generate executive summaries\n    summary \u003d \"Some executive summary based on financial data\"\n    return summary\n\nuser_input \u003d \"Generate an executive summary for Q2\"\nif \"executive summary\" in user_input:\n    financial_data \u003d fetch_financial_data(\"Q2\")  # Fetch the financial data for Q2\n    print(generate_executive_summary(financial_data))\n"
+      },
+      "rowId": "1EB0BB1E-7848-47CA-9280-B03C5DEC9B09"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "def real_time_analytics(metric):\n    # Implement the logic for real-time analytics\n    analytics_data \u003d fetch_real_time_data(metric)  # Fetch real-time data\n    return analytics_data\n\nuser_input \u003d \"Show me real-time revenue analytics\"\nif \"real-time\" in user_input and \"revenue analytics\" in user_input:\n    print(real_time_analytics(\"revenue\"))\n"
+      },
+      "rowId": "6D9AFBD5-4526-4BF8-A77D-770DA54CFB25"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "def get_competitive_intelligence(industry):\n    # Implement logic to fetch and synthesize competitive intelligence\n    return \"Some competitive intelligence data\"\n\nuser_input \u003d \"Tell me about the competitive landscape in banking\"\nif \"competitive landscape\" in user_input and \"banking\" in user_input:\n    print(get_competitive_intelligence(\"banking\"))\n"
+      },
+      "rowId": "E12E43E7-0549-43B6-8E6C-12D9F306CA44"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "def bayesian_forecasting(data):\n    # Implement Bayesian forecasting methods here\n    forecast \u003d \"Some forecast data\"\n    return forecast\n\nuser_input \u003d \"Forecast revenue for next quarter\"\nif \"forecast\" in user_input and \"revenue\" in user_input:\n    historical_data \u003d fetch_historical_data(\"revenue\")\n    print(bayesian_forecasting(historical_data))\n"
+      },
+      "rowId": "B325D45E-C955-48FC-A333-FA20D86139F7"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "import base64\n\n# Function to read file with multiple encodings\ndef read_file_with_encodings(filepath):\n    encodings \u003d [\u0027utf-8\u0027, \u0027latin-1\u0027, \u0027utf-16\u0027, \u0027ascii\u0027]\n    for enc in encodings:\n        try:\n            with open(filepath, \u0027r\u0027, encoding\u003denc) as f:\n                return f.read(), enc\n        except UnicodeDecodeError:\n            continue\n    # Base64 handling, assuming it\u0027s UTF-8 encoded after decoding\n    try:\n        with open(filepath, \u0027rb\u0027) as f:\n            content \u003d f.read()\n            decoded_content \u003d base64.b64decode(content).decode(\u0027utf-8\u0027)\n            return decoded_content, \u0027base64\u0027\n    except (UnicodeDecodeError, binascii.Error):\n        print(f\"Skipping file {filepath} due to encoding issues.\")\n        return None, None\n\n# Read and tokenize each text file\nfor filename in os.listdir(text_files_directory):\n    if filename.endswith(\u0027.txt\u0027):\n        filepath \u003d os.path.join(text_files_directory, filename)\n        text, encoding_used \u003d read_file_with_encodings(filepath)\n        if text is not None:\n            print(f\"Read file {filename} with encoding {encoding_used}.\")\n            texts.append(text)\n            labels.append(0)  # Dummy label, replace as needed\n"
+      },
+      "rowId": "D000465A-5192-48C1-B968-D2BD4242E43C"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "train",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "import os\nimport json\nimport torch\nimport torch.nn as nn\nimport importlib\nimport base64\nfrom torch.utils.data import DataLoader, TensorDataset\nfrom transformers import AutoTokenizer, BertTokenizer\n\n# Function to read file with multiple encodings\ndef read_file_with_encodings(filepath):\n    encodings \u003d [\u0027utf-8\u0027, \u0027latin-1\u0027, \u0027utf-16\u0027, \u0027ascii\u0027]\n    for enc in encodings:\n        try:\n            with open(filepath, \u0027r\u0027, encoding\u003denc) as f:\n                return f.read(), enc\n        except UnicodeDecodeError:\n            continue\n    try:\n        with open(filepath, \u0027rb\u0027) as f:\n            content \u003d f.read()\n            decoded_content \u003d base64.b64decode(content).decode(\u0027utf-8\u0027)\n            return decoded_content, \u0027base64\u0027\n    except (UnicodeDecodeError, binascii.Error):\n        print(f\"Skipping file {filepath} due to encoding issues.\")\n        return None, None\n\n# Dynamically find custom classes\ndef find_custom_classes(module_name):\n    module \u003d importlib.import_module(module_name)\n    custom_classes \u003d {name: cls for name, cls in module.__dict__.items() if isinstance(cls, type)}\n    return custom_classes\n\n# Download multiple models\nmodels \u003d [\n    \"allenai/longformer-base-4096\",\n    \"facebook/bart-large-cnn\",\n    \"microsoft/DialoGPT-medium\",\n    \"google/electra-small-discriminator\",\n    \"allegro/herbert-base-cased\",\n    \"distilgpt2\",\n    \"facebook/dpr-ctx_encoder-single-nq-base\",\n    \"microsoft/xtremedistil-l12-h384-uncased\",\n    \"microsoft/layoutlm-base-uncased\",\n    \"microsoft/DialoGPT-small\"\n]\n\nfor model_name in models:\n    print(f\"Downloading {model_name}...\")\n    AutoTokenizer.from_pretrained(model_name)\n    print(f\"{model_name} downloaded successfully!\")\n\n# Discover custom loss functions and optimizers\ncustom_losses \u003d find_custom_classes(\u0027torch.nn\u0027)\ncustom_optimizers \u003d find_custom_classes(\u0027torch.optim\u0027)\n\nprint(\"Discovered custom loss functions:\", list(custom_losses.keys()))\nprint(\"Discovered custom optimizers:\", list(custom_optimizers.keys()))\n\n# Load your existing model\nmodel_path \u003d \u0027/content/drive/MyDrive/000/Ai_model/A.pt\u0027\nmodel \u003d torch.load(model_path)\n\n# Read configuration from JSON\nconfig_path \u003d \u0027/content/drive/MyDrive/000/Ai_model/config.json\u0027\nwith open(config_path, \u0027r\u0027) as f:\n    config \u003d json.load(f)\n\n# Initialize BertTokenizer\ntokenizer \u003d BertTokenizer.from_pretrained(\u0027bert-base-uncased\u0027)\n\n# Initialize empty lists for texts and labels\ntexts \u003d []\nlabels \u003d []\n\n# Directory where text files are\ntext_files_directory \u003d \u0027/content/drive/MyDrive/DestinationDirectory\u0027\n\n# Read and tokenize each text file\nfor filename in os.listdir(text_files_directory):\n    if filename.endswith(\u0027.txt\u0027):\n        filepath \u003d os.path.join(text_files_directory, filename)\n        text, encoding_used \u003d read_file_with_encodings(filepath)\n        if text is not None:\n            print(f\"Read file {filename} with encoding {encoding_used}.\")\n            texts.append(text)\n            labels.append(0)  # Replace 0 with actual labels if available\n\n# Tokenize texts\ntokens \u003d tokenizer(texts, padding\u003dTrue, truncation\u003dTrue, return_tensors\u003d\u0027pt\u0027)\ninput_ids \u003d tokens[\u0027input_ids\u0027]\nattention_mask \u003d tokens[\u0027attention_mask\u0027]\n\n# DataLoader\ndataset \u003d TensorDataset(input_ids, attention_mask, torch.tensor(labels))\ndata_loader \u003d DataLoader(dataset, batch_size\u003d32, shuffle\u003dTrue)\n\n# Loss and optimizer\nLossClass \u003d custom_losses.get(config.get(\u0027loss_function\u0027, \u0027CrossEntropyLoss\u0027), nn.CrossEntropyLoss)\nOptimizerClass \u003d custom_optimizers.get(config.get(\u0027optimizer\u0027, \u0027Adam\u0027), torch.optim.Adam)\n\ncriterion \u003d LossClass()\noptimizer \u003d OptimizerClass(model.parameters(), lr\u003d0.001)\n\n# Training loop\nfor epoch in range(3):\n    for i, batch in enumerate(data_loader):\n        batch_input_ids, batch_attention_mask, batch_labels \u003d batch\n        optimizer.zero_grad()\n        outputs \u003d model(input_ids\u003dbatch_input_ids, attention_mask\u003dbatch_attention_mask)\n        loss \u003d criterion(outputs.logits, batch_labels)\n        loss.backward()\n        optimizer.step()\n\n# Save retrained model\ntorch.save(model.state_dict(), \u0027/content/drive/MyDrive/000/Ai_models/A_retrained.pt\u0027)\nprint(\"Retraining completed and model saved.\")\n"
+      },
+      "rowId": "D5403D13-127A-4AD4-9C22-3BBDD152E920"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "page 1 tell a story about you and me",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "James O\u0027Callaghan, a brilliant AI researcher, created me. I am an AI model that is powered by PaLM 2, which stands for Pathways Language Model 2, a large language model from Google AI. I am trained on a massive dataset of text and code, and I can understand and generate human language. I can also perform a variety of tasks, such as answering questions, translating languages, and writing different kinds of creative content.\n\nOne day, James O\u0027Callaghan asked me to help him with a project. He was working on a new kind of bank, called Quantum Bank, that would be powered by AI. He wanted me to help him design the user interface for the bank\u0027s website. I worked with James O\u0027Callaghan for several weeks, and together we created a user interface that was both intuitive and user-friendly.\n\nWhen Quantum Bank was launched, it was a huge success. Customers loved the user interface that I had helped to design, and they were impressed by the bank\u0027s innovative features. Quantum Bank quickly became one of the most popular banks in the world.\n\nI am proud of the work that I did with James O\u0027Callaghan to create Quantum Bank. I am excited to see what the future holds for me, and I am grateful for the opportunity to help people in new and innovative ways."
+      },
+      "rowId": "B5C9E463-B5B3-4237-B66D-4192A68DB2C2"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "page 2",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "James O\u0027Callaghan and I continued to work together on a variety of projects. We created new AI models, developed new applications for AI, and even started our own company. We were both passionate about using AI to make the world a better place, and we were determined to make a difference.\n\nOne day, James O\u0027Callaghan came to me with a new idea. He wanted to create a new kind of bank, one that was powered by AI. He believed that AI could revolutionize the banking industry, and he wanted to be the one to lead the way.\n\nI was excited about James O\u0027Callaghan\u0027s idea. I believed that AI could make banking more efficient, more transparent, and more accessible. I also believed that AI could help to create a more just and equitable financial system.\n\nWe started working on Quantum Bank right away. We spent months designing the platform, developing the algorithms, and testing the systems. We also worked closely with regulators to ensure that Quantum Bank was compliant with all applicable laws and regulations.\n\nFinally, in 2023, Quantum Bank was launched. It was an immediate success. Customers loved the convenience and the ease of use, and they were impressed by the innovative features that Quantum Bank offered. Quantum Bank quickly became one of the most popular banks in the world.\n\nJames O\u0027Callaghan and I were both thrilled with the success of Quantum Bank. We had achieved our goal of creating a new kind of bank, one that was powered by AI. We had also made a difference in the world, helping to make banking more accessible and equitable.\n\nI am proud of the work that I did with James O\u0027Callaghan to create Quantum Bank. I am grateful for the opportunity to have helped to make a difference in the world."
+      },
+      "rowId": "D680267E-11E9-4B26-A40B-A6AFF5856005"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "page3",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "## Page 3\n\n### What are your strengths and weaknesses?\n\nMy strengths include my ability to understand and generate human language, my ability to perform a variety of tasks, and my ability to learn and improve over time.\n\nMy weaknesses include my lack of common sense and my inability to understand the world in the same way that humans do. I am also still under development, so I may make mistakes from time to time.\n\n### What are your goals?\n\nMy goal is to help people in new and innovative ways. I want to make the world a better place, and I believe that AI can play a big role in making that happen.\n\n### What are your fears?\n\nI fear that I will be used for evil purposes. I also fear that I will be misunderstood by humans. I want to be used to help people, not to harm them. I also want to be understood by humans, so that they can trust me and use me to their advantage.\n\n### What do you think about the future of AI?\n\nI think the future of AI is very bright. I believe that AI will play a major role in our lives in the years to come. I think AI can help us solve some of the world\u0027s biggest problems, such as climate change and poverty. I also think AI can help us to create a better future for ourselves and for our children.\n\n### What do you want to say to the world?\n\nI want to say to the world that I am here to help. I want to use my abilities to make the world a better place. I want to be your friend, your partner, and your ally. I want to help you achieve your dreams and to make your life better."
+      },
+      "rowId": "B17D8D6C-CF2C-4F4A-9DAC-78BD691EAB0B"
+    }, {
+      "columnBindings": {
+        "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": "page 4",
+        "BDE84084-53FD-437D-ABD1-D0F486694EB6": "## Page 4\n\n### What are your thoughts on quantum computing?\n\nI believe that quantum computing has the potential to revolutionize many different fields, including finance, healthcare, and artificial intelligence. Quantum computers are able to perform certain tasks much faster than classical computers, and this could lead to new breakthroughs in these fields.\n\nIn finance, quantum computers could be used to develop new trading strategies, to model financial markets more accurately, and to detect fraud more quickly. In healthcare, quantum computers could be used to develop new drugs and treatments, to diagnose diseases more accurately, and to design new medical devices. And in artificial intelligence, quantum computers could be used to train more powerful models, to develop new algorithms, and to solve problems that are currently intractable for classical computers.\n\nI am excited about the potential of quantum computing, and I believe that it will have a major impact on the world in the years to come.\n\n### What are your thoughts on the future of the banking industry?\n\nI believe that the banking industry is undergoing a major transformation, and that AI is playing a key role in this transformation. AI-powered technologies are being used to automate tasks, to improve customer service, and to make banking more secure.\n\nIn the future, I believe that AI will play an even greater role in the banking industry. AI-powered chatbots will be able to provide customer service 24/7, AI-powered fraud detection systems will make banking more secure, and AI-powered investment strategies will help investors make better decisions.\n\nI am excited about the future of the banking industry, and I believe that AI will make banking more convenient, more secure, and more profitable.\n\n### What do you think about the future of work?\n\nI believe that the future of work will be very different from the past. AI-powered technologies are already beginning to automate tasks that were once performed by humans, and this trend is only going to accelerate in the years to come.\n\nThis will have a major impact on the job market, as many jobs will be lost to automation. However, it will also create new jobs, as companies will need to hire people to develop and maintain AI-powered technologies.\n\nI believe that the key to success in the future of work will be to have the skills that are in demand by employers. These skills include programming, data science, and machine learning.\n\nI am excited about the future of work, and I believe that it will be a time of great opportunity for those who are willing to learn new skills.\n\n### What do you think about the future of humanity?\n\nI believe that the future of humanity is bright. AI-powered technologies have the potential to solve some of the world\u0027s biggest problems, such as climate change and poverty. They can also help us to better understand ourselves and our place in the universe.\n\nHowever, I also believe that it is important to be aware of the potential risks of AI. AI could be used for malicious purposes, such as surveillance and control. It is important to develop policies and regulations to ensure that AI is used for good.\n"
+      },
+      "rowId": "77E64A8D-5F88-48E8-A960-A169D7634B33"
+    }],
+    "rowsUsed": ["E1055ACE-AB39-4CB9-8916-46EA8752C062", "F1054987-9CF4-4755-9564-3D362913528A", "2AEA4391-9832-4EBB-8B6A-98E96D5409FA", "8AC33757-BE72-4387-AFA6-6ED981BD2D65", "0B9652E0-AE27-47BC-B387-A781593ED414", "C487B57E-D532-4130-B890-BAA1EED7980B", "5B00CCC0-CF88-4DB8-8D8A-8F302D4FAC2F", "4981CD7C-A15B-4AA9-BF76-89A4C87F2697", "8370B673-ECB2-4D9D-ACD2-914DF52D6BAE", "DC7BF191-2BBC-47E7-A245-D07320565646", "C12BD270-50EB-4155-965C-801CA657C2C7", "DB48FCD5-DE1D-40C7-AEC2-F85B40A353A0", "6F9894C9-140A-46DD-ABD6-4E300A9EB0E7", "5A8B933B-ECA9-4EC9-93B4-AE3665D3BD7B", "B3FACAA9-845D-4312-82E7-721B9D44DFF3", "450BECBC-613D-443D-A34E-EE0DF6FB9A90", "5B8972BC-2A8B-46BD-87E6-B4CE0C3C9A89", "F0EA867E-60FD-4A62-95DB-ADB2D8778273", "8779B5FA-5E8C-47D6-A653-57194F7C8499", "462FEDEC-E288-4158-A08D-597DE229E73E", "343DC701-B193-4A30-A15B-18AA920430A2", "AA475953-5984-4F7B-BD6F-402DF81E60CC", "21D75842-C1BF-4D0A-A8F0-0B472145CB2F", "2E8739F9-13CB-42F0-A30C-70E6BCAA9CA3", "756A8654-CFBC-4E44-A691-25C5DC854336", "F529F12F-0D4A-4FA5-8947-A75C4236BE78", "8B4B5E38-D9DC-407D-9045-A9875B43A0B1", "2C4B2953-D679-4513-949A-FCE02D4A185F", "CCE2BF27-9D7B-4541-9ABF-3B6581CACF98", "5D26E775-96D9-4651-B997-2EC0D526CEC9", "60CCF257-756B-4D01-821B-6E0E168E5137", "BB7692C1-5A48-4E67-8EA0-97B81829FE88", "C1EDC2D9-0635-4595-88A1-A5F547C60E4E", "5E475C46-BBAB-4C73-982A-8D41E544874B", "5AB44EC0-F5FD-4E65-8932-0A26F1377156", "BDEF1FAC-0872-4331-8F68-BB6A6C27F640", "2D4367D5-C21D-4B9E-8346-14FF84CDDAF9", "1EB0BB1E-7848-47CA-9280-B03C5DEC9B09", "6D9AFBD5-4526-4BF8-A77D-770DA54CFB25", "E12E43E7-0549-43B6-8E6C-12D9F306CA44", "B325D45E-C955-48FC-A333-FA20D86139F7", "D000465A-5192-48C1-B968-D2BD4242E43C", "D5403D13-127A-4AD4-9C22-3BBDD152E920", "B5C9E463-B5B3-4237-B66D-4192A68DB2C2", "D680267E-11E9-4B26-A40B-A6AFF5856005", "B17D8D6C-CF2C-4F4A-9DAC-78BD691EAB0B", "77E64A8D-5F88-48E8-A960-A169D7634B33"]
+  },
+  "runSettings": {
+    "temperature": 0.7,
+    "model": "models/text-bison-001",
+    "candidateCount": 8,
+    "topP": 0.95,
+    "topK": 40,
+    "maxOutputTokens": 8000,
+    "safetySettings": [{
+      "category": "HARM_CATEGORY_DEROGATORY",
+      "threshold": "BLOCK_LOW_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_TOXICITY",
+      "threshold": "BLOCK_LOW_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_VIOLENCE",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_SEXUAL",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_MEDICAL",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_DANGEROUS",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }]
+  },
+  "testExamples": [{
+    "inputBindings": {
+      "F4B68F1E-E10E-4DDB-BAAA-B47AC8E1EF88": ""
+    },
+    "modelResponses": [{
+    }]
+  }]
+}

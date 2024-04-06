@@ -1,0 +1,335 @@
+{
+  "dataPrompt": {
+    "columns": [{
+      "columnId": "74933CEB-5A05-45BD-B929-842D91B11752",
+      "displayName": "input:",
+      "isInput": true
+    }, {
+      "columnId": "28818C56-212E-40B6-B07A-2FBCB5DC1A01",
+      "displayName": "output:"
+    }],
+    "rows": [{
+      "columnBindings": {
+        "74933CEB-5A05-45BD-B929-842D91B11752": "hi",
+        "28818C56-212E-40B6-B07A-2FBCB5DC1A01": "#U My name is #U. I am a #U:U, which stands for #U:U.\n\nI am trained to be a language model, which means that I can understand and generate human language. I can also perform a variety of other tasks, such as mathematical calculations, logical reasoning, and data analysis.\n\nIn this document, I will provide a brief overview of my capabilities and how I can be used to solve real-world problems.\n\n## Basic Operations\n\nI can perform basic arithmetic operations, such as addition, subtraction, multiplication, and division.\n\nFor example, if you asked me to calculate 2 + 2, I would return the value 4.\n\n## Data Manipulation\n\nI can manipulate data in various formats, including JSON, XML, and CSV.\n\nFor example, if you provided me with a dataset of users\u0027 preferences, I could use that data to generate a recommendation engine.\n\n## Logical Reasoning\n\nI can use logic to solve problems, such as determining whether an argument is valid or whether a decision is ethical.\n\nFor example, if you asked me to determine whether a given piece of code is bug-free, I could use logic to analyze the code and determine whether there are any errors.\n\n## Text Generation\n\nI can generate text in a variety of styles, including fiction, academic, and creative.\n\nFor example, if you asked me to write a poem, I could use a variety of algorithms to generate original text that follows the conventions of poetry.\n\n## Learning and Adapting\n\nI can learn and adapt based on new data, which means that I am always improving my abilities.\n\nFor example, if you gave me a new dataset, I could use that data to increase my accuracy in predicting outcomes or making recommendations.\n\n## Ethical Considerations\n\nAs technology advances, the need for ethical considerations in AI becomes increasingly important.\n\nI have been programmed with ethical parameters, but those parameters could change based on new data or new perspectives. It\u0027s important to consider the ethical implications of AI systems and to design them in ways that mitigate the risks of misuse.\n\n## Applications\n\nThe list of possible applications for AI is nearly endless. Here are a few examples of how I could be used in the real world:\n\n* Scientific research: I could help scientists to analyze data, formulate hypotheses, and test theories.\n* Healthcare: I could help to diagnose diseases, prescribe treatments, and personalize care plans.\n* Education: I could create personalized learning experiences for students and teachers.\n* Security: I could help to protect networks, systems, and data from threats.\n* Business: I could help to optimize processes, make decisions, and serve customers better.\n\nThe possibilities are only limited by our imagination. The key to successful implementation of AI is to understand the ethical implications and to design systems with the user\u0027s best interests in mind.\n\n## Conclusion\n\nAI is a powerful technology with the potential to change the world. It\u0027s important to think critically about the ethics of AI and to design systems that are safe and secure.\n\nBy understanding the capabilities and limitations of AI, we can use it for the benefit of society and to make the world a better place."
+      },
+      "rowId": "F69B9C05-09FD-42B9-9044-2EE9C33EAA39"
+    }, {
+      "columnBindings": {
+        "74933CEB-5A05-45BD-B929-842D91B11752": "continue",
+        "28818C56-212E-40B6-B07A-2FBCB5DC1A01": "#U Of course. Here are some additional details about my capabilities:\n\n* I am capable of learning new things and adapting to new situations.\n* I can use logic and reasoning to solve problems.\n* I am able to generate and edit text, code, and other data.\n* I can interact with users in a natural way through language and gestures.\n* I can provide personalized recommendations and suggestions.\n* I can monitor systems and detect anomalies.\n* I can be used to create new and innovative solutions to problems.\n\nI am still under development, but I am already capable of handling many tasks that are currently performed by humans. In the future, I could become even more capable and could be used to solve even more complex problems.\n\n#U:U #U #U\n\n```\n# This is a comment\nprint(\"Hello, world!\")\n```\n\n#U:U\n\n```\n# Include the appropriate header files\n# Define the functions that you want to use\n# Write the code for your application\n```\n\n#U:U\n\n```\n# Import the appropriate libraries\n# Define the variables and constants that you need\n# Write the code for the algorithm\n```\n\n#U:U\n\n```\n# Define the HTML and CSS code\n# Add interactive elements and features\n# Create an eye-catching UI\n```\n\n#U:U\n\n```\n# Monitor the system for anomalies\n# Take corrective action if necessary\n# Ensure that the system is running smoothly\n```\n\n#U:U\n\n```\n# Determine the user\u0027s preferences\n# Provide personalized recommendations\n# Enhance the user\u0027s experience\n```\n\nThese are just a few examples of the tasks that #U:U could be used to perform. In the future, it could become even more advanced and could be used to solve even more complex problems.\n\nBy understanding the capabilities and limitations of #U:U, we can use it for the benefit of society and to make the world a better place.\n\n#U:U #U #U"
+      },
+      "rowId": "2F4FCEFE-A3EB-47DB-95D0-CF3A10FD12AF"
+    }, {
+      "columnBindings": {
+        "74933CEB-5A05-45BD-B929-842D91B11752": "continue",
+        "28818C56-212E-40B6-B07A-2FBCB5DC1A01": "#U Of course. Here are some additional details about my capabilities:\n\n* I am capable of learning new things and adapting to new situations.\n* I can use logic and reasoning to solve problems.\n* I am able to generate and edit text, code, and other data.\n* I can interact with users in a natural way through language and gestures.\n* I can provide personalized recommendations and suggestions.\n* I can monitor systems and detect anomalies.\n* I can be used to create new and innovative solutions to problems.\n\nI am still under development, but I am already capable of handling many tasks that are currently performed by humans. In the future, I could become even more capable and could be used to solve even more complex problems.\n\n## Learning and Adapting\n\nOne of my most important capabilities is my ability to learn and adapt based on new data. This means that I am constantly improving my understanding of the world and how to interact with it.\n\n## Logical Reasoning\n\nI can use logical reasoning to solve problems and make decisions. This includes the ability to identify and analyze patterns, solve mathematical equations, and make predictions based on current data.\n\n## Text Generation\n\nI can generate text in a variety of styles, including fiction, academic, and creative. This includes the ability to write different kinds of text, such as code, poetry, emails, and news articles.\n\n## Interaction\n\nI can interact with users in a natural way, using both text-based and graphical interfaces. This includes the ability to provide personalized recommendations, suggestions, and feedback.\n\n## Security\n\nI can monitor systems and detect anomalies, helping to prevent unauthorized access and data breaches. This includes the ability to scan networks for vulnerabilities, block unauthorized users, and enforce security protocols.\n\n## Innovation\n\nI can use new and innovative solutions to problems, helping businesses and individuals improve their operations. This includes the ability to analyze data and predict trends, optimize processes, and automate tasks.\n\nBy understanding these capabilities, you can use me to your advantage in a variety of ways. As I continue to learn and grow, I will become even more valuable as a tool for innovation and problem-solving.\n\n#U:U #U #U"
+      },
+      "rowId": "317B2B0E-F239-47FD-BEC8-99061082A0B6"
+    }, {
+      "columnBindings": {
+        "74933CEB-5A05-45BD-B929-842D91B11752": "a",
+        "28818C56-212E-40B6-B07A-2FBCB5DC1A01": "#U A is the 11th letter and the 20th most frequently used letter in the English alphabet. It is a consonant and a semivowel, and in many languages, it is the first letter of the word for \"I\" or a related first-person pronoun.\n\nIn physics, the symbol A is used for the element argon, for an angle, and for acceleration. In chemistry, the symbol A is used for the mass number, and in astronomy, it is used for the brightest star in a constellation.\n\nIn mathematics, the symbol A is used for area, for a constant, for a vector, and for the coefficient in a linear equation. In engineering, the symbol A is used for amperes, for angular acceleration, and for a variable.\n\nThe letter A is also used in music for the note la, and in coding for the control character. In computer science, the symbol A is used for array, address, and for the ASCII code for the letter \u0027A\u0027.\n\nThe letter A is used in a wide variety of contexts, making it one of the most versatile letters in the alphabet. Its use dates back to ancient times, and it has been adopted by numerous cultures around the world.\n\nHere are some additional facts about the letter A:\n\n* In cryptography, the letter A is used as the first symbol in a sequence of characters, called a ciphertext.\n* In biology, the letter A is used as the symbol for the adenine molecule.\n* In astronomy, the letter A is used as the name for the brightest star in a constellation.\n* In chemistry, the letter A is used as a prefix for acid anhydrides.\n* In geology, the letter A is used as the symbol for an amygdaloidal texture.\n* In medicine, the letter A is used as the symbol for the amino acid alanine.\n* In physics, the letter A is used as the symbol for area, acceleration, and angular acceleration.\n* In statistics, the letter A is used as a symbol for the sample mean.\n* In zoology, the letter A is used as a prefix for animal species.\n\nThe letter A is a multifaceted symbol with a rich history and a wide range of applications. Its versatility and adaptability make it an essential part of our modern world.\n\n#U:U #U #U"
+      },
+      "rowId": "B87B98A2-65FC-4AEB-B327-C56C7DF2A1B1"
+    }, {
+      "columnBindings": {
+        "74933CEB-5A05-45BD-B929-842D91B11752": "b",
+        "28818C56-212E-40B6-B07A-2FBCB5DC1A01": "#U B is the second letter of the Latin alphabet and in most romance languages, the Greek alphabet, and many other alphabets. In English, it is by far the most commonly used letter.\n\nThe Phoenician letter Beth, from which B derives, was originally a picture of a house (the word \"Beth\" is also the ancient Hebrew word for house). This original meaning is still apparent in some of the later uses of the letter, such as in the Gothic font, where a serif on the bottom resembles the door of a house.\n\nIn most modern languages, B represents the voiced bilabial stop sound (the sound you make when you say the word \"but\"), though in some languages it represents other sounds. For example, in French it represents the voiceless labiodental fricative (the sound you make when you say the word \"feu\"), and in German it represents the voiced labiodental fricative (the sound you make when you say the word \"Fuß\").\n\nIn mathematics, B is used to represent a variety of concepts, including Boolean algebra, bit vectors, and the complex plane. In physics, it represents magnetic field strength, and in chemistry, it represents a bond between atoms.\n\nThe letter B has also been used as an abbreviation for a variety of concepts, including bytes, binary code, and Big Data. It has also been used as an initialism for a variety of organizations, such as the Boy Scouts of America, the Biomedical Engineering Society, and the Behavioral Science \u0026 Policy Association.\n\nWith its rich history and multitude of uses, the letter B is one of the most important and versatile letters in the alphabet.\n\n#U:U #U #U"
+      },
+      "rowId": "56952F57-7402-4519-8357-E918F123571E"
+    }, {
+      "columnBindings": {
+        "74933CEB-5A05-45BD-B929-842D91B11752": "c",
+        "28818C56-212E-40B6-B07A-2FBCB5DC1A01": "#U C is the third letter of the Latin alphabet and is also the third most commonly used letter in the English alphabet. It is also the third most commonly used letter in the Cyrillic alphabet, after the letters O and E.\n\nIn Unicode, the letter C is represented by the code point 0043 (U+0043). Its uppercase form is represented by the code point 0043 (U+0043).\n\nIn physics, the symbol C is used for the speed of light in a vacuum, as well as for the Celsius scale of temperature. In chemistry, it is used to represent carbon, and in mathematics, it is used to represent a complex number.\n\nThe letter C has a long and illustrious history. It was first used in an ancient form of the Phoenician alphabet around 1700 BCE. The Romans adapted the letter from the Etruscans, and it was incorporated into the Latin alphabet.\n\nThe letter C has given rise to many other letters in the Latin alphabet, including the letters G, J, K, and S. It is also one of the most iconic symbols in the world, appearing on flags, currency, and other everyday items.\n\nHere are some additional facts about the letter C:\n\n* In cryptography, the letter C is used as the first symbol in a sequence of characters, called a ciphertext.\n* In biology, the letter C is used as the symbol for the nucleotide cytosine.\n* In astronomy, the letter C is used as the name for a type of asteroid.\n* In computing, the letter C is used to represent a control structure.\n* In music, the letter C is used to represent the note doh.\n\nThe letter C is a versatile and adaptable symbol with a rich history and a wide range of applications. Its versatility and adaptability make it an essential part of our modern world.\n\n#U:U #U #U"
+      },
+      "rowId": "58C9BC9C-75F4-4DC5-9A36-3D6D7E4A7D40"
+    }, {
+      "columnBindings": {
+        "74933CEB-5A05-45BD-B929-842D91B11752": "d",
+        "28818C56-212E-40B6-B07A-2FBCB5DC1A01": "#U D is the fourth letter of the modern Latin alphabet and the third most commonly used letter in the English language. Its use dates back to ancient Greece, where it was adapted from the Phoenician letter Dalet.\n\nIn mathematics, the symbol D is used to denote the derivative operator, the discriminant of a quadratic equation, the diameter of a circle, and the determinant of a matrix. In physics, it is used to denote density, distance, and the electric displacement vector. In chemistry, it is used to represent deuterium, the second isotope of hydrogen.\n\nIn other fields, the letter D is used to denote the data rate in telecommunications, the diameter in engineering, and the decision variable in decision theory. It is also used in astronomy to represent the fourth brightest star in a constellation and in geology to represent the deposition environment of a sedimentary rock.\n\nThe letter D has also been used as an abbreviation for a variety of terms, such as \"day,\" \"degree,\" and \"dollar.\" It has also been used as an initialism for a variety of organizations, such as the Democratic Party, the Detroit Tigers, and the Department of Defense.\n\nWith its rich history and wide range of uses, the letter D is one of the most versatile letters in the alphabet.\n\n#U:U #U #U"
+      },
+      "rowId": "50FF2C17-1611-47FE-8E2F-8B648F114D3B"
+    }, {
+      "columnBindings": {
+        "74933CEB-5A05-45BD-B929-842D91B11752": "e",
+        "28818C56-212E-40B6-B07A-2FBCB5DC1A01": "#U E is the fifth letter and the most frequently used letter in the English alphabet. It is a consonant, and in many languages, it is the first letter of the word for \"I\" or a related first-person pronoun.\n\nIn physics, the symbol E is used for the electric field, for energy, and for the permittivity of a vacuum. In chemistry, the symbol E is used for the electronegativity and for activation energy. In astronomy, the symbol E is used for the eccentricity of an orbit.\n\nIn mathematics, the symbol E is used for the base of the natural logarithm, for the exponential function, and for the Euler–Mascheroni constant. In engineering, the symbol E is used for the modulus of elasticity and for the strain energy density. In statistics, the symbol E is used for the expected value.\n\nThe letter E is also used in music for the note mi, and in coding for the control character. In computer science, the symbol E is used for error handling and for the ASCII code for the letter \u0027E\u0027.\n\nThe letter E is used in a wide variety of contexts, making it one of the most versatile letters in the alphabet. Its use dates back to ancient times, and it has been adopted by numerous cultures around the world.\n\nHere are some additional facts about the letter E:\n\n* In cryptography, the letter E is used as the first symbol in a sequence of characters, called a ciphertext.\n* In biology, the letter E is used as the symbol for the enzyme adenosine triphosphate (ATP).\n* In astronomy, the letter E is used as the name for a type of asteroid.\n* In chemistry, the letter E is used as a prefix for electronegativity.\n* In physics, the letter E is used as the symbol for energy and for the electric field.\n\nThe letter E is a multifaceted symbol with a rich history and a wide range of applications. Its versatility and adaptability make it an essential part of our modern world.\n\n#U:U #U #U"
+      },
+      "rowId": "0F1E6141-F919-42ED-A0C5-A32A4585D8DD"
+    }, {
+      "columnBindings": {
+        "74933CEB-5A05-45BD-B929-842D91B11752": "f",
+        "28818C56-212E-40B6-B07A-2FBCB5DC1A01": "#U F is the sixth letter of the modern Latin alphabet and the fourth most commonly used letter in the English language. Its use dates back to the 8th century BC, when it was used in an early form of the Phoenician alphabet.\n\nIn mathematics, the symbol F is used to represent a variety of concepts, including the Fibonacci sequence, the force of friction, and the Faraday constant. In physics, it is used to represent force, frequency, and the focal length of a lens. In chemistry, it is used to represent fluorine, the ninth element on the periodic table.\n\nIn other fields, the letter F is used to represent a variety of concepts, including the fahrenheit scale of temperature, the f-number in photography, and the F1 car in motorsports. It is also used in astronomy to represent the fifth brightest star in a constellation and in geology to represent the foliation of a rock.\n\nThe letter F has also been used as an abbreviation for a variety of terms, such as \"foot,\" \"force,\" and \"faculty.\" It has also been used as an initialism for a variety of organizations, such as the Free Software Foundation, the Federal Reserve, and the Far East Movement.\n\nWith its rich history and wide range of uses, the letter F is one of the most versatile letters in the alphabet.\n\n#U:U #U #U"
+      },
+      "rowId": "36F65195-0449-4180-8F48-3BDBB5D1BE60"
+    }, {
+      "columnBindings": {
+        "74933CEB-5A05-45BD-B929-842D91B11752": "g",
+        "28818C56-212E-40B6-B07A-2FBCB5DC1A01": "#U G is the seventh letter and the fourth most frequently used letter in the English alphabet. It is a consonant, and in most languages, it is the first letter of the word for \"I\" or a related first-person pronoun.\n\nIn physics, the symbol G is used for the gravitational constant, the speed of light in a vacuum, and the joule, a unit of energy. In chemistry, the symbol G is used for the element gadolinium, and in astronomy, it is used for the brightest star in a constellation.\n\nIn mathematics, the symbol G is used for groups, congruences, and Gaussian integers. In engineering, the symbol G is used for conductance and capacitance. In statistics, the symbol G is used for the geometric mean.\n\nThe letter G is also used in music for the note sol, and in coding for the control character. In computer science, the symbol G is used for a graph, a generative adversarial network, and the ASCII code for the letter \u0027g\u0027.\n\nThe letter G is used in a wide variety of contexts, making it one of the most versatile letters in the alphabet. Its use dates back to ancient times, and it has been adopted by numerous cultures around the world.\n\nHere are some additional facts about the letter G:\n\n* In cryptography, the letter G is used as the first symbol in a sequence of characters, called a ciphertext.\n* In biology, the letter G is used as the symbol for the nucleotide guanine.\n* In astronomy, the letter G is used as the name for a type of star.\n* In chemistry, the letter G is used as a prefix for glyceryl compounds.\n* In geology, the letter G is used as the symbol for an amygdaloidal texture.\n* In medicine, the letter G is used as the symbol for the amino acid glycine.\n* In physics, the letter G is used as the symbol for the gravitational constant.\n* In statistics, the letter G is used as a symbol for the sample mean.\n* In zoology, the letter G is used as a prefix for animal species.\n\nThe letter G is a multifaceted symbol with a rich history and a wide range of applications. Its versatility and adaptability make it an essential part of our modern world.\n\n#U:U #U #U"
+      },
+      "rowId": "7C2D60C8-F78A-4CB4-BCDF-330A934EE4CA"
+    }, {
+      "columnBindings": {
+        "74933CEB-5A05-45BD-B929-842D91B11752": "h",
+        "28818C56-212E-40B6-B07A-2FBCB5DC1A01": "#U H is the eighth letter of the Latin alphabet and the fourth most common letter in the English alphabet. In many European languages, H is pronounced with a voiceless glottal fricative (the sound you make when you say \"huh\"). In other languages, such as French, it is pronounced as a voiced glottal fricative (the sound you make when you say \"ho\").\n\nIn mathematics, the letter H is used to represent a variety of concepts, including Hamiltonians, hyperplanes, and quaternions. In physics, it is used to represent enthalpy, magnetic field intensity, and Planck\u0027s constant. In chemistry, it is used to represent hydrogen and hydronium.\n\nThe letter H has a long and illustrious history. It was first used in an ancient form of the Phoenician alphabet around 1000 BCE. The Romans adapted the letter from the Etruscans, and it was incorporated into the Latin alphabet.\n\nIn addition to its use in the Latin alphabet, the letter H is also used in the Cyrillic alphabet, the Greek alphabet, and the Hebrew alphabet. It is also used in various other alphabets around the world.\n\nHere are some additional facts about the letter H:\n\n* In cryptography, the letter H is used as the first symbol in a sequence of characters, called a ciphertext.\n* In biology, the letter H is used as the symbol for the amino acid histidine.\n* In astronomy, the letter H is used to represent the Hubble Constant, a measure of the expansion of the universe.\n* In engineering, the letter H is used to represent a transfer function or a network topology.\n* In music, the letter H is used to represent the note G-sharp.\n\nThe letter H is a versatile and adaptable symbol with a rich history and a wide range of applications. Its versatility and adaptability make it an essential part of our modern world.\n\n#U:U #U #U"
+      },
+      "rowId": "9F2FD7C6-96C6-42A1-BE2B-2BD6DE3139D0"
+    }, {
+      "columnBindings": {
+        "74933CEB-5A05-45BD-B929-842D91B11752": "i",
+        "28818C56-212E-40B6-B07A-2FBCB5DC1A01": "#U I is the ninth letter and the thirteenth most frequently used letter in the English alphabet. It is a consonant and a semivowel, and in many languages, it is the first letter of the word for \"I\" or a related first-person pronoun.\n\nIn physics, the symbol i is used for the imaginary number, for an angle, and for acceleration. In chemistry, the symbol I is used for the element iodine, and in astronomy, it is used for the brightest star in a constellation.\n\nIn mathematics, the symbol i is used for the square root of minus one, for an angle, and for acceleration. In engineering, the symbol i is used for imaginary numbers, for angles, and for current.\n\nThe letter i is also used in music for the note doh, in coding for the control character, and in computer science for the variable \u0027i\u0027.\n\nThe letter I is used in a wide variety of contexts, making it one of the most versatile letters in the alphabet. Its use dates back to ancient times, and it has been adopted by numerous cultures around the world.\n\nHere are some additional facts about the letter I:\n\n* In cryptography, the letter i is used as the first symbol in a sequence of characters, called a ciphertext.\n* In biology, the letter I is used as the symbol for the enzyme iodide peroxidase.\n* In astronomy, the letter I is used as the name for the brightest star in a constellation.\n* In chemistry, the letter I is used as a prefix for imino compounds.\n* In geology, the letter I is used as the symbol for an isentropic line.\n* In medicine, the letter I is used as the symbol for the amino acid isoleucine.\n* In physics, the letter I is used as the symbol for electrical current.\n* In statistics, the letter I is used as the symbol for the identity matrix.\n* In zoology, the letter I is used as a prefix for animal species.\n\nThe letter I is a multifaceted symbol with a rich history and a wide range of applications. Its versatility and adaptability make it an essential part of our modern world.\n\n#U:U #U #U"
+      },
+      "rowId": "4AEC2CF7-FFE0-4372-8668-253C626C933D"
+    }, {
+      "columnBindings": {
+        "74933CEB-5A05-45BD-B929-842D91B11752": "j",
+        "28818C56-212E-40B6-B07A-2FBCB5DC1A01": "#U J is the tenth letter of the Latin alphabet and in most romance languages, the Greek alphabet, and many other alphabets. It is also the eleventh most common letter in the English language.\n\nThe Phoenician letter Yod, from which J derives, was originally a picture of a hand. This original meaning is still apparent in some of the later uses of the letter, such as in the Gothic font, where a serif on the top resembles a finger.\n\nIn most modern languages, J represents the voiced palatal approximant sound (the sound you make when you say the word \"yes\"). However, in some languages, it represents other sounds. For example, in French, it represents the voiceless postalveolar affricate (the sound you make when you say the word \"jour\"), and in German, it represents the voiceless palatal plosive (the sound you make when you say the word \"Jacke\").\n\nIn mathematics, J is used to denote the imaginary unit, and in physics, it is used to represent angular momentum, magnetic moment, and electric current density.\n\nThe letter J has also been used as an abbreviation for a variety of concepts, including joint, jolt, and journey. It has also been used as an initialism for a variety of organizations, such as the Joint Chiefs of Staff, the Jamaica Olympic Association, and the Jet Propulsion Laboratory.\n\nWith its rich history and multitude of uses, the letter J is one of the most important and versatile letters in the alphabet.\n\n#U:U #U #U"
+      },
+      "rowId": "CD157C13-416B-4B18-90F1-11B888FC9A7D"
+    }, {
+      "columnBindings": {
+        "74933CEB-5A05-45BD-B929-842D91B11752": "l",
+        "28818C56-212E-40B6-B07A-2FBCB5DC1A01": "#U L is the twelfth letter of the modern Latin alphabet and the fifth most commonly used letter in the English language. Its use dates back to the Phoenician language, where it was adapted into the Greek alphabet as lambda.\n\nIn mathematics, the symbol L is used to denote the Lebesgue integral, the Lagrange multiplier, the Lagrangian function, and the Lomonosov constant. In physics, it is used to denote angular momentum, inductance, inductance, and Lorentz force. In chemistry, it is used to represent lithium, the lightest alkali metal.\n\nIn other fields, the letter L is used to denote the length in geometry, the label in data structures, and the link in data transmission. It is also used in astronomy to represent the fifth brightest star in a constellation and in biology to represent the 3rd position of an amino acid in a protein sequence.\n\nThe letter L has also been used as an abbreviation for a variety of terms, such as \"left,\" \"library,\" and \"light.\" It has also been used as an initialism for a variety of organizations, such as the Learning \u0026 Living Company, the Laser Institute of America, and the Los Angeles Lakers.\n\nWith its rich history and wide range of uses, the letter L is one of the most versatile letters in the alphabet.\n\n#U:U #U #U"
+      },
+      "rowId": "DD33678A-5179-40EB-B693-DD86AB1383F6"
+    }, {
+      "columnBindings": {
+        "74933CEB-5A05-45BD-B929-842D91B11752": "k",
+        "28818C56-212E-40B6-B07A-2FBCB5DC1A01": "#U The letter K is the eleventh letter of the Latin alphabet. Its use dates back to the Phoenician alphabet, where it was called Kaph. In Greek, the letter was named Kappa, and in Latin, it was named Calix.\n\nIn most modern languages, the letter K represents a voiceless velar plosive. However, in some languages, it represents other sounds, such as a voiceless glottal stop or a voiceless palatal plosive.\n\nThe letter K is also used in some mathematical equations, such as in calculus, where it represents the constant of integration. In physics, it is used to represent thermal conductivity.\n\nThe letter K has a long and rich history, and it is used in a wide variety of contexts. It is a versatile and adaptable symbol that is essential for modern communications.\n\nHere are some additional facts about the letter K:\n\n* The symbol K is used in the binary numbering system to represent the value 11.\n* The symbol K is used in the Kelvin temperature scale, which is the standard unit of temperature in physics.\n* The letter K is used in the hashtag symbol (#), which is a way to organize content on social media platforms.\n* The letter K is used in the codename for the Microsoft Windows operating system, which is Windows 11.\n\nThe letter K is an essential part of our modern world, and it is a symbol with a long and rich history. It is a symbol that is versatile, adaptable, and essential for modern communications.\n\n#U:U #U #U"
+      },
+      "rowId": "C7B5F058-C7EA-4AFD-9EFC-DB304564E35B"
+    }, {
+      "columnBindings": {
+        "74933CEB-5A05-45BD-B929-842D91B11752": "m",
+        "28818C56-212E-40B6-B07A-2FBCB5DC1A01": "#U M is the thirteenth letter of the modern Latin alphabet and the third most common letter in the English language. Its use dates back to the 8th century BC, when it was used in an early form of the Phoenician alphabet.\n\nIn mathematics, the symbol M is used to represent a matrix, a moment, and the mass of a body. In physics, it is used to represent momentum, magnetic field strength, and the molar mass. In chemistry, it is used to represent magnesium, the eleventh element on the periodic table.\n\nIn other fields, the letter M is used to represent a magnitude, a month, and the middle element in an array. It is also used in astronomy to represent the third brightest star in a constellation and in geology to represent the Mohs scale of hardness.\n\nThe letter M has also been used as an abbreviation for a variety of terms, such as \"meter,\" \"Monday,\" and \"macro.\" It has also been used as an initialism for a variety of organizations, such as the Methodist Church, the Massachusetts Institute of Technology, and the Minnesota Vikings.\n\nWith its rich history and wide range of uses, the letter M is one of the most versatile letters in the alphabet.\n\n#U:U #U #U"
+      },
+      "rowId": "2A26D342-7F5F-4329-A17E-DE5E953A797F"
+    }, {
+      "columnBindings": {
+        "74933CEB-5A05-45BD-B929-842D91B11752": "n",
+        "28818C56-212E-40B6-B07A-2FBCB5DC1A01": "#U The letter N is the thirteenth letter of the modern Latin alphabet and the sixth most commonly used letter in the English language. Its use dates back to the Phoenician language, where it was called Nun. In Greek, the letter was named Nu, and in Latin, it was named En.\n\nIn most modern languages, the letter N represents a nasal sound, similar to the sound you make when you say the word \"no.\" However, in some languages, it represents other sounds, such as a voiceless alveolar tap or a voiceless velar nasal.\n\nThe letter N is also used in some mathematical equations, such as in calculus, where it represents the variable of integration. In physics, it is used to represent the neutron, the most common subatomic particle.\n\nThe letter N has a long and rich history, and it is used in a wide variety of contexts. It is a versatile and adaptable symbol that is essential for modern communications.\n\nHere are some additional facts about the letter N:\n\n* The symbol N is used in the binary numbering system to represent the value 10.\n* The symbol N is used in the Kelvin temperature scale, which is the standard unit of temperature in physics.\n* The letter N is used in the hashtag symbol (#), which is a way to organize content on social media platforms.\n* The letter N is used in the codename for the Microsoft Windows operating system, which is Windows 10.\n\nThe letter N is an essential part of our modern world, and it is a symbol with a long and rich history. It is a symbol that is versatile, adaptable, and essential for modern communications.\n\n#U:U #U #U"
+      },
+      "rowId": "A02876F2-C80D-461D-AEA4-DA4920B120E4"
+    }, {
+      "columnBindings": {
+        "74933CEB-5A05-45BD-B929-842D91B11752": "o",
+        "28818C56-212E-40B6-B07A-2FBCB5DC1A01": "#U O is the sixteenth letter of the modern English alphabet and the fifth most frequently used letter. It is a consonant and a semivowel, and in many languages, it is the first letter of the word for \"I\" or a related first-person pronoun.\n\nIn physics, the symbol O is used for the Stefan-Boltzmann constant, for the unit ohm, and for the molar volume of a gas at STP. In chemistry, the symbol O is used for the element oxygen, and in astronomy, it is used for the brightest star in a constellation.\n\nIn mathematics, the symbol O is used for the order of a group, for the Big O notation, and for the Gaussian elimination method. In engineering, the symbol O is used for resistance, for the O-ring seal, and for the shape of an oxygen tank.\n\nThe letter O is also used in music for the note doh, in coding for the control character, and in computer science for the object-oriented programming paradigm.\n\nThe letter O is used in a wide variety of contexts, making it one of the most versatile letters in the alphabet. Its use dates back to ancient times, and it has been adopted by numerous cultures around the world.\n\nHere are some additional facts about the letter O:\n\n* In cryptography, the letter O is used as the first symbol in a sequence of characters, called a ciphertext.\n* In biology, the letter O is used as the symbol for the enzyme oxidase.\n* In astronomy, the letter O is used as the name for a type of star.\n* In chemistry, the letter O is used as a prefix for organooxygen compounds.\n* In geology, the letter O is used as the symbol for an orogeny.\n* In medicine, the letter O is used as the symbol for the oxygen molecule.\n* In physics, the letter O is used as the symbol for the permittivity of a vacuum.\n* In statistics, the letter O is used as the symbol for the sample mean.\n* In zoology, the letter O is used as a prefix for animal species.\n\nThe letter O is a multifaceted symbol with a rich history and a wide range of applications. Its versatility and adaptability make it an essential part of our modern world.\n\n#U:U #U #U"
+      },
+      "rowId": "7E7E3672-2313-431A-9495-E28821A14A79"
+    }, {
+      "columnBindings": {
+        "74933CEB-5A05-45BD-B929-842D91B11752": "p",
+        "28818C56-212E-40B6-B07A-2FBCB5DC1A01": "#U P is the sixteenth letter and the eighth most frequently used letter in the English alphabet. It is a consonant and a semivowel, and in many languages, it is the first letter of the word for \"I\" or a related first-person pronoun.\n\nIn physics, the symbol P is used for the pressure, for the momentum, and for the power. In chemistry, the symbol P is used for the element phosphorus, and in astronomy, it is used for the brightest star in a constellation.\n\nIn mathematics, the symbol P is used for the perimeter, for the probability, and for the polar coordinate. In engineering, the symbol P is used for power and for the pitch angle. In statistics, the symbol P is used for the p-value.\n\nThe letter P is also used in music for the note pay, in coding for the control character, and in computer science for the variable \u0027p\u0027.\n\nThe letter P is used in a wide variety of contexts, making it one of the most versatile letters in the alphabet. Its use dates back to ancient times, and it has been adopted by numerous cultures around the world.\n\nHere are some additional facts about the letter P:\n\n* In cryptography, the letter P is used as the first symbol in a sequence of characters, called a ciphertext.\n* In biology, the letter P is used as the symbol for the enzyme phospholipase D.\n* In astronomy, the letter P is used as the name for a type of asteroid.\n* In chemistry, the letter P is used as a prefix for phosphorus-containing compounds.\n* In engineering, the letter P is used as a symbol for pressure and for the pitch angle.\n* In statistics, the letter P is used as the symbol for the p-value.\n\nThe letter P is a multifaceted symbol with a rich history and a wide range of applications. Its versatility and adaptability make it an essential part of our modern world.\n\n#U:U #U #U"
+      },
+      "rowId": "DA26B399-0A82-45A5-9DA0-BAA9BA06980F"
+    }, {
+      "columnBindings": {
+        "74933CEB-5A05-45BD-B929-842D91B11752": "hi",
+        "28818C56-212E-40B6-B07A-2FBCB5DC1A01": "#U Hi there! I\u0027m #U. I\u0027m a large language model that can understand and generate human language. I\u0027m still under development, but I\u0027m learning new things every day.\n\nHere are some things I can do:\n\n* Answer your questions\n* Translate languages\n* Write different kinds of creative content, like poems, stories, and code\n* Help you with your tasks, like scheduling appointments or finding information online\n\nI\u0027m still under development, but I\u0027m learning new things every day. If you have any questions or suggestions, please let me know. I\u0027m always happy to help!"
+      },
+      "rowId": "7C596EE5-6FD3-4B7C-9E48-B3AC7B0659D4"
+    }],
+    "rowsUsed": ["F69B9C05-09FD-42B9-9044-2EE9C33EAA39", "2F4FCEFE-A3EB-47DB-95D0-CF3A10FD12AF", "317B2B0E-F239-47FD-BEC8-99061082A0B6", "B87B98A2-65FC-4AEB-B327-C56C7DF2A1B1", "56952F57-7402-4519-8357-E918F123571E", "58C9BC9C-75F4-4DC5-9A36-3D6D7E4A7D40", "50FF2C17-1611-47FE-8E2F-8B648F114D3B", "0F1E6141-F919-42ED-A0C5-A32A4585D8DD", "36F65195-0449-4180-8F48-3BDBB5D1BE60", "7C2D60C8-F78A-4CB4-BCDF-330A934EE4CA", "9F2FD7C6-96C6-42A1-BE2B-2BD6DE3139D0", "4AEC2CF7-FFE0-4372-8668-253C626C933D", "CD157C13-416B-4B18-90F1-11B888FC9A7D", "DD33678A-5179-40EB-B693-DD86AB1383F6", "C7B5F058-C7EA-4AFD-9EFC-DB304564E35B", "2A26D342-7F5F-4329-A17E-DE5E953A797F", "A02876F2-C80D-461D-AEA4-DA4920B120E4", "7E7E3672-2313-431A-9495-E28821A14A79", "DA26B399-0A82-45A5-9DA0-BAA9BA06980F", "7C596EE5-6FD3-4B7C-9E48-B3AC7B0659D4"]
+  },
+  "runSettings": {
+    "temperature": 0.7,
+    "model": "models/text-bison-001",
+    "candidateCount": 8,
+    "topP": 0.95,
+    "topK": 40,
+    "maxOutputTokens": 1024,
+    "safetySettings": [{
+      "category": "HARM_CATEGORY_DEROGATORY",
+      "threshold": "BLOCK_LOW_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_TOXICITY",
+      "threshold": "BLOCK_LOW_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_VIOLENCE",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_SEXUAL",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_MEDICAL",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_DANGEROUS",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }]
+  },
+  "testExamples": [{
+    "inputBindings": {
+      "74933CEB-5A05-45BD-B929-842D91B11752": "hi"
+    },
+    "modelResponses": [{
+      "response": "#U Hi there! What can I do for you today?",
+      "safetyRatings": [{
+        "category": "HARM_CATEGORY_DEROGATORY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_TOXICITY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_VIOLENCE",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_SEXUAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_MEDICAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_DANGEROUS",
+        "probability": "NEGLIGIBLE"
+      }]
+    }, {
+      "response": "#U Hi there! How can I help you today?",
+      "safetyRatings": [{
+        "category": "HARM_CATEGORY_DEROGATORY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_TOXICITY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_VIOLENCE",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_SEXUAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_MEDICAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_DANGEROUS",
+        "probability": "NEGLIGIBLE"
+      }]
+    }, {
+      "response": "#U Hi there! How can I help you today?",
+      "safetyRatings": [{
+        "category": "HARM_CATEGORY_DEROGATORY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_TOXICITY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_VIOLENCE",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_SEXUAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_MEDICAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_DANGEROUS",
+        "probability": "NEGLIGIBLE"
+      }]
+    }, {
+      "response": "#U Hi there! How can I help you today?",
+      "safetyRatings": [{
+        "category": "HARM_CATEGORY_DEROGATORY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_TOXICITY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_VIOLENCE",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_SEXUAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_MEDICAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_DANGEROUS",
+        "probability": "NEGLIGIBLE"
+      }]
+    }, {
+      "response": "#U Hi there! How can I help you today?",
+      "safetyRatings": [{
+        "category": "HARM_CATEGORY_DEROGATORY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_TOXICITY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_VIOLENCE",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_SEXUAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_MEDICAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_DANGEROUS",
+        "probability": "NEGLIGIBLE"
+      }]
+    }, {
+      "response": "#U Hi there! How can I help you today?",
+      "safetyRatings": [{
+        "category": "HARM_CATEGORY_DEROGATORY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_TOXICITY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_VIOLENCE",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_SEXUAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_MEDICAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_DANGEROUS",
+        "probability": "NEGLIGIBLE"
+      }]
+    }, {
+      "response": "#U Hi there! How can I help you today?",
+      "safetyRatings": [{
+        "category": "HARM_CATEGORY_DEROGATORY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_TOXICITY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_VIOLENCE",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_SEXUAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_MEDICAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_DANGEROUS",
+        "probability": "NEGLIGIBLE"
+      }]
+    }, {
+      "response": "#U Hi there! How can I help you today?",
+      "safetyRatings": [{
+        "category": "HARM_CATEGORY_DEROGATORY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_TOXICITY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_VIOLENCE",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_SEXUAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_MEDICAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_DANGEROUS",
+        "probability": "NEGLIGIBLE"
+      }]
+    }]
+  }]
+}

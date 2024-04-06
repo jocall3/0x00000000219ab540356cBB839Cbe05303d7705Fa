@@ -1,0 +1,40 @@
+{
+  "dataPrompt": {
+    "columns": [{
+      "columnId": "122E6361-20CE-4C38-83A0-FA9F3A4F19E1",
+      "displayName": "input:",
+      "isInput": true
+    }, {
+      "columnId": "62B7CC96-6031-4F44-8A23-9F73AE3374B7",
+      "displayName": "output:"
+    }]
+  },
+  "runSettings": {
+    "temperature": 0.7,
+    "model": "tunedModels/u-fd28myt90xzc",
+    "candidateCount": 1,
+    "topP": 0.95,
+    "topK": 40,
+    "maxOutputTokens": 2048,
+    "safetySettings": [{
+      "category": "HARM_CATEGORY_HARASSMENT",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_HATE_SPEECH",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }]
+  },
+  "testExamples": [{
+    "inputBindings": {
+      "122E6361-20CE-4C38-83A0-FA9F3A4F19E1": "tell me about yourself"
+    },
+    "modelResponses": [{
+    }]
+  }]
+}
