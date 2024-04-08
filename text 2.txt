@@ -1,0 +1,1242 @@
+2022-03-14T05:41:54.377Z: APP START
+2022-03-14T05:41:54.781Z: APP STATE: ACTIVE
+2022-03-14T05:41:54.783Z: Initial notification(on start app):: undefined
+2022-03-14T05:41:54.846Z: {
+  "articles": null,
+  "articlesList": null,
+  "articlesQuery": null,
+  "articleLastVisited": null,
+  "authParams": null,
+  "authParamsKey": "1647145785549",
+  "projectId": "22-250",
+  "projects": 82,
+  "draftId": "25-3795340",
+  "currentUser": false,
+  "creationTimestamp": 1647145785549,
+  "config": {
+    "backendUrl": "https://youtrack.jetbrains.com",
+    "statisticsEnabled": true,
+    "version": "2022.1",
+    "auth": {
+      "serverUri": "https://hub.jetbrains.com",
+      "scopes": "Hub YouTrack"
+    }
+  },
+  "query": null,
+  "searchContext": {
+    "shortName": "BDIDE",
+    "query": "project: {Big Data IDE}",
+    "name": "Big Data IDE",
+    "id": "22-298",
+    "$type": "Project"
+  },
+  "lastQueries": null,
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED",
+  "isRegisteredForPush": true,
+  "deviceToken": "7be7cef8729a4ece0c5ce4f700254c0a95ceaf43545317b706992a59513cff39",
+  "agileZoomedIn": true,
+  "agileLastSprint": "155-13207",
+  "agileQuery": null,
+  "lastRoute": "Settings",
+  "currentAppVersion": "2022.1.2-2667",
+  "issueActivitiesEnabledTypes": [
+    {
+      "id": "IssueComments",
+      "name": "Comments"
+    },
+    {
+      "id": "IssueHistory",
+      "name": "Issue history"
+    },
+    {
+      "id": "TimeTracking",
+      "name": "Spent time"
+    },
+    {
+      "id": "IssueVcs",
+      "name": "VCS changes"
+    }
+  ],
+  "permissions": 22,
+  "agileDefaultBoard": {
+    "hideOrphansSwimlane": false,
+    "sprintsSettings": {
+      "disableSprints": false,
+      "$type": "SprintsSettings"
+    },
+    "name": "BigDataTools",
+    "status": {
+      "errors": [],
+      "valid": true,
+      "$type": "AgileStatus"
+    },
+    "id": "153-1270",
+    "$type": "Agile"
+  },
+  "themeMode": null,
+  "vcsChanges": null,
+  "forceHandsetMode": null
+}
+2022-03-14T05:41:54.846Z: Storage populated
+2022-03-14T05:41:54.853Z: New API instance received (https://youtrack.jetbrains.com/api/issues)
+2022-03-14T05:41:54.853Z: {
+  "issueId": null,
+  "navigateToActivity": true,
+  "imageHeaders": "CENSORED"
+}
+2022-03-14T05:41:54.853Z: Router(navigate) Issues
+2022-03-14T05:41:54.853Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:41:54.853Z: Flushing storage part
+2022-03-14T05:41:54.860Z: Loaded 10 cached issues
+2022-03-14T05:41:54.860Z: Loading issues...
+2022-03-14T05:41:54.860Z: "GET" to https://youtrack.jetbrains.com/api/issues?$top=10&$skip=0&query=project%3A%20%7BBig%20Data%20IDE%7D%20&fields=id,idReadable,summary,resolved,created,updated,project($type,id,name,archived,shortName,ringId,template,plugins(timeTrackingSettings(enabled,timeSpent(id,field(id,name))))),reporter(id,fullName,login,ringId,avatarUrl,name),fields(id,name,$type,value(id,name,ringId,avatarUrl,login,presentation,color(id,background,foreground)),projectCustomField(field(id,name))),tags(name,id,query,color(id,background,foreground))
+2022-03-14T05:41:54.861Z: "POST" to https://youtrack.jetbrains.com/api/issuesGetter/count?fields=count&$top=-1 with body |{"folder":{"$type":"Project","id":"22-298"},"query":"project: {Big Data IDE}","unresolvedOnly":false}|
+2022-03-14T05:41:54.880Z: "POST" to https://youtrack.jetbrains.com/api/search/assist/?fields=query,sortProperties($type,id,asc,readOnly,localizedName,sortField($type,id,localizedName,name,defaultSortAsc,sortablePresentation),folder(id))&$top=-1 with body |{"folder":{"shortName":"BDIDE","query":"project: {Big Data IDE}","name":"Big Data IDE","id":"22-298","$type":"Project"},"query":""}|
+2022-03-14T05:41:54.910Z: loadCurrentUser: Verifying token, loading current user...
+2022-03-14T05:41:55.575Z: {
+  "type": "default",
+  "status": 401,
+  "ok": false,
+  "statusText": "",
+  "headers": {
+    "map": {
+      "server": "nginx",
+      "content-type": "application/json;charset=utf-8",
+      "access-control-expose-headers": "Location",
+      "content-length": "68",
+      "referrer-policy": "same-origin",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "access-control-allow-origin": "*",
+      "date": "Mon, 14 Mar 2022 05:41:55 GMT",
+      "x-frame-options": "SAMEORIGIN",
+      "cache-control": "no-cache, no-store, no-transform, must-revalidate"
+    }
+  },
+  "url": "https://youtrack.jetbrains.com/api/issues?$top=10&$skip=0&query=project%3A%20%7BBig%20Data%20IDE%7D%20&fields=id,idReadable,summary,resolved,created,updated,project($type,id,name,archived,shortName,ringId,template,plugins(timeTrackingSettings(enabled,timeSpent(id,field(id,name))))),reporter(id,fullName,login,ringId,avatarUrl,name),fields(id,name,$type,value(id,name,ringId,avatarUrl,login,presentation,color(id,background,foreground)),projectCustomField(field(id,name))),tags(name,id,query,color(id,background,foreground))",
+  "bodyUsed": false,
+  "_bodyInit": {
+    "_data": {
+      "size": 68,
+      "offset": 0,
+      "blobId": "3248230F-45C8-40E6-B17C-392AA90948FB",
+      "type": "application/json",
+      "name": "issues",
+      "__collector": {}
+    }
+  },
+  "_bodyBlob": {
+    "_data": {
+      "size": 68,
+      "offset": 0,
+      "blobId": "3248230F-45C8-40E6-B17C-392AA90948FB",
+      "type": "application/json",
+      "name": "issues",
+      "__collector": {}
+    }
+  }
+}
+2022-03-14T05:41:55.575Z: Token is expired, refreshing token
+2022-03-14T05:41:55.580Z: {
+  "type": "default",
+  "status": 401,
+  "ok": false,
+  "statusText": "",
+  "headers": {
+    "map": {
+      "server": "nginx",
+      "content-type": "application/json;charset=utf-8",
+      "access-control-expose-headers": "Location",
+      "content-length": "68",
+      "referrer-policy": "same-origin",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "access-control-allow-origin": "*",
+      "date": "Mon, 14 Mar 2022 05:41:55 GMT",
+      "x-frame-options": "SAMEORIGIN",
+      "cache-control": "no-cache, no-store, no-transform, must-revalidate"
+    }
+  },
+  "url": "https://youtrack.jetbrains.com/api/issuesGetter/count?fields=count&$top=-1",
+  "bodyUsed": false,
+  "_bodyInit": {
+    "_data": {
+      "size": 68,
+      "offset": 0,
+      "blobId": "D0BBD858-A5C0-4DE2-B557-73C62A13D7CD",
+      "type": "application/json",
+      "name": "count",
+      "__collector": {}
+    }
+  },
+  "_bodyBlob": {
+    "_data": {
+      "size": 68,
+      "offset": 0,
+      "blobId": "D0BBD858-A5C0-4DE2-B557-73C62A13D7CD",
+      "type": "application/json",
+      "name": "count",
+      "__collector": {}
+    }
+  }
+}
+2022-03-14T05:41:55.580Z: Token is expired, refreshing token
+2022-03-14T05:41:55.586Z: {
+  "type": "default",
+  "status": 401,
+  "ok": false,
+  "statusText": "",
+  "headers": {
+    "map": {
+      "server": "nginx",
+      "content-type": "application/json;charset=utf-8",
+      "access-control-expose-headers": "Location",
+      "content-length": "68",
+      "referrer-policy": "same-origin",
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "access-control-allow-origin": "*",
+      "date": "Mon, 14 Mar 2022 05:41:55 GMT",
+      "x-frame-options": "SAMEORIGIN",
+      "cache-control": "no-cache, no-store, no-transform, must-revalidate"
+    }
+  },
+  "url": "https://youtrack.jetbrains.com/api/search/assist/?fields=query,sortProperties($type,id,asc,readOnly,localizedName,sortField($type,id,localizedName,name,defaultSortAsc,sortablePresentation),folder(id))&$top=-1",
+  "bodyUsed": false,
+  "_bodyInit": {
+    "_data": {
+      "size": 68,
+      "offset": 0,
+      "blobId": "8C5705F5-A32D-4460-909D-B0BD16288ABD",
+      "type": "application/json",
+      "name": "assist",
+      "__collector": {}
+    }
+  },
+  "_bodyBlob": {
+    "_data": {
+      "size": 68,
+      "offset": 0,
+      "blobId": "8C5705F5-A32D-4460-909D-B0BD16288ABD",
+      "type": "application/json",
+      "name": "assist",
+      "__collector": {}
+    }
+  }
+}
+2022-03-14T05:41:55.585Z: Token is expired, refreshing token
+2022-03-14T05:41:55.587Z: {
+  "access_token": "1647153896635.1d7b44fa-4c08-4711-8bf7-9daa32558e70.16d7742f-97a9-433c-82d2-216fbf4f2eb2.869c54ca-878c-4f0a-870d-a081021bcdbd 0-0-0-0-0;1.MCwCFD5kCHsVaKPLjnB+kF2GT+1tNraFAhRorZggSrzmaLKtF82cIA29/nV80Q==",
+  "accessTokenExpirationDate": "2022-03-13T06:44:56Z",
+  "refresh_token": "NKxxan5yLDSWVi62ZAdFOU3qlDzjpa1647142952350",
+  "scopes": [],
+  "token_type": "Bearer"
+}
+2022-03-14T05:41:55.587Z: OAuth2 token refresh: start...
+2022-03-14T05:41:55.588Z: {
+  "access_token": "1647153896635.1d7b44fa-4c08-4711-8bf7-9daa32558e70.16d7742f-97a9-433c-82d2-216fbf4f2eb2.869c54ca-878c-4f0a-870d-a081021bcdbd 0-0-0-0-0;1.MCwCFD5kCHsVaKPLjnB+kF2GT+1tNraFAhRorZggSrzmaLKtF82cIA29/nV80Q==",
+  "accessTokenExpirationDate": "2022-03-13T06:44:56Z",
+  "refresh_token": "NKxxan5yLDSWVi62ZAdFOU3qlDzjpa1647142952350",
+  "scopes": [],
+  "token_type": "Bearer"
+}
+2022-03-14T05:41:55.588Z: OAuth2 token refresh: start...
+2022-03-14T05:41:55.589Z: {
+  "access_token": "1647153896635.1d7b44fa-4c08-4711-8bf7-9daa32558e70.16d7742f-97a9-433c-82d2-216fbf4f2eb2.869c54ca-878c-4f0a-870d-a081021bcdbd 0-0-0-0-0;1.MCwCFD5kCHsVaKPLjnB+kF2GT+1tNraFAhRorZggSrzmaLKtF82cIA29/nV80Q==",
+  "accessTokenExpirationDate": "2022-03-13T06:44:56Z",
+  "refresh_token": "NKxxan5yLDSWVi62ZAdFOU3qlDzjpa1647142952350",
+  "scopes": [],
+  "token_type": "Bearer"
+}
+2022-03-14T05:41:55.589Z: OAuth2 token refresh: start...
+2022-03-14T05:41:55.772Z: {
+  "type": "default",
+  "status": 401,
+  "ok": false,
+  "statusText": "",
+  "headers": {
+    "map": {
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "content-type": "application/json;charset=utf-8",
+      "server": "nginx",
+      "tk": "N",
+      "content-length": "324",
+      "referrer-policy": "same-origin",
+      "cache-control": "no-cache, no-store, no-transform, must-revalidate",
+      "date": "Mon, 14 Mar 2022 05:41:55 GMT",
+      "vary": "Hub-API-Version"
+    }
+  },
+  "url": "https://hub.jetbrains.com/api/rest/users/me?fields=id,guest,name,profile/avatar/url,endUserAgreementConsent(accepted,majorVersion,minorVersion)",
+  "bodyUsed": false,
+  "_bodyInit": {
+    "_data": {
+      "size": 324,
+      "offset": 0,
+      "blobId": "47520D2E-FAFB-4D8B-9C98-0E9A054AEE48",
+      "type": "application/json",
+      "name": "me",
+      "__collector": {}
+    }
+  },
+  "_bodyBlob": {
+    "_data": {
+      "size": 324,
+      "offset": 0,
+      "blobId": "47520D2E-FAFB-4D8B-9C98-0E9A054AEE48",
+      "type": "application/json",
+      "name": "me",
+      "__collector": {}
+    }
+  }
+}
+2022-03-14T05:41:55.771Z: loadCurrentUser: Error 401. Verifying token...
+2022-03-14T05:41:55.778Z: {
+  "type": "default",
+  "status": 401,
+  "ok": false,
+  "statusText": "",
+  "headers": {
+    "map": {
+      "x-content-type-options": "nosniff",
+      "x-xss-protection": "1; mode=block",
+      "content-type": "application/json;charset=utf-8",
+      "server": "nginx",
+      "tk": "N",
+      "content-length": "324",
+      "referrer-policy": "same-origin",
+      "cache-control": "no-cache, no-store, no-transform, must-revalidate",
+      "date": "Mon, 14 Mar 2022 05:41:55 GMT",
+      "vary": "Hub-API-Version"
+    }
+  },
+  "url": "https://hub.jetbrains.com/api/rest/users/me?fields=id,guest,name,profile/avatar/url,endUserAgreementConsent(accepted,majorVersion,minorVersion)",
+  "bodyUsed": false,
+  "_bodyInit": {
+    "_data": {
+      "size": 324,
+      "offset": 0,
+      "blobId": "47520D2E-FAFB-4D8B-9C98-0E9A054AEE48",
+      "type": "application/json",
+      "name": "me",
+      "__collector": {}
+    }
+  },
+  "_bodyBlob": {
+    "_data": {
+      "size": 324,
+      "offset": 0,
+      "blobId": "47520D2E-FAFB-4D8B-9C98-0E9A054AEE48",
+      "type": "application/json",
+      "name": "me",
+      "__collector": {}
+    }
+  }
+}
+2022-03-14T05:41:55.778Z: loadCurrentUser: Token refresh.
+2022-03-14T05:41:55.784Z: {
+  "access_token": "1647153896635.1d7b44fa-4c08-4711-8bf7-9daa32558e70.16d7742f-97a9-433c-82d2-216fbf4f2eb2.869c54ca-878c-4f0a-870d-a081021bcdbd 0-0-0-0-0;1.MCwCFD5kCHsVaKPLjnB+kF2GT+1tNraFAhRorZggSrzmaLKtF82cIA29/nV80Q==",
+  "accessTokenExpirationDate": "2022-03-13T06:44:56Z",
+  "refresh_token": "NKxxan5yLDSWVi62ZAdFOU3qlDzjpa1647142952350",
+  "scopes": [],
+  "token_type": "Bearer"
+}
+2022-03-14T05:41:55.784Z: OAuth2 token refresh: start...
+2022-03-14T05:41:56.222Z: Access token refreshed
+2022-03-14T05:41:56.226Z: {
+  "accessTokenExpirationDate": "2022-03-14T06:41:56Z",
+  "additionalParameters": {},
+  "accessToken": "1647240116167.1d7b44fa-4c08-4711-8bf7-9daa32558e70.16d7742f-97a9-433c-82d2-216fbf4f2eb2.869c54ca-878c-4f0a-870d-a081021bcdbd 0-0-0-0-0;1.MC0CFQCCJLP3XZXauFlBZzqxpp/NcDKOXAIUL/OSoHhHD+ZQlCQV9VV4qXBWCyY=",
+  "idToken": "",
+  "refreshToken": "",
+  "tokenType": "Bearer"
+}
+2022-03-14T05:41:56.225Z: OAuth2 token refresh: success
+2022-03-14T05:41:56.234Z: Access token refreshed
+2022-03-14T05:41:56.236Z: {
+  "accessTokenExpirationDate": "2022-03-14T06:41:56Z",
+  "additionalParameters": {},
+  "accessToken": "1647240116174.1d7b44fa-4c08-4711-8bf7-9daa32558e70.16d7742f-97a9-433c-82d2-216fbf4f2eb2.869c54ca-878c-4f0a-870d-a081021bcdbd 0-0-0-0-0;1.MCwCFBW4s5JCq1vZJ9/2KFLmF2Ck5zhfAhQQwJiDkyKuLE1o7IeuKMIyv3GHtg==",
+  "idToken": "",
+  "refreshToken": "",
+  "tokenType": "Bearer"
+}
+2022-03-14T05:41:56.236Z: OAuth2 token refresh: success
+2022-03-14T05:41:56.245Z: loadCurrentUser: Verifying token, loading current user...
+2022-03-14T05:41:56.252Z: loadCurrentUser: Verifying token, loading current user...
+2022-03-14T05:41:56.280Z: Access token refreshed
+2022-03-14T05:41:56.282Z: {
+  "accessTokenExpirationDate": "2022-03-14T06:41:56Z",
+  "additionalParameters": {},
+  "accessToken": "1647240116228.1d7b44fa-4c08-4711-8bf7-9daa32558e70.16d7742f-97a9-433c-82d2-216fbf4f2eb2.869c54ca-878c-4f0a-870d-a081021bcdbd 0-0-0-0-0;1.MCwCFBIJuOiBPs+W4NAB2yQLU7xjRSr4AhRMuMOM4i+X0eINQN06wTLvtpBalg==",
+  "idToken": "",
+  "refreshToken": "",
+  "tokenType": "Bearer"
+}
+2022-03-14T05:41:56.282Z: OAuth2 token refresh: success
+2022-03-14T05:41:56.343Z: loadCurrentUser: Verifying token, loading current user...
+2022-03-14T05:41:56.384Z: loadCurrentUser: Token refreshed.
+2022-03-14T05:41:56.386Z: loadCurrentUser: Current user updated.
+2022-03-14T05:41:56.388Z: loadCurrentUser: Token refreshed.
+2022-03-14T05:41:56.390Z: loadCurrentUser: Current user updated.
+2022-03-14T05:41:56.430Z: Access token refreshed
+2022-03-14T05:41:56.430Z: {
+  "accessTokenExpirationDate": "2022-03-14T06:41:56Z",
+  "additionalParameters": {},
+  "accessToken": "1647240116382.1d7b44fa-4c08-4711-8bf7-9daa32558e70.16d7742f-97a9-433c-82d2-216fbf4f2eb2.869c54ca-878c-4f0a-870d-a081021bcdbd 0-0-0-0-0;1.MC0CFQCTXNdpz7z5cEjKEx8Amnq14f2OmAIUPhoz6xdXstHL3CjPJWF6h/OjFqM=",
+  "idToken": "",
+  "refreshToken": "",
+  "tokenType": "Bearer"
+}
+2022-03-14T05:41:56.430Z: OAuth2 token refresh: success
+2022-03-14T05:41:56.435Z: loadCurrentUser: Verifying token, loading current user...
+2022-03-14T05:41:56.482Z: loadCurrentUser: Token refreshed.
+2022-03-14T05:41:56.486Z: loadCurrentUser: Current user updated.
+2022-03-14T05:41:56.589Z: 10 issues loaded
+2022-03-14T05:41:56.609Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:41:56.609Z: Flushing storage part
+2022-03-14T05:41:56.642Z: loadCurrentUser: Token refreshed.
+2022-03-14T05:41:56.644Z: loadCurrentUser: Current user updated.
+2022-03-14T05:41:56.644Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:41:56.644Z: Flushing storage part
+2022-03-14T05:41:56.693Z: New API instance received (https://youtrack.jetbrains.com/api/issues)
+2022-03-14T05:41:56.694Z: {
+  "type": "user",
+  "id": "16d7742f-97a9-433c-82d2-216fbf4f2eb2",
+  "name": "jocall3",
+  "guest": false,
+  "profile": {
+    "avatar": {
+      "type": "urlavatar",
+      "url": "https://hub.jetbrains.com/api/rest/avatar/16d7742f-97a9-433c-82d2-216fbf4f2eb2"
+    }
+  },
+  "endUserAgreementConsent": {
+    "accepted": true,
+    "majorVersion": 1,
+    "minorVersion": 2
+  }
+}
+2022-03-14T05:41:56.694Z: Checking user agreement
+2022-03-14T05:41:56.694Z: The EUA already accepted, skip check
+2022-03-14T05:41:56.694Z: Completing initialization
+2022-03-14T05:41:56.694Z: "GET" to https://youtrack.jetbrains.com/api/admin/users/me?fields=id%2CavatarUrl%2Clogin%2CfullName%2Cprofiles%28general%28star%28id%29%2CsearchContext%28id%2Cname%2CshortName%2Cquery%29%29%2Cappearance%28naturalCommentsOrder%29%2Carticles%28lastVisitedArticle%28id%2CidReadable%2Csummary%2Cproject%28id%2CringId%29%29%29%29&$top=-1
+2022-03-14T05:41:56.834Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:41:56.834Z: Flushing storage part
+2022-03-14T05:41:56.894Z: "POST" to https://youtrack.jetbrains.com/api/search/assist/?fields=query,sortProperties($type,id,asc,readOnly,localizedName,sortField($type,id,localizedName,name,defaultSortAsc,sortablePresentation),folder(id))&$top=-1 with body |{"folder":{"shortName":"BDIDE","query":"project: {Big Data IDE}","name":"Big Data IDE","id":"22-298","$type":"Project"},"query":""}|
+2022-03-14T05:41:57.043Z: Permissions loaded
+2022-03-14T05:41:57.044Z: PermissionsStore created
+2022-03-14T05:41:57.044Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:41:57.044Z: Flushing storage part
+2022-03-14T05:41:57.045Z: Permissions stored
+2022-03-14T05:41:57.045Z: "GET" to https://youtrack.jetbrains.com/api/userIssueFolders/?fields=%24type%2Cid%2CshortName%2Cname%2Cpinned&$top=-1
+2022-03-14T05:41:57.457Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:41:57.457Z: Flushing storage part
+2022-03-14T05:41:57.534Z: Initialization completed
+2022-03-14T05:41:57.534Z: "GET" to https://youtrack.jetbrains.com/api/admin/timeTrackingSettings/workTimeSettings?fields=id,daysAWeek,workDays,minutesADay&$top=-1
+2022-03-14T05:41:57.536Z: App has been initially started with URL "NOPE"
+2022-03-14T05:41:57.536Z: Device was already registered for push notifications. Initializing.
+2022-03-14T05:41:57.538Z: Initial notification:: undefined
+2022-03-14T05:41:57.560Z: Push notifications(subscribeOnNotificationOpen:Android): subscribe to open event
+2022-03-14T05:41:57.679Z: Got result from https://youtrack.jetbrains.com: 200
+2022-03-14T05:41:57.680Z: Response body: undefined
+2022-03-14T05:41:57.685Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:41:57.685Z: Flushing storage part
+2022-03-14T05:41:59.558Z: "POST" to https://youtrack.jetbrains.com/api/issuesGetter/count?fields=count&$top=-1 with body |{"folder":{"$type":"Project","id":"22-298"},"query":"project: {Big Data IDE}","unresolvedOnly":false}|
+2022-03-14T05:42:06.087Z: {
+  "children": {
+    "type": {
+      "compare": null
+    },
+    "key": null,
+    "ref": null,
+    "props": {
+      "context": {
+        "shortName": "BDIDE",
+        "query": "project: {Big Data IDE}",
+        "name": "Big Data IDE",
+        "id": "22-298",
+        "$type": "Project"
+      },
+      "query": "",
+      "selectedSortProperties": [
+        {
+          "sortField": {
+            "id": "updated",
+            "sortablePresentation": "updated",
+            "defaultSortAsc": false,
+            "name": "updated",
+            "$type": "PredefinedFilterField"
+          },
+          "asc": false,
+          "readOnly": false,
+          "id": "updated",
+          "localizedName": "updated",
+          "$type": "IssueFieldSortProperty"
+        }
+      ]
+    },
+    "_owner": null
+  },
+  "imageHeaders": "CENSORED"
+}
+2022-03-14T05:42:06.086Z: Router(navigate) PageModal
+2022-03-14T05:42:08.618Z: "GET" to https://youtrack.jetbrains.com/api/userIssueFolders/?fields=id%2C%24type%2CshortName%2Cname%2Cquery%2Cpinned%2Cstar%28id%29%2CshortName&$top=-1
+2022-03-14T05:42:11.071Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:42:11.070Z: Flushing storage part
+2022-03-14T05:42:11.161Z: "POST" to https://youtrack.jetbrains.com/api/admin/users/me/profiles/general?fields=searchContext%28id%2Cname%2CshortName%2Cquery%29&$top=-1 with body |{"searchContext":null,"$type":"GeneralUserProfile"}|
+2022-03-14T05:42:11.165Z: Loading issues...
+2022-03-14T05:42:11.169Z: "GET" to https://youtrack.jetbrains.com/api/issues?$top=10&$skip=0&query=&fields=id,idReadable,summary,resolved,created,updated,project($type,id,name,archived,shortName,ringId,template,plugins(timeTrackingSettings(enabled,timeSpent(id,field(id,name))))),reporter(id,fullName,login,ringId,avatarUrl,name),fields(id,name,$type,value(id,name,ringId,avatarUrl,login,presentation,color(id,background,foreground)),projectCustomField(field(id,name))),tags(name,id,query,color(id,background,foreground))
+2022-03-14T05:42:11.170Z: "POST" to https://youtrack.jetbrains.com/api/issuesGetter/count?fields=count&$top=-1 with body |{"folder":null,"query":null,"unresolvedOnly":false}|
+2022-03-14T05:42:11.344Z: "POST" to https://youtrack.jetbrains.com/api/search/assist/?fields=query,sortProperties($type,id,asc,readOnly,localizedName,sortField($type,id,localizedName,name,defaultSortAsc,sortablePresentation),folder(id))&$top=-1 with body |{"query":""}|
+2022-03-14T05:42:11.511Z: 10 issues loaded
+2022-03-14T05:42:11.541Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:42:11.541Z: Flushing storage part
+2022-03-14T05:42:14.329Z: "POST" to https://youtrack.jetbrains.com/api/issuesGetter/count?fields=count&$top=-1 with body |{"folder":null,"query":null,"unresolvedOnly":false}|
+2022-03-14T05:42:15.678Z: Opening issue "25-3795905" from list
+2022-03-14T05:42:15.702Z: {
+  "issuePlaceholder": {
+    "created": 1647236447469,
+    "project": {
+      "plugins": {
+        "$type": "ProjectPlugins",
+        "timeTrackingSettings": {
+          "enabled": true,
+          "timeSpent": null,
+          "$type": "ProjectTimeTrackingSettings"
+        }
+      },
+      "shortName": "IDEA",
+      "ringId": "cd47e12a-f5dd-449e-b236-a3bad6083265",
+      "name": "IntelliJ IDEA",
+      "id": "22-22",
+      "$type": "Project"
+    },
+    "updated": 1647236462160,
+    "idReadable": "IDEA-290409",
+    "summary": "PE: IndexAccessValidator.checkAccessingIndexDuringOtherIndexProcessing",
+    "resolved": null,
+    "reporter": {
+      "login": "daddy-bear",
+      "avatarUrl": "https://hub.jetbrains.com/api/rest/avatar/1229725d-5e62-4e3c-9c0d-9518661d844c?s=48&etag==MjgtMjMyMjY%3D",
+      "ringId": "1229725d-5e62-4e3c-9c0d-9518661d844c",
+      "fullName": "Dmitry Batkovich",
+      "name": "Dmitry Batkovich",
+      "id": "11-41245",
+      "$type": "User"
+    },
+    "fields": [
+      {
+        "projectCustomField": {
+          "field": {
+            "name": "Priority",
+            "id": "112-24",
+            "$type": "CustomField"
+          },
+          "$type": "EnumProjectCustomField"
+        },
+        "value": {
+          "color": {
+            "background": "#ffee9c",
+            "foreground": "#b45f06",
+            "id": "18",
+            "$type": "FieldStyle"
+          },
+          "name": "Major",
+          "id": "118-54",
+          "$type": "EnumBundleElement"
+        },
+        "name": "Priority",
+        "id": "123-64",
+        "$type": "SingleEnumIssueCustomField"
+      },
+      {
+        "projectCustomField": {
+          "field": {
+            "name": "Type",
+            "id": "112-23",
+            "$type": "CustomField"
+          },
+          "$type": "EnumProjectCustomField"
+        },
+        "value": {
+          "color": {
+            "background": "#fff",
+            "foreground": "#444",
+            "id": "0",
+            "$type": "FieldStyle"
+          },
+          "name": "Exception",
+          "id": "118-45",
+          "$type": "EnumBundleElement"
+        },
+        "name": "Type",
+        "id": "123-15",
+        "$type": "SingleEnumIssueCustomField"
+      },
+      {
+        "projectCustomField": {
+          "field": {
+            "name": "State",
+            "id": "112-25",
+            "$type": "CustomField"
+          },
+          "$type": "StateProjectCustomField"
+        },
+        "value": {
+          "color": {
+            "background": "#fff",
+            "foreground": "#444",
+            "id": "0",
+            "$type": "FieldStyle"
+          },
+          "name": "Submitted",
+          "id": "125-58",
+          "$type": "StateBundleElement"
+        },
+        "name": "State",
+        "id": "123-113",
+        "$type": "StateIssueCustomField"
+      },
+      {
+        "value": {
+          "login": "gregsh",
+          "avatarUrl": "https://hub.jetbrains.com/api/rest/avatar/547c6884-89c3-4727-89a1-e5876b9d7af2?s=48",
+          "ringId": "547c6884-89c3-4727-89a1-e5876b9d7af2",
+          "name": "Greg Shrago",
+          "id": "11-833",
+          "$type": "User"
+        },
+        "projectCustomField": {
+          "field": {
+            "name": "Assignee",
+            "id": "112-30",
+            "$type": "CustomField"
+          },
+          "$type": "UserProjectCustomField"
+        },
+        "name": "Assignee",
+        "id": "133-15",
+        "$type": "SingleUserIssueCustomField"
+      },
+      {
+        "projectCustomField": {
+          "field": {
+            "name": "Subsystem",
+            "id": "112-26",
+            "$type": "CustomField"
+          },
+          "$type": "OwnedProjectCustomField"
+        },
+        "value": {
+          "color": {
+            "background": "#fff",
+            "foreground": "#444",
+            "id": "0",
+            "$type": "FieldStyle"
+          },
+          "name": "Core. Indexing",
+          "id": "127-860",
+          "$type": "OwnedBundleElement"
+        },
+        "name": "Subsystem",
+        "id": "123-171",
+        "$type": "SingleOwnedIssueCustomField"
+      },
+      {
+        "projectCustomField": {
+          "field": {
+            "name": "Affected versions",
+            "id": "112-27",
+            "$type": "CustomField"
+          },
+          "$type": "VersionProjectCustomField"
+        },
+        "value": [],
+        "name": "Affected versions",
+        "id": "123-220",
+        "$type": "MultiVersionIssueCustomField"
+      },
+      {
+        "projectCustomField": {
+          "field": {
+            "name": "Included in builds",
+            "id": "112-1074",
+            "$type": "CustomField"
+          },
+          "$type": "BuildProjectCustomField"
+        },
+        "value": [],
+        "name": "Included in builds",
+        "id": "123-4351",
+        "$type": "MultiBuildIssueCustomField"
+      }
+    ],
+    "tags": [],
+    "id": "25-3795905",
+    "$type": "Issue",
+    "fieldHash": {
+      "Priority": {
+        "color": {
+          "background": "#ffee9c",
+          "foreground": "#b45f06",
+          "id": "18",
+          "$type": "FieldStyle"
+        },
+        "name": "Major",
+        "id": "118-54",
+        "$type": "EnumBundleElement"
+      },
+      "Type": {
+        "color": {
+          "background": "#fff",
+          "foreground": "#444",
+          "id": "0",
+          "$type": "FieldStyle"
+        },
+        "name": "Exception",
+        "id": "118-45",
+        "$type": "EnumBundleElement"
+      },
+      "State": {
+        "color": {
+          "background": "#fff",
+          "foreground": "#444",
+          "id": "0",
+          "$type": "FieldStyle"
+        },
+        "name": "Submitted",
+        "id": "125-58",
+        "$type": "StateBundleElement"
+      },
+      "Assignee": {
+        "login": "gregsh",
+        "avatarUrl": "https://hub.jetbrains.com/api/rest/avatar/547c6884-89c3-4727-89a1-e5876b9d7af2?s=48",
+        "ringId": "547c6884-89c3-4727-89a1-e5876b9d7af2",
+        "name": "Greg Shrago",
+        "id": "11-833",
+        "$type": "User"
+      },
+      "Subsystem": {
+        "color": {
+          "background": "#fff",
+          "foreground": "#444",
+          "id": "0",
+          "$type": "FieldStyle"
+        },
+        "name": "Core. Indexing",
+        "id": "127-860",
+        "$type": "OwnedBundleElement"
+      },
+      "Affected versions": [],
+      "Included in builds": []
+    }
+  },
+  "issueId": "25-3795905",
+  "imageHeaders": "CENSORED"
+}
+2022-03-14T05:42:15.700Z: Router(navigate) Issue
+2022-03-14T05:42:15.748Z: Loading issue "25-3795905"
+2022-03-14T05:42:15.749Z: "GET" to https://youtrack.jetbrains.com/api/issues/25-3795905?fields=id,idReadable,summary,description,resolved,created,votes,updated,wikifiedDescription,usesMarkdown,comments(id),watchers(hasStar),voters(hasVote),project($type,id,name,archived,shortName,ringId,template,plugins(timeTrackingSettings(enabled,timeSpent(id,field(id,name))))),reporter(id,fullName,login,ringId,avatarUrl,name),updater(id,fullName,login,ringId,avatarUrl,name),fields($type,id,name,hasStateMachine,value($type,id,name,ringId,fullName,avatarUrl,login,minutes,presentation,text,isResolved,color(id,background,foreground)),projectCustomField($type,id,ordinal,canBeEmpty,emptyFieldText,isPublic,bundle(id,isUpdateable),field(id,name,ordinal,fieldType(valueType,isMultiValue)),defaultValues($type,id,name,description,ordinal,ringId,login,released,archived,isResolved,owner(ringId,login),color(id,background,foreground)))),tags(name,id,query,color(id,background,foreground)),attachments(id,name,url,thumbnailURL,mimeType,imageDimension(width,height),imageDimensions(width,height),author(ringId)),visibility($type,permittedGroups($type,id,name,allUsersGroup),permittedUsers(id,fullName,login,ringId,avatarUrl,name),implicitPermittedUsers(id,fullName,login,ringId,avatarUrl,name))&$top=-1
+2022-03-14T05:42:15.925Z: Issue "25-3795905" loaded
+2022-03-14T05:42:15.937Z: "GET" to https://youtrack.jetbrains.com/api/issues/25-3795905/links?fields=direction,issuesSize,linkType(sourceToTarget,localizedSourceToTarget,targetToSource,localizedTargetToSource)&$top=-1
+2022-03-14T05:42:15.954Z: "GET" to https://youtrack.jetbrains.com/api/issues/25-3795905/links?fields=direction,issuesSize,linkType(sourceToTarget,localizedSourceToTarget,targetToSource,localizedTargetToSource)&$top=-1
+2022-03-14T05:42:16.087Z: "25-3795905" linked issues title data loaded
+2022-03-14T05:42:16.103Z: "25-3795905" linked issues title data loaded
+2022-03-14T05:42:29.098Z: {
+  "imageHeaders": "CENSORED"
+}
+2022-03-14T05:42:29.098Z: Router(navigate) AgileBoard
+2022-03-14T05:42:29.100Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:42:29.100Z: Flushing storage part
+2022-03-14T05:42:29.110Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:42:29.110Z: Flushing storage part
+2022-03-14T05:42:29.137Z: "GET" to https://youtrack.jetbrains.com/api/agileUserProfile?fields=defaultAgile%28id%2Cname%2Csprints%28id%2Cname%2Cstart%2Cfinish%29%2CcurrentSprint%28id%2Cname%2Cstart%2Cfinish%29%29%2CvisitedSprints%28id%2Cname%2Cagile%28id%29%29&$top=-1
+2022-03-14T05:42:29.778Z: BigDataTools
+2022-03-14T05:42:29.778Z: Loading Default Agile board
+2022-03-14T05:42:29.778Z: "POST" to https://youtrack.jetbrains.com/api/agileUserProfile?fields=defaultAgile%28id%2Cname%2Csprints%28id%2Cname%2Cstart%2Cfinish%29%2CcurrentSprint%28id%2Cname%2Cstart%2Cfinish%29%29%2CvisitedSprints%28id%2Cname%2Cagile%28id%29%29&$top=-1 with body |{"defaultAgile":{"id":"153-1270"}}|
+2022-03-14T05:42:29.994Z: "GET" to https://youtrack.jetbrains.com/api/agiles/153-1270?fields=id%2Cname%2Cstatus%28errors%2Cvalid%29%2CsprintsSettings%28disableSprints%29%2ChideOrphansSwimlane&$top=-1
+2022-03-14T05:42:29.994Z: Loading: Board BigDataTools, Sprint = GA 1.5
+2022-03-14T05:42:30.104Z: "GET" to https://youtrack.jetbrains.com/api/agiles/153-1270/sprints/155-12463?fields=id%2Cname%2Cstart%2Cfinish%2Cboard%28id%2Cname%2Ccolumns%28id%2Ccollapsed%2CagileColumn%28id%2Ccollapsed%2CisVisible%2CfieldValues%28presentation%2Cid%29%29%29%2CorphanRow%28id%2Cname%2Ccollapsed%2Cissue%28id%2CidReadable%2Csummary%29%2Ccells%28id%2Ccolumn%28id%29%2Cissues%28id%2CidReadable%2Csummary%2Cfields%28%24type%2Cid%2Cvalue%28id%29%2CprojectCustomField%28field%28id%2Cname%29%29%29%29%29%29%2CtrimmedSwimlanes%28id%2Cname%2Ccollapsed%2Cissue%28id%2CidReadable%2Csummary%29%2Ccells%28id%2Ccolumn%28id%29%2Cissues%28id%2CidReadable%2Csummary%2Cfields%28%24type%2Cid%2Cvalue%28id%29%2CprojectCustomField%28field%28id%2Cname%29%29%29%29%29%29%29%2CeventSourceTicket%2Cagile%28id%2Cname%2CorphansAtTheTop%2CisUpdatable%2CestimationField%28id%29%2CcolorCoding%28id%2Cprototype%28id%2Cname%29%2CprojectColors%28id%2Ccolor%28id%2Cbackground%29%2Cproject%28id%29%29%29%29&%24topSwimlanes=15&%24skipSwimlanes=0&issuesQuery=
+2022-03-14T05:42:30.146Z: Loaded agile board 153-1270 status: true
+2022-03-14T05:42:30.256Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:42:30.256Z: Flushing storage part
+2022-03-14T05:42:30.373Z: "POST" to https://youtrack.jetbrains.com/api/agiles/153-1270/sprints/155-12463/sseSubscription?fields=ticket&$top=-1 with body |{"issuesQuery":""}|
+2022-03-14T05:42:30.511Z: "POST" to https://youtrack.jetbrains.com/api/issuesGetter?fields=id%2Cresolved%2Ctags%28name%2Cid%2Cquery%2Ccolor%28id%2Cbackground%2Cforeground%29%29%2Cproject%28id%2Cname%29%2Cfields%28id%2Cname%2Cvalue%28id%2Cname%2CavatarUrl%2Ccolor%28id%2Cbackground%29%2Cpresentation%29%2CprojectCustomField%28id%2Cfield%28id%2Cname%2CfieldType%28isMultiValue%29%29%29%29&$top=-1 with body |[{"id":"25-3053802"},{"id":"25-3212670"},{"id":"25-3223247"},{"id":"25-3223338"},{"id":"25-3223356"},{"id":"25-3230520"},{"id":"25-3231376"},{"id":"25-3238378"},{"id":"25-3238782"},{"id":"25-3290375"},{"id":"25-3290935"},{"id":"25-3364596"},{"id":"25-3364613"},{"id":"25-3366662"},{"id":"25-3369028"},{"id":"25-3409844"},{"id":"25-3433804"},{"id":"25-3476579"},{"id":"25-3483499"},{"id":"25-3483569"},{"id":"25-3487709"},{"id":"25-3538797"},{"id":"25-3538874"},{"id":"25-3538959"},{"id":"25-3546154"},{"id":"25-3553451"},{"id":"25-3616374"},{"id":"25-3616401"},{"id":"25-3676440"},{"id":"25-3680748"},{"id":"25-3683556"},{"id":"25-3683820"},{"id":"25-3706524"},{"id":"25-3712412"},{"id":"25-3714711"},{"id":"25-3762743"},{"id":"25-3765971"},{"id":"25-3514443"},{"id":"25-3599990"},{"id":"25-3269676"},{"id":"25-3282041"},{"id":"25-3397311"},{"id":"25-3419966"},{"id":"25-3430365"},{"id":"25-3430401"},{"id":"25-3430442"},{"id":"25-3430542"},{"id":"25-3432661"},{"id":"25-3444586"},{"id":"25-3444715"},{"id":"25-3518607"},{"id":"25-3541571"},{"id":"25-3544550"},{"id":"25-3557828"},{"id":"25-3583082"},{"id":"25-3596275"},{"id":"25-3624170"},{"id":"25-3639989"},{"id":"25-3656769"},{"id":"25-3670414"},{"id":"25-3677091"},{"id":"25-3678456"},{"id":"25-3699260"},{"id":"25-3699416"},{"id":"25-3707090"},{"id":"25-3714031"},{"id":"25-3717614"},{"id":"25-3726098"},{"id":"25-3735681"},{"id":"25-2607540"},{"id":"25-2961139"},{"id":"25-3123860"},{"id":"25-3188446"},{"id":"25-3232072"},{"id":"25-3272571"},{"id":"25-3377726"},{"id":"25-3412982"},{"id":"25-3479624"},{"id":"25-3491433"},{"id":"25-3501377"},{"id":"25-3514440"},{"id":"25-3547078"},{"id":"25-3557838"},{"id":"25-3561590"},{"id":"25-3583081"},{"id":"25-3596081"},{"id":"25-3616437"},{"id":"25-3641477"},{"id":"25-3649599"},{"id":"25-3649639"},{"id":"25-3655277"},{"id":"25-3656759"},{"id":"25-3669583"},{"id":"25-3670120"},{"id":"25-3673052"},{"id":"25-3673137"},{"id":"25-3673556"},{"id":"25-3679950"},{"id":"25-3680395"},{"id":"25-3689542"},{"id":"25-3696902"},{"id":"25-3698294"},{"id":"25-3703364"},{"id":"25-3705077"},{"id":"25-3716958"},{"id":"25-3718765"},{"id":"25-3725918"},{"id":"25-3730744"},{"id":"25-3738742"},{"id":"25-3744695"},{"id":"25-3744955"},{"id":"25-3755993"},{"id":"25-3758031"},{"id":"25-3758689"}]|
+2022-03-14T05:42:30.511Z: "POST" to https://youtrack.jetbrains.com/api/agileUserProfile?fields=defaultAgile%28id%2Cname%2Csprints%28id%2Cname%2Cstart%2Cfinish%29%2CcurrentSprint%28id%2Cname%2Cstart%2Cfinish%29%29%2CvisitedSprints%28id%2Cname%2Cagile%28id%29%29&$top=-1 with body |{"visitedSprints":[{"id":"155-12463"}]}|
+2022-03-14T05:42:30.512Z: Sprint 155-12463 (agileBoardId="153-1270") has been loaded
+2022-03-14T05:42:30.970Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:42:30.970Z: Flushing storage part
+2022-03-14T05:42:31.997Z: SSE connection opened
+2022-03-14T05:42:37.482Z: Opening issue "25-3053802" from Agile Board
+2022-03-14T05:42:37.499Z: {
+  "issuePlaceholder": {
+    "idReadable": "BDIDE-1417",
+    "summary": "After enabling Zeppelin connection in Big Data Tools, the stacktrace analysis resolves to only the zeppelin server's library versions",
+    "fields": [
+      {
+        "projectCustomField": {
+          "field": {
+            "fieldType": {
+              "isMultiValue": false,
+              "$type": "FieldType"
+            },
+            "name": "Priority",
+            "id": "112-24",
+            "$type": "CustomField"
+          },
+          "id": "123-3217",
+          "$type": "EnumProjectCustomField"
+        },
+        "value": {
+          "color": {
+            "background": "#ffee9c",
+            "id": "18",
+            "$type": "FieldStyle"
+          },
+          "name": "Major",
+          "id": "118-54",
+          "$type": "EnumBundleElement"
+        },
+        "name": "Priority",
+        "id": "123-3217",
+        "$type": "SingleEnumIssueCustomField"
+      },
+      {
+        "projectCustomField": {
+          "field": {
+            "fieldType": {
+              "isMultiValue": false,
+              "$type": "FieldType"
+            },
+            "name": "Type",
+            "id": "112-23",
+            "$type": "CustomField"
+          },
+          "id": "123-3216",
+          "$type": "EnumProjectCustomField"
+        },
+        "value": {
+          "color": {
+            "background": "#fff",
+            "id": "0",
+            "$type": "FieldStyle"
+          },
+          "name": "Bug",
+          "id": "118-43",
+          "$type": "EnumBundleElement"
+        },
+        "name": "Type",
+        "id": "123-3216",
+        "$type": "SingleEnumIssueCustomField"
+      },
+      {
+        "projectCustomField": {
+          "field": {
+            "fieldType": {
+              "isMultiValue": true,
+              "$type": "FieldType"
+            },
+            "name": "Fix versions",
+            "id": "112-28",
+            "$type": "CustomField"
+          },
+          "id": "123-3221",
+          "$type": "VersionProjectCustomField"
+        },
+        "value": [],
+        "name": "Fix versions",
+        "id": "123-3221",
+        "$type": "MultiVersionIssueCustomField"
+      },
+      {
+        "value": {
+          "avatarUrl": "https://hub.jetbrains.com/api/rest/avatar/ee2f35c5-0669-4516-a5fe-3aa1cf517d8c?s=48&etag==MjgtMTU2MDA%3D",
+          "name": "Dmitry Naydanov",
+          "id": "11-24559",
+          "$type": "User"
+        },
+        "projectCustomField": {
+          "field": {
+            "fieldType": {
+              "isMultiValue": false,
+              "$type": "FieldType"
+            },
+            "name": "Assignee",
+            "id": "112-30",
+            "$type": "CustomField"
+          },
+          "id": "133-417",
+          "$type": "UserProjectCustomField"
+        },
+        "name": "Assignee",
+        "id": "133-417",
+        "$type": "SingleUserIssueCustomField"
+      },
+      {
+        "projectCustomField": {
+          "field": {
+            "fieldType": {
+              "isMultiValue": false,
+              "$type": "FieldType"
+            },
+            "name": "Subsystem",
+            "id": "112-26",
+            "$type": "CustomField"
+          },
+          "id": "123-3219",
+          "$type": "OwnedProjectCustomField"
+        },
+        "value": null,
+        "name": "Subsystem",
+        "id": "123-3219",
+        "$type": "SingleOwnedIssueCustomField"
+      },
+      {
+        "projectCustomField": {
+          "field": {
+            "fieldType": {
+              "isMultiValue": true,
+              "$type": "FieldType"
+            },
+            "name": "Affected versions",
+            "id": "112-27",
+            "$type": "CustomField"
+          },
+          "id": "123-3220",
+          "$type": "VersionProjectCustomField"
+        },
+        "value": [],
+        "name": "Affected versions",
+        "id": "123-3220",
+        "$type": "MultiVersionIssueCustomField"
+      },
+      {
+        "projectCustomField": {
+          "field": {
+            "fieldType": {
+              "isMultiValue": false,
+              "$type": "FieldType"
+            },
+            "name": "Fixed in build",
+            "id": "112-29",
+            "$type": "CustomField"
+          },
+          "id": "123-3222",
+          "$type": "BuildProjectCustomField"
+        },
+        "value": null,
+        "name": "Fixed in build",
+        "id": "123-3222",
+        "$type": "SingleBuildIssueCustomField"
+      },
+      {
+        "projectCustomField": {
+          "field": {
+            "fieldType": {
+              "isMultiValue": false,
+              "$type": "FieldType"
+            },
+            "name": "State",
+            "id": "112-25",
+            "$type": "CustomField"
+          },
+          "id": "123-3218",
+          "$type": "StateProjectCustomField"
+        },
+        "value": {
+          "color": {
+            "background": "#fff",
+            "id": "0",
+            "$type": "FieldStyle"
+          },
+          "name": "Submitted",
+          "id": "125-0",
+          "$type": "StateBundleElement"
+        },
+        "name": "State",
+        "id": "123-3218",
+        "$type": "StateIssueCustomField"
+      },
+      {
+        "projectCustomField": {
+          "field": {
+            "fieldType": {
+              "isMultiValue": false,
+              "$type": "FieldType"
+            },
+            "name": "Milestone",
+            "id": "112-543",
+            "$type": "CustomField"
+          },
+          "id": "123-3733",
+          "$type": "VersionProjectCustomField"
+        },
+        "value": null,
+        "name": "Milestone",
+        "id": "123-3733",
+        "$type": "SingleVersionIssueCustomField"
+      },
+      {
+        "value": {
+          "presentation": "4h",
+          "id": "PT4H",
+          "$type": "PeriodValue"
+        },
+        "projectCustomField": {
+          "field": {
+            "fieldType": {
+              "isMultiValue": false,
+              "$type": "FieldType"
+            },
+            "name": "Estimated time",
+            "id": "112-179",
+            "$type": "CustomField"
+          },
+          "id": "170-158",
+          "$type": "PeriodProjectCustomField"
+        },
+        "name": "Estimated time",
+        "id": "170-158",
+        "$type": "PeriodIssueCustomField"
+      }
+    ],
+    "id": "25-3053802",
+    "$type": "Issue",
+    "project": {
+      "name": "Big Data IDE",
+      "id": "22-298",
+      "$type": "Project"
+    },
+    "resolved": null,
+    "tags": []
+  },
+  "issueId": "25-3053802",
+  "imageHeaders": "CENSORED"
+}
+2022-03-14T05:42:37.497Z: Router(navigate) Issue
+2022-03-14T05:42:37.576Z: Loading issue "25-3053802"
+2022-03-14T05:42:37.577Z: "GET" to https://youtrack.jetbrains.com/api/issues/25-3053802?fields=id,idReadable,summary,description,resolved,created,votes,updated,wikifiedDescription,usesMarkdown,comments(id),watchers(hasStar),voters(hasVote),project($type,id,name,archived,shortName,ringId,template,plugins(timeTrackingSettings(enabled,timeSpent(id,field(id,name))))),reporter(id,fullName,login,ringId,avatarUrl,name),updater(id,fullName,login,ringId,avatarUrl,name),fields($type,id,name,hasStateMachine,value($type,id,name,ringId,fullName,avatarUrl,login,minutes,presentation,text,isResolved,color(id,background,foreground)),projectCustomField($type,id,ordinal,canBeEmpty,emptyFieldText,isPublic,bundle(id,isUpdateable),field(id,name,ordinal,fieldType(valueType,isMultiValue)),defaultValues($type,id,name,description,ordinal,ringId,login,released,archived,isResolved,owner(ringId,login),color(id,background,foreground)))),tags(name,id,query,color(id,background,foreground)),attachments(id,name,url,thumbnailURL,mimeType,imageDimension(width,height),imageDimensions(width,height),author(ringId)),visibility($type,permittedGroups($type,id,name,allUsersGroup),permittedUsers(id,fullName,login,ringId,avatarUrl,name),implicitPermittedUsers(id,fullName,login,ringId,avatarUrl,name))&$top=-1
+2022-03-14T05:42:37.756Z: Issue "25-3053802" loaded
+2022-03-14T05:42:37.770Z: "GET" to https://youtrack.jetbrains.com/api/issues/25-3053802/links?fields=direction,issuesSize,linkType(sourceToTarget,localizedSourceToTarget,targetToSource,localizedTargetToSource)&$top=-1
+2022-03-14T05:42:37.793Z: "GET" to https://youtrack.jetbrains.com/api/issues/25-3053802/links?fields=direction,issuesSize,linkType(sourceToTarget,localizedSourceToTarget,targetToSource,localizedTargetToSource)&$top=-1
+2022-03-14T05:42:37.921Z: "25-3053802" linked issues title data loaded
+2022-03-14T05:42:37.944Z: "25-3053802" linked issues title data loaded
+2022-03-14T05:42:40.185Z: Loading activities...
+2022-03-14T05:42:40.186Z: "GET" to https://youtrack.jetbrains.com/api/issues/25-3053802/activitiesPage?categories=CommentsCategory,AttachmentsCategory,AttachmentRenameCategory,CustomFieldCategory,DescriptionCategory,IssueCreatedCategory,IssueResolvedCategory,LinksCategory,ProjectCategory,PermittedGroupCategory,SprintCategory,SummaryCategory,TagsCategory,WorkItemCategory,VcsChangeCategory,PullRequestChangeCategory&%24top=100&reverse=true&fields=activities(id,timestamp,targetMember,targetSubMember,authorGroup(icon,name),author(id,fullName,login,ringId,avatarUrl,name),category(id),target(id,created,usesMarkdown),field(linkId,id,presentation,customField(id,fieldType(isMultiValue,valueType))),pullRequest(id,noUserReason(id),noHubUserReason(id),fetched,files,userName,date,fetched,url,text,title,idExternal,user(id,fullName,avatarUrl),author(id,fullName,avatarUrl)),added(shortName,id,name,text,color(id),id,text,usesMarkdown,author(id,fullName,login,ringId,avatarUrl,name),visibility($type,permittedGroups($type,id,name,allUsersGroup),permittedUsers(id,fullName,login,ringId,avatarUrl,name),implicitPermittedUsers(id,fullName,login,ringId,avatarUrl,name)),created,deleted,attachments(id,name,url,thumbnailURL,mimeType,imageDimension(width,height),imageDimensions(width,height),author(ringId)),id,idReadable,summary,resolved,created,updated,project($type,id,name,archived,shortName,ringId,template,plugins(timeTrackingSettings(enabled,timeSpent(id,field(id,name))))),$type,date,type(id,name),duration(presentation),issue(id,project(id,ringId)),reactionOrder,reactions(id,reaction,author(id,fullName,avatarUrl)),commands(hasError,errorText,start,end),created,date,fetched,files,id,noHubUserReason(id),noUserReason(id),reopened,state(id),user(id,fullName,avatarUrl),userName,version,processors($type,id),urls),removed(shortName,id,name,text,color(id),id,created,deleted,id,idReadable,summary,resolved,created,updated,project($type,id,name,archived,shortName,ringId,template,plugins(timeTrackingSettings(enabled,timeSpent(id,field(id,name))))))),cursor,till
+2022-03-14T05:42:40.186Z: "GET" to https://youtrack.jetbrains.com/api/issues/25-3053802?fields=draftComment%28id%2Ctext%2CusesMarkdown%2Cauthor%28id%2CfullName%2Clogin%2CringId%2CavatarUrl%2Cname%29%2Cvisibility%28%24type%2CpermittedGroups%28%24type%2Cid%2Cname%2CallUsersGroup%29%2CpermittedUsers%28id%2CfullName%2Clogin%2CringId%2CavatarUrl%2Cname%29%2CimplicitPermittedUsers%28id%2CfullName%2Clogin%2CringId%2CavatarUrl%2Cname%29%29%2Ccreated%2Cdeleted%2Cattachments%28id%2Cname%2Curl%2CthumbnailURL%2CmimeType%2CimageDimension%28width%2Cheight%29%2CimageDimensions%28width%2Cheight%29%2Cauthor%28ringId%29%29%29&$top=-1
+2022-03-14T05:42:40.425Z: Received activities
+2022-03-14T05:42:57.279Z: {
+  "imageHeaders": "CENSORED"
+}
+2022-03-14T05:42:57.279Z: Router(navigate) Inbox
+2022-03-14T05:42:57.280Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:42:57.280Z: Flushing storage part
+2022-03-14T05:42:57.366Z: Force close SSE
+2022-03-14T05:42:57.373Z: "GET" to https://youtrack.jetbrains.com/api/users/notifications?fields=id,sender(login,fullName,email,avatarUrl),recipient(login),metadata&reverse=true&since=1646631777373&$top=10&$skip=0&uncompressed=true
+2022-03-14T05:42:57.374Z: "GET" to https://youtrack.jetbrains.com/api/users/me/reactionsFeed?$skip=0&$top=10&ignoreLicenseErrors=true&fields=added,comment(created,deleted,id,issue(id,idReadable,resolved,summary),reactionOrder,reactions(author(fullName,id,isLocked),id,reaction),text),id,reaction(author(fullName,id,isLocked),reaction),timestamp
+2022-03-14T05:42:57.542Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:42:57.542Z: Flushing storage part
+2022-03-14T05:42:58.491Z: {
+  "imageHeaders": "CENSORED"
+}
+2022-03-14T05:42:58.491Z: Router(navigate) KnowledgeBase
+2022-03-14T05:42:58.492Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:42:58.492Z: Flushing storage part
+2022-03-14T05:42:58.532Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:42:58.532Z: Flushing storage part
+2022-03-14T05:42:58.533Z: Loading articles per project
+2022-03-14T05:42:58.533Z: "GET" to https://youtrack.jetbrains.com/api/issueFolders?pinned=true&$top=100&$skip=0&fields=id%2Cname%2CringId%2Cpinned%2Ctemplate
+2022-03-14T05:42:58.759Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:42:58.758Z: Flushing storage part
+2022-03-14T05:42:59.814Z: {
+  "imageHeaders": "CENSORED"
+}
+2022-03-14T05:42:59.814Z: Router(navigate) Settings
+2022-03-14T05:42:59.816Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:42:59.815Z: Flushing storage part
+2022-03-14T05:43:04.256Z: {
+  "imageHeaders": "CENSORED"
+}
+2022-03-14T05:43:04.255Z: Router(navigate) Issues
+2022-03-14T05:43:04.259Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:43:04.259Z: Flushing storage part
+2022-03-14T05:43:04.316Z: Loaded 10 cached issues
+2022-03-14T05:43:04.316Z: Loading issues...
+2022-03-14T05:43:04.316Z: "GET" to https://youtrack.jetbrains.com/api/issues?$top=10&$skip=0&query=&fields=id,idReadable,summary,resolved,created,updated,project($type,id,name,archived,shortName,ringId,template,plugins(timeTrackingSettings(enabled,timeSpent(id,field(id,name))))),reporter(id,fullName,login,ringId,avatarUrl,name),fields(id,name,$type,value(id,name,ringId,avatarUrl,login,presentation,color(id,background,foreground)),projectCustomField(field(id,name))),tags(name,id,query,color(id,background,foreground))
+2022-03-14T05:43:04.317Z: "POST" to https://youtrack.jetbrains.com/api/issuesGetter/count?fields=count&$top=-1 with body |{"folder":null,"query":null,"unresolvedOnly":false}|
+2022-03-14T05:43:04.318Z: "POST" to https://youtrack.jetbrains.com/api/search/assist/?fields=query,sortProperties($type,id,asc,readOnly,localizedName,sortField($type,id,localizedName,name,defaultSortAsc,sortablePresentation),folder(id))&$top=-1 with body |{"query":""}|
+2022-03-14T05:43:04.547Z: 10 issues loaded
+2022-03-14T05:43:04.562Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:43:04.562Z: Flushing storage part
+2022-03-14T05:43:05.979Z: {
+  "imageHeaders": "CENSORED"
+}
+2022-03-14T05:43:05.979Z: Router(navigate) AgileBoard
+2022-03-14T05:43:05.981Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:43:05.981Z: Flushing storage part
+2022-03-14T05:43:06.001Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:43:06.000Z: Flushing storage part
+2022-03-14T05:43:06.178Z: "GET" to https://youtrack.jetbrains.com/api/agileUserProfile?fields=defaultAgile%28id%2Cname%2Csprints%28id%2Cname%2Cstart%2Cfinish%29%2CcurrentSprint%28id%2Cname%2Cstart%2Cfinish%29%29%2CvisitedSprints%28id%2Cname%2Cagile%28id%29%29&$top=-1
+2022-03-14T05:43:06.332Z: BigDataTools
+2022-03-14T05:43:06.332Z: Loading Default Agile board
+2022-03-14T05:43:06.332Z: "POST" to https://youtrack.jetbrains.com/api/agileUserProfile?fields=defaultAgile%28id%2Cname%2Csprints%28id%2Cname%2Cstart%2Cfinish%29%2CcurrentSprint%28id%2Cname%2Cstart%2Cfinish%29%29%2CvisitedSprints%28id%2Cname%2Cagile%28id%29%29&$top=-1 with body |{"defaultAgile":{"id":"153-1270"}}|
+2022-03-14T05:43:06.376Z: "GET" to https://youtrack.jetbrains.com/api/agiles/153-1270?fields=id%2Cname%2Cstatus%28errors%2Cvalid%29%2CsprintsSettings%28disableSprints%29%2ChideOrphansSwimlane&$top=-1
+2022-03-14T05:43:06.377Z: Loading: Board BigDataTools, Sprint = GA 1.5
+2022-03-14T05:43:06.415Z: "GET" to https://youtrack.jetbrains.com/api/agiles/153-1270/sprints/155-12463?fields=id%2Cname%2Cstart%2Cfinish%2Cboard%28id%2Cname%2Ccolumns%28id%2Ccollapsed%2CagileColumn%28id%2Ccollapsed%2CisVisible%2CfieldValues%28presentation%2Cid%29%29%29%2CorphanRow%28id%2Cname%2Ccollapsed%2Cissue%28id%2CidReadable%2Csummary%29%2Ccells%28id%2Ccolumn%28id%29%2Cissues%28id%2CidReadable%2Csummary%2Cfields%28%24type%2Cid%2Cvalue%28id%29%2CprojectCustomField%28field%28id%2Cname%29%29%29%29%29%29%2CtrimmedSwimlanes%28id%2Cname%2Ccollapsed%2Cissue%28id%2CidReadable%2Csummary%29%2Ccells%28id%2Ccolumn%28id%29%2Cissues%28id%2CidReadable%2Csummary%2Cfields%28%24type%2Cid%2Cvalue%28id%29%2CprojectCustomField%28field%28id%2Cname%29%29%29%29%29%29%29%2CeventSourceTicket%2Cagile%28id%2Cname%2CorphansAtTheTop%2CisUpdatable%2CestimationField%28id%29%2CcolorCoding%28id%2Cprototype%28id%2Cname%29%2CprojectColors%28id%2Ccolor%28id%2Cbackground%29%2Cproject%28id%29%29%29%29&%24topSwimlanes=15&%24skipSwimlanes=0&issuesQuery=
+2022-03-14T05:43:06.523Z: Loaded agile board 153-1270 status: true
+2022-03-14T05:43:06.572Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:43:06.572Z: Flushing storage part
+2022-03-14T05:43:06.702Z: "POST" to https://youtrack.jetbrains.com/api/agiles/153-1270/sprints/155-12463/sseSubscription?fields=ticket&$top=-1 with body |{"issuesQuery":""}|
+2022-03-14T05:43:06.859Z: "POST" to https://youtrack.jetbrains.com/api/issuesGetter?fields=id%2Cresolved%2Ctags%28name%2Cid%2Cquery%2Ccolor%28id%2Cbackground%2Cforeground%29%29%2Cproject%28id%2Cname%29%2Cfields%28id%2Cname%2Cvalue%28id%2Cname%2CavatarUrl%2Ccolor%28id%2Cbackground%29%2Cpresentation%29%2CprojectCustomField%28id%2Cfield%28id%2Cname%2CfieldType%28isMultiValue%29%29%29%29&$top=-1 with body |[{"id":"25-3053802"},{"id":"25-3212670"},{"id":"25-3223247"},{"id":"25-3223338"},{"id":"25-3223356"},{"id":"25-3230520"},{"id":"25-3231376"},{"id":"25-3238378"},{"id":"25-3238782"},{"id":"25-3290375"},{"id":"25-3290935"},{"id":"25-3364596"},{"id":"25-3364613"},{"id":"25-3366662"},{"id":"25-3369028"},{"id":"25-3409844"},{"id":"25-3433804"},{"id":"25-3476579"},{"id":"25-3483499"},{"id":"25-3483569"},{"id":"25-3487709"},{"id":"25-3538797"},{"id":"25-3538874"},{"id":"25-3538959"},{"id":"25-3546154"},{"id":"25-3553451"},{"id":"25-3616374"},{"id":"25-3616401"},{"id":"25-3676440"},{"id":"25-3680748"},{"id":"25-3683556"},{"id":"25-3683820"},{"id":"25-3706524"},{"id":"25-3712412"},{"id":"25-3714711"},{"id":"25-3762743"},{"id":"25-3765971"},{"id":"25-3514443"},{"id":"25-3599990"},{"id":"25-3269676"},{"id":"25-3282041"},{"id":"25-3397311"},{"id":"25-3419966"},{"id":"25-3430365"},{"id":"25-3430401"},{"id":"25-3430442"},{"id":"25-3430542"},{"id":"25-3432661"},{"id":"25-3444586"},{"id":"25-3444715"},{"id":"25-3518607"},{"id":"25-3541571"},{"id":"25-3544550"},{"id":"25-3557828"},{"id":"25-3583082"},{"id":"25-3596275"},{"id":"25-3624170"},{"id":"25-3639989"},{"id":"25-3656769"},{"id":"25-3670414"},{"id":"25-3677091"},{"id":"25-3678456"},{"id":"25-3699260"},{"id":"25-3699416"},{"id":"25-3707090"},{"id":"25-3714031"},{"id":"25-3717614"},{"id":"25-3726098"},{"id":"25-3735681"},{"id":"25-2607540"},{"id":"25-2961139"},{"id":"25-3123860"},{"id":"25-3188446"},{"id":"25-3232072"},{"id":"25-3272571"},{"id":"25-3377726"},{"id":"25-3412982"},{"id":"25-3479624"},{"id":"25-3491433"},{"id":"25-3501377"},{"id":"25-3514440"},{"id":"25-3547078"},{"id":"25-3557838"},{"id":"25-3561590"},{"id":"25-3583081"},{"id":"25-3596081"},{"id":"25-3616437"},{"id":"25-3641477"},{"id":"25-3649599"},{"id":"25-3649639"},{"id":"25-3655277"},{"id":"25-3656759"},{"id":"25-3669583"},{"id":"25-3670120"},{"id":"25-3673052"},{"id":"25-3673137"},{"id":"25-3673556"},{"id":"25-3679950"},{"id":"25-3680395"},{"id":"25-3689542"},{"id":"25-3696902"},{"id":"25-3698294"},{"id":"25-3703364"},{"id":"25-3705077"},{"id":"25-3716958"},{"id":"25-3718765"},{"id":"25-3725918"},{"id":"25-3730744"},{"id":"25-3738742"},{"id":"25-3744695"},{"id":"25-3744955"},{"id":"25-3755993"},{"id":"25-3758031"},{"id":"25-3758689"}]|
+2022-03-14T05:43:06.861Z: "POST" to https://youtrack.jetbrains.com/api/agileUserProfile?fields=defaultAgile%28id%2Cname%2Csprints%28id%2Cname%2Cstart%2Cfinish%29%2CcurrentSprint%28id%2Cname%2Cstart%2Cfinish%29%29%2CvisitedSprints%28id%2Cname%2Cagile%28id%29%29&$top=-1 with body |{"visitedSprints":[{"id":"155-12463"}]}|
+2022-03-14T05:43:06.863Z: Sprint 155-12463 (agileBoardId="153-1270") has been loaded
+2022-03-14T05:43:07.253Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:43:07.253Z: Flushing storage part
+2022-03-14T05:43:11.252Z: "GET" to https://youtrack.jetbrains.com/api/agiles?fields=id%2Cname%2Cfavorite%2Csprints%28id%2Cname%29&templates=false&$top=-1
+2022-03-14T05:43:16.864Z: {
+  "imageHeaders": "CENSORED"
+}
+2022-03-14T05:43:16.864Z: Router(navigate) Issues
+2022-03-14T05:43:16.866Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:43:16.866Z: Flushing storage part
+2022-03-14T05:43:16.915Z: Force close SSE
+2022-03-14T05:43:16.924Z: Loaded 10 cached issues
+2022-03-14T05:43:16.925Z: Loading issues...
+2022-03-14T05:43:16.925Z: "GET" to https://youtrack.jetbrains.com/api/issues?$top=10&$skip=0&query=&fields=id,idReadable,summary,resolved,created,updated,project($type,id,name,archived,shortName,ringId,template,plugins(timeTrackingSettings(enabled,timeSpent(id,field(id,name))))),reporter(id,fullName,login,ringId,avatarUrl,name),fields(id,name,$type,value(id,name,ringId,avatarUrl,login,presentation,color(id,background,foreground)),projectCustomField(field(id,name))),tags(name,id,query,color(id,background,foreground))
+2022-03-14T05:43:16.925Z: "POST" to https://youtrack.jetbrains.com/api/issuesGetter/count?fields=count&$top=-1 with body |{"folder":null,"query":null,"unresolvedOnly":false}|
+2022-03-14T05:43:16.933Z: "POST" to https://youtrack.jetbrains.com/api/search/assist/?fields=query,sortProperties($type,id,asc,readOnly,localizedName,sortField($type,id,localizedName,name,defaultSortAsc,sortablePresentation),folder(id))&$top=-1 with body |{"query":""}|
+2022-03-14T05:43:17.159Z: 10 issues loaded
+2022-03-14T05:43:17.171Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:43:17.171Z: Flushing storage part
+2022-03-14T05:43:19.063Z: {
+  "imageHeaders": "CENSORED"
+}
+2022-03-14T05:43:19.063Z: Router(navigate) KnowledgeBase
+2022-03-14T05:43:19.064Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:43:19.064Z: Flushing storage part
+2022-03-14T05:43:19.154Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:43:19.154Z: Flushing storage part
+2022-03-14T05:43:19.154Z: Loading articles per project
+2022-03-14T05:43:19.154Z: "GET" to https://youtrack.jetbrains.com/api/issueFolders?pinned=true&$top=100&$skip=0&fields=id%2Cname%2CringId%2Cpinned%2Ctemplate
+2022-03-14T05:43:19.491Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:43:19.491Z: Flushing storage part
+2022-03-14T05:43:20.188Z: APP STATE: INACTIVE
+2022-03-14T05:43:20.281Z: APP STATE: ACTIVE
+2022-03-14T05:43:23.888Z: APP STATE: INACTIVE
+2022-03-14T05:43:25.202Z: APP STATE: ACTIVE
+2022-03-14T05:43:26.018Z: APP STATE: INACTIVE
+2022-03-14T05:43:26.568Z: APP STATE: ACTIVE
+2022-03-14T05:43:27.494Z: {
+  "imageHeaders": "CENSORED"
+}
+2022-03-14T05:43:27.493Z: Router(navigate) Settings
+2022-03-14T05:43:27.495Z: {
+  "issuesCache": "CENSORED",
+  "inboxCache": "CENSORED"
+}
+2022-03-14T05:43:27.495Z: Flushing storage part
+2022-03-14T05:43:35.563Z: {
+  "children": {
+    "key": null,
+    "ref": null,
+    "props": {},
+    "_owner": null
+  },
+  "imageHeaders": "CENSORED"
+}
+2022-03-14T05:43:35.563Z: Router(navigate) Page
+2022-03-14T05:45:27.484Z: APP STATE: INACTIVE
+2022-03-14T05:45:29.259Z: APP STATE: ACTIVE

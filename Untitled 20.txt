@@ -1,0 +1,802 @@
+{
+    "complete": [
+        {
+            "_score": 9,
+            "componentType": "do",
+            "content": {
+                "coverMetadata": [
+                    {
+                        "body": "Let us find the keywords customers use to search for businesses like yours",
+                        "ctas": [
+                            {
+                                "action": {
+                                    "type": "URL",
+                                    "value": "https://searchenginevisibility.godaddy.com/v2/externalapplaunch?account_uid={compound.wsbvnext.accountId}&appLink=VNEXT&ua_placement=post_publish_modal"
+                                },
+                                "text": "Start"
+                            }
+                        ],
+                        "image": {
+                            "text": "Boost your visibility ",
+                            "type": "image",
+                            "value": "suggestionCard-zero-state-goCentralMarketing.svg"
+                        },
+                        "step": "initial",
+                        "title": "Boost your visibility ",
+                        "type": "Do-Cover-Initial"
+                    }
+                ],
+                "sectionTitle": "Boost your visibility "
+            },
+            "contentSchema": {},
+            "dataBinding": {
+                "compound": {
+                    "mktgasst": {
+                        "type": "mktgasst",
+                        "id": "b9e957e4-3406-11ee-8336-3417ebe73f23",
+                        "features": {
+                            "actionPlan": {
+                                "assessmentLevel": 1,
+                                "assessmentScore": 0,
+                                "completedGuidancesScore": 0,
+                                "currentGuidanceScore": 0,
+                                "introAcknowledgeDate": ""
+                            },
+                            "gmb": {
+                                "gmbApiAccountId": "114116240372964394428",
+                                "status": "MANUAL_VERIFICATION",
+                                "gmbBusinessType": "SERVICE",
+                                "hasGMBBusiness": true,
+                                "hasGMBAuthentication": true,
+                                "hasGMBOnlineBusiness": false,
+                                "hasDataQualityFixPending": false,
+                                "hasGMBStarted": true,
+                                "hasGMBLocation": true,
+                                "hasGMBPublished": false,
+                                "hasGMBPending": false,
+                                "hasGMBHours": false,
+                                "hasGMBDescription": false,
+                                "hasSubmittedToOneSpace": true,
+                                "hasValidCategory": true,
+                                "photos": {
+                                    "counts": {}
+                                },
+                                "shouldConnectListing": false
+                            },
+                            "instagram": {
+                                "hasDashboardPermissions": false,
+                                "isConnected": false
+                            },
+                            "twitter": {
+                                "hasDashboardPermissions": false,
+                                "isConnected": false
+                            },
+                            "yelp": {
+                                "yelpBusinessType": "SERVICE",
+                                "hasYelpApprovedClaim": false,
+                                "hasYelpBusiness": true,
+                                "hasYelpAuthentication": true,
+                                "hasCompletedYelpFlow": true,
+                                "hasYelpOnlineOnlyBusiness": false,
+                                "hasYelpStarted": true,
+                                "hasYelpLocation": true,
+                                "hasYelpPublished": false,
+                                "hasYelpPending": false,
+                                "hasYelpHours": false,
+                                "hasYelpDescription": false,
+                                "yelpBusinessId": "vwkMqH0eGCArhpncZ82rSA",
+                                "claimUrl": "https://biz.yelp.com/partner-claim/C61D2317B2CBA5899CA473DA4664FC01F6EA7B0A95C033A1/YeRRsr-iLqT4DZtClfB6ww/landing?utm_campaign=claim_business&utm_content=biz_owner_approve&utm_medium=partner_link&utm_source=claim_partner_link_158",
+                                "reverifyUrl": null
+                            },
+                            "facebook": {
+                                "isConnected": true,
+                                "socialWidgetData": {
+                                    "pageURL": ""
+                                }
+                            },
+                            "cardVerticalFilter": {
+                                "group": {
+                                    "DigitalMarketing-Insightly-SJtmlaNIX": 8,
+                                    "DigitalMarketing-Accelo-ByzHSTV8X": 8
+                                },
+                                "vertical": {}
+                            },
+                            "sev": {
+                                "businessType": "",
+                                "hasActivated": false,
+                                "hasHomepagePublished": false
+                            },
+                            "categoryReferrers": {
+                                "google": 7,
+                                "bing": 4,
+                                "facebook": 3,
+                                "yahoo": 3,
+                                "duckduckgo": 1,
+                                "yandex": 1,
+                                "t": 1,
+                                "myway": 1,
+                                "timer4web": 1,
+                                "linkedin": 1,
+                                "att": 1,
+                                "live": 1,
+                                "aol": 1,
+                                "instagram": 1,
+                                "ask": 1,
+                                "searchencrypt": 1,
+                                "godaddy": 1,
+                                "salesforce": 1
+                            }
+                        },
+                        "links": {
+                            "fbAdsDirect": "https://social.manager.godaddy.com/account/b9e957e4-3406-11ee-8336-3417ebe73f23/social/connect/fb/launch?redirectURL=https%3A%2F%2Fwww.facebook.com%2Fad_center%2Fcreate%2Fad%2F%3Fentry_point%3Dcreate_ad_cta%26page_id%3DLISTING_ID_TEMPLATE",
+                            "fbPageCreate": "https://dashboard.godaddy.com/fbPageCreate/558efa16-3168-4552-8fa5-da198b3d5adb?accountId=b9e957e4-3406-11ee-8336-3417ebe73f23",
+                            "sevLaunch": "https://searchenginevisibility.godaddy.com/externalappstart?account_uid=b9e957e4-3406-11ee-8336-3417ebe73f23&marketid=en-US&appLink=VNEXT",
+                            "gmbLaunch": "https://dashboard.godaddy.com/account/b9e957e4-3406-11ee-8336-3417ebe73f23/gmb",
+                            "gmbLaunchDescription": "https://dashboard.godaddy.com/account/b9e957e4-3406-11ee-8336-3417ebe73f23/gmb/description",
+                            "gmbLaunchHours": "https://dashboard.godaddy.com/account/b9e957e4-3406-11ee-8336-3417ebe73f23/gmb/hours",
+                            "gmbLaunchPhotos": "https://dashboard.godaddy.com/account/b9e957e4-3406-11ee-8336-3417ebe73f23/gmb/photos",
+                            "yelpLaunch": "https://dashboard.godaddy.com/account/b9e957e4-3406-11ee-8336-3417ebe73f23/yelp"
+                        },
+                        "states": {
+                            "gmb": {
+                                "state": "INTL_MANUAL_VERIFICATION_VERIFY",
+                                "error": "INTL_MANUAL_VERIFICATION_VERIFY"
+                            },
+                            "instagram": {},
+                            "twitter": {},
+                            "yelp": {
+                                "error": "DQ_REJECTED",
+                                "state": "DQ_REJECTED"
+                            },
+                            "facebook": {}
+                        }
+                    },
+                    "wsbvnext": {
+                        "type": "wsbvnext",
+                        "id": "558efa16-3168-4552-8fa5-da198b3d5adb",
+                        "accountId": "b9e957e4-3406-11ee-8336-3417ebe73f23",
+                        "createDate": "2023-08-06T03:10:11.200Z",
+                        "commerce": {
+                            "poyntStatus": "CREATED",
+                            "poyntBusinessId": "fa57c4bb-b91b-4a82-b6ef-a9f3ebc79bc2"
+                        },
+                        "domainName": "citibankdemobusiness.dev",
+                        "title": "#U",
+                        "accountCreationListingId": "wsb-vnext-freemat-3",
+                        "entitlementData": {},
+                        "features": {
+                            "planType": "freemiumV1",
+                            "isCanceled": false,
+                            "isCookieBannerEnabled": true,
+                            "isPlanTypeBusinessPlus": false,
+                            "isPlanTypeCommerce": false,
+                            "isMetricsBlocked": false,
+                            "isEligibleForFreeTrialUpgrade": false,
+                            "olsStatus": "",
+                            "olsInfoLastUpdatedTime": 1709326661024,
+                            "businessCategory": "publicservicesgovt",
+                            "externalDomainName": null,
+                            "status": "published",
+                            "minutesSinceCreate": 300587,
+                            "minutesSinceUpdate": 0,
+                            "minutesSinceFirstPublish": 299760,
+                            "minutesSincePublish": 37,
+                            "publishedTwiceOrMore": true,
+                            "published": true,
+                            "onboarded": true,
+                            "activated": true,
+                            "pathway": "mya",
+                            "fbPageId": "123921914136720",
+                            "instagramProfile": "",
+                            "websiteType": "gocentral",
+                            "yelpProfile": "",
+                            "userAddedLogo": true,
+                            "areSubscribersContacts": true
+                        },
+                        "customerIntentions": {
+                            "getNoticed": true,
+                            "localCustomers": true,
+                            "onlineStore": true,
+                            "onlineAppointments": true,
+                            "preloaded": {},
+                            "salesVolume": {}
+                        },
+                        "insight": {
+                            "gxExperimentsEndDate": ""
+                        },
+                        "links": {
+                            "blog": "https://blogging.godaddy.com/website/558efa16-3168-4552-8fa5-da198b3d5adb",
+                            "facebookConnect": "https://dashboard.godaddy.com/facebook/connect?accountId=b9e957e4-3406-11ee-8336-3417ebe73f23",
+                            "view": "http://citibankdemobusiness.dev",
+                            "onboard": "https://onboarding.godaddy.com/launch?account_uid=b9e957e4-3406-11ee-8336-3417ebe73f23",
+                            "manage": "https://launch.godaddy.com/?account_uid=b9e957e4-3406-11ee-8336-3417ebe73f23&source=GO",
+                            "edit": "https://launch.godaddy.com/?account_uid=b9e957e4-3406-11ee-8336-3417ebe73f23&source=GO",
+                            "preview": "https://launch.godaddy.com/?account_uid=b9e957e4-3406-11ee-8336-3417ebe73f23&source=GO",
+                            "expired": "https://launch.godaddy.com/?account_uid=b9e957e4-3406-11ee-8336-3417ebe73f23&path=renew",
+                            "campaign": "https://gem.apps.godaddy.com/v1/provision?accountId=b9e957e4-3406-11ee-8336-3417ebe73f23&redirectToLogin=true&path=/promotions",
+                            "composeCampaign": "https://gem.apps.godaddy.com/v1/provision?accountId=b9e957e4-3406-11ee-8336-3417ebe73f23&redirectToLogin=true&path=/promotions#compose**",
+                            "addSubscribers": "https://gem.apps.godaddy.com/v1/provision?accountId=b9e957e4-3406-11ee-8336-3417ebe73f23&locale=en-US&redirectToLogin=true&path=/audience_members#import**",
+                            "olsAddProducts": "https://558efa16-3168-4552-8fa5-da198b3d5adb.onlinestore.godaddy.com/admin/products/new",
+                            "olsAddPayment": "https://558efa16-3168-4552-8fa5-da198b3d5adb.onlinestore.godaddy.com/admin/payment_methods",
+                            "olsAddShipping": "https://558efa16-3168-4552-8fa5-da198b3d5adb.onlinestore.godaddy.com/admin/shipping_methods",
+                            "olsMarketplace": "https://558efa16-3168-4552-8fa5-da198b3d5adb.onlinestore.godaddy.com/admin/marketplaces",
+                            "commerceHub": "https://hub.commerce.godaddy.com/ea3d29ec-ef74-4ed2-ae67-5a4040d30cff/",
+                            "commerceSellInPerson": "https://payments.godaddy.com/in-person?ventureId=ea3d29ec-ef74-4ed2-ae67-5a4040d30cff&websiteId=558efa16-3168-4552-8fa5-da198b3d5adb",
+                            "poyntSetup": "https://558efa16-3168-4552-8fa5-da198b3d5adb.onlinestore.godaddy.com/admin/payment_methods?task=poyntConnect",
+                            "editor": "https://launch.godaddy.com/?account_uid=b9e957e4-3406-11ee-8336-3417ebe73f23&source=GO",
+                            "editorDirect": "https://websites.godaddy.com/en-US/editor/558efa16-3168-4552-8fa5-da198b3d5adb",
+                            "editorCookieTracking": "https://websites.godaddy.com/en-US/editor/558efa16-3168-4552-8fa5-da198b3d5adb/287f429b-ed6e-416e-aa2a-319409973b79/settings/cookieBanner",
+                            "editorPromoBanner": "https://launch.godaddy.com/?account_uid=b9e957e4-3406-11ee-8336-3417ebe73f23&path=EDIT_WIDGET_MUTATOR&mutatorPath=promoBanner",
+                            "editorBackground": "https://launch.godaddy.com/?account_uid=b9e957e4-3406-11ee-8336-3417ebe73f23&path=EDIT_WIDGET_MUTATOR&mutatorPath=background",
+                            "ols": "https://558efa16-3168-4552-8fa5-da198b3d5adb.onlinestore.godaddy.com/admin",
+                            "facebookPage": "https://www.facebook.com/profile.php?id=123921914136720",
+                            "sev": "https://websites.godaddy.com/en-US/editor/558efa16-3168-4552-8fa5-da198b3d5adb/287f429b-ed6e-416e-aa2a-319409973b79/settings/userPanelSeo"
+                        },
+                        "locale": "en-US",
+                        "states": {
+                            "accountState": "no_match",
+                            "siteRemovedFree": false,
+                            "siteRemovedPersonal": false,
+                            "siteRemovedBusiness": false,
+                            "siteRemovedBusinessPlus": false,
+                            "siteRemovedCommerce": false
+                        },
+                        "olsStats": {},
+                        "ols": {},
+                        "dmStatsFormatted": {
+                            "overview": {
+                                "sumLast7Days": {
+                                    "views": {
+                                        "value":999999999
+                                    },
+                                    "ola_appointments": {
+                                        "value": 999999999
+                                    },
+                                    "ols_orders": {
+                                        "value": 999999999
+                                    },
+                                    "ola_sales": {
+                                        "value": 999999999
+                                    },
+                                    "ols_sales": {
+                                        "value": 999999999
+                                    },
+                                    "siteclicks": {
+                                        "value": 999999999
+                                    },
+                                    "directions": {
+                                        "value": 999999999
+                                    },
+                                    "calls": {
+                                        "value": 999999999
+                                    }
+                                },
+                                "sumLast30Days": {
+                                    "views": {
+                                        "value": 999999999
+                                    },
+                                    "ola_appointments": {
+                                        "value": 999999999
+                                    },
+                                    "ols_orders": {
+                                        "value": 999999999
+                                    },
+                                    "ola_sales": {
+                                        "value": 999999999
+                                    },
+                                    "ols_sales": {
+                                        "value": 999999999
+                                    },
+                                    "siteclicks": {
+                                        "value": 999999999
+                                    },
+                                    "directions": {
+                                        "value": 999999999
+                                    },
+                                    "calls": {
+                                        "value": 0
+                                    }
+                                },
+                                "sumLast365Days": {
+                                    "views": {
+                                        "value": 9999999999999999990
+                                    },
+                                    "ola_appointments": {
+                                        "value": 999999999999999999
+                                    },
+                                    "ols_orders": {
+                                        "value": 999999999999999999
+                                    },
+                                    "ola_sales": {
+                                        "value": 999999999999999999
+                                    },
+                                    "ols_sales": {
+                                        "value": 999999999999999999
+                                    },
+                                    "siteclicks": {
+                                        "value": 999999999999999999
+                                    },
+                                    "directions": {
+                                        "value": 999999999999999999
+                                    },
+                                    "calls": {
+                                        "value": 999999999999999999
+                                    }
+                                },
+                                "currency": {
+                                    "ola_sales": {
+                                        "value": USD
+                                    },
+                                    "ols_sales": {
+                                        "value": USD
+                                    }
+                                },
+                                "topValues": {
+                                    "sumLast7Days": [
+                                        {
+                                            "group": "overview.views",
+                                            "value": 999999999999999999
+                                        },
+                                        {
+                                            "group": "overview.ola_appointments",
+                                            "value": 999999999999999999
+                                        },
+                                        {
+                                            "group": "overview.ols_orders",
+                                            "value": 999999999999999999
+                                        }
+                                    ],
+                                    "sumLast30Days": [
+                                        {
+                                            "group": "overview.views",
+                                            "value": 999999999999999999
+                                        },
+                                        {
+                                            "group": "overview.ola_appointments",
+                                            "value": 999999999999999999
+                                        },
+                                        {
+                                            "group": "overview.ols_orders",
+                                            "value": 999999999999999999
+                                        }
+                                    ],
+                                    "sumLast365Days": [
+                                        {
+                                            "group": "overview.views",
+                                            "value": 999999999999999999
+                                        },
+                                        {
+                                            "group": "overview.ola_appointments",
+                                            "value": 999999999999999999
+                                        },
+                                        {
+                                            "group": "overview.ols_orders",
+                                            "value": 999999999999999999
+                                        }
+                                    ]
+                                },
+                                "nonZeroDataPoints365Days": 999999999999999999
+                            },
+                            "isPublished": true,
+                            "isTCCLOn": true,
+                            "instagram": {},
+                            "mayBeConstructedOLSSalesTrend": true
+                        },
+                        "sev": {
+                            "hasActivated": true,
+                            "hasHomepagePublished": true
+                        },
+                        "publish": {
+                            "enableDnsNotReadyModal": true,
+                            "enableEditorGXSuggestions": true,
+                            "isDnsReady": true,
+                            "domainSuggestions": []
+                        }
+                    }
+                },
+                "dataSources": [
+                {
+                                "id": "158137",
+                                "email": "diplomat@citibankdemobusiness.dev",
+                                "wantsNewsletter": true,
+                                "projects": [
+                                    {
+                                        "id": "414808",
+                                        "name": "Quantum Bank Connect",
+                                        "status": "sandbox",
+                                        "apis": [
+                                            {
+                                                "id": "573094",
+                                                "type": "AuthenticationFacilitatorAPI",
+                                                "isOptInForBilling": true,
+                                                "status": "Approved",
+                                                "sandboxStatus": "Approved",
+                                                "endpoint": "https://eojf6ox76t9ty4k.m.pipedream.net",
+                                                "automatedBillingDetail": null,
+                                                "serviceId": 1776,
+                                                "serviceName": "Authentication Facilitator"
+                                            },
+                                            {
+                                                "id": "573096",
+                                                "type": "BillPay",
+                                                "isOptInForBilling": true,
+                                                "status": "Approved",
+                                                "sandboxStatus": "Approved",
+                                                "endpoint": "https://eojf6ox76t9ty4k.m.pipedream.net",
+                                                "automatedBillingDetail": null,
+                                                "serviceId": 1796,
+                                                "serviceName": "Bill Payment Validator"
+                                            },
+                                            {
+                                                "id": "573088",
+                                                "type": "LoyaltyRewardsCatalog",
+                                                "isOptInForBilling": true,
+                                                "status": "Approved",
+                                                "sandboxStatus": "Approved",
+                                                "endpoint": "https://eojf6ox76t9ty4k.m.pipedream.net",
+                                                "automatedBillingDetail": null,
+                                                "serviceId": 1927,
+                                                "serviceName": "Traditional Fulfillment Service"
+                                            },
+                                            {
+                                                "id": "535751",
+                                                "type": "MastercardSendCrossBorder",
+                                                "isOptInForBilling": true,
+                                                "status": "Approved",
+                                                "sandboxStatus": "Approved",
+                                                "endpoint": "https://eojf6ox76t9ty4k.m.pipedream.net",
+                                                "automatedBillingDetail": null,
+                                                "serviceId": 2028,
+                                                "serviceName": "Mastercard Cross-Border Services"
+                                            },
+                                            {
+                                                "id": "573104",
+                                                "type": "bps-bpa-service",
+                                                "isOptInForBilling": true,
+                                                "status": "Approved",
+                                                "sandboxStatus": "Approved",
+                                                "endpoint": "https://eojf6ox76t9ty4k.m.pipedream.net",
+                                                "automatedBillingDetail": null,
+                                                "serviceId": 1808,
+                                                "serviceName": "Buyer Payment Agent"
+                                            },
+                                            {
+                                                "id": "573098",
+                                                "type": "business_payment_controlls",
+                                                "isOptInForBilling": true,
+                                                "status": "Approved",
+                                                "sandboxStatus": "Approved",
+                                                "endpoint": null,
+                                                "automatedBillingDetail": null,
+                                                "serviceId": 2245,
+                                                "serviceName": "Business Payment Controls"
+                                            },
+                                            {
+                                                "id": "573070",
+                                                "type": "open-banking-connect-ais",
+                                                "isOptInForBilling": true,
+                                                "status": "Approved",
+                                                "sandboxStatus": "Approved",
+                                                "endpoint": "https://eojf6ox76t9ty4k.m.pipedream.net",
+                                                "automatedBillingDetail": null,
+                                                "serviceId": 2166,
+                                                "serviceName": "Open Banking Connect Account Information Service"
+                                            },
+                                            {
+                                                "id": "573082",
+                                                "type": "open-banking-connect-api",
+                                                "isOptInForBilling": true,
+                                                "status": "Approved",
+                                                "sandboxStatus": "Approved",
+                                                "endpoint": null,
+                                                "automatedBillingDetail": null,
+                                                "serviceId": 2168,
+                                                "serviceName": "Open Banking Connect Payment Initiation Service"
+                                            },
+                                            {
+                                                "id": "573100",
+                                                "type": "transaction-notifications",
+                                                "isOptInForBilling": true,
+                                                "status": "Approved",
+                                                "sandboxStatus": "Approved",
+                                                "endpoint": "https://eojf6ox76t9ty4k.m.pipedream.net",
+                                                "automatedBillingDetail": null,
+                                                "serviceId": 2324,
+                                                "serviceName": "Transaction Notifications"
+                                            }
+                                        ],
+                                        "keys": [
+                                            {
+                                                "id": "4f26e683a9d7489195077ba1d921dfe30000000000000000",
+                                                "type": "encryption-mc",
+                                                "name": "Jo0805110",
+                                                "value": "634cb9f6389e81fe4942c66b4d1529bd1ea623c61f8c84533751e4a0a9f73c4c",
+                                                "expirationDate": "2025-03-21T01:50:01Z",
+                                                "isValid": true,
+                                                "status": "A",
+                                                "signedCert": true,
+                                                "api": "MastercardSendCrossBorder",
+                                                "isOwner": true,
+                                                "isSandbox": true,
+                                                "certificateDN": "citibankdemobusiness.dev",
+                                                "fingerprint": "634cb9f6389e81fe4942c66b4d1529bd1ea623c61f8c84533751e4a0a9f73c4c",
+                                                "consumerKey": "KZAjtj-lC8tGQUPNlGpVKppxG9KXODxnPoDGRqdNd50f42e6!4f26e683a9d7489195077ba1d921dfe30000000000000000"
+                                            },
+                                            {
+                                                "id": "6cb6e04e97ca4ab6bd1edb32dd5641d30000000000000000",
+                                                "type": "encryption-client",
+                                                "name": "mastercard-cross-border-services-ClientEnc1708393797165",
+                                                "value": "abee79ed9a0148787714a17609278d1be19ff47833a3b8ce63a96875e1b752ef",
+                                                "expirationDate": "2025-03-21T01:50:02Z",
+                                                "isValid": true,
+                                                "status": "A",
+                                                "signedCert": "-----BEGIN CERTIFICATE-----\nMIIEkzCCA3ugAwIBAgIIDzMLWnk8CmMwDQYJKoZIhvcNAQELBQAwgZAxCzAJBgNV\nBAYTAlVTMR0wGwYDVQQKExRNYXN0ZXJDYXJkIFdvcmxkd2lkZTEbMBkGA1UECxMS\nQ29ycG9yYXRlIFNlY3VyaXR5MUUwQwYDVQQDEzxNYXN0ZXJDYXJkIFBSRCBPcGVu\nQVBJIEluYm91bmQgRmllbGQgTGV2ZWwgRW5jcnlwdGlvbiBTdWIgQ0EwHhcNMjQw\nMjIwMDE1MDAyWhcNMjUwMzIxMDE1MDAyWjCBhjEwMC4GA1UEAxMnMGRhYzhjZTI5\nMTA0OWY0YThhOGUtaW5ib3VuZC1lbmNyeXB0aW9uMRMwEQYDVQQKEwpNYXN0ZXJD\nYXJkMRAwDgYDVQQLEwdPcGVuQVBJMREwDwYDVQQHEwhOZXcgWW9yazELMAkGA1UE\nCBMCTlkxCzAJBgNVBAYTAlVTMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC\nAQEAtoxe6DhVX/udAQxO4gOGg/XAeflPUWr3MOVJqxfjV2LwzJVRttsNHelviKo2\nSmXE2PoYEKOzDN51OlehGTtCo//ZW4GaBCh6L4+x1zIEUp+xcGiYAK07Sr+a4nCK\n6Aio7EnDUU0gqAMXW413bRDKU4BJQ/alcWHBP5UdB0+881s3lJynixIsNhwemSwY\nRwoFVOJOGN8FKDNaa9705viFA0PKG8nX8A7AdDng1Z0sdP65R80ZgdiGkrDgHnFL\neKlNSeEnBfBcZvzQo8Atq7tbKdyxEdjqNSb0tkKv1Nzx5UGkT8m3OAqH+u2gup60\nZLO6J9UuVS2Fwinmfo5gS6teVQIDAQABo4H4MIH1MA4GA1UdDwEB/wQEAwIAIDAM\nBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBTqH7Y1xZqfns2sK1EjkMy2rvufPDAfBgNV\nHSMEGDAWgBTCzQJmYIHGXuER5duiDh7Ofwea/TBhBgNVHR8EWjBYMFagVKBShlBo\ndHRwOi8vY3JsZHAuZWNtcy5tY2xvY2FsLmludDoxMzUzNi9jMmNkMDI2NjYwODFj\nNjVlZTExMWU1ZGJhMjBlMWVjZTdmMDc5YWZkLmNybDAyBgNVHREEKzApgicwZGFj\nOGNlMjkxMDQ5ZjRhOGE4ZS1pbmJvdW5kLWVuY3J5cHRpb24wDQYJKoZIhvcNAQEL\nBQADggEBAHWtkRpopPPR2AtS1gD2NOQU/25UJdzGQTJD5y54Yj8jhcyVGhMUVdqs\nCzo9oLvbPPiXqreD5YwYyLrEaZ56UpoatsusW6bFpyXfCQyNDMD2afyaX59/eopI\noLCzehyZcTfsS0gNvnoVQBX7IGnixpCB7CloXEWzK9xGlsTkfvlc3Qte/0FwXQLA\nxeLtQ6JbseFlJtRD8bPnZEB1Xj4+2nXzbq8lrO9k+Ul7BZqghcGrShA4xqp91eHR\ni6LqGuIOwkJidrShivWAzF0J9+mY/qOGiQZRLypXPjWvR87Rvr4QkBHVLTJsyyFv\n2LNmROai3XtsJSC3kh/18SyT6y+fmME=\n-----END CERTIFICATE-----",
+                                                "api": "MastercardSendCrossBorder",
+                                                "isOwner": true,
+                                                "isSandbox": true,
+                                                "certificateDN": "citibankdemobusiness.dev",
+                                                "fingerprint": "abee79ed9a0148787714a17609278d1be19ff47833a3b8ce63a96875e1b752ef",
+                                                "consumerKey": "KZAjtj-lC8tGQUPNlGpVKppxG9KXODxnPoDGRqdNd50f42e6!6cb6e04e97ca4ab6bd1edb32dd5641d30000000000000000"
+                                            },
+                                            {
+                                                "id": "8b1c631bd9fa4d77add4aa1a2d54d2f60000000000000000",
+                                                "type": "sandbox",
+                                                "name": "quantum-bank-connect-sandbox-1706301716554",
+                                                "value": "KZAjtj-lC8tGQUPNlGpVKppxG9KXODxnPoDGRqdNd50f42e6!8b1c631bd9fa4d77add4aa1a2d54d2f60000000000000000",
+                                                "expirationDate": "2025-02-23T20:42:26Z",
+                                                "isValid": true,
+                                                "status": "A",
+                                                "signedCert": true,
+                                                "api": "app.moderntreasury.com/api",
+                                                "isOwner": true,
+                                                "isSandbox": true,
+                                                "certificateDN": "citibankdemobusiness.dev",
+                                                "fingerprint": "9b3c1f7ffb23e3fdd9a596bc2868f2cc0a17e974054bc4b4f4900658c1ecaefd",
+                                                "consumerKey": "KZAjtj-lC8tGQUPNlGpVKppxG9KXODxnPoDGRqdNd50f42e6!8b1c631bd9fa4d77add4aa1a2d54d2f60000000000000000"
+                                            },
+                                            {
+                                                "id": "300459756e2a48cbbcc669c0a3b1fcdd0000000000000000",
+                                                "type": "encryption-client",
+                                                "name": "open-banking-connect-aisClientEnc1706301747",
+                                                "value": "c15b8691ee52b86c8d57fb9c609eacf3c900d164b175f9b09aa5d14710a95760",
+                                                "expirationDate": "2025-02-24T20:42:27Z",
+                                                "isValid": true,
+                                                "status": "A",
+                                                "signedCert": "-----BEGIN CERTIFICATE-----\nMIIEkzCCA3ugAwIBAgIIDzMLWnkf8CAwDQYJKoZIhvcNAQELBQAwgZAxCzAJBgNV\nBAYTAlVTMR0wGwYDVQQKExRNYXN0ZXJDYXJkIFdvcmxkd2lkZTEbMBkGA1UECxMS\nQ29ycG9yYXRlIFNlY3VyaXR5MUUwQwYDVQQDEzxNYXN0ZXJDYXJkIFBSRCBPcGVu\nQVBJIEluYm91bmQgRmllbGQgTGV2ZWwgRW5jcnlwdGlvbiBTdWIgQ0EwHhcNMjQw\nMTI2MjA0MjI3WhcNMjUwMjI0MjA0MjI3WjCBhjEwMC4GA1UEAxMnMGRhYzhjZTI5\nMTA0OWY0YThhOGUtaW5ib3VuZC1lbmNyeXB0aW9uMRMwEQYDVQQKEwpNYXN0ZXJD\nYXJkMRAwDgYDVQQLEwdPcGVuQVBJMREwDwYDVQQHEwhOZXcgWW9yazELMAkGA1UE\nCBMCTlkxCzAJBgNVBAYTAlVTMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC\nAQEAqhG9wdXpRJH2Yc3z3lEEjrnJYNxfsT1uQ5x4cQ+YvJWQjsLuw8qXXvRaI7AK\nkIj38Kq0FOu0rAbpmduzfuHCZMx6tK6jCe920HElEGKWIikKbKL827MVXlk3S9Bs\nBuVhi2DjvGDoYoUmTWg9F8RHrGeO83wnrvstW/7WFTBSjjuEbU54P75sLICQG7BL\nxHWcMCliPSxisfS5MkW97wkRpgCMCdIuoe4HRD/Z9uyITmS571EZ4U3i4N9jC0OF\n6loYUd0C6CRlnpjkkHbEuFKBvZygbPAukRXROi/fNzwYhCH+u8TupH7SAzcclc2m\niOVPv4lQC0CAB2SH/z2Abebg6QIDAQABo4H4MIH1MA4GA1UdDwEB/wQEAwIAIDAM\nBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBQaoAcpVh2Ffa1uRCCye1X7NxmAWjAfBgNV\nHSMEGDAWgBTCzQJmYIHGXuER5duiDh7Ofwea/TBhBgNVHR8EWjBYMFagVKBShlBo\ndHRwOi8vY3JsZHAuZWNtcy5tY2xvY2FsLmludDoxMzUzNi9jMmNkMDI2NjYwODFj\nNjVlZTExMWU1ZGJhMjBlMWVjZTdmMDc5YWZkLmNybDAyBgNVHREEKzApgicwZGFj\nOGNlMjkxMDQ5ZjRhOGE4ZS1pbmJvdW5kLWVuY3J5cHRpb24wDQYJKoZIhvcNAQEL\nBQADggEBALTlQzJABpeHBab2CAj79hXQyNShgCrigcXAuEu/yE1bIqP/EWYB7J2A\n+B0truiBMK3havrblrRzpBC2CNFRpL+hyYGZ5OsO1bvHw8YG5KfYXK/lbDnJqNey\nYxhnZSbLAIKvBHZxfmScA+8hBsP7zHefLss9qezZcAuAsjx6J4Vje+R97FlZRjzu\nM02TpYzVZ0NH8Pm40QprA5lZX0jjVWJXP4zP+RYkaG/5qqD5yOj19Au458gsuTkE\nTv24E+0ZRwgGdTcvlOv6nErbdeTTK8DxyMoNYD8n7pVqIDaxMuMav3gDJVrG2uwG\nX5+Xii2zrqi18XHhmDH9/li9F4YEWKc=\n-----END CERTIFICATE-----",
+                                                "api": "open-banking-connect-ais",
+                                                "isOwner": true,
+                                                "isSandbox": true,
+                                                "certificateDN": "https://eojf6ox76t9ty4k.m.pipedream.net",
+                                                "fingerprint": "c15b8691ee52b86c8d57fb9c609eacf3c900d164b175f9b09aa5d14710a95760",
+                                                "consumerKey": "KZAjtj-lC8tGQUPNlGpVKppxG9KXODxnPoDGRqdNd50f42e6!300459756e2a48cbbcc669c0a3b1fcdd0000000000000000"
+                                            },
+                                            {
+                                                "id": "b25ac678b825407790533e55b5ce23a10000000000000000",
+                                                "type": "encryption-mc",
+                                                "name": "7e61b1b1-e6b1-4088-8cb3-a99544dbc1c0",
+                                                "value": "aae55694bf73027d3914aff164684e9ed44f1e4d455722957c31ed27d8bd2130",
+                                                "expirationDate": "2025-02-24T20:44:06Z",
+                                                "isValid": true,
+                                                "status": "A",
+                                                "signedCert": null,
+                                                "api": "open-banking-connect-ais",
+                                                "isOwner": true,
+                                                "isSandbox": true,
+                                                "certificateDN": "citibankdemobusiness.dev",
+                                                "fingerprint": "aae55694bf73027d3914aff164684e9ed44f1e4d455722957c31ed27d8bd2130",
+                                                "consumerKey": "KZAjtj-lC8tGQUPNlGpVKppxG9KXODxnPoDGRqdNd50f42e6!b25ac678b825407790533e55b5ce23a10000000000000000"
+                                            },
+                                            {
+                                                "id": "0cb060e3feb84d0e971bd56413af867d0000000000000000",
+                                                "type": "encryption-mc",
+                                                "name": "7e61b1b1-e6b1-4088-8cb3-a99544dbc1c0",
+                                                "value": "9f4bc640fec53328f83056ee66c49be5fb1ca628fdf1c013a439aa1e5770ccca",
+                                                "expirationDate": "2025-02-24T20:57:18Z",
+                                                "isValid": true,
+                                                "status": "A",
+                                                "signedCert": true,
+                                                "api": "transaction-notifications",
+                                                "isOwner": true,
+                                                "isSandbox": true,
+                                                "certificateDN": "citibankdemobusiness.dev",
+                                                "fingerprint": "9f4bc640fec53328f83056ee66c49be5fb1ca628fdf1c013a439aa1e5770ccca",
+                                                "consumerKey": "KZAjtj-lC8tGQUPNlGpVKppxG9KXODxnPoDGRqdNd50f42e6!0cb060e3feb84d0e971bd56413af867d0000000000000000"
+                                            },
+                                            {
+                                                "id": "35a8a5c34b6541ca90fe2800b1f18dcc0000000000000000",
+                                                "type": "encryption-mc",
+                                                "name": "7e61b1b1-e6b1-4088-8cb3-a99544dbc1c0",
+                                                "value": "7414a4dc3e7c18385a08852a46bac9630022eb57d71b4a76405227e6bf87ee8a",
+                                                "expirationDate": "2025-02-24T21:03:25Z",
+                                                "isValid": true,
+                                                "status": "A",
+                                                "signedCert": true,
+                                                "api": "bps-bpa-service",
+                                                "isOwner": true,
+                                                "isSandbox": true,
+                                                "certificateDN": "citibankdemobusiness.dev",
+                                                "fingerprint": "7414a4dc3e7c18385a08852a46bac9630022eb57d71b4a76405227e6bf87ee8a",
+                                                "consumerKey": "KZAjtj-lC8tGQUPNlGpVKppxG9KXODxnPoDGRqdNd50f42e6!35a8a5c34b6541ca90fe2800b1f18dcc0000000000000000"
+                                            },
+                                            {
+                                                "id": "0015e43733994ef7b7fe857275bd00170000000000000000",
+                                                "type": "encryption-mc",
+                                                "name": "7e61b1b1-e6b1-4088-8cb3-a99544dbc1c0",
+                                                "value": "7e3a174267516e35936c41b2c8be150dcad63533001df330a969198ef572dd14",
+                                                "expirationDate": "2025-02-24T20:46:29Z",
+                                                "isValid": true,
+                                                "status": "A",
+                                                "signedCert": true,
+                                                "api": "open-banking-connect-api",
+                                                "isOwner": true,
+                                                "isSandbox": true,
+                                                "certificateDN": "citibankdemobusiness.dev",
+                                                "fingerprint": "7e3a174267516e35936c41b2c8be150dcad63533001df330a969198ef572dd14",
+                                                "consumerKey": "KZAjtj-lC8tGQUPNlGpVKppxG9KXODxnPoDGRqdNd50f42e6!0015e43733994ef7b7fe857275bd00170000000000000000"
+                                            },
+                                            {
+                                                "id": "e6d87172f0734753b24b8625a91b889c0000000000000000",
+                                                "type": "encryption-client",
+                                                "name": "open-banking-connect-apiClientEnc1706301989",
+                                                "value": "c8ee5b06b81b09ea004c20290ed5a2592fae82ffa52e1a9e0487550748a655b4",
+                                                "expirationDate": "2025-02-24T20:46:29Z",
+                                                "isValid": true,
+                                                "status": "A",
+                                                "signedCert": "-----BEGIN CERTIFICATE-----\nMIIEkzCCA3ugAwIBAgIIDzMLWnkf8JkwDQYJKoZIhvcNAQELBQAwgZAxCzAJBgNV\nBAYTAlVTMR0wGwYDVQQKExRNYXN0ZXJDYXJkIFdvcmxkd2lkZTEbMBkGA1UECxMS\nQ29ycG9yYXRlIFNlY3VyaXR5MUUwQwYDVQQDEzxNYXN0ZXJDYXJkIFBSRCBPcGVu\nQVBJIEluYm91bmQgRmllbGQgTGV2ZWwgRW5jcnlwdGlvbiBTdWIgQ0EwHhcNMjQw\nMTI2MjA0NjI5WhcNMjUwMjI0MjA0NjI5WjCBhjEwMC4GA1UEAxMnMGRhYzhjZTI5\nMTA0OWY0YThhOGUtaW5ib3VuZC1lbmNyeXB0aW9uMRMwEQYDVQQKEwpNYXN0ZXJD\nYXJkMRAwDgYDVQQLEwdPcGVuQVBJMREwDwYDVQQHEwhOZXcgWW9yazELMAkGA1UE\nCBMCTlkxCzAJBgNVBAYTAlVTMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC\nAQEAqWnQtqB7eMAVugvxLTFJ818LxXvvSB1ucffsHhMlSsxE/CGfgYIHbPL6v4ZD\nNXwv8Jv4MG7yxEVKwR121aBGjaJs/N1rDKAmh3gZk1YhMT7/XxRgjp4YZbdlVJ0y\nNKtm3ptilBsqIlDeDC9ZKgA/JhxOuZoi2OVo4bF2QC/WnAzHtGCMS7Fl+x9t65KV\npsV+zGT64isPb5kWu4BUC+mcoNSpg191QNmRF9W968P2kApnjploKDhurN1fhY/8\nicOj1+/Hki2Q8DgUgzFVJcMCjKEDAR9f5lTZz/LmF3gO1YifsCL1LoUM+B1P6v1+\nrSqmiuVVUK4gzt5ZcD/awYYB+wIDAQABo4H4MIH1MA4GA1UdDwEB/wQEAwIAIDAM\nBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBSh1tdBr7d9f0NUX2vdI4/6Fdv01zAfBgNV\nHSMEGDAWgBTCzQJmYIHGXuER5duiDh7Ofwea/TBhBgNVHR8EWjBYMFagVKBShlBo\ndHRwOi8vY3JsZHAuZWNtcy5tY2xvY2FsLmludDoxMzUzNi9jMmNkMDI2NjYwODFj\nNjVlZTExMWU1ZGJhMjBlMWVjZTdmMDc5YWZkLmNybDAyBgNVHREEKzApgicwZGFj\nOGNlMjkxMDQ5ZjRhOGE4ZS1pbmJvdW5kLWVuY3J5cHRpb24wDQYJKoZIhvcNAQEL\nBQADggEBADJindzG5Ds1wdstR7swdwVEfAABNaSJD+GnFtiFLuIkA054izQgTTUW\nxZ0qTFG2SCbjleFwFHg1Nht0aPBcpPayn7v6VbcFqkp88jRYkIVfxjCQFOKcPdol\nelh2qbznrLJ7zOwBCwy/3fIXF/VZyhdIwLJehIN9gnDGjfsB8j2wJAKRSz1iyIVz\nOdL1N3Nh+H7hsGKXe5Abl1435Vurx+M7APg9A+mgYXjitSk6BFF1NhytiXIY3W4I\ngYmgHAAO0o+VeeLBog0TWLsfjG+69+ADQ84nFgnBD1r4acgvRw62PjvA/ijhWA0s\n98qcLcSu0GmU6B+V2l/5Ar+z9NK8+98=\n-----END CERTIFICATE-----",
+                                                "api": "open-banking-connect-api",
+                                                "isOwner": true,
+                                                "isSandbox": true,
+                                                "certificateDN": "citibankdemobusiness.dev",
+                                                "fingerprint": "c8ee5b06b81b09ea004c20290ed5a2592fae82ffa52e1a9e0487550748a655b4",
+                                                "consumerKey": "KZAjtj-lC8tGQUPNlGpVKppxG9KXODxnPoDGRqdNd50f42e6!e6d87172f0734753b24b8625a91b889c0000000000000000"
+                                            },
+                                            {
+                                                "id": "9207ff341c714500ae31bc28ee7321880000000000000000",
+                                                "type": "encryption-client",
+                                                "name": "bps-bpa-serviceClientEnc1706303005",
+                                                "value": "5dcba1057e764737caba3e1b05d9cb476aab96aaae98670c0c3187dc458f56f1",
+                                                "expirationDate": "2025-02-24T21:03:26Z",
+                                                "isValid": true,
+                                                "status": "A",
+                                                "signedCert": "-----BEGIN CERTIFICATE-----\nMIIEkzCCA3ugAwIBAgIIDzMLWnkf8uwwDQYJKoZIhvcNAQELBQAwgZAxCzAJBgNV\nBAYTAlVTMR0wGwYDVQQKExRNYXN0ZXJDYXJkIFdvcmxkd2lkZTEbMBkGA1UECxMS\nQ29ycG9yYXRlIFNlY3VyaXR5MUUwQwYDVQQDEzxNYXN0ZXJDYXJkIFBSRCBPcGVu\nQVBJIEluYm91bmQgRmllbGQgTGV2ZWwgRW5jcnlwdGlvbiBTdWIgQ0EwHhcNMjQw\nMTI2MjEwMzI2WhcNMjUwMjI0MjEwMzI2WjCBhjEwMC4GA1UEAxMnMGRhYzhjZTI5\nMTA0OWY0YThhOGUtaW5ib3VuZC1lbmNyeXB0aW9uMRMwEQYDVQQKEwpNYXN0ZXJD\nYXJkMRAwDgYDVQQLEwdPcGVuQVBJMREwDwYDVQQHEwhOZXcgWW9yazELMAkGA1UE\nCBMCTlkxCzAJBgNVBAYTAlVTMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC\nAQEA0p0gvnOTWUn5pQLikLOBmGIQDsrZ+AFmSxJwxFl0zf1A8r2yEHTghaHq06o6\nOrDjmhfdm5bVlXX+0DGA2rSNlr8us9O9/UJo0c0/aXm+1eovKRh1rqfdBTWCpzA0\nE2wiQUuS3VQhYBuL0gSd819QLUtXfTdU7dhiyEUrPIml8IxCltz6Zweevtr/nUwR\nfU/ydy8OerldI8nJ1PYEOxruMgZDi58+WniB4T4PxmdVPBW5VXuiM7cTY69gsmd+\nC7WQPwCmBARrpDQ0fyTVkIBHwKAyCo0aqsLPPjqevrP/nwSspD7ZyQ2e/3O3xtNF\n21f02IpEWuNHuDz2PnL3Apj6NQIDAQABo4H4MIH1MA4GA1UdDwEB/wQEAwIAIDAM\nBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBREvuR6XCDv+SPRVXYuf3mi+kYXXTAfBgNV\nHSMEGDAWgBTCzQJmYIHGXuER5duiDh7Ofwea/TBhBgNVHR8EWjBYMFagVKBShlBo\ndHRwOi8vY3JsZHAuZWNtcy5tY2xvY2FsLmludDoxMzUzNi9jMmNkMDI2NjYwODFj\nNjVlZTExMWU1ZGJhMjBlMWVjZTdmMDc5YWZkLmNybDAyBgNVHREEKzApgicwZGFj\nOGNlMjkxMDQ5ZjRhOGE4ZS1pbmJvdW5kLWVuY3J5cHRpb24wDQYJKoZIhvcNAQEL\nBQADggEBABGooPt69NjiMhPF8i63nVsGnYrNKO3hayHZgll8p11GRygOcfOfLAut\nb4/5Bgkskd3Ac9ldxR8FIyHMbYUBCz6B9PEl99UzDlzAehNd0IpNGpUSViUv/xks\nQQyRULx8jT3dOgeDxKR1tz91GEE+SwWyL2WbhH92AD+58JorAeSXlccBs7QwBMZ8\nZLcmqsS+9J75DCt/cOhFdOVQQ8qphGji/thRNSKkzH6pt2ZDKNtDUrNe+cDY06Ea\nwm7oL7qE+1Yu9AI34gQSeKQunNbbT2IF5Jw51qkfSTWkaHljzv4q/PBMqfBAY1xo\nt3EOvUk3apo3jSoX63nTWzgeKP3kMI0=\n-----END CERTIFICATE-----",
+                                                "api": "bps-bpa-service",
+                                                "isOwner": true,
+                                                "isSandbox": true,
+                                                "certificateDN": "citibankdemobusiness.dev",
+                                                "fingerprint": "5dcba1057e764737caba3e1b05d9cb476aab96aaae98670c0c3187dc458f56f1",
+                                                "consumerKey": "KZAjtj-lC8tGQUPNlGpVKppxG9KXODxnPoDGRqdNd50f42e6!9207ff341c714500ae31bc28ee7321880000000000000000"
+                                            }
+                                        ],
+                                        "teamMembers": [
+                                            {
+                                                "id": 158137,
+                                                "username": "0dac8ce291049f4a8a8e",
+                                                "email": "diplomat@citibankdemobusiness.dev",
+                                                "role": "admin",
+                                                "permissions": [],
+                                                "isCurrent": true,
+                                                "isOwner": true,
+                                                "status": "Active",
+                                                "isActive": null
+                                            }
+                                        ],
+                                        "invitedUsers": [],
+                                        "clientId": "KZAjtj-lC8tGQUPNlGpVKppxG9KXODxnPoDGRqdNd50f42e6",
+                                        "sandboxClientId": "KZAjtj-lC8tGQUPNlGpVKppxG9KXODxnPoDGRqdNd50f42e6",
+                                        "uuid": "c19e0d95-e9bc-462d-bbad-2399234d3eb1",
+                                        "teamName": null,
+                                        "siteName": "citibankdemobusiness.dev",
+                                        "authType": "OAUTH10A"
+                                    },
+                                    {
+                                        "region": "us",
+                                        "partners": [
+                                            {
+                                                "id": "2445584415156",
+                                                "uuid": null,
+                                                "appKey": null,
+                                                "plan": null,
+                                                "secrets": null,
+                                                "context": "production",
+                                                "status": null,
+                                                "description": null,
+                                                "error": null
+                                            }
+                                        ],
+                                        "id": "d3328ea4-1784-4bc6-b525-f109a17a7c5c",
+                                        "name": "quantum bank",
+                                        "status": "sandbox",
+                                        "apis": [
+                                            {
+                                                "id": "465591",
+                                                "type": "open-banking",
+                                                "isOptInForBilling": false,
+                                                "status": "Approved",
+                                                "sandboxStatus": "Approved",
+                                                "endpoint": null,
+                                                "automatedBillingDetail": null,
+                                                "serviceId": 1443,
+                                                "serviceName": "Open Banking"
+                                            }
+                                        ],
+                                        "keys": [],
+                                        "teamMembers": [
+                                            {
+                                                "id": 158137,
+                                                "username": "0dac8ce291049f4a8a8e",
+                                                "email": "diplomat@citibankdemobusiness.dev",
+                                                "role": "admin",
+                                                "permissions": [],
+                                                "isCurrent": true,
+                                                "isOwner": true,
+                                                "status": "Active",
+                                                "isActive": true
+                                            }
+                                        ],
+                                        "invitedUsers": [],
+                                        "migrationStatus": null,
+                                        "uuid": "7e61b1b1-e6b1-4088-8cb3-a99544dbc1c0",
+                                        "teamName": "TeamRocket",
+                                        "siteName": "citibankdemobusiness.dev",
+                                        "authType": "FINICITY"
+                                    }
+                                ],
+                                "connectLinkingStatus": {
+                                    "connectLink": "Approved",
+                                    "userCompanyVerified": true
+                                },
+                                "username": "0dac8ce291049f4a8a8e",
+                                "locale": "en_US",
+                                "loggedInSw": "Y",
+                                "mpBusinessName": "citibankdemobusiness.dev",
+                                "adminRequests": [],
+                                "firstname": "james",
+                                "lastname": "ocallaghan",
+                                "ldapId": "23c797d7-e5d7-4db2-b7a4-dd062227ad22",
+                                "features": [
+                                    "COMPANY_ID_JOB",
+                                    "NOTIFIER_MIGRATION",
+                                    "DEVPORTAL_MIGRATION",
+                                    "AMC_NOTIFIER_MIGRATION",
+                                    "FINICITY",
+                                    "MCAPI_EVENT_ENABLED",
+                                    "ARGUS_PLATFORM_ENABLED",
+                                    "MTLS_V2",
+                                    "COLLABORATORS_MIGRATION",
+                                    "MCAPI_PROJECT_EVENT_ENABLED",
+                                    "MCC_VERIFICATION",
+                                    "CLIENTHUB_US_BE",
+                                    "SRC_BUTTON",
+                                    "NEW_PROJECT_DASHBOARD"
+                                ],
+                                "migrationUser": null
+                            }
+                            ]},
+            "definitionId": "DigitalMarketing-Editor-DoLaunchSEO-B1WpQM5af",
+            "dependentCards": [],
+            "experiments": [],
+            "id": "DigitalMarketing-Editor-DoLaunchSEO-B1WpQM5af/mktgasst,b9e957e4-3406-11ee-8336-3417ebe73f23|wsbvnext,558efa16-3168-4552-8fa5-da198b3d5adb"
+        }
+    ],
+    "warnings": [],
+    "shopperWarnings": [],
+    "shopperProperties": {
+        "ownedProducts": [
+            "mktgasst",
+            "gocentral"
+        ],
+        "activatedProducts": [
+            "gocentral"
+        ],
+        "mktgasstCount": 1,
+        "gocentralCount": 1
+    },
+    "experimentSettings": {
+        "rawSettings": {},
+        "telemetry": {}
+    },
+    "plInfo": {
+        "rootDomain": "godaddy.com",
+        "plid": 1
+    }
+}
