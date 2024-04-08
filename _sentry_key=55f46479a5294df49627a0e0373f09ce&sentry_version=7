@@ -1,0 +1,3511 @@
+{
+    "id": "acct_1NS7P9B1i7aShZWt",
+    "json": {
+        "regionalized": true,
+        "merchant": {
+            "id": "acct_1NS7P9B1i7aShZWt",
+            "bacs_debit_display_name": CITIBANKDEMOBUSINESS,
+            "created": 1688946759.8040674,
+            "managed_account": true,
+            "is_express": true,
+            "has_express_dashboard_access": true,
+            "has_dashboard_access": true,
+            "primary_user": "usr_OEaaab7j8TOuey",
+            "primary_email": "postmaster@citibankdemobusiness.dev",
+            "statement_descriptor": "CITIBANKDEMOBUSINESS",
+            "statement_descriptor_prefix": "Business",
+            "statement_descriptor_kanji": CITIBANKDEMOBUSINESS,
+            "statement_descriptor_prefix_kanji": CITIBANKDEMOBUSINESS,
+            "statement_descriptor_kana": CITIBANKDEMOBUSINESS,
+            "statement_descriptor_prefix_kana": CITIBANKDEMOBUSINESS,
+            "hides_welcome": null,
+            "country": "US",
+            "is_in_india_dl_scope": true,
+            "supported_currencies": [
+                "usd",
+                "aed",
+                "afn",
+                "all",
+                "amd",
+                "ang",
+                "aoa",
+                "ars",
+                "aud",
+                "awg",
+                "azn",
+                "bam",
+                "bbd",
+                "bdt",
+                "bgn",
+                "bif",
+                "bmd",
+                "bnd",
+                "bob",
+                "brl",
+                "bsd",
+                "bwp",
+                "byn",
+                "bzd",
+                "cad",
+                "cdf",
+                "chf",
+                "clp",
+                "cny",
+                "cop",
+                "crc",
+                "cve",
+                "czk",
+                "djf",
+                "dkk",
+                "dop",
+                "dzd",
+                "egp",
+                "etb",
+                "eur",
+                "fjd",
+                "fkp",
+                "gbp",
+                "gel",
+                "gip",
+                "gmd",
+                "gnf",
+                "gtq",
+                "gyd",
+                "hkd",
+                "hnl",
+                "hrk",
+                "htg",
+                "huf",
+                "idr",
+                "ils",
+                "inr",
+                "isk",
+                "jmd",
+                "jpy",
+                "kes",
+                "kgs",
+                "khr",
+                "kmf",
+                "krw",
+                "kyd",
+                "kzt",
+                "lak",
+                "lbp",
+                "lkr",
+                "lrd",
+                "lsl",
+                "mad",
+                "mdl",
+                "mga",
+                "mkd",
+                "mmk",
+                "mnt",
+                "mop",
+                "mur",
+                "mvr",
+                "mwk",
+                "mxn",
+                "myr",
+                "mzn",
+                "nad",
+                "ngn",
+                "nio",
+                "nok",
+                "npr",
+                "nzd",
+                "pab",
+                "pen",
+                "pgk",
+                "php",
+                "pkr",
+                "pln",
+                "pyg",
+                "qar",
+                "ron",
+                "rsd",
+                "rub",
+                "rwf",
+                "sar",
+                "sbd",
+                "scr",
+                "sek",
+                "sgd",
+                "shp",
+                "sle",
+                "sos",
+                "srd",
+                "std",
+                "szl",
+                "thb",
+                "tjs",
+                "top",
+                "try",
+                "ttd",
+                "twd",
+                "tzs",
+                "uah",
+                "ugx",
+                "uyu",
+                "uzs",
+                "vnd",
+                "vuv",
+                "wst",
+                "xaf",
+                "xcd",
+                "xof",
+                "xpf",
+                "yer",
+                "zar",
+            ],
+            "supported_presentment_currencies": [
+                "usd",
+                "aed",
+                "afn",
+                "all",
+                "amd",
+                "ang",
+                "aoa",
+                "ars",
+                "aud",
+                "awg",
+                "azn",
+                "bam",
+                "bbd",
+                "bdt",
+                "bgn",
+                "bif",
+                "bmd",
+                "bnd",
+                "bob",
+                "brl",
+                "bsd",
+                "bwp",
+                "byn",
+                "bzd",
+                "cad",
+                "cdf",
+                "chf",
+                "clp",
+                "cny",
+                "cop",
+                "crc",
+                "cve",
+                "czk",
+                "djf",
+                "dkk",
+                "dop",
+                "dzd",
+                "egp",
+                "etb",
+                "eur",
+                "fjd",
+                "fkp",
+                "gbp",
+                "gel",
+                "gip",
+                "gmd",
+                "gnf",
+                "gtq",
+                "gyd",
+                "hkd",
+                "hnl",
+                "hrk",
+                "htg",
+                "huf",
+                "idr",
+                "ils",
+                "inr",
+                "isk",
+                "jmd",
+                "jpy",
+                "kes",
+                "kgs",
+                "khr",
+                "kmf",
+                "krw",
+                "kyd",
+                "kzt",
+                "lak",
+                "lbp",
+                "lkr",
+                "lrd",
+                "lsl",
+                "mad",
+                "mdl",
+                "mga",
+                "mkd",
+                "mmk",
+                "mnt",
+                "mop",
+                "mur",
+                "mvr",
+                "mwk",
+                "mxn",
+                "myr",
+                "mzn",
+                "nad",
+                "ngn",
+                "nio",
+                "nok",
+                "npr",
+                "nzd",
+                "pab",
+                "pen",
+                "pgk",
+                "php",
+                "pkr",
+                "pln",
+                "pyg",
+                "qar",
+                "ron",
+                "rsd",
+                "rub",
+                "rwf",
+                "sar",
+                "sbd",
+                "scr",
+                "sek",
+                "sgd",
+                "shp",
+                "sle",
+                "sos",
+                "srd",
+                "std",
+                "szl",
+                "thb",
+                "tjs",
+                "top",
+                "try",
+                "ttd",
+                "twd",
+                "tzs",
+                "uah",
+                "ugx",
+                "uyu",
+                "uzs",
+                "vnd",
+                "vuv",
+                "wst",
+                "xaf",
+                "xcd",
+                "xof",
+                "xpf",
+                "yer",
+                "zar",
+                "zmw"
+            ],
+            "settlement_currencies": [
+                "usd",
+                "aed",
+                "afn",
+                "all",
+                "amd",
+                "ang",
+                "aoa",
+                "ars",
+                "aud",
+                "awg",
+                "azn",
+                "bam",
+                "bbd",
+                "bdt",
+                "bgn",
+                "bif",
+                "bmd",
+                "bnd",
+                "bob",
+                "brl",
+                "bsd",
+                "bwp",
+                "byn",
+                "bzd",
+                "cad",
+                "cdf",
+                "chf",
+                "clp",
+                "cny",
+                "cop",
+                "crc",
+                "cve",
+                "czk",
+                "djf",
+                "dkk",
+                "dop",
+                "dzd",
+                "egp",
+                "etb",
+                "eur",
+                "fjd",
+                "fkp",
+                "gbp",
+                "gel",
+                "gip",
+                "gmd",
+                "gnf",
+                "gtq",
+                "gyd",
+                "hkd",
+                "hnl",
+                "hrk",
+                "htg",
+                "huf",
+                "idr",
+                "ils",
+                "inr",
+                "isk",
+                "jmd",
+                "jpy",
+                "kes",
+                "kgs",
+                "khr",
+                "kmf",
+                "krw",
+                "kyd",
+                "kzt",
+                "lak",
+                "lbp",
+                "lkr",
+                "lrd",
+                "lsl",
+                "mad",
+                "mdl",
+                "mga",
+                "mkd",
+                "mmk",
+                "mnt",
+                "mop",
+                "mur",
+                "mvr",
+                "mwk",
+                "mxn",
+                "myr",
+                "mzn",
+                "nad",
+                "ngn",
+                "nio",
+                "nok",
+                "npr",
+                "nzd",
+                "pab",
+                "pen",
+                "pgk",
+                "php",
+                "pkr",
+                "pln",
+                "pyg",
+                "qar",
+                "ron",
+                "rsd",
+                "rub",
+                "rwf",
+                "sar",
+                "sbd",
+                "scr",
+                "sek",
+                "sgd",
+                "shp",
+                "sle",
+                "sos",
+                "srd",
+                "std",
+                "szl",
+                "thb",
+                "tjs",
+                "top",
+                "try",
+                "ttd",
+                "twd",
+                "tzs",
+                "uah",
+                "ugx",
+                "uyu",
+                "uzs",
+                "vnd",
+                "vuv",
+                "wst",
+                "xaf",
+                "xcd",
+                "xof",
+                "xpf",
+                "yer",
+                "zar",
+            ],
+            "merchant_presentment_currencies": [
+                "usd",
+                "aed",
+                "afn",
+                "all",
+                "amd",
+                "ang",
+                "aoa",
+                "ars",
+                "aud",
+                "awg",
+                "azn",
+                "bam",
+                "bbd",
+                "bdt",
+                "bgn",
+                "bif",
+                "bmd",
+                "bnd",
+                "bob",
+                "brl",
+                "bsd",
+                "bwp",
+                "byn",
+                "bzd",
+                "cad",
+                "cdf",
+                "chf",
+                "clp",
+                "cny",
+                "cop",
+                "crc",
+                "cve",
+                "czk",
+                "djf",
+                "dkk",
+                "dop",
+                "dzd",
+                "egp",
+                "etb",
+                "eur",
+                "fjd",
+                "fkp",
+                "gbp",
+                "gel",
+                "gip",
+                "gmd",
+                "gnf",
+                "gtq",
+                "gyd",
+                "hkd",
+                "hnl",
+                "hrk",
+                "htg",
+                "huf",
+                "idr",
+                "ils",
+                "inr",
+                "isk",
+                "jmd",
+                "jpy",
+                "kes",
+                "kgs",
+                "khr",
+                "kmf",
+                "krw",
+                "kyd",
+                "kzt",
+                "lak",
+                "lbp",
+                "lkr",
+                "lrd",
+                "lsl",
+                "mad",
+                "mdl",
+                "mga",
+                "mkd",
+                "mmk",
+                "mnt",
+                "mop",
+                "mur",
+                "mvr",
+                "mwk",
+                "mxn",
+                "myr",
+                "mzn",
+                "nad",
+                "ngn",
+                "nio",
+                "nok",
+                "npr",
+                "nzd",
+                "pab",
+                "pen",
+                "pgk",
+                "php",
+                "pkr",
+                "pln",
+                "pyg",
+                "qar",
+                "ron",
+                "rsd",
+                "rub",
+                "rwf",
+                "sar",
+                "sbd",
+                "scr",
+                "sek",
+                "sgd",
+                "shp",
+                "sle",
+                "sos",
+                "srd",
+                "std",
+                "szl",
+                "thb",
+                "tjs",
+                "top",
+                "try",
+                "ttd",
+                "twd",
+                "tzs",
+                "uah",
+                "ugx",
+                "uyu",
+                "uzs",
+                "vnd",
+                "vuv",
+                "wst",
+                "xaf",
+                "xcd",
+                "xof",
+                "xpf",
+                "yer",
+                "zar",
+            ],
+            "fx_enabled": true,
+            "enabled_countries": [
+                "AE",
+                "AT",
+                "AU",
+                "BE",
+                "BG",
+                "BR",
+                "CA",
+                "CH",
+                "CY",
+                "CZ",
+                "DE",
+                "DK",
+                "EE",
+                "ES",
+                "FI",
+                "FR",
+                "GB",
+                "GI",
+                "GR",
+                "HK",
+                "HR",
+                "HU",
+                "IE",
+                "IN",
+                "IT",
+                "JP",
+                "LI",
+                "LT",
+                "LU",
+                "LV",
+                "MT",
+                "MX",
+                "MY",
+                "NL",
+                "NO",
+                "NZ",
+                "PL",
+                "PT",
+                "RO",
+                "SE",
+                "SG",
+                "SI",
+                "SK",
+                "TH",
+                "US"
+            ],
+            "default_currency": "usd",
+            "decline_on_cvc_failure": false,
+            "decline_on_avs_zip_failure": false,
+            "timezone": "America/Chicago",
+            "nickname": "citibank_link",
+            "icon": "https://files.stripe.com/files/MDB8YWNjdF8xTlM3UDlCMWk3YVNoWld0fGZfbGl2ZV9lRng4TWl0cElHWHlTcWttSlk4QU9IU2w00tTABXKum",
+            "controlling_platform_settings": {
+                "platform_color": null,
+                "platform_name": null,
+                "platform_icon": null,
+                "stripe_owns_loss_liability": true,
+                "platform_support_info": null,
+                "stripe_owns_pricing": false,
+                "disable_dashboard_payment_creation": null,
+                "platform_controlled_permissions": []
+            },
+            "business_primary_color": "#525f7f",
+            "email_background_color": "#525f7f",
+            "business_url": "https://citibankdemobusiness.dev",
+            "business_logo": "https://files.stripe.com/files/MDB8YWNjdF8xTlM3UDlCMWk3YVNoWld0fGZfbGl2ZV9lRng4TWl0cElHWHlTcWttSlk4QU9IU2w00tTABXKum",
+            "business_cross_border_transaction_classifications": [],
+            "support_address": {
+                "line1": "Citibank Demo Business Inc",
+                "line2": "5218 Franklin woodland drive ",
+                "city": "Plant city ",
+                "state": "FL",
+                "zip": "33565",
+                "country": "US"
+            },
+            "support_phone": "+18136685520",
+            "support_email": "postmaster@citibankdemobusiness.dev",
+            "support_url": null,
+            "privacy_policy_url": "https://citibankdemobusiness.dev/privacy-policy",
+            "terms_of_service_url": null,
+            "legal_transfer_intervals": [
+                "daily",
+                "weekly",
+                "monthly"
+            ],
+            "legal_payout_intervals": [
+                "daily",
+                "weekly",
+                "monthly"
+            ],
+            "is_fake_merchant": false,
+            "stripe_version": "2023-10-16",
+            "submitted_application": true,
+            "activated": true,
+            "applied_payment_sources": {
+                "alipay_account": true,
+                "bank_account": true,
+                "banking": true,
+                "bitcoin_receiver": false,
+                "credit_drawn": true,
+                "financial_partner_revenue": true,
+                "financial_partner_settlement": true,
+                "financing": true,
+                "issuing": true,
+                "issuing_credit_reserve": true,
+                "obligation": true,
+                "payment_method": true,
+                "refund_and_dispute_prefunding": true,
+                "source": true,
+                "stripe_account": true
+            },
+            "atlas": true,
+            "show_ppro_boarding_directors": true,
+            "is_verified": true,
+            "enabled_raw_pans": true,
+            "enforce_raw_pans": true,
+            "enabled_checkout": true,
+            "allow_additional_diagnostics": true,
+            "tags": {
+                "bank_reconciliation_status": true,
+                "automations_active": true,
+                "billing_analytics_pinot_enabled": true,
+                "climate_program": "active",
+                "company_profile": "enterprise",
+                "identity_active": "active",
+                "integration_intent": "app.moderntreasury.com, citibankdemobusiness.dev",
+                "issuing_active": "active",
+                "orders_active": "active",
+                "revenue_boost_status": "active",
+                "revenue_recognition_eligible": "eligible",
+                "revenue_recognition_status_testmode": "active",
+                "revenue_recognition_status": "active",
+                "revenue_reporting_nav": "active",
+                "sigma_plan_status": "paid",
+                "subscriptions_active": "active",
+                "tax_product_active": "active",
+                "terminal_active": "active",
+                "treasury_active": "active"
+            },
+            "controlled_by_single_platform": true,
+            "controlling_platform": "citibankdemobusiness.dev",
+            "email_customers_show_support_phone": true,
+            "topup_currency": "usd",
+            "exports_decimal_separator": ".",
+            "specified_commercial_transactions_act_url": "citibankdemobusiness.dev",
+            "org": "org_OEaawbYhaU0zGY",
+            "org_name": "CITIBANKDEMOBUSINESSINC,
+            "org_created": 1688946760.323303,
+            "created_by_application": false,
+            "has_applications": true,
+            "is_extension": true,
+            "create_v1_transfers_supported": true,
+            "email_customers_on_refund": true,
+            "email_customers_default_locale": "en-US",
+            "email_customers_on_successful_charge": true,
+            "on_manual_payouts": true,
+            "url": "citibankdemobusiness.dev",
+            "can_change_country": true,
+            "can_submit_application": true,
+            "name": "James OCallaghan",
+            "phone": "+19177960749",
+            "street": "Citibank Demo Business Inc\n5218 Franklin woodland drive ",
+            "line1": "Citibank Demo Business Inc",
+            "line2": "5218 Franklin woodland drive ",
+            "city": "Plant city ",
+            "state": "FL",
+            "zip": "335653175183",
+            "business_name": "Citibank Demo Business Inc",
+            "business_type": "company",
+            "tax_verification_needed": false,
+            "platform_industry": "banking/financial",
+            "enable_international_recipients": true,
+            "enable_recipient_extra_fields": true,
+            "trusted_payouts_app": true,
+            "has_default_external_bank_accounts": true,
+            "has_payment_intents_in_livemode": true,
+            "has_payment_intents_in_testmode": true,
+            "topup_compliance_disabled": false,
+            "is_japan_risa_survey_submission_required": false
+        },
+        "api_keys": [
+            {
+                "id": "mk_1NS7PGB1i7aShZWt2WRawNzm",
+                "object": "api_key",
+                "type": "publishable",
+                "name": null,
+                "note": null,
+                "permissions": [],
+                "connect_permissions": [],
+                "livemode": true,
+                "created": 1688946766,
+                "expires": 0,
+                "hidden": false,
+                "hide_on_next_view": false,
+                "longer_format": true,
+                "ip_whitelist": null,
+                "thirdparty_integration_name": null,
+                "thirdparty_integration_url": null,
+                "secret_redacted": "pk_test_...c6ru",
+                "secret": "pk_test_51NS7P9B1i7aShZWtt94PWAanN7Y26z6ZDkdyI83R1V3JwqF6VsTHyWfedUzo6rObnXR4YBrUFqBLESb2AaaNRSil00Q1Utc6ru"
+            },
+            {
+                "id": "mk_1NS7PGB1i7aShZWtmuMBPggj",
+                "object": "api_key",
+                "type": "publishable",
+                "name": null,
+                "note": null,
+                "permissions": [],
+                "connect_permissions": [],
+                "livemode": true,
+                "created": 1688946766,
+                "expires": 0,
+                "hidden": false,
+                "hide_on_next_view": false,
+                "longer_format": true,
+                "ip_whitelist": null,
+                "thirdparty_integration_name": null,
+                "thirdparty_integration_url": null,
+                "secret_redacted": "pk_live_...ZqdM",
+                "secret": "pk_live_51NS7P9B1i7aShZWtH4SLVfl2BlnTJSc8sTfO245bPvQd406uQwUN3eSH3AcWPgJVcZBFCEZkxgGhIW0FZWVoyfgK00rX1hZqdM"
+            }
+        ],
+        "transfer_currency_mapping": {
+            "US": {
+                "usd": [
+                    "US"
+                ]
+            },
+            "CA": {
+                "cad": [
+                    "CA"
+                ],
+                "usd": [
+                    "US",
+                    "CA"
+                ]
+            },
+            "AE": {
+                "aed": [
+                    "AE"
+                ]
+            },
+            "AR": {
+                "ars": [
+                    "AR"
+                ]
+            },
+            "AU": {
+                "aud": [
+                    "AU"
+                ]
+            },
+            "BR": {
+                "brl": [
+                    "BR"
+                ]
+            },
+            "BD": {
+                "bdt": [
+                    "BD"
+                ]
+            },
+            "MX": {
+                "mxn": [
+                    "MX"
+                ]
+            },
+            "NZ": {
+                "nzd": [
+                    "NZ"
+                ]
+            },
+            "JP": {
+                "jpy": [
+                    "JP"
+                ]
+            },
+            "SG": {
+                "sgd": [
+                    "SG"
+                ]
+            },
+            "HK": {
+                "hkd": [
+                    "HK"
+                ]
+            },
+            "AG": {
+                "xcd": [
+                    "AG"
+                ]
+            },
+            "AL": {
+                "all": [
+                    "AL"
+                ]
+            },
+            "AM": {
+                "amd": [
+                    "AM"
+                ]
+            },
+            "AO": {
+                "aoa": [
+                    "AO"
+                ]
+            },
+            "AZ": {
+                "azn": [
+                    "AZ"
+                ]
+            },
+            "BA": {
+                "bam": [
+                    "BA"
+                ]
+            },
+            "BH": {
+                "bhd": [
+                    "BH"
+                ]
+            },
+            "BJ": {
+                "xof": [
+                    "BJ"
+                ]
+            },
+            "BN": {
+                "bnd": [
+                    "BN"
+                ]
+            },
+            "BS": {
+                "bsd": [
+                    "BS"
+                ]
+            },
+            "BO": {
+                "bob": [
+                    "BO"
+                ]
+            },
+            "BT": {
+                "btn": [
+                    "BT"
+                ]
+            },
+            "BW": {
+                "bwp": [
+                    "BW"
+                ]
+            },
+            "CI": {
+                "xof": [
+                    "CI"
+                ]
+            },
+            "CL": {
+                "clp": [
+                    "CL"
+                ]
+            },
+            "CO": {
+                "cop": [
+                    "CO"
+                ]
+            },
+            "CR": {
+                "crc": [
+                    "CR"
+                ]
+            },
+            "DO": {
+                "dop": [
+                    "DO"
+                ]
+            },
+            "DZ": {
+                "dzd": [
+                    "DZ"
+                ]
+            },
+            "EC": {
+                "usd": [
+                    "EC"
+                ]
+            },
+            "EG": {
+                "egp": [
+                    "EG"
+                ]
+            },
+            "ET": {
+                "etb": [
+                    "ET"
+                ]
+            },
+            "GA": {
+                "xaf": [
+                    "GA"
+                ]
+            },
+            "GE": {
+                "gel": [
+                    "GE"
+                ]
+            },
+            "GH": {
+                "ghs": [
+                    "GH"
+                ]
+            },
+            "GM": {
+                "gmd": [
+                    "GM"
+                ]
+            },
+            "GT": {
+                "gtq": [
+                    "GT"
+                ]
+            },
+            "GY": {
+                "gyd": [
+                    "GY"
+                ]
+            },
+            "ID": {
+                "idr": [
+                    "ID"
+                ]
+            },
+            "IL": {
+                "ils": [
+                    "IL"
+                ]
+            },
+            "IS": {
+                "eur": [
+                    "IS"
+                ]
+            },
+            "IN": {
+                "inr": [
+                    "IN"
+                ]
+            },
+            "JO": {
+                "jod": [
+                    "JO"
+                ]
+            },
+            "JM": {
+                "jmd": [
+                    "JM"
+                ]
+            },
+            "KE": {
+                "kes": [
+                    "KE"
+                ]
+            },
+            "KH": {
+                "khr": [
+                    "KH"
+                ]
+            },
+            "KR": {
+                "krw": [
+                    "KR"
+                ]
+            },
+            "KW": {
+                "kwd": [
+                    "KW"
+                ]
+            },
+            "KZ": {
+                "kzt": [
+                    "KZ"
+                ]
+            },
+            "LC": {
+                "xcd": [
+                    "LC"
+                ]
+            },
+            "LA": {
+                "lak": [
+                    "LA"
+                ]
+            },
+            "LK": {
+                "lkr": [
+                    "LK"
+                ]
+            },
+            "MA": {
+                "mad": [
+                    "MA"
+                ]
+            },
+            "MC": {
+                "eur": [
+                    "MC"
+                ]
+            },
+            "MD": {
+                "mdl": [
+                    "MD"
+                ]
+            },
+            "MG": {
+                "mga": [
+                    "MG"
+                ]
+            },
+            "MK": {
+                "mkd": [
+                    "MK"
+                ]
+            },
+            "MN": {
+                "mnt": [
+                    "MN"
+                ]
+            },
+            "MO": {
+                "mop": [
+                    "MO"
+                ]
+            },
+            "MU": {
+                "mur": [
+                    "MU"
+                ]
+            },
+            "MY": {
+                "myr": [
+                    "MY"
+                ]
+            },
+            "MZ": {
+                "mzn": [
+                    "MZ"
+                ]
+            },
+            "NA": {
+                "nad": [
+                    "NA"
+                ]
+            },
+            "NE": {
+                "xof": [
+                    "NE"
+                ]
+            },
+            "NG": {
+                "ngn": [
+                    "NG"
+                ]
+            },
+            "OM": {
+                "omr": [
+                    "OM"
+                ]
+            },
+            "PA": {
+                "usd": [
+                    "PA"
+                ]
+            },
+            "PE": {
+                "pen": [
+                    "PE"
+                ]
+            },
+            "PH": {
+                "php": [
+                    "PH"
+                ]
+            },
+            "PK": {
+                "pkr": [
+                    "PK"
+                ]
+            },
+            "PY": {
+                "pyg": [
+                    "PY"
+                ]
+            },
+            "QA": {
+                "qar": [
+                    "QA"
+                ]
+            },
+            "RS": {
+                "rsd": [
+                    "RS"
+                ]
+            },
+            "RW": {
+                "rwf": [
+                    "RW"
+                ]
+            },
+            "SA": {
+                "sar": [
+                    "SA"
+                ]
+            },
+            "SM": {
+                "eur": [
+                    "SM"
+                ]
+            },
+            "SN": {
+                "xof": [
+                    "SN"
+                ]
+            },
+            "SV": {
+                "usd": [
+                    "SV"
+                ]
+            },
+            "TH": {
+                "thb": [
+                    "TH"
+                ]
+            },
+            "TN": {
+                "tnd": [
+                    "TN"
+                ]
+            },
+            "TR": {
+                "try": [
+                    "TR"
+                ]
+            },
+            "TT": {
+                "ttd": [
+                    "TT"
+                ]
+            },
+            "TW": {
+                "twd": [
+                    "TW"
+                ]
+            },
+            "TZ": {
+                "tzs": [
+                    "TZ"
+                ]
+            },
+            "UY": {
+                "uyu": [
+                    "UY"
+                ]
+            },
+            "UZ": {
+                "uzs": [
+                    "UZ"
+                ]
+            },
+            "VN": {
+                "vnd": [
+                    "VN"
+                ]
+            },
+            "ZA": {
+                "zar": [
+                    "ZA"
+                ]
+            },
+            "GB": {
+                "gbp": [
+                    "GB",
+                    "GI"
+                ],
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ]
+            },
+            "GI": {
+                "gbp": [
+                    "GB",
+                    "GI"
+                ],
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ]
+            },
+            "LI": {
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "CH": {
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "NO": {
+                "nok": [
+                    "NO"
+                ],
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "DK": {
+                "dkk": [
+                    "DK"
+                ],
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "SE": {
+                "sek": [
+                    "SE"
+                ],
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "PL": {
+                "pln": [
+                    "PL"
+                ],
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "BG": {
+                "bgn": [
+                    "BG"
+                ],
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "CZ": {
+                "czk": [
+                    "CZ"
+                ],
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "HU": {
+                "huf": [
+                    "HU"
+                ],
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "RO": {
+                "ron": [
+                    "RO"
+                ],
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "AT": {
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "BE": {
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "CY": {
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "DE": {
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "EE": {
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "ES": {
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "FI": {
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "FR": {
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "GR": {
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "HR": {
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "IE": {
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "IT": {
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "LT": {
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "LU": {
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "LV": {
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "MT": {
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "NL": {
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "PT": {
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "SI": {
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            },
+            "SK": {
+                "eur": [
+                    "AT",
+                    "BE",
+                    "BG",
+                    "CH",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DK",
+                    "EE",
+                    "ES",
+                    "FI",
+                    "FR",
+                    "GB",
+                    "GI",
+                    "GR",
+                    "HR",
+                    "HU",
+                    "IE",
+                    "IT",
+                    "LI",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "MT",
+                    "NL",
+                    "NO",
+                    "PL",
+                    "PT",
+                    "RO",
+                    "SE",
+                    "SI",
+                    "SK"
+                ],
+                "usd": [
+                    "US"
+                ],
+                "sek": [
+                    "SE"
+                ],
+                "nok": [
+                    "NO"
+                ],
+                "dkk": [
+                    "DK"
+                ],
+                "chf": [
+                    "CH",
+                    "LI"
+                ],
+                "gbp": [
+                    "GB",
+                    "GI"
+                ]
+            }
+        },
+        "treatments": {
+            "caribou_beta_promo": "treatment",
+            "billing_experience_holdback": "control",
+            "dashboard_payments_action_filters_counts": "treatment",
+            "dashboard_create_invoice_defer_stripejs": "control",
+            "dashboard_prefetch_invoice_list": "control",
+            "dashboard_home_charts_api_refactor_m1_darklaunch": "control",
+            "dashboard_prefetch_default_home_widgets": "treatment",
+            "app_marketplace_merchant_aware": "treatment",
+            "app_marketplace_merchant_aware_aa": "control",
+            "app_marketplace_ple_insight_modules": "treatment",
+            "dashboard_featured_apps_replacement_apps": "treatment",
+            "dashboard_featured_apps_replacement_apps_aa": "control",
+            "growth_more_products_link_title": "treatment",
+            "billing_product_drawer_existing_users": "control",
+            "billing_onboarding_product_drawer_existing_users": "control",
+            "settings_sail_next_beta": "control",
+            "billing_onboarding_personalized_tasklist_existing_users": "control",
+            "tax_api_home_insight_module_experiment": "control",
+            "billing_product_drawer_v2": "control",
+            "billing_product_drawer_v3_no_products": "control",
+            "billing_product_drawer_v3_has_products": "control",
+            "link_overlap_modal": "control",
+            "growth_subscription_recommendation_20240103": "control",
+            "dashboard_revolut_pay_promotion": "control",
+            "dashboard_new_payment_analytics": "control",
+            "dashboard_bento_revenue_opportunities": "control",
+            "test_experiment_2": "control",
+            "instant_payouts_button_design": "control",
+            "capital_make_me_a_better_offer_survey": "control",
+            "revenue_recognition_promotion": "treatment",
+            "invoicing_invoice_editor_fast_line_item_editing": "control",
+            "invoicing_dashboard_landing_page_v2": "control",
+            "invoicing_dashboard_landing_page_v3": "treatment",
+            "invoicing_recommendation_cards": "control",
+            "invoicing_recommendation_cards_v2": "treatment",
+            "invoicing_gb_editor_enhancements": "control",
+            "invoicing_onboarding_flow": "control",
+            "dashboard_decline_reasons": "control",
+            "dashboard_payment_method_adoption_1": "treatment",
+            "dashboard_payout_modals": "control",
+            "direct_upfront_full_ssn": "control",
+            "ark_company_structures_us": "treatment",
+            "ark_company_structures_uae": "control",
+            "ark_company_structures_eu": "treatment",
+            "ark_company_structures_aunz": "control",
+            "ark_company_structures_hk": "control",
+            "ark_company_structures_jp": "control",
+            "express_1_click_payee_onboarding": "control",
+            "cbsp_platform_isolation": "treatment",
+            "onboarding_risk_evaluation_survey_experiment": "control",
+            "skippable_bank_account": "control",
+            "growth_account_app_confirmation_m1": "control",
+            "growth_updated_insights_design": "control",
+            "growth_contact_sales_link": "control",
+            "growth_tax_onboarding_drawer_v2": "control",
+            "growth_new_nux": "treatment",
+            "growth_new_nux_2": "control",
+            "growth_insights_on_customers_list": "treatment",
+            "growth_phone_a_friend_m1": "control",
+            "growth_updated_insights_design_2": "control",
+            "growth_optimize_getting_started_recommendations_connect": "control",
+            "connections_in_onboarding_standard_api_v2": "treatment",
+            "channel_recommendation_banner": "treatment",
+            "reduce_data_story_runner_polling_delay": "treatment",
+            "ash_v2_milestone_1": "treatment",
+            "lpm_adoption_recommended_lpm_settings_page_v2": "control",
+            "dashboard_payments_list_enhancements_m1": "control",
+            "connect_onboarding_address_suggestion": "treatment",
+            "ark_conversion_to_sail_next_m1": "control",
+            "billing_starter_plan_upsell_insight_module_message": "treatment",
+            "billing_legacy_plan_upsell_insight_module_message": "control",
+            "ab_test_account_claim_missing_tin_to_bank_last_4": "treatment",
+            "app_marketplace_trial": "control",
+            "climate_dashboard_payment_success_promotion_new_users": "treatment",
+            "rfa_relaunch": "control",
+            "capital_default_selected_offer": "control",
+            "capital_offer_display_order": "treatment",
+            "dashboard_prefetch_invoice_details": "control",
+            "display_sta_info_card_for_tax_overview_page": "treatment",
+            "tax_cheatsheet_payments_support_copy_change": "control",
+            "dashboard_bento_customer_details": "treatment",
+            "bg_pre_essential_journey_improvements_holdback": "control",
+            "billing_scale_paywall_settings": "control",
+            "dashboard_product_list_platformized": "control",
+            "dashboard_billing_platformized": "control",
+            "dashboard_product_settings_revamp": "control",
+            "remove_subs_tasklist_aa": "control",
+            "remove_subs_tasklist": "control",
+            "growth_onboarding_starter_guides": "control",
+            "update_quick_actions_cta": "treatment",
+            "ua_platform_onboarding": "control",
+            "bank_connections_manual_entry_in_direct_onboarding": "control",
+            "bank_connections_manual_entry_in_direct_onboarding_aa": "control",
+            "insights_module_cashapp_pay_promotion": "control",
+            "express_app_connect_elements": "control_test",
+            "growth_billing_scale_upgrade": "control",
+            "growth_insights_on_customer_details": "control",
+            "tax_default_on_monitoring_v2": "control",
+            "sigma_show_results_with_trial_promo": "control",
+            "dashboard_m2_new_merchants": "control",
+            "dashboard_m2_existing_and_billing_merchants": "control",
+            "dashboard_m2_existing_not_billing_merchants": "control",
+            "dashboard_m2_connect_platforms": "control",
+            "eu_invoicing_banner": "control",
+            "billing_product_drawer_new_users": "control",
+            "billing_onboarding_product_drawer_new_users": "control",
+            "billing_nav_p2_new_merchants": "control",
+            "billing_nav_p2_new_merchants_aa": "control",
+            "billing_nav_p2_existing_not_billing_merchants": "control",
+            "billing_nav_p2_existing_not_billing_merchants_aa": "control",
+            "billing_onboarding_personalized_tasklist_new_users": "control",
+            "billing_product_drawer_v4_has_products": "treatment_1",
+            "billing_product_drawer_v4_no_products": "treatment_1",
+            "payout_schedule_selection_in_onboarding": "control",
+            "payout_schedule_selection_in_onboarding_aa": "control",
+            "growth_new_nux_2_1": "control",
+            "dashboard_customer_analytics": "control",
+            "payouts_platform_remove_future_payout_attribution": "control",
+            "invoicing_spice_editor_v1": "treatment",
+            "lpm_two_plus_two_compliance_plan_rollout": "treatment",
+            "ark_enable_expanded_persons_v2": "control",
+            "growth_register_page_checkout_fe_ab": "control",
+            "acquisition_global_register_page_aa": "control",
+            "insights_benchmarking": "control",
+            "display_tax_for_payments_without_tax": "control",
+            "emea_marketing_consent_phase_2": "control",
+            "onboarding_encourage_director_addition": "control",
+            "product_tour_invoicing_mvp": "control",
+            "request_support_on_account_application": "control",
+            "welcome_page_setup_later_target": "control",
+            "climate_dashboard_payment_success_promotion_existing_users": "control",
+            "combine_individual_and_sole_prop_v2": "control",
+            "arkv2_custom_onboarding": "control"
+        },
+        "flags": {
+            "has_banking_capability_requested": true,
+            "banking_v1_onboarding_enabled": true,
+            "opal_statement_notifications_enabled": true,
+            "opal_is_product_name": true,
+            "opal_show_post_migration_task_list": true,
+            "enable_financial_services_platform_onboarding": true,
+            "enable_treasury_api": true,
+            "enable_treasury_testmode": true,
+            "can_self_serve_treasury": true,
+            "enable_treasury_connect_dashboard": true,
+            "is_treasury_platform": true,
+            "enable_banking_capability": true,
+            "enable_instant_treasury_and_issuing_testmode": true,
+            "use_ga_treasury_api_in_dashboard": true,
+            "test_clocks_enable_existing_objects": true,
+            "create_incomplete": true,
+            "billing_payment_intents": true,
+            "billing_revenue_recognition_new_ineligible_signup_flow": true,
+            "billing_revenue_recognition_v17": true,
+            "billing_revenue_recognition_rules": true,
+            "billing_revenue_recognition_manual_accounting_period": true,
+            "billing_scale_paywall_feature_context": true,
+            "revenue_recognition_has_trial": true,
+            "flexible_invoice_numbering_api": true,
+            "billing_analytics_bugfix_decibel_currency_conversion": true,
+            "billing_analytics_enable_pinot_shadow_mode": true,
+            "billing_analytics_enable_pinot": true,
+            "billing_analytics_enable_consistent_naming": true,
+            "billing_analytics_enable_metric_policy": true,
+            "billing_analytics_disregard_active_unpaid_subscriptions_as_active": true,
+            "billing_analytics_enable_metric_export": true,
+            "billing_connect_platform": true,
+            "billing_promotion_code_livemode_access": true,
+            "billing_new_final_action_on_invoice_settings": true,
+            "regular_dunning_array_of_fixed_retries": true,
+            "smart_dunning_drop_dead_days_to_63": true,
+            "smart_dunning_max_retries_to_8": true,
+            "invoicing_dashboard_create_invoices_due_same_day": true,
+            "restrict_add_cards_on_invoice_editor": true,
+            "invoices_are_monetized": true,
+            "invoice_recommendation_cards_v2": true,
+            "invoice_dashboard_line_item_grouping": true,
+            "invoice_line_item_grouping_cel_editor": true,
+            "invoices_dashboard_editor_layout_changes": true,
+            "invoices_dashboard_editor_requires_account_name": true,
+            "invoicing_use_pay_endpoint_to_transition_to_paid": true,
+            "invoicing_show_all_outstanding_invoices": true,
+            "invoicing_show_service_supply_date": true,
+            "invoicing_scheduled_payment_eligable": true,
+            "customizable_failed_payment_email_v2": true,
+            "invoices_shipping_details": true,
+            "invoices_shipping_cost": true,
+            "credit_note_shipping_cost": true,
+            "invoice_details_page_send_invoice_hcaptcha": true,
+            "invoiceless_subscription_payment_method_update_link": true,
+            "enable_hosted_page_for_upcoming_invoice_email": true,
+            "revenue_recognition_show_rev_rec_bento_insight": true,
+            "revenue_recognition_waterfall_custom_accounting_period": true,
+            "recovery_ia": true,
+            "enable_multiple_trigger_conditions": true,
+            "automations_ga": true,
+            "automation_detail_page": true,
+            "revenue_recognition_debit_credit_format_by_event_type": true,
+            "billing_nav_p2_new_merchants_eligible": true,
+            "invoice_refund_and_dispute_status_filters": true,
+            "invoice_refund_and_dispute_status_ui": true,
+            "invoice_list_remove_payment_intent_expansion": true,
+            "share_payment_method_update_page": true,
+            "subscription_schedule_metadata_editor": true,
+            "repackage_billing_and_invoicing_features_to_free_tier": true,
+            "connect_orr_force_new_remediation_experience": true,
+            "connect_show_legal_spc_agreement": true,
+            "dashboard_home_sample_charts_disabled": true,
+            "emerald_xero_integration": true,
+            "emerald_download_statement_pdfs": true,
+            "emerald_autopay_schedules": true,
+            "emerald_splitview_items_from_wrapper": true,
+            "account_app_2fa_mandate": true,
+            "account_app_2fa_mandate_international": true,
+            "account_app_connect_2fa_mandate": true,
+            "account_app_connect_2fa_mandate_international": true,
+            "dashboard_enable_add_funds": true,
+            "dashboard_enable_default_radar_rules_change_notice": true,
+            "radar_enable_customizable_lists": true,
+            "radar_enable_integration_health_dashboard_section": true,
+            "radar_risk_insights_hide_fraud_factor_insights": true,
+            "radar_risk_tolerance_livemode": true,
+            "radar_risk_tolerance_testmode": true,
+            "radar_show_request_credential_rules": true,
+            "radar_enable_new_rule_backtesting_and_creation_experience": true,
+            "accounting_starter_promotion": true,
+            "revenue_recognition_enable_metadata_column_selection": true,
+            "revenue_reporting_weekly_charts": true,
+            "revenue_reporting_v1": true,
+            "stripe_card_show_flipped_card_designs": true,
+            "stripe_card_unenrolled": true,
+            "stripe_card_ibt_reversals_ux": true,
+            "stripe_card_limit_card_spend_on_negative_opal_balance": true
+        },
+        "experiments": {
+            "dashboard_home_sample_charts_disabled": false,
+            "dispute_evidence_submission_form_default_file_upload_to_other": true,
+            "enable_dashboard_support_access": true,
+            "caribou_beta_promo": true,
+            "billing_experience_holdback": false,
+            "dashboard_payments_action_filters_counts": true,
+            "dashboard_create_invoice_defer_stripejs": false,
+            "dashboard_prefetch_invoice_list": true,
+            "dashboard_home_charts_api_refactor_m1_darklaunch": true,
+            "dashboard_prefetch_default_home_widgets": true,
+            "app_marketplace_merchant_aware": true,
+            "app_marketplace_merchant_aware_aa": true,
+            "app_marketplace_ple_insight_modules": true,
+            "dashboard_featured_apps_replacement_apps": true,
+            "dashboard_featured_apps_replacement_apps_aa": true,
+            "growth_more_products_link_title": true,
+            "billing_product_drawer_existing_users": true,
+            "billing_onboarding_product_drawer_existing_users": true,
+            "settings_sail_next_beta": truetrue,
+            "billing_onboarding_personalized_tasklist_existing_users": true,
+            "tax_api_home_insight_module_experiment": true,
+            "billing_product_drawer_v2": true,
+            "billing_product_drawer_v3_no_products": false,
+            "billing_product_drawer_v3_has_products": true,
+            "link_overlap_modal": true,
+            "growth_subscription_recommendation_20240103": true,
+            "dashboard_revolut_pay_promotion": true,
+            "dashboard_new_payment_analytics": true,
+            "dashboard_bento_revenue_opportunities": true,
+            "test_experiment_2": true,
+            "instant_payouts_button_design": true,
+            "capital_make_me_a_better_offer_survey": true,
+            "revenue_recognition_promotion": true,
+            "invoicing_invoice_editor_fast_line_item_editing": true,
+            "invoicing_dashboard_landing_page_v2": true,
+            "invoicing_dashboard_landing_page_v3": true,
+            "invoicing_recommendation_cards": true,
+            "invoicing_recommendation_cards_v2": true,
+            "invoicing_gb_editor_enhancements": true,
+            "invoicing_onboarding_flow": true,
+            "dashboard_decline_reasons": true,
+            "dashboard_payment_method_adoption_1": true,
+            "dashboard_payout_modals": true,
+            "direct_upfront_full_ssn": true,
+            "ark_company_structures_us": true,
+            "ark_company_structures_uae": true,
+            "ark_company_structures_eu": true,
+            "ark_company_structures_aunz": true,
+            "ark_company_structures_hk": true,
+            "ark_company_structures_jp": true,
+            "express_1_click_payee_onboarding": true,
+            "cbsp_platform_isolation": true,
+            "onboarding_risk_evaluation_survey_experiment": true,
+            "skippable_bank_account": true,
+            "growth_account_app_confirmation_m1": true,
+            "growth_updated_insights_design": true,
+            "growth_contact_sales_link": true,
+            "growth_tax_onboarding_drawer_v2": true,
+            "growth_new_nux": true,
+            "growth_new_nux_2": true,
+            "growth_insights_on_customers_list": true,
+            "growth_phone_a_friend_m1": true,
+            "growth_updated_insights_design_2": true,
+            "growth_optimize_getting_started_recommendations_connect": true,
+            "connections_in_onboarding_standard_api_v2": true,
+            "channel_recommendation_banner": true,
+            "reduce_data_story_runner_polling_delay": true,
+            "ash_v2_milestone_1": true,
+            "lpm_adoption_recommended_lpm_settings_page_v2": true,
+            "dashboard_payments_list_enhancements_m1": true,
+            "connect_onboarding_address_suggestion": true,
+            "ark_conversion_to_sail_next_m1": true,
+            "billing_starter_plan_upsell_insight_module_message": true,
+            "billing_legacy_plan_upsell_insight_module_message": true,
+            "ab_test_account_claim_missing_tin_to_bank_last_4": true,
+            "app_marketplace_trial": true,
+            "climate_dashboard_payment_success_promotion_new_users": true,
+            "rfa_relaunch": true,
+            "capital_default_selected_offer": true,
+            "capital_offer_display_order": true,
+            "dashboard_prefetch_invoice_details": true,
+            "display_sta_info_card_for_tax_overview_page": true,
+            "tax_cheatsheet_payments_support_copy_change": true,
+            "dashboard_bento_customer_details": true,
+            "bg_pre_essential_journey_improvements_holdback": true,
+            "billing_scale_paywall_settings": true,
+            "dashboard_product_list_platformized": true,
+            "dashboard_billing_platformized": true,
+            "dashboard_product_settings_revamp": true,
+            "remove_subs_tasklist_aa": true,
+            "remove_subs_tasklist": true,
+            "growth_onboarding_starter_guides": true,
+            "update_quick_actions_cta": true,
+            "ua_platform_onboarding": true,
+            "bank_connections_manual_entry_in_direct_onboarding": true,
+            "bank_connections_manual_entry_in_direct_onboarding_aa": true,
+            "insights_module_cashapp_pay_promotion": true,
+            "express_app_connect_elements": true,
+            "growth_billing_scale_upgrade": true,
+            "growth_insights_on_customer_details": true,
+            "tax_default_on_monitoring_v2": true,
+            "sigma_show_results_with_trial_promo": true,
+            "dashboard_m2_new_merchants": true,
+            "dashboard_m2_existing_and_billing_merchants": true,
+            "dashboard_m2_existing_not_billing_merchants": true,
+            "dashboard_m2_connect_platforms": true,
+            "eu_invoicing_banner": true,
+            "billing_product_drawer_new_users": true,
+            "billing_onboarding_product_drawer_new_users": true,
+            "billing_nav_p2_new_merchants": true,
+            "billing_nav_p2_new_merchants_aa": true,
+            "billing_nav_p2_existing_not_billing_merchants": true,
+            "billing_nav_p2_existing_not_billing_merchants_aa": true,
+            "billing_onboarding_personalized_tasklist_new_users": true,
+            "billing_product_drawer_v4_has_products": true,
+            "billing_product_drawer_v4_no_products": true,
+            "payout_schedule_selection_in_onboarding": true,
+            "payout_schedule_selection_in_onboarding_aa": true,
+            "growth_new_nux_2_1": true,
+            "dashboard_customer_analytics": true,
+            "payouts_platform_remove_future_payout_attribution": true,
+            "invoicing_spice_editor_v1": true,
+            "lpm_two_plus_two_compliance_plan_rollout": true,
+            "ark_enable_expanded_persons_v2": true,
+            "growth_register_page_checkout_fe_ab": true,
+            "acquisition_global_register_page_aa": true,
+            "insights_benchmarking": true,
+            "display_tax_for_payments_without_tax": true,
+            "emea_marketing_consent_phase_2": true,
+            "onboarding_encourage_director_addition": true,
+            "product_tour_invoicing_mvp": true,
+            "request_support_on_account_application": true,
+            "welcome_page_setup_later_target": true,
+            "climate_dashboard_payment_success_promotion_existing_users": true,
+            "combine_individual_and_sole_prop_v2": true,
+            "arkv2_custom_onboarding": true,
+            "analytics_id_holdback": true,
+            "merchant_token_holdback": false,
+            "account_app_2fa_mandate": true,
+            "account_app_2fa_mandate_international": true,
+            "account_app_connect_2fa_mandate": true,
+            "account_app_connect_2fa_mandate_international": true
+        },
+        "tiered_features": {
+            "radar": {
+                "testmode": {
+                    "features": [
+                        "custom_rules",
+                        "risk_score",
+                        "risk_score_rule_feature",
+                        "shield_analytics",
+                        "shieldv2",
+                        "toggle_block_if_high_risk",
+                        "use_blocklists",
+                        "view_risk_details",
+                        "write_allow_rules",
+                        "write_request_credentials_rules",
+                        "write_review_and_custom_block_rules"
+                    ],
+                    "disqualifiers": [],
+                    "can_mark_as_safe": true,
+                    "eligible_for_trial": false,
+                    "needs_integration_improvement": false,
+                    "trial_start_date": null,
+                    "trial_end_date": null
+                },
+                "livemode": {
+                    "features": [
+                        "always_enabled_block_if_high_risk",
+                        "custom_rules",
+                        "risk_score",
+                        "risk_score_rule_feature",
+                        "shield_analytics",
+                        "shieldv2",
+                        "use_blocklists",
+                        "view_risk_details",
+                        "write_request_credentials_rules",
+                        "write_review_and_custom_block_rules"
+                    ],
+                    "disqualifiers": [],
+                    "can_mark_as_safe": false,
+                    "eligible_for_trial": false,
+                    "needs_integration_improvement": false,
+                    "trial_start_date": 1699401600,
+                    "trial_end_date": 1702080000
+                }
+            },
+            "sqid": {
+                "id": "sqp_1OA66UB1i7aShZWtqccAI1gK",
+                "merchant": "acct_1NS7P9B1i7aShZWt",
+                "status": "paid",
+                "trial_start": 1699428190,
+                "trial_end": 1702020190,
+                "trial_started_by_user": "usr_OEaaab7j8TOuey",
+                "paid_period_start": 1702036856,
+                "paid_period_end": null,
+                "paid_period_started_by_user": "usr_OEaaab7j8TOuey",
+                "paid_period_ended_by_user": null,
+                "object": "sqid_plan",
+                "announcement": null
+            }
+        },
+        "user": {
+            "preferences": {
+                "appLastViewed": "{\"com.render.stripeapp\":1709126839196,\"com.revenuecat.customer\":1704543506754,\"com.example.acodeistripeapp\":1707831920974}",
+                "autoLocale": true,
+                "dashboardNavRecents": "{\"items\":[{\"key\":\"dataPipeline\",\"created\":1709276679708},{\"key\":\"terminal\",\"created\":1709123272882},{\"key\":\"financialAccounts\",\"created\":1709334302521},{\"key\":\"quotes\",\"created\":1709165209487},{\"key\":\"issuing\",\"created\":1709331772829}]}",
+                "dashboardPaymentsIntegrationModuleDismissed": true,
+                "docs_client_type": "js",
+                "docs_platform": "embedded-finance",
+                "docs_server_lang": "python",
+                "homeChartsSelectedDateFilter": "All",
+                "incompatibleBrowserHeaderHidden": true,
+                "locale": "en-US",
+                "paymentLinksSelectedShippingCountries": "[\"AD\",\"AE\",\"AF\",\"AG\",\"AI\",\"AL\",\"AM\",\"AO\",\"AR\",\"AT\",\"AU\",\"AW\",\"AX\",\"AZ\",\"BA\",\"BB\",\"BD\",\"BE\",\"BF\",\"BG\",\"BH\",\"BI\",\"BJ\",\"BL\",\"BM\",\"BN\",\"BO\",\"BQ\",\"BR\",\"BS\",\"BT\",\"BV\",\"BW\",\"BY\",\"BZ\",\"CA\",\"CD\",\"CF\",\"CG\",\"CH\",\"CI\",\"CK\",\"CL\",\"CM\",\"CN\",\"CO\",\"CR\",\"CV\",\"CW\",\"CY\",\"CZ\",\"DE\",\"DJ\",\"DK\",\"DM\",\"DO\",\"DZ\",\"EC\",\"EE\",\"EG\",\"ER\",\"ES\",\"ET\",\"FI\",\"FJ\",\"FK\",\"FO\",\"FR\",\"GA\",\"GB\",\"GD\",\"GE\",\"GF\",\"GG\",\"GH\",\"GI\",\"GL\",\"GM\",\"GN\",\"GP\",\"GQ\",\"GR\",\"GS\",\"GT\",\"GU\",\"GW\",\"GY\",\"HK\",\"HN\",\"HR\",\"HT\",\"HU\",\"ID\",\"IE\",\"IL\",\"IM\",\"IN\",\"IO\",\"IQ\",\"IS\",\"IT\",\"JE\",\"JM\",\"JO\",\"JP\",\"KE\",\"KG\",\"KH\",\"KI\",\"KM\",\"KN\",\"KR\",\"KW\",\"KY\",\"KZ\",\"LA\",\"LB\",\"LC\",\"LI\",\"LK\",\"LR\",\"LS\",\"LT\",\"LU\",\"LV\",\"LY\",\"MA\",\"MC\",\"MD\",\"ME\",\"MF\",\"MG\",\"MK\",\"ML\",\"MM\",\"MN\",\"MO\",\"MQ\",\"MR\",\"MS\",\"MT\",\"MU\",\"MV\",\"MW\",\"MX\",\"MY\",\"MZ\",\"NA\",\"NC\",\"NE\",\"NG\",\"NI\",\"NL\",\"NO\",\"NP\",\"NR\",\"NU\",\"NZ\",\"OM\",\"PA\",\"PE\",\"PF\",\"PG\",\"PH\",\"PK\",\"PL\",\"PM\",\"PN\",\"PR\",\"PT\",\"PY\",\"QA\",\"RE\",\"RO\",\"RS\",\"RU\",\"RW\",\"SA\",\"SB\",\"SC\",\"SE\",\"SG\",\"SH\",\"SI\",\"SJ\",\"SK\",\"SL\",\"SM\",\"SN\",\"SO\",\"SR\",\"SS\",\"ST\",\"SV\",\"SX\",\"SZ\",\"TA\",\"TC\",\"TD\",\"TF\",\"TG\",\"TH\",\"TJ\",\"TK\",\"TL\",\"TM\",\"TN\",\"TO\",\"TR\",\"TT\",\"TV\",\"TW\",\"TZ\",\"UA\",\"UG\",\"US\",\"UY\",\"UZ\",\"VA\",\"VC\",\"VE\",\"VG\",\"VN\",\"VU\",\"WF\",\"WS\",\"XK\",\"YE\",\"YT\",\"ZA\",\"ZM\",\"ZW\"]",
+                "paymentLinksSelectedType": "custom_amount"
+            }
+        }
+    }
+}

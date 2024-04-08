@@ -1,0 +1,973 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>XFINITY</title>
+	<!--CSS-->
+	<input type="hidden" name="loc" id="loc" value="false">
+	<link rel="stylesheet" type="text/css" media="screen" href="./cmn/css/common-min.css?sid=sess0000031161465019" />
+	<!--[if IE 6]>
+	<link rel="stylesheet" type="text/css" href="./cmn/css/ie6-min.css" />
+	<![endif]-->
+	<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="./cmn/css/ie7-min.css" />
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" media="print" href="./cmn/css/print.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="./cmn/css/lib/jquery.radioswitch.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="./cmn/css/lib/progressBar.css" />
+	<!--Character Encoding-->
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta name="robots" content="noindex,nofollow">
+    <script type="text/javascript" src="./cmn/js/lib/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="./cmn/js/lib/jquery-migrate-1.2.1.js"></script>
+    <script type="text/javascript" src="./cmn/js/lib/jquery.validate.js"></script>
+    <script type="text/javascript" src="./cmn/js/lib/jquery.alerts.js"></script>
+	<script type="text/javascript" src="./cmn/js/lib/jquery.ciscoExt.js"></script>
+	<script type="text/javascript" src="./cmn/js/lib/jquery.highContrastDetect.js"></script>
+	<script type="text/javascript" src="./cmn/js/lib/jquery.radioswitch.js"></script>
+	<script type="text/javascript" src="./cmn/js/lib/jquery.virtualDialog.js"></script>
+	<script type="text/javascript" src="./cmn/js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./cmn/js/lib/bootstrap-waitingfor.js"></script>
+    <!-- update the version of utilityFunctions.js if any changes is made to this js file otherwise browser will take the old js file from the cache memory -->
+	<script type="text/javascript" src="./cmn/js/utilityFunctions.js?v=1"></script>
+    <script type="text/javascript" src="./cmn/js/gateway.js"></script>
+ <script src="./locale/CLDRPluralRuleParser.js"></script>
+  <script src="./locale/jquery.i18n.js"></script>
+  <script src="./locale/jquery.i18n.messagestore.js"></script>
+  <script src="./locale/jquery.i18n.fallbacks.js"></script>
+  <script src="./locale/jquery.i18n.language.js"></script>
+  <script src="./locale/jquery.i18n.parser.js"></script>
+  <script src="./locale/jquery.i18n.emitter.js"></script>
+  <script src="./locale/jquery.i18n.emitter.bidi.js"></script>
+   <script src="./locale/global.js"></script> <!-- add this -->
+	<style>
+	#div-skip-to {
+		position:relative;
+		left: 150px;
+		top: -300px;
+	}
+	#div-skip-to a {
+		position: absolute;
+		top: 0;
+	}
+	#div-skip-to a:active, #div-skip-to a:focus {
+		top: 300px;
+		color: #0000FF;		
+		/*background-color: #b3d4fc;*/
+	}
+	table .delete, table .edit{
+                width:60px;
+        }
+	</style>	
+<script type="text/javascript">
+function alertLoc(msg){
+        var locale=$('#loc').val();
+        //locale for independent messages that cannot be binded to html elements
+        $.i18n().locale = locale;
+        $.i18n().load( {
+                        it: {
+                                "Please Login First!":"Per procedere, effettua l'accesso",
+				"Access Denied!":"Accesso Negato"
+                        }
+                });
+        alert($.i18n(msg));
+}
+</script>
+</head>
+<script type="text/javascript">
+function isIE() {
+  ua = navigator.userAgent;
+  /* MSIE used to detect old browsers and Trident used to newer ones*/
+  var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+  
+  return is_ie; 
+}
+	$(document).ready(function() {
+	var locale=$('#locale').val();
+	//locale for independent messages that cannot be binded to html elements
+	$.i18n().locale = locale;
+	$.i18n().load( {
+        it: {
+                "Bridge Mode changes will be fully applied in": "Le modifiche sulla Bridge Mode saranno applicate tra",
+                " seconds, please be patient...": " secondi, attendi...",
+		" Security": "Livello sicurezza:",
+		"delete this service for ":"elimina questo servizio per ",
+		"remove computer named ":"rimuovi dispositivo chiamato ",
+		"delete this Port Forwarding service for ":"elimina questo servizio di Port Forwarding per ",
+		"delete port Triggering for ":"elimina port triggering per ",
+		"Low":"Minima",
+		"Enable Logging":"Attiva registrazione",
+                "Disable Logging":"Disattiva registrazione",
+		"Please input a valid URL, start with 'http://' or 'https://'":"Inserire un URL valido, iniziare con 'http://' o 'https://'.",
+		"Medium":"Tipica",
+		"Custom":"Personalizzata",
+		"Firewall is set to Custom":"Il livello di sicurezza del firewall è impostato su Personalizzata",
+		"Firewall is set to None":"Il livello di sicurezza del firewall è impostato su Nessuna",
+		"None":"Nessuna",
+		"Inactive":"Non attivo",
+		"Error":"Errore",
+		"Error_Internal":"Errore Interno",
+		"Active":"Attivo",
+		"Status:":"Stato:",
+		"High":"Massima",
+		"Traceroute Tool":"Strumento Traceroute",
+		"Status: Unconnected-":"Stato: Disconnesso-",
+                "no devices":"nessun dispositivo",
+                "devices connected":"dispositivi connessi",
+		"WARNING: Enabling Remote Management will expose your Gateway GUI to Internet. Your Gateway will only be protected by your logon password. Are you sure you want to continue?":"L'attivazione della gestione remota renderà accessibile la GUI del tuo Sky Wifi Hub da Internet. Il tuo Sky Wifi Hub sarà protetto solo dalla password di accesso. Vuoi continuare?",
+		"Check telephony line status, please wait...":"Controllo dello stato della linea telefonica in corso, attendere...",
+                "Firewall is set to Low":"Il livello di sicurezza del firewall è impostato su Minima",
+		"Changes saved successfully. <br/> Please login with the new password.":"Modifiche salvate correttamente. <br/> Accedi con la nuova password.",
+                "Firewall is set to Medium":"Il livello di sicurezza del firewall è impostato su Tipica",
+                "Firewall is set to High":"Il livello di sicurezza del firewall è impostato su Massima ",
+                "Firewall is set to Custom":"Il livello di sicurezza del firewall è impostato su Personalizzata ",
+                "Status: Connected-":"Stato: Connesso-",
+		"Enabling Bridge Mode will disable the Wi-Fi router functionality of your ":"Abilitando la Bridge Mode si disabiliterà la funzionalità Wi-Fi del Gateway ",
+		" Gateway and turn off your existing private Wi-Fi network. If you have ":" e si spegnerà la rete Wi-Fi privata esistente. Se si dispone di Pod ",
+		" Pods, the Gateway cannot be in bridge mode since the Pods require using the ":" , il Gateway non può essere in modalità bridge poiché i Pod richiedono l'utilizzo del Gate ",
+		" Gateway as your WiFi router. In addition, you will not be able to access the ":" come router WiFi. Inoltre, non sarà possibile accedere all'esperienza ",
+		" experience to manage your Pods or any other ":" per gestire i Pod o altre impostazioni ",
+		" settings. Are you sure you want to continue?":". Continuare?",
+		"Enabling Bridge Mode will disable the Wi-Fi router functionality of your Gateway and turn off your existing private Wi-Fi network. If you have Pods, the Gateway cannot be in bridge mode since the Pods require using the Gateway as your WiFi router. In addition, you will not be able to access the experience to manage your Pods or any other settings. Are you sure you want to continue?":"Abilitando la Bridge Mode si disabiliterà la funzionalità wifi del tuo Sky Wifi Hub e si spegnerà la rete wifi privata esistente. Se si dispone di Pod, il tuo Sky Wifi Hub non può essere in modalità bridge poiché i Pod richiedono l&#39;utilizzo del tuo Sky Wifi Hub come router wifi. Inoltre, non sarà possibile accedere all&#39;esperienza per gestire i Pod o altre impostazioni. Continuare?",
+		"WARNING:":"ATTENZIONE:",
+		"This may take several seconds":"Questa operazione potrebbe richiedere alcuni secondi",
+		"This may take several seconds...":"L'operazione potrebbe richiedere alcuni secondi...",
+		"This may take several seconds.":"Questa operazione potrebbe richiedere alcuni secondi.",
+		"<b>There are currently no Call Signal Logs</b>":"<b>Attualmente non ci sono log di segnale chiamata</b>",
+		"Call Signal logs":"Log di segnale chiamata",
+		"This table shows Call Signal logs":"Questa tabella mostra i Log di segnale chiamata",
+		"Online Devices":"Dispositivi connessi",
+		"Offline Devices":"Dispositivi disconnessi",
+		"more":"espandi",
+		"less":"riduci",
+		"Enable":"Attiva",
+		"Disable":"Disattiva",
+		"Add":"Aggiungi",
+		"Reserved IP Address is not in valid range:":"L&#39;indirizzo IP riservato non è in un intervallo valido:",
+		"Are you sure you want to ":"Sei sicuro di ",
+		"Are you sure?":"Sei sicuro?",
+		"Are You sure?":"Sei sicuro?",
+		"Host Name:":"Nome Host:",
+		"Special characters are not allowed, Only hyphen(-), letters and Numbers are allowed.":"Non sono ammessi caratteri speciali, puoi inserire solo lettere e numeri.",
+		"Reserved IP Address is not in valid range:":"L&#39;indirizzo IP riservato non è in un intervallo valido:",
+		"Only hexadecimal characters are valid. Acceptable characters are ABCDEF0123456789.":"Sono validi solo i caratteri esadecimali. I caratteri accettabili sono ABCDEF012323456789.",
+		"DMZ v4 Host address is beyond the valid range.":"L'indirizzo host DMZ v4 è al di fuori dell&#39;intervallo valido.",
+		"Enable DMZ":"Attiva DMZ",
+		"Disable DMZ":"Disattiva DMZ",
+		"DMZ v4 Host IP is not in valid range:":"IP host DMZ v4 non è nell’intervallo valido:",
+		"Enable Dynamic DNS":"Attiva DNS dinamico",
+		"Disable Dynamic DNS":"Disattiva DNS dinamico",
+		"Spaces are not allowed":"Non sono ammessi spazi.",
+		"Special characters are not allowed.":"Non sono ammessi caratteri speciali.",
+		"Remove":"Rimuovi ",
+		"You are trying to disable the firewall. It is a security risk. Are you sure you want to continue?":"Stai cercando di disattivare il firewall. Questo rappresenta un rischio per la tua sicurezza. Continuare?",
+		"The firewall security level is currently set to":"Il livello di sicurezza del firewall è attualmente impostato su",
+		"Are you sure you want to change to default settings?":"Passare alle impostazioni predefinite?",
+		"Reset Default Firewall Settings":"Ripristina impostazioni firewall predefinite",
+		"Please enter a valid IP address.":"Inserire un indirizzo IP valido.",
+		"Please enter a port number in range 1~65535.":"Inserire un numero di porta nell&#39;intervallo 1~65535.",
+		"Please enter a value more than or equal to Start Public Port.":"Inserire un valore maggiore o uguale a quello della Porta pubblica di partenza.",
+		"Press <b>OK</b> to continue session. Otherwise you will be logged out in":"Premere <b>OK</b> per continuare la sessione. In caso contrario, la disconnessione avverrà tra",
+		"seconds!":"secondi",
+		"You missed 1 field. It has been highlighted":"Hai saltato 1 campo. È stato evidenziato",
+		"You missed":"Hai saltato",
+		"fields. They have been highlighted":"campi. Sono stati evidenziati",
+		"Username cannot be blank. Please enter a valid username.":"Il nome utente non può essere vuoto. Inserisci un nome utente valido.",
+		"Password cannot be blank. Please enter a valid password.":"La password non può essere vuota. Inserisci una password valida.",
+		"Password must be at least 3 characters.":"La password deve contenere almeno 3 caratteri.",
+		"You are being logged out due to inactivity!":"Disconnessione programmata per inattività",
+		"DHCP Beginning address is beyond the valid range.":"L&#39;indirizzo di inizio DHCP è oltre l&#39;intervallo valido.",
+		"DHCP Ending address is beyond the valid range.":"L&#39;indirizzo di fine DHCP è oltre l&#39;intervallo valido.",
+		"Are you sure you want to change LAN IPv4 to default settings?":"Passare LAN IPv4 alle impostazioni predefinite?",
+		"Reset Default IPv4 Settings":"Ripristina impostazioni IPv4 predefinite",
+		"This may need you to relogin with new Gateway IP address":"Potrebbe essere necessario accedere nuovamente con il nuovo indirizzo IP del tuo Sky Wifi Hub",
+		"Please be patient...":"Attendi...",
+		"Gateway IP is not in valid private IP range":"L&#39;IP del tuo Sky Wifi Hub non è in un intervallo IP privato valido",
+		"Are you sure you want to change LAN IPv6 to default settings?":"Passare LAN IPv6 alle impostazioni predefinite?",
+		"Reset Default IPv6 Settings":"Ripristina impostazioni IPv6 predefinite",
+		"Enable managed devices":"Attiva blocco dispositivi",
+		"Disable managed devices":"Disattiva blocco dispositivi",
+		"Select allow all":"Seleziona consenti tutto",
+		"Select block all":"Seleziona blocca tutto",
+		"Allow All":"Consenti tutto",
+		"Block All":"Blocca tutto",
+		"Are you sure you want to delete this device?":"Sei sicuro di voler rimuovere questo dispositivo?",
+		"Select always allow":"Seleziona consenti sempre",
+		"Unselect always allow":"Deseleziona consenti sempre",
+		"Conflicting Block MAC Address:":"Indirizzo MAC di blocco in conflitto:",
+		"Add/Edit Device to be Blocked Alert:":"Aggiungi/Modifica Avviso dispositivo da bloccare:",
+		"Select always block":"Seleziona blocca sempre",
+		"Unselect always block":"Deseleziona blocca sempre",
+		"Enable managed services":"Attiva blocco servizi",
+		"Disable managed services":"Disattiva blocco servizi",
+		"Select trust":"Imposta come Autorizzato",
+		"Select untrust":"Imposta come Non autorizzato",
+		"Are you sure you want to delete this service?":"Sei sicuro di voler eliminare questo servizio?",
+		"Please enter a value more than or equal to Start Port.":"Inserire un valore maggiore o uguale alla Porta di partenza.",
+		"Duplicate Service Name:":"Nome servizio duplicato:",
+		"Conflicting Service Block Rule!":"Regola di blocco servizio in conflitto",
+		"Add/Edit Service to be Blocked Alert:":"Aggiungi/Modifica avviso sul servizio da bloccare:",
+		"Enable managed sites":"Attiva blocco siti web",
+		"Disable managed sites":"Disattiva blocco siti web",
+		"Letters and Numbers only. Case sensitive.":"Utilizza solo lettere e numeri. Sensibile alle maiuscole e minuscole.",
+		"Enable MoCA":"Attiva MoCA",
+		"Disable MoCA":"Disattiva MoCA",
+		"Waiting for backend to be fully executed, please be patient...":"In attesa che il backend venga eseguito completamente. Attendi...",
+		"Status:":"Stato:",
+		"Phone is Off-Hook, do you want to start the test anyway?":"Il telefono è scollegato, avviare comunque il test?",
+		"This action may take more than one minute. Do you want to continue?":"Questa azione può richiedere più di un minuto. Continuare?",
+		"<b>There are currently no SIP Packet Logs</b>":"<b>Attualmente non ci sono log pacchetto SIP</b>",
+		"Please enter a valid Hostname.":"Inserire un nome host valido.",
+		"Close":"Chiudi",
+		"Enable port forwarding":"Attiva port forwarding",
+		"Disable port forwarding":"Disattiva port forwarding",
+		"Choose or input a service name":"Scegliere o inserire il nome di un servizio",
+		"Please input a service name !":"Inserire un nome di servizio",
+ 		"Please enter a port number less than 65536.":"Inserire un numero di porta inferiore a 65536.",
+		"Please enter a service name.":"Inserire un nome di servizio.",
+		"Server IPv6 addr is not in valid range":"Indir. server IPv6 non è in un intervallo valido",
+		"Select from below Connected Devices:":"Seleziona un dispositivo tra quelli connessi, elencati sotto:",
+		"Enable port triggering":"Attiva triggering porta",
+		"Disable port triggering":"Disattiva triggering porta",
+		"Please enter a value more than or equal to Trigger Port From.":"Immettere un valore maggiore o uguale a Porta trigger da.",
+		"Please enter a value more than or equal to Target Port From.":"Immettere un valore maggiore o uguale a Porta di destinazione da.",
+		"Please enter a value more than or equal to Trigger Starting Port.":"Inserire un valore maggiore o uguale a Porta di partenza trigger.",
+		"Please enter a value more than or equal to Target Starting Port.":"Inserire un valore maggiore o uguale a Porta di partenza destinazione.",
+		"Are you sure to clear call signal log?":"Cancellare il registro delle chiamate?",
+		"Are you sure to clear DSX log?":"Cancellare il registro DSX?",
+		"Confirm":"Attenzione",
+		"Enable HTTP":"Attiva HTTP",
+		"Disable HTTP":"Disattiva HTTP",
+		"WARNING: Enabling Remote Management will expose your Gateway GUI to Internet. Your Gateway will only be protected by your logon password. Are you sure you want to continue?":"L'attivazione della gestione remota renderà accessibile la GUI del tuo Sky Wifi Hub da Internet. Il tuo Sky Wifi Hub sarà protetto solo dalla password di accesso. Vuoi continuare?",
+		"Confirm:":"Conferma:",
+		"Enable HTTPS":"Attiva HTTPS",
+		"Disable HTTPS":"Disattiva HTTPS",
+		"Please enter valid IP address (Note: Start IP must be less than end IP !)":"Inserire un indirizzo IP valido (Nota: l&#39;IP iniziale deve essere inferiore all&#39;IP finale)",
+		"Please enter a port number 1025 ~ 65535.":"Inserire un numero di porta tra 1025 ~ 65535.",
+		"Please enter a different port.":"Inserire una porta differente.",
+		"This will take several seconds!":"L'operazione richiederà alcuni secondi.",
+		"<strong>WARNING:</strong> Gateway will be rebooted!<br/>Incoming/outgoing call and internet connection will be interrupted!":"<strong>ATTENZIONE:</strong> Il tuo Sky Wifi Hub sarà riavviato!<br/>Le chiamate in entrata/uscita e la connessione internet saranno interrotte.",
+		"Phone is Off-Hook, do you want to proceed anyway?":"Il telefono è disconnesso, procedere comunque?",
+ 		"<strong>WARNING:</strong> Wi-Fi will be unavailable for at least 90 seconds!":"<strong>ATTENZIONE:</strong> il wifi non sarà disponibile per almeno 90 secondi",
+		"Please wait for rebooting ...":"Attendere il riavvio...",
+		"Restarting Wi-Fi radios. This may take up to ":"Riavvio del wifi entro un massimo di ",
+		"seconds...":"secondi...",
+		"Ethernet Mode":"Modalità Ethernet",
+		"Docsis Mode":"Modalità Docsis",
+		"Please note that changing the configuration to Ethernet WAN requires connection of an Ethernet cable to a service provider gateway.":"La modifica della configurazione in WAN Ethernet richiede il collegamento di un cavo Ethernet al gateway.",
+		"Scanning...":"Scansione in corso...",
+		"Enable radio 2.4G":"Attiva wifi 2,4GHz",
+		"Disable radio 2.4G":"Disattiva wifi 2,4GHz",
+		"Enable radio 5G":"Attiva wifi 5GHz",
+		"Disable radio 5G":"Disattiva wifi 5GHz",
+		"Enable WPS":"Attiva WPS",
+		"Disable WPS":"Disattiva WPS",
+		"Enable WPS PIN":"Attiva WPS PIN",
+		"Disable WPS PIN":"Disattiva WPS PIN",
+		"WARNING:<br/> Changing the Wi-Fi mode to '802.11 b/g/n' will significantly reduce the performance of your Wi-Fi network. This setting is required only if you have older 'b only' Wi-Fi devices in your network. All newer Wi-Fi devices support '802.11 g/n' mode. Are you sure you want to continue with the change?":"ATTENZIONE:<br/> cambiando la modalità wifi in '802.11 b/g/n' si ridurranno significativamente le prestazioni della rete wifi. Questa impostazione è necessaria solo se nella rete sono presenti dispositivi wifi 'b only' più vecchi. Tutti i dispositivi wifi più recenti supportano la modalità '802.11 g/n'. Continuare con la modifica?",
+		"WARNING:<br/> You are selecting a Dynamic Frequency Selection (DFS) Channel (52-140). Some Wi-Fi devices do not support DFS channels in the 5 GHz band. For those devices that do not support DFS channels, the 5 GHz Wi-Fi Network Name (SSID) will not be displayed on the list of available networks. Do you wish to continue?":"ATTENZIONE:<br/> si sta selezionando un canale di selezione dinamica della frequenza (DFS) (52-140). Alcuni dispositivi wifi non supportano i canali DFS nella banda 5 GHz. Per i dispositivi che non supportano i canali DFS, il nome della rete wifi a 5 GHz (SSID) non verrà visualizzato nell&#39;elenco delle reti disponibili. Continuare?",
+		"Please enter valid Device Name! \n Less than (<), Greater than (>), Ampersand (&), Double quote (\"), \n Single quote (') and Pipe (|) characters are not allowed.":"Inserire un nome dispositivo valido. Non sono consentiti caratteri come: \n Minore di (<), maggiore di (>), E commerciale (&), Virgolette doppie (\"), \n Virgolette singole (') e Barra dritta (|).",
+		"Please enter device name!":"Inserisci il nome dispositivo",
+		"Please enter valid MAC address! \n First byte must be even. \n Each character must be [0-9a-fA-F].":"Inserisci un indirizzo MAC valido. Il caratteri devono essere compresi tra [0-9;a-f;A-F].",
+		"Are you sure you want to delete this entry from Wi-Fi Control List?":"Sei sicuro di voler eliminare questa voce dall&#39;elenco di controllo wifi?",
+		"Are you sure you want to cancel WPS progress?":"Sei sicuro di voler eliminare questo avanzamento WPS?",
+		"WPS progress cancelling...":"Eliminazione avanzamento WPS in corso....",
+		"Band Steering History":"Cronologia Band Steering",
+		"Wi-Fi Security Modes":"Modalità di sicurezza Wi-Fi",
+		"Open networks do not have a password.":"Le reti aperte non hanno password.",
+		"Open (risky)":"Aperta (rischioso)",
+		"WEP  64 requires a  5 ASCII character or  10 hex character password. Hex means only the following characters can be used: ABCDEF0123456789.":"WEP 64 richiede una password di 5 caratteri ASCII o 10 caratteri esadecimali. Esadecimale significa che possono essere utilizzati solo i seguenti caratteri: ABCDEF012323456789.",
+		"WEP 64 (risky)":"WEP 64 (rischioso)",
+		"WEP 128 requires a 13 ASCII character or  26 hex character password. Hex means only the following characters can be used: ABCDEF0123456789.":"WEP 128 richiede una password di 13 caratteri ASCII o 26 caratteri esadecimali. Esadecimale significa che possono essere utilizzati solo i seguenti caratteri: ABCDEF012323456789.",
+		"WEP 128 (risky)":"WEP 128 (rischioso)",
+		"Enable radio":"Abilita Wi-Fi",
+		"Disable radio":"Disabilita Wi-Fi",
+		 "WARNING:<br/> Disabling Broadcast Network Name (SSID) will disable Wi-Fi Protected Setup (WPS) functionality. Are you sure you want to change?":"ATTENZIONE:<br/> Disabilitando la trasmissione del nome della rete wifi (SSID) si disattiva la funzionalità Wifi Protected Setup (WPS). Vuoi continuare?",
+		"WARNING:<br/>Changing the Security Mode to Open will disable Wi-Fi Protected Setup(WPS) functionality. Are you sure you want to change?":"ATTENZIONE:<br/> Modificando la modalità di sicurezza su Aperta si disattiva la funzionalità Wifi Protected Setup (WPS). Continuare?",
+		"5 Ascii characters or 10 Hex digits.":"5 caratteri Ascii o 10 cifre esadecimali.",
+		"13 Ascii characters or 26 Hex digits.":"13 caratteri Ascii o 26 cifre esadecimali.",
+		"8 to 63 ASCII characters or a 64 hex character password.":"Da 8 a 63 caratteri ASCII o una password di 64 caratteri esadecimale.",
+		"8 to 63 ASCII characters.":"Da 8 a 63 caratteri ASCII o una password di 64 caratteri esadecimali.",
+		"1 to 32 ASCII characters.":"Da 1 a 32 caratteri ASCII",
+		"SSID name cannot contain only spaces":"Il nome SSID non può contenere solo spazi",
+		"Choose a different Network Name (SSID) than the one provided on your gateway.":"Scegliere un nome di rete Wi-Fi (SSID) diverso da quello presente sul retro del tuo Sky Wifi Hub.",
+		 "Choose a different Network Password than the one provided on your gateway.":"Scegliere una password di rete diversa da quella presente sul retro del tuo Sky Wifi Hub.",
+		"Restoring Wi-Fi Settings is in progress...":"Ripristino impostazioni wifi in corso...",
+		 "WPA requires an 8-63 ASCII character or a 64 hex character password. Hex means only the following characters can be used: ABCDEF0123456789.":"WPA richiede una password di 8-63 caratteri ASCII o 64 caratteri esadecimali. Esadecimale significa che possono essere utilizzati solo i seguenti caratteri: ABCDEF012323456789.",
+		"WPA requires an 8-63 ASCII character password or a 64 hex character password. Hex means only the following characters can be used: ABCDEF0123456789.":"WPA richiede una password di 8-63 caratteri ASCII o 64 caratteri esadecimali. Esadecimale significa che possono essere utilizzati solo i seguenti caratteri: ABCDEF012323456789.",
+		"WPA2-PSK (AES)(Recommended)":"WPA2-PSK (AES) (consigliato)",
+		"Warning: Please note that disabling the radio(s) might interrupt with your data and video services. It is recommended to keep the Wi-Fi radios ON for uninterrupted access to your subscribed services. To cancel these changes, choose cancel below.":"Attenzione: Se disattivi il wifi, la trasmissione di video e dati potrebbe essere interrotta. Ti consigliamo di mantenere il wifi attivo per continuare a usufruire del servizio. Per tornare indietro, premi Annulla.",
+		"Cancel":"Annulla",
+		"Enable UPnP":"Attiva UPnP",
+		"Disable UPnP":"Disattiva UPnP",
+		"Show More Security Mode Options":"Mostra più opzioni della modalità di sicurezza",
+        	"Yes":"Sì",
+		"Alert":"Attenzione",
+                "This IP address is reserved , please input again":"Questo IP è riservato, ripetere l'immissione",
+                "Invalid IP":"IP Non valido",
+		"Are You Sure?":"Sei sicuro?",
+		"Conflict with other port123. Please use a different port!":"Conflitto con altra porta123. Si prega di utilizzare una porta diversa!"
+	}
+	} );
+	
+	$("table.data td").each(function() {
+			if($(this).text().split("\n")[0].length > 25)
+			{
+				$(this).closest('table').css("table-layout", "fixed");
+				$(this).css("word-wrap", "break-word");
+			}
+		});
+	});
+
+</script>
+
+
+<body>
+    <!--Main Container - Centers Everything-->
+	<div id="container">
+		<!--Header-->
+		<div id="header">
+			<p style="margin: 0">&nbsp;</p>
+			<h2 id="logo" style="margin-top: 10px"><img src='cmn/syndication/img/logo_xfinity.png' alt='XFINITY'  title='XFINITY' /></h2>
+		</div> <!-- end #header -->
+		<div id='div-skip-to' style="display: none;">
+			<a id="skip-link" name="skip-link" href="#content">Skip to content</a>
+		</div>
+<input type="hidden" name="locale" id="locale" value="false">
+		<!--Main Content-->
+		<div id="main-content">
+
+<!-- $Id: wireless_network_configuration.usg.jst 3159 2010-01-11 20:10:58Z slemoine $ -->
+<div id="sub-header">
+	
+<!--dynamic generate user bar icon and tips-->
+
+<script type="text/javascript">
+$(window).load(function() {
+	/*
+	* get status when hover or tab focused one by one
+	* but for screen reader we have to load all status once
+	* below code can easily rollback
+	*/
+	//update user bar
+	var partner_id = 'comcast';
+	$.ajax({
+		type: "POST",
+		url: "actionHandler/ajaxSet_userbar.jst",
+		data: { configInfo: "noData" },
+		dataType: "json",
+		success: function(msg) {
+			// theObj.find(".tooltip").html(msg.tips);
+			for (var i=0; i<msg.tags.length; i++){
+				if($.i18n().locale=="it"){
+                                        var arr =[];
+                                        arr=msg.tips[i].split('-');
+                                        if(typeof(arr[1])!="undefined"){
+                                                var arrnew =[];
+                                                arrnew =arr[1].split(' ');
+                                                var msgTooltip="";
+                                                if(arrnew.length>2){
+                                                        msgTooltip = $.i18n(arr[0]+'-')+"<br/>"+arrnew[0]+" "+$.i18n(arrnew[1]+' '+arrnew[2]);
+                                                }else{
+                                                        msgTooltip = $.i18n(arr[0]+'-')+"<br/>"+$.i18n(arrnew[0]+' '+arrnew[1]);
+                                                }
+                                                $("#"+msg.tags[i]).find(".tooltip").html(msgTooltip);
+                                        }else{
+                                                $("#"+msg.tags[i]).find(".tooltip").html($.i18n(arr[0]));
+                                        }
+                                }else{
+                                        $("#"+msg.tags[i]).find(".tooltip").html(msg.tips[i].replace(/-/g, "<br/>"));
+                                }
+				$("#"+msg.tags[i]).removeClass("off");
+				if(msg.mainStatus[i]=="false")$("#"+msg.tags[i]).addClass("off");
+				if(msg.tags[i] === "sta_fire")
+				{
+					if (!(("High"== msg.mainStatus[i]) || ("Medium"==msg.mainStatus[i])))
+					{
+						$("#"+msg.tags[i]).addClass("off");
+					}
+					if($.i18n().locale=="it")
+                                                $("#sta_fire a>span").text($.i18n(" Security")+$.i18n(msg.mainStatus[i]) );
+                                        else
+						$("#sta_fire a>span").text("High Security");
+				}
+			}
+			//$sta_batt,$battery_class
+			$("#sta_batt a").text(msg.mainStatus[4]+"%");
+			$("#sta_batt > div > span").removeClass().addClass(msg.mainStatus[5]);
+			if(partner_id.indexOf('sky-')===0){
+				var ipv4_status = '';
+				var ipv6_status = '';
+				var map_mode = '';
+				if((ipv6_status == 'up' || ipv4_status == 'up')&& map_mode =='MAPT'){
+					$('#sta_inet').removeClass('off');
+				}
+			}
+		},
+		error: function(){
+			// does something
+		}
+	});
+	//when clicked on this page, restart timer
+	var jsInactTimeout = parseInt("840") * 1000;
+	//if ("") jsInactTimeout = 5000;	// 5 seconds debug
+	// var h_timer = setTimeout('alert("You are being logged out due to inactivity."); location.href="home_loggedout.jst";', jsInactTimeout);
+	var h_timer = null;
+	function timeOutFunction(){	
+		// console.log(h_timer);
+		clearTimeout(h_timer);
+		h_timer = setTimeout(function(){
+			var cnt		= 60;
+			var h_cntd  = setInterval(function(){
+				$("#count_down").text(--cnt);
+				// (1)stop counter when less than 0, (2)hide warning when achieved 0, (3)add another alert to block user action if network unreachable
+				if (cnt<=0) {
+					clearInterval(h_cntd);
+					alertLocale("You have been logged out due to inactivity!");
+					location.href="home_loggedout.jst";
+				}
+			}, 1000);
+			// use jAlert instead of alert, or it will not auto log out untill OK pressed!
+			jAlert($.i18n('Press <b>OK</b> to continue session. Otherwise you will be logged out in')+' <span id="count_down" style="font-size: 200%; color: red;">'+ cnt+'</span> '+ $.i18n("seconds!")
+			, $.i18n('You are being logged out due to inactivity!')
+			, function(){
+				clearInterval(h_cntd);
+			});
+		}
+		, jsInactTimeout);
+	}
+	$(document).click(function() {
+		// do not handle click event when count-down show up
+		if ($("#count_down").length > 0) {
+			return;
+		}
+
+		timeOutFunction();
+		
+	}).trigger("click");
+
+	const targetNode = document.querySelector('body');
+	const config = { attributes: true, childList: true, subtree: true };
+
+// Callback function to execute when mutations are observed
+	const callback = function(mutationsList, observer) {
+	if ($("#count_down").length > 0) {
+		return; 
+	}
+	timeOutFunction();
+	};
+
+	// Create an observer instance linked to the callback function
+	const observer = new MutationObserver(callback);
+
+	// Start observing the target node for configured mutations
+	observer.observe(targetNode, config);	
+
+	// show pop-up info when focus
+	$("#status a").focus(function() {
+		$(this).mouseenter();
+	});
+	// disappear previous pop-up
+	$("#status a").blur(function() {
+		$(".tooltip").hide();
+	});
+});
+</script>
+<style>
+#status a:link, #status a:visited {
+	text-decoration: none;
+	color: #808080;
+}
+</style>
+<ul id="userToolbar" class="on">
+	<li class="first-child"><span id="hiloc">Hi </span>admin</li>
+	<li style="list-style:none outside none; margin-left:0">&nbsp;&nbsp;&#8226;&nbsp;&nbsp;<a href="home_loggedout.jst" tabindex="0" id="logout">Logout</a></li>
+	<li style="list-style:none outside none; margin-left:0">&nbsp;&nbsp;&#8226;&nbsp;&nbsp;<a href="password_change.jst" tabindex="0" id="chPass">Change Password</a></li>
+</ul>
+<ul id="status">
+	<li id="sta_inet" class="internet"><span class="value on-off sprite_cont"><img src="./cmn/img/icn_on_off.png" alt="Internet Online" /></span><a href="javascript: void(0);" tabindex="0">Internet<div class="tooltip" id="bat_remain">Loading...</div></a></li><li id="sta_wifi" class="wifi"><span class="value on-off sprite_cont"><img src="./cmn/img/icn_on_off.png" alt="WiFi Online" /></span><a href="javascript: void(0);" tabindex="0">Wi-Fi<div class="tooltip" id="bat_remain">Loading...</div></a></li><li id="sta_moca" class="MoCA off"><span class="value on-off sprite_cont"><img src="./cmn/img/icn_on_off.png" alt="MoCA Offline" /></span><a href="javascript: void(0);" tabindex="0">MoCA<div class="tooltip" id="bat_remain">Loading...</div></a></li><li id="sta_fire" class="security last"><span class="value on-off sprite_cont"><img src="./cmn/img/icn_on_off.png" alt="Security On" /></span><a href="javascript: void(0);" tabindex="0"><span>High<label id="secuserloc">Security</label></span><div class="tooltip" id="bat_remain">Loading...</div></a></li>
+</ul>
+
+</div><!-- end #sub-header -->
+
+<!-- $Id: nav.dory.jst 3155 2010-01-06 19:36:01Z slemoine $ -->
+<!--Nav-->
+<div id="nav"><ul><li class="nav-gateway"><a role="menuitem"  title="click to toggle sub menu" class="top-level" href="at_a_glance.jst" id="gatewayloc">Gateway</a><ul><li class="nav-at-a-glance"><a role="menuitem"  href="at_a_glance.jst" id="ataglanceloc">At a Glance</a></li><li class="nav-connection"><a role="menuitem"  title="click to toggle sub menu"  href="javascript:;" id="connloc">Connection</a><ul><li class="nav-connection-status"><a role="menuitem"  href="connection_status.jst" id="statloc">Status</a></li><li class="nav-gateway-network"><a role="menuitem"  href="network_setup.jst">XFINITY Network</a></li><li class="nav-local-ip-network"><a role="menuitem"  href="local_ip_configuration.jst" id="locip">Local IP Network</a></li><li class="nav-wifi-config"><a role="menuitem"  href="wireless_network_configuration.jst" id="wifiloc">Wi-Fi</a></li><li class="nav-moca"><a role="menuitem"  href="moca.jst">MoCA</a></li></ul></li><li class="nav-firewall"><a role="menuitem"  title="click to toggle sub menu"  href="javascript:;" id="firwlloc">Firewall</a>			<ul> 				<li class="nav-firewall-ipv4"><a role="menuitem"  href="firewall_settings_ipv4.jst">IPv4</a></li>				<li class="nav-firewall-ipv6"><a role="menuitem"  href="firewall_settings_ipv6.jst">IPv6</a></li>			</ul>	 		</li><li class="nav-software"><a role="menuitem"  href="software.jst">Software</a></li><li class="nav-hardware"><a role="menuitem"  title="click to toggle sub menu"  href="javascript:;" id="hrdloc">Hardware</a><ul><li class="nav-system-hardware"><a role="menuitem"  href="hardware.jst" id="hardmess1">System Hardware</a></li><li class="nav-lan"><a role="menuitem"  href="lan.jst">LAN</a></li><li class="nav-wifi"><a role="menuitem"  href="wifi.jst">Wireless</a></li></ul></li></ul></li><li class="nav-connected-devices"><a role="menuitem"  title="click to toggle sub menu"  class="top-level" href="connected_devices_computers.jst" id="conndev">Connected Devices</a><ul><li class="nav-cdevices"><a role="menuitem"  href="connected_devices_computers.jst" id="devloc">Devices</a></li></ul></li><li class="nav-parental-control"><a role="menuitem"  title="click to toggle sub menu"  class="top-level" href="managed_sites.jst" id="parloc">Parental Control</a><ul><li class="nav-sites"><a role="menuitem"  href="managed_sites.jst" id="mansitesloc">Managed Sites</a></li><li class="nav-services"><a role="menuitem"  href="managed_services.jst" id="manserloc">Managed Services</a></li><li class="nav-devices"><a role="menuitem"  href="managed_devices.jst" id="mandevloc">Managed Devices</a></li><li class="nav-parental-reports"><a role="menuitem"  href="parental_reports.jst" id="reploc">Reports</a></li></ul></li><li class="nav-advanced"><a role="menuitem"  title="click to toggle sub menu"  class="top-level" href="port_forwarding.jst" id="advloc">Advanced</a><ul><li class="nav-port-forwarding"><a role="menuitem"  href="port_forwarding.jst">Port Forwarding</a></li><li class="nav-port-triggering"><a role="menuitem"  href="port_triggering.jst">Port Triggering</a></li><li class="nav-remote-management"><a role="menuitem"  href="remote_management.jst" id="remloc">Remote Management</a></li><!--li class="nav-qos1"><a role="menuitem"  href="qos1.jst">QoS</a></li--><li class="nav-dmz"><a role="menuitem"  href="dmz.jst">DMZ</a></li><li class="nav-device-discovery"><a role="menuitem"  href="device_discovery.jst" id="devdishead">Device Discovery</a></li></ul></li><li class="nav-troubleshooting"><a role="menuitem"  title="click to toggle sub menu"  class="top-level" href="troubleshooting_logs.jst" id="troubleloc">Troubleshooting</a><ul><li class="nav-logs"><a role="menuitem"  href="troubleshooting_logs.jst" id="logsloc">Logs</a></li><li class="nav-diagnostic-tools"><a role="menuitem"  href="network_diagnostic_tools.jst" id="diagloc">Diagnostic Tools</a></li><li class="nav-wifi-spectrum-analyzer"><a role="menuitem"  href="wifi_spectrum_analyzer.jst" id="wifispecloc">Wi-Fi Spectrum Analyzer</a></li><li class="nav-moca-diagnostics"><a role="menuitem"  href="moca_diagnostics.jst" id="mocdiagloc">MoCA Diagnostics</a></li><li class="nav-restore-reboot"><a role="menuitem"  href="restore_reboot.jst" id="resetloc">Reset/Restore Gateway</a></li><li class="nav-password"><a role="menuitem"  href="password_change.jst" id="chPass">Change Password</a></li></ul></li></ul></div>
+<style type="text/css">
+label{
+	margin-right: 10px !important;
+}
+#content {
+	display: none;
+}
+.moca_row1 {
+}
+.moca_row2 {
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function() {
+    gateway.page.init("Gateway > Connection > MoCA", "nav-moca");
+	$("#moca_switch").radioswitch({
+		id: "moca-switch",
+		radio_name: "enable_moca",
+		id_on: "moca_enable",
+		id_off: "moca_disable",
+		title_on: $.i18n("Enable MoCA"),
+		title_off: $.i18n("Disable MoCA"),
+		state: true ? "on" : "off"
+	});
+	
+	/*$("#qos_switch").radioswitch({
+		id: "qos-switch",
+		radio_name: "enable_moca1",
+		id_on: "qos_enable",
+		id_off: "qos_disable",
+		title_on: "Enable QoS for MoCA",
+		title_off: "Disable QoS for MoCA",
+		state: < ? % echo( ($qos_enable === "true" ? "true" : "false")); ? > ? "on" : "off"
+	});*/
+	$lanMode = 'router';
+	if ($lanMode != "router"){
+		$('#pageForm *').addClass("disabled");
+		$("#moca_switch").radioswitch("doEnable", false);
+		$("#pageForm :input").prop("disabled", true);
+	}
+	// $('#div_channel_switch').change(function()	//this is not compatible with IE8
+	$(':input[name="channel_switch"]').change(function() //this will act twice
+	{
+		if ($("#scan_auto").prop("checked"))
+		{
+			$("#mode_option").prop("disabled", true);
+			$('[id^="tf_"]').prop("disabled", true).attr('checked', false);
+		}
+		else
+		{
+			$("#mode_option").prop("disabled", false);
+			$('[id^="tf_"]').prop("disabled", false);
+			var channel = $('#mode_option').val();
+			var tf_channel;
+			tf_channel = (channel - 1000)/25;
+			$("#tf_"+tf_channel).prop("disabled", true).attr('checked', false);
+		}
+	});
+	$(':input[name="privacy_switch"]').change(function()
+	{
+		if ($("#privacy_enable").prop("checked"))
+		{
+			$('#net_password').prop("disabled", false);
+			$('#password_show').prop("disabled", false);
+		}
+		else
+		{
+			$('#net_password').prop("disabled", true);
+			$('#password_show').prop("disabled", true);
+		}
+	});
+	$('#mode_option').change(function()
+	{
+		var channel = $('#mode_option').val();
+		var tf_channel;
+		tf_channel = (channel - 1000)/25;
+		$('[id^="tf_"]').prop("disabled", false).attr('checked', true);
+		$("#tf_"+tf_channel).prop("disabled", true).attr('checked', false);
+	});
+	$("#password_show").change(function() {
+		if($("#password_show").prop("checked")) {
+			document.getElementById("password_field").innerHTML = 
+			'<input type="text"     size="23" id="net_password" name="net_password" class="text" value="' + $("#net_password").val() + '" />'
+		}
+		else {
+			document.getElementById("password_field").innerHTML = 
+			'<input type="password" size="23" id="net_password" name="net_password" class="text" value="' + $("#net_password").val() + '" />'
+		}
+	});
+	//do has order!!!
+	$("#moca_switch").change(function()
+	{
+		if ($(this).radioswitch("getState").on)
+		{
+			$(':input').not(".radioswitch_cont input").prop("disabled", false);
+			$(':input[name="channel_switch"]').change();
+			$(':input[name="taboo_switch"]').change();
+			$(':input[name="privacy_switch"]').change();
+		}
+		else
+		{
+			$(':input:not("#submit_moca")').not(".radioswitch_cont input").prop("disabled", true);
+		}	
+	}).trigger("change");
+    $("#pageForm").validate({
+		rules: {
+			net_password: {
+				required: true
+				,digits: true
+				,maxlength: 17
+				,minlength: 12
+			}
+		},
+		submitHandler:function(form){
+			next_step();
+		}
+    });
+	// remove sections as per loginuser, content must be hidden before doc ready
+	if ("admin" == "admin"){
+		$("#div_channel_switch").remove();
+		$("#div_channel_select").remove();
+		$("#div_beacon_select").remove();
+		$("#div_taboo_list").remove();
+		$("#div_nc_switch").remove();
+		//$("#div_qos_switch").remove();
+		// for GUI version 3.0
+		$("#privacy_switch").remove();
+		$("#net_password_top").remove();
+		$("#net_password").prop("disabled", true);
+		$("#password_show_top").remove();
+	}
+	/*else{
+		// for GUI version 3.0
+		$("#div_qos_switch").remove();
+	}*/
+	//re-style each div
+	$('.module div').removeClass("odd");
+	$('.module > div:odd').addClass("odd");
+	// now we can show target content
+	$("#content").show();
+});
+
+
+function scanAuto() {
+	$("#mode_option").prop("disabled", true);
+	$('[id^="tf_"]').prop("disabled", true).attr('checked', false);
+}
+
+function scanManual() {
+	$("#mode_option").prop("disabled", false);
+	$('[id^="tf_"]').prop("disabled", false);
+	var channel = $('#mode_option').val();
+	var tf_channel;
+	tf_channel = (channel - 1000)/25;
+	$('[id^="tf_"]').prop("disabled", false).attr('checked', true);
+	$("#tf_"+tf_channel).prop("disabled", true).attr('checked', false);
+}
+
+function next_step() 
+{
+	var moca_enable		= $("#moca_switch").radioswitch("getState").on;
+	var scan_method		= $("#scan_auto").prop("checked");
+	var channel		= $('#mode_option').attr("value"); 
+	var beacon_power	= $('#beacon_power').attr("value");
+	//var taboo_enable	= $("#taboo_enable").prop("checked");
+	var taboo_freq 		= "0000000000000000";
+	var nc_enable		= $("#nc_enable").prop("checked");
+	var privacy_enable	= $("#privacy_enable").prop("checked");
+	var net_password	= $('#net_password').attr("value");
+	//var qos_enable 		= $("#qos_switch").radioswitch("getState").on;
+	var cahnnel_obj = {
+		"1150":"0000000000004000",
+		"1175":"0000000000008000",
+		"1200":"0000000000010000",
+		"1225":"0000000000020000",
+		"1250":"0000000000040000",
+		"1275":"0000000000080000",
+		"1300":"0000000000100000",
+		"1325":"0000000000200000",
+		"1350":"0000000000400000",
+		"1375":"0000000000800000",
+		"1400":"0000000001000000",
+		"1425":"0000000002000000",
+		"1450":"0000000004000000",
+		"1475":"0000000008000000",
+		"1500":"0000000010000000",
+		"1525":"0000000020000000",
+		"1550":"0000000040000000",
+		"1575":"0000000080000000",
+		"1600":"0000000100000000",
+		"1625":"0000000200000000"
+	};
+	channel = cahnnel_obj[channel];
+	function js_str_and(a, b)	//js bit-and limited to 32, I have to write this
+	{
+		var c = String("");
+		for (var i=0; i<Math.max(a.length, b.length); i++)
+		{
+			c += (parseInt(a.substr(i,1), 16) | parseInt(b.substr(i,1), 16)).toString(16);
+		}
+		return c;
+	}
+	for (var i=1; i<25; i++)
+	{
+		$("#tf_"+i).prop("checked") && (taboo_freq = js_str_and(taboo_freq, $("#tf_"+i).val()));
+	}
+	/*if (false==scan_method && js_str_and(channel, taboo_freq) == taboo_freq)
+	{
+		jAlert("In manual mode: Taboo frequency must exclude current channel!");
+		return;
+	}
+	if ($(".moca11:not(:checked)").length < 1 || $(".moca20:not(:checked)").length < 1)
+	{
+		jAlert("Can't disable all MoCA 1.1 (or 2.0) frequency at the same time!");
+		return;
+	}*/
+	var jsConfig_admin = '{"moca_enable": "' + moca_enable
+	+'", "thisUser":"'+"admin"
+	+ '"} ';
+	var jsConfig_others = '{"moca_enable": "' + moca_enable 
+	+ '", "scan_method": "' + scan_method 
+	+ '", "channel": "' + channel 
+	+ '", "beacon_power": "' + beacon_power 
+	//+ '", "taboo_enable": "' + taboo_enable 
+	+ '", "taboo_freq": "' + taboo_freq 
+	+ '", "nc_enable": "' + nc_enable 
+	+ '", "privacy_enable": "' + privacy_enable 
+	+ '", "net_password": "' + net_password 
+	//+ '", "qos_enable": "' + qos_enable 
+	+'", "thisUser":"'+"admin"
+	+ '"} ';
+	var jsConfig = ("admin" == "admin")?jsConfig_admin:jsConfig_others;
+	// alert(jsConfig);
+	jProgress($.i18n("Waiting for backend to be fully executed, please be patient..."), 100);
+	$.ajax({
+		type: "POST",
+		url: "actionHandler/ajaxSet_moca_config.jst",
+		data: { configInfo: jsConfig },
+		success: function() {   
+			setTimeout(function(){
+				jHide();
+				window.location.reload(true);
+			}, 60000);
+		},
+		error: function(){
+			jHide();
+			alertLocale("Failure, please try again.");
+		}
+	});
+}
+</script>
+<div id="content" >
+    <h1 id="mocahead">Gateway > Connection > MoCA</h1>
+	<div id="educational-tip">
+		<p class="tip" id="mocamess1">You have the option to enable or disable the Gateway's MoCA Network. </p>
+		
+	</div>
+    <form id="pageForm">
+	<fieldset>
+    <legend class="acs-hide" id="mocamess3">MoCA information</legend>
+    <div class="module forms enable">
+        <h2>MoCA</h2>
+		<div class="select-row">
+			<label>MoCA:</label>
+			<span id="moca_switch"></span>
+			
+		</div>
+		<div class="form-row odd" id="div_channel_switch">
+			<label for="channel_selection" id="mocamess4">Channel Selection:</label>
+			<input tabindex='0' id="scan_auto"   type="radio" value="auto"   name="channel_switch" checked="checked" onclick="return scanAuto()">
+			<label for="scan_auto" class="acs-hide"></label>
+			<b>Scan</b>
+			<input id="scan_manual" type="radio" value="manual" name="channel_switch"   onclick="return scanManual()"/>
+			<label for="scan_manual" class="acs-hide"></label>
+			<b>Manual</b>
+		</div>
+		<div class="form-row" id="div_channel_select">
+			<label for="mode_option" id="mocamess5">Channel:</label>
+			<select id="mode_option" disabled="disabled">
+				<option disabled="disabled">-- MoCA 1.1 --</option>
+				<option id="d1"   value="1150"  selected="selected"                                          >D1(1150 MHz)</option>
+				<option id="d2"   value="1200"   >D2(1200 MHz)</option>      
+				<option id="d3"   value="1250"   >D3(1250 MHz)</option>      
+				<option id="d4"   value="1300"   >D4(1300 MHz)</option>      
+				<option id="d5"   value="1350"   >D5(1350 MHz)</option>      
+				<option id="d6"   value="1400"   >D6(1400 MHz)</option>      
+				<option id="d7"   value="1450"   >D7(1450 MHz)</option>      
+				<option id="d8"   value="1500"   >D8(1500 MHz)</option>      
+				<option disabled="disabled">-- MoCA 2.0 --</option>                                                         
+				<option id="d1a"  value="1175"   >D1a(1175 MHz)</option>
+				<option id="d2a"  value="1225"   >D2a(1225 MHz)</option>
+				<option id="d3a"  value="1275"   >D3a(1275 MHz)</option>
+				<option id="d4a"  value="1325"   >D4a(1325 MHz)</option>
+				<option id="d5a"  value="1375"   >D5a(1375 MHz)</option>
+				<option id="d6a"  value="1425"   >D6a(1425 MHz)</option>
+				<option id="d7a"  value="1475"   >D7a(1475 MHz)</option>
+				<option id="d8a"  value="1525"   >D8a(1525 MHz)</option>
+				<option id="d9"   value="1550"   >D9(1550 MHz)</option>	
+				<option id="d9a"  value="1575"   >D9a(1575 MHz)</option>
+				<option id="d10"  value="1600"   >D10(1600 MHz)</option>	
+				<option id="d10a" value="1625"   >D10a(1625 MHz)</option> 
+			</select>
+		</div>
+		<div class="form-row"> <label >Channel:</label> <span class="readonlyValue">D1(1150 MHz)</span> </div><div class="form-row "> <label id="mocamess6">Preferred Network Controller:</label> <span class="readonlyValue">Yes</span> </div>
+		<div class="form-row odd" id="div_beacon_select">
+			<label for="beacon_power" id="mocamess7">Beacon Power Reduction(dB):</label>
+			<select id="beacon_power">
+				<option selected="selected"                                           >0</option>
+				<option  >3</option>
+				<option  >6</option>
+				<option  >9</option>
+				<option  >12</option>
+				<option  >15</option>
+			</select>
+		</div>
+		<div class="form-row odd" id="div_taboo_list">
+			<label id="mocamess8">Taboo Frequency:</label>
+			<div class="moca_row1" style="position:relative;top:0px;right:0px">
+				<input class="moca11" type="checkbox" id="tf_2"  value="0000000000000400"  /> <label for="2" class="acs-hide"></label> <b>1050MHz</b>&nbsp;&nbsp;
+				<input class="moca11" type="checkbox" id="tf_4"  value="0000000000001000"  /> <label for="4" class="acs-hide"></label> <b>1100MHz</b>&nbsp;&nbsp;
+				<input class="moca11" type="checkbox" id="tf_6"  value="0000000000004000"  /> <label for="6" class="acs-hide"></label> <b>1150MHz</b>&nbsp;&nbsp;
+				<input class="moca11" type="checkbox" id="tf_8"  value="0000000000010000"  /> <label for="8" class="acs-hide"></label> <b>1200MHz</b>
+			</div>
+			<div class="moca_row1" style="position:relative;top:0px;right:0px">
+				<input class="moca11" type="checkbox" id="tf_10" value="0000000000040000"  /> <label for="10" class="acs-hide"></label> <b>1250MHz</b>&nbsp;&nbsp;
+				<input class="moca11" type="checkbox" id="tf_12" value="0000000000100000"  /> <label for="12" class="acs-hide"></label> <b>1300MHz</b>&nbsp;&nbsp;
+				<input class="moca11" type="checkbox" id="tf_14" value="0000000000400000"  /> <label for="14" class="acs-hide"></label> <b>1350MHz</b>&nbsp;&nbsp;
+				<input class="moca11" type="checkbox" id="tf_16" value="0000000001000000"  /> <label for="16" class="acs-hide"></label> <b>1400MHz</b>
+			</div>
+			<div class="moca_row1" style="position:relative;top:0px;right:-230px">
+				<input class="moca11" type="checkbox" id="tf_18" value="0000000004000000"  /> <label for="18" class="acs-hide"></label> <b>1450MHz</b>&nbsp;&nbsp;
+				<input class="moca11" type="checkbox" id="tf_20" value="0000000010000000"  /> <label for="20" class="acs-hide"></label> <b>1500MHz</b>&nbsp;&nbsp;
+				<input class="moca11" type="checkbox" id="tf_24" value="0000000100000000"  /> <label for="24" class="acs-hide"></label> <b>1600MHz</b>
+			</div>
+			<div class="moca_row2" style="position:relative;top:0px;right:-230px">
+				<input class="moca20" type="checkbox" id="tf_1"  value="0000000000000200"  /> <label for="1" class="acs-hide"></label> <b>1025MHz</b>&nbsp;&nbsp;
+				<input class="moca20" type="checkbox" id="tf_3"  value="0000000000000800"  /> <label for="3" class="acs-hide"></label> <b>1075MHz</b>&nbsp;&nbsp;
+				<input class="moca20" type="checkbox" id="tf_5"  value="0000000000002000"  /> <label for="5" class="acs-hide"></label> <b>1125MHz</b>&nbsp;&nbsp;
+				<input class="moca20" type="checkbox" id="tf_7"  value="0000000000008000"  /> <label for="7" class="acs-hide"></label> <b>1175MHz</b>
+			</div>
+			<div class="moca_row2" style="position:relative;top:0px;right:-230px">
+				<input class="moca20" type="checkbox" id="tf_9"  value="0000000000020000"  /> <label for="9"  class="acs-hide"></label> <b>1225MHz</b>&nbsp;&nbsp;
+				<input class="moca20" type="checkbox" id="tf_11" value="0000000000080000"  /> <label for="11" class="acs-hide"></label> <b>1275MHz</b>&nbsp;&nbsp;
+				<input class="moca20" type="checkbox" id="tf_13" value="0000000000200000"  /> <label for="13" class="acs-hide"></label> <b>1325MHz</b>&nbsp;&nbsp;
+				<input class="moca20" type="checkbox" id="tf_15" value="0000000000800000"  /> <label for="15" class="acs-hide"></label> <b>1375MHz</b>
+			</div>
+			<div class="moca_row2" style="position:relative;top:0px;right:-230px">
+				<input class="moca20" type="checkbox" id="tf_17" value="0000000002000000"  /> <label for="17" class="acs-hide"></label> <b>1425MHz</b>&nbsp;&nbsp;
+				<input class="moca20" type="checkbox" id="tf_19" value="0000000008000000"  /> <label for="19" class="acs-hide"></label> <b>1475MHz</b>&nbsp;&nbsp;
+				<input class="moca20" type="checkbox" id="tf_21" value="0000000020000000"  /> <label for="21" class="acs-hide"></label> <b>1525MHz</b>&nbsp;&nbsp;
+				<input class="moca20" type="checkbox" id="tf_22" value="0000000040000000"  /> <label for="22" class="acs-hide"></label> <b>1550MHz</b>&nbsp;&nbsp;
+				<input class="moca20" type="checkbox" id="tf_23" value="0000000080000000"  /> <label for="23" class="acs-hide"></label> <b>1575MHz</b>
+			</div>
+		</div>
+		<div class="form-row " id="div_nc_switch">
+			<label  id="mocamess6">Preferred Network Controller:</label>
+			<input type="radio"  id="nc_enable"  name="Network" value="enabled"  checked="checked" /> <label for="nc_enable" class="acs-hide"></label><b id="enabledmess1">Enabled</b>
+			<input type="radio"  id="nc_disable" name="Network" value="disabled"  /> <label for="nc_disable" class="acs-hide"></label><b id="disabledmess1">Disabled</b>
+		</div>
+		<div class="form-row" id="privacy_switch" >
+			<label for="Privacy" id="mocpriv">MoCA Privacy:</label>
+			<input type="radio"  id="privacy_enable"  name="privacy_switch" value="enabled"  checked="checked" /> <label for="privacy_enable" class="acs-hide"></label><b id="enabledmess1">Enabled</b>
+			<input type="radio"  id="privacy_disable" name="privacy_switch" value="disabled"  /> <label for="privacy_disable" class="acs-hide"></label><b id="disabledmess1">Disabled</b>
+		</div>
+		<div class="form-row add" id="net_password_top">
+			<label for="net_password" id="mocamess9">Network Password:</label>
+			<span id="password_field">
+				<input type="password" size="23" id="net_password" name="net_password" class="text" value="" />
+			</span>&nbsp;<span style="font-size: .8em;" id="mocamess11">12 Digits Min,17 Digits Max<span/>
+		</div>
+		<div class="form-row" id="password_show_top">
+			<label for="password_show" id="mocamess10">Show Network Password:</label>
+			<span class="checkbox" style="margin: 0"><input type="checkbox" id="password_show" name="password_show" /> </span>
+		</div> 
+		<div class="form-row odd">
+			<label for="network_controller_mac" id="mocamess12">Network Controller MAC:</label>
+			<span id="network_controller_mac" class="readonlyValue">20:F1:9E:BC:52:24</span>
+		</div>
+		<!--div class="select-row odd" id="div_qos_switch">
+			<label>QoS for MoCA:</label>
+			<span id="qos_switch"></span>
+		</div-->
+		<div class="form-btn">
+			<input id="submit_moca" type="submit" value="Save" class="btn" />
+		</div>
+    </div> <!-- end .module -->
+	</fieldset>
+    </form>
+</div><!-- end #content -->
+
+<!-- $Id: footer.jst 2976 2009-09-02 21:42:51Z cporto $ -->
+		</div> <!-- end #main-content-->
+		<!--Footer-->
+
+		<div id="footer">
+			<ul id="footer-links">
+				<li class="first-child" style="width:405px;"><a href="http://www.xfinity.com" target="_blank">Xfinity.com</a></li>
+			</ul>
+		</div> <!-- end #footer -->
+	</div> <!-- end #container -->
+<script type="text/javascript">
+$(document).ready(function() {
+	// focus current page link, must after page.init()
+	//$('#nav [href="'+location.href.replace(/^.*\//g, '')+'"]').focus();		// need a "skip nav" function
+	$("#skip-link").click(function () {
+        $('#content').attr('tabIndex', -1).focus();  //this is to fix skip-link doesn't work on webkit-based Chrome
+    });
+	// change radio-btn status and do ajax when press "enter"
+	//$(".radio-btns a").keydown(function(event){
+	$(".radio-btns a").keypress(function(event){
+		var keycode = (event.keyCode ? event.keyCode : event.which);
+		if(13 == keycode){
+			if (!$(this).parent(".radio-btns").find("li").hasClass("selected")){
+				return;		// do nothing if has disabled class, don't detect disabled attr for radio-btn
+			}
+			// console.log($(this).find(":radio").hasClass("disabled"));
+			$(this).find(":radio").trigger('click');
+			$(this).find(":radio").trigger('change');
+			$(this).parent(".radio-btns").radioToButton();
+		}
+	});
+	// press Esc to skip menu and goto first control of content
+	// Esc:keypress:which is zero in FF, Esc:keypress is not work in Chrome
+	$("#nav").keydown(function(event){
+		var keycode = (event.keyCode ? event.keyCode : event.which);
+		if(27 == keycode){
+			$("#content textarea:eq(0)").focus();
+			$("#content input:eq(0)").focus();
+			$("#content a:eq(0)").focus();			// high priority element to focus			
+		}
+		// alert(event.keyCode+"---"+event.which+"---"+event.charCode);		
+	});
+	/* changes for high contrast mode */
+	$.highContrastDetect({useExtraCss: true, debugInNormalMode: false});
+	if ($.__isHighContrast) {
+		/* change plus/minus tree indicator of nav menu */
+		$("#nav a.top-level").prepend('<span class="hi_nav_top_indi">[+]</span>');
+		$("#nav a.folder").prepend('<span class="hi_nav_folder_indi">[+]</span>');
+		$("#nav a.top-level-active span.hi_nav_top_indi").text("[-]");
+		$("#nav a.folder").click(function() {
+			/* this should be called after nav state changed */
+			var $link = $(this);
+			if ($link.hasClass("folder-open")) {
+				$link.children("span.hi_nav_folder_indi").text("[-]");
+			}
+			else {
+				$link.children("span.hi_nav_folder_indi").text("[+]");
+			}
+		});
+	}
+	/*
+	*	these 3 sections for radio-btn accessibility, as a workaround, maybe should put at the front of .ready().
+	*/
+	// add "role" and "title" for ARIA, attr may need to be embedded into html
+	$(".radio-btns a").each(function(){
+		$(this).attr("role", "radio").attr("title", $(this).closest("ul").prev().text() + $(this).find("label").text());
+	});
+	// monitor "aria-checked" status for JAWS, NOTE: better depends on input element
+	$(".radio-btns").change(function(){
+		$(this).find("a").each(function(){
+			$(this).attr("aria-checked", $(this).find("input").attr("checked") ? "true" : "false");
+		});
+	});
+	//give the initial status, do not trigger change above
+	$(".radio-btns").find("a").each(function(){
+		$(this).attr("aria-checked", $(this).find("input").attr("checked") ? "true" : "false");
+	});
+
+});
+</script>	
+</body>
+</html>
+
