@@ -1,0 +1,18 @@
+[
+  {
+    "PartitionKey": "000300004CA4D1F4",
+    "RowKey": "browsersettings|1storageblob",
+    "Timestamp": "2023-06-10T16:57:44.4886165+00:00",
+    "Favorites": "[]",
+    "RecentItems": "[{\"ItemType\":\"fileShare\",\"ItemName\":\"localhost\"},{\"ItemType\":\"container\",\"ItemName\":\"container\"}]",
+    "ETag": {}
+  },
+  {
+    "PartitionKey": "000300004CA4D1F4",
+    "RowKey": "browsersettings|workspace3982375877",
+    "Timestamp": "2023-06-14T00:52:27.0572097+00:00",
+    "Favorites": "[]",
+    "RecentItems": "[{\"ItemType\":\"container\",\"ItemName\":\"azureml-blobstore-feb86879-a81b-4a7d-8e66-b34c49d919e9\"},{\"ItemType\":\"fileShare\",\"ItemName\":\"code-391ff5ac-6576-460f-ba4d-7e03433c68b6\"}]",
+    "ETag": {}
+  }
+]

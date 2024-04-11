@@ -1,0 +1,500 @@
+<html id="modern-treasury-application" lang="en"><head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="Op7ZVvgU-NSe0yOoXtFCrPKKSItnnCc6BBwXjrraPwBk6DZIl-zQUWQxZw8AXe4CHuk3zfNQccvhcqPBElH8aA">
+<meta name="csp-nonce" content="9b5JAdXf0876ZXCy7+J1HA==">
+
+<title>Modern Treasury</title>
+
+<script nonce="9b5JAdXf0876ZXCy7+J1HA==">
+//<![CDATA[
+window.gon={};gon.global={"segment_js_write_key":"7JVChyK8LN1tHam3imvcvqDHwQe038Xv","auth0_client_id":"IdAxBDkXxeqce3MmSjmNQzT7mKJx2yG7","auth0_custom_domain":"auth.moderntreasury.com","auth0_redirect":"https://app.moderntreasury.com","datadog_rum_application_id":"cdd8dc81-f472-4c1a-b16a-f1ac3aa2f309","datadog_rum_client_token":"pubf6cc287fc89bb715c8be1902a70aad4f","datadog_rum_environment":"production","rails_env":"production","plaid_environment":"production","plaid_public_key":"1f0b22416062984fa3c5f9a4d7c0bb","sardineHost":"api.sardine.ai","sardineIsDev":"false","sentry_dsn":"https://63e01c5b9ec44918be59cc3272db7d24@sentry.io/1244199","sentry_release":"138992","sentry_environment":"production","sentry_cell":"us001"};gon.sentry_context={"user":{"id":"b8201fa9-b39e-4f3a-99eb-17b20d750f24","email":"jamesocallaghanprivatebank@gmail.com"},"tags":{"live_mode":"true","organization_id":"7e61b1b1-e6b1-4088-8cb3-a99544dbc1c0"},"extras":{"organization_name":"Citibank Demo Business Inc","request_id":"1-65df473a-440e405d0d3ecb8b35c8e67c","is_ghosting":false}};gon.ui={"navigationLinks":{"primary_links":[{"text":"Approvals","path":"/approvals","icon":"mt_approvals"}],"tools_links":[],"products_links":[{"text":"Payments","icon":"mt_payments","user_pilot_tour_id":"user_pilot_tour_payments_nav","subpaths":["/getting_started/payments","/getting_started/virtual_accounts"],"subsections":[{"text":"Payments","path":"/payment_orders","subpaths":["/payment_orders","/incoming_payment_details","/returns","/paper_items","/reversals","/file_transfers"]},{"text":"Sweeps","path":"/sweeps"},{"text":"Invoices","path":"/invoicing/invoices","subpaths":["/invoicing/new"]}]},{"text":"Reconciliation","icon":"mt_reconciliation","subsections":[{"text":"Insights","path":"/reconciliation"},{"text":"Reconcile","path":"/reconcile"},{"text":"Expected Payments","path":"/expected_payments"},{"text":"Transactions","path":"/transactions"}]},{"text":"Accounts","icon":"museum","subsections":[{"text":"Cash Management","path":"/accounts"},{"text":"Internal Accounts","path":"/search_accounts"},{"text":"Virtual Accounts","path":"/virtual_accounts"}]},{"icon":"mt_counterparties","text":"Counterparties","path":"/counterparties","subpaths":["/counterparties","/external_accounts"]},{"text":"Ledgers","icon":"mt_ledgers","path":"/ledgers","subpaths":["/ledger_transactions","/ledger_accounts"]},{"text":"Compliance","icon":"mt_compliance","path":"/compliance/cases","subpaths":["/getting_started/compliance","/compliance/insights","/compliance/block_allow_entities","/compliance/decisions","/compliance/flows","/compliance/insights"]},{"text":"Reporting","icon":"mt_reporting","path":"/reporting/reports","subpaths":["/reports"]}],"additional_links":[{"text":"Developers","path":"/developers/logs","icon":"mt_developers","subpaths":["/developers/publishable_keys","/developers/events","/developers/webhooks","/developers/bulk_requests","/developers/api_keys"]}],"footer_links":[{"text":"Invite People","icon":"add","path":"/settings/users/user_invitations/new"},{"text":"Help","path":"https://help.moderntreasury.com/hc/en-us","icon":"support_vs"},{"text":"Settings","icon":"settings_1","path":"/settings/organization"}],"settings_links":[{"text":"Organization","icon":"company","path":"/settings/organization","subsections":[{"text":"General","path":"/settings/organization"},{"text":"Users","path":"/settings/users"},{"text":"Roles","path":"/settings/roles"},{"text":"Account Groups","path":"/settings/account_groups"},{"text":"Notifications","path":"/settings/notification_groups"},{"text":"Audit Trail","path":"/settings/audit_records"}]},{"text":"Payments","path":"/settings/rules","icon":"mt_payments","subsections":[{"text":"Approval Rules","path":"/settings/payments"}]},{"text":"Compliance","path":"/settings/rules","icon":"mt_compliance","subsections":[{"text":"Case Rules","path":"/settings/compliance"}]},{"text":"Integrations","icon":"node_multiple","subsections":[{"text":"Push to Warehouse","path":"/settings/push_to_warehouse"},{"text":"Plaid","path":"/settings/plaid"},{"text":"Accounting","path":"/settings/accounting"}]},{"text":"Reconciliation","path":"/settings/rules","icon":"mt_reconciliation","subsections":[{"text":"Reconciliation Rules","path":"/settings/reconciliation"}]},{"text":"Account","path":"/settings/my_settings","icon":"user_big"}]},"authenticityToken":"-scLx9RyJmFIsZg8GMAFWaBjNhygH-xksCRhsPkuT4-kseTZu4oO5LJT3JtGTKn3TABJWjTTupVVStX_UaWM5w","isLiveMode":"true","isLive":"true","isGhosting":false,"userName":"Citibank Demo Business Inc","userId":"b8201fa9-b39e-4f3a-99eb-17b20d750f24","userEmail":"jamesocallaghanprivatebank@gmail.com","userCreatedAt":1641366082,"isDevelopment":"true","userTimezone":"Universal","cardconnectEnvironment":"fts","organizations":[{"id":"10549df9-f620-4c18-8659-5a26fb4e9642","name":"u"},{"id":"7e61b1b1-e6b1-4088-8cb3-a99544dbc1c0","name":"Citibank Demo Business Inc"},{"id":"ab76f03b-cc3a-4585-a0d5-7a2b1298638c","name":"All of the Above"}],"ticker":"CD"};gon.organization={"id":"7e61b1b1-e6b1-4088-8cb3-a99544dbc1c0","name":"Citibank Demo Business Inc","ticker":"CD","createdAt":1641366081,"showPii":"true","email_settings":{"security_notifications":"true","payment_order_review_digest":"true","payment_order_review_immediate":"true","compliance_case_review_immediate":"true","counterparty_invitation_completed":"true","payment_order_batch_approval_receipt":"true"}};gon.flatfile={"licenseKey":"be6d29d6-2e51-477b-b480-ac7254ea60f7"};
+//]]>
+</script>
+
+<link rel="apple-touch-icon" type="image/png" href="https://cdn.moderntreasury.com/packs/static/images/apple-touch-icon-1a9a3ef2033939676b41.png" sizes="180x180">
+<link rel="icon" type="image/png" href="https://cdn.moderntreasury.com/packs/static/images/favicon-9eedb218711099509cfc.png">
+<link rel="mask-icon" type="image/svg+xml" href="https://cdn.moderntreasury.com/packs/static/images/safari-pinned-tab-3ac0ec4393a6d096ec51.svg" color="#1ba778">
+<link rel="manifest" href="manifest.json">
+
+  <!-- Zendesk -->
+  <script src="https://static.zdassets.com/ekr/snippet.js?key=54282df4-9f1f-403d-92f0-7907e5ee8453" id="ze-snippet" nonce=""></script>
+
+    <link rel="stylesheet" href="https://cdn.moderntreasury.com/packs/css/155-5391e490.css">
+<link rel="stylesheet" href="https://cdn.moderntreasury.com/packs/css/109-69994075.css">
+<link rel="stylesheet" href="https://cdn.moderntreasury.com/packs/css/application-bac77ca0.css">
+  <style type="text/css">.__react_component_tooltip {
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 13px;
+  left: -999em;
+  opacity: 0;
+  padding: 8px 21px;
+  position: fixed;
+  pointer-events: none;
+  transition: opacity 0.3s ease-out;
+  top: -999em;
+  visibility: hidden;
+  z-index: 999;
+}
+.__react_component_tooltip.allow_hover, .__react_component_tooltip.allow_click {
+  pointer-events: auto;
+}
+.__react_component_tooltip:before, .__react_component_tooltip:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.__react_component_tooltip.show {
+  opacity: 0.9;
+  margin-top: 0px;
+  margin-left: 0px;
+  visibility: visible;
+}
+.__react_component_tooltip.type-dark {
+  color: #fff;
+  background-color: #222;
+}
+.__react_component_tooltip.type-dark.place-top:after {
+  border-top-color: #222;
+  border-top-style: solid;
+  border-top-width: 6px;
+}
+.__react_component_tooltip.type-dark.place-bottom:after {
+  border-bottom-color: #222;
+  border-bottom-style: solid;
+  border-bottom-width: 6px;
+}
+.__react_component_tooltip.type-dark.place-left:after {
+  border-left-color: #222;
+  border-left-style: solid;
+  border-left-width: 6px;
+}
+.__react_component_tooltip.type-dark.place-right:after {
+  border-right-color: #222;
+  border-right-style: solid;
+  border-right-width: 6px;
+}
+.__react_component_tooltip.type-dark.border {
+  border: 1px solid #fff;
+}
+.__react_component_tooltip.type-dark.border.place-top:before {
+  border-top: 8px solid #fff;
+}
+.__react_component_tooltip.type-dark.border.place-bottom:before {
+  border-bottom: 8px solid #fff;
+}
+.__react_component_tooltip.type-dark.border.place-left:before {
+  border-left: 8px solid #fff;
+}
+.__react_component_tooltip.type-dark.border.place-right:before {
+  border-right: 8px solid #fff;
+}
+.__react_component_tooltip.type-success {
+  color: #fff;
+  background-color: #8DC572;
+}
+.__react_component_tooltip.type-success.place-top:after {
+  border-top-color: #8DC572;
+  border-top-style: solid;
+  border-top-width: 6px;
+}
+.__react_component_tooltip.type-success.place-bottom:after {
+  border-bottom-color: #8DC572;
+  border-bottom-style: solid;
+  border-bottom-width: 6px;
+}
+.__react_component_tooltip.type-success.place-left:after {
+  border-left-color: #8DC572;
+  border-left-style: solid;
+  border-left-width: 6px;
+}
+.__react_component_tooltip.type-success.place-right:after {
+  border-right-color: #8DC572;
+  border-right-style: solid;
+  border-right-width: 6px;
+}
+.__react_component_tooltip.type-success.border {
+  border: 1px solid #fff;
+}
+.__react_component_tooltip.type-success.border.place-top:before {
+  border-top: 8px solid #fff;
+}
+.__react_component_tooltip.type-success.border.place-bottom:before {
+  border-bottom: 8px solid #fff;
+}
+.__react_component_tooltip.type-success.border.place-left:before {
+  border-left: 8px solid #fff;
+}
+.__react_component_tooltip.type-success.border.place-right:before {
+  border-right: 8px solid #fff;
+}
+.__react_component_tooltip.type-warning {
+  color: #fff;
+  background-color: #F0AD4E;
+}
+.__react_component_tooltip.type-warning.place-top:after {
+  border-top-color: #F0AD4E;
+  border-top-style: solid;
+  border-top-width: 6px;
+}
+.__react_component_tooltip.type-warning.place-bottom:after {
+  border-bottom-color: #F0AD4E;
+  border-bottom-style: solid;
+  border-bottom-width: 6px;
+}
+.__react_component_tooltip.type-warning.place-left:after {
+  border-left-color: #F0AD4E;
+  border-left-style: solid;
+  border-left-width: 6px;
+}
+.__react_component_tooltip.type-warning.place-right:after {
+  border-right-color: #F0AD4E;
+  border-right-style: solid;
+  border-right-width: 6px;
+}
+.__react_component_tooltip.type-warning.border {
+  border: 1px solid #fff;
+}
+.__react_component_tooltip.type-warning.border.place-top:before {
+  border-top: 8px solid #fff;
+}
+.__react_component_tooltip.type-warning.border.place-bottom:before {
+  border-bottom: 8px solid #fff;
+}
+.__react_component_tooltip.type-warning.border.place-left:before {
+  border-left: 8px solid #fff;
+}
+.__react_component_tooltip.type-warning.border.place-right:before {
+  border-right: 8px solid #fff;
+}
+.__react_component_tooltip.type-error {
+  color: #fff;
+  background-color: #BE6464;
+}
+.__react_component_tooltip.type-error.place-top:after {
+  border-top-color: #BE6464;
+  border-top-style: solid;
+  border-top-width: 6px;
+}
+.__react_component_tooltip.type-error.place-bottom:after {
+  border-bottom-color: #BE6464;
+  border-bottom-style: solid;
+  border-bottom-width: 6px;
+}
+.__react_component_tooltip.type-error.place-left:after {
+  border-left-color: #BE6464;
+  border-left-style: solid;
+  border-left-width: 6px;
+}
+.__react_component_tooltip.type-error.place-right:after {
+  border-right-color: #BE6464;
+  border-right-style: solid;
+  border-right-width: 6px;
+}
+.__react_component_tooltip.type-error.border {
+  border: 1px solid #fff;
+}
+.__react_component_tooltip.type-error.border.place-top:before {
+  border-top: 8px solid #fff;
+}
+.__react_component_tooltip.type-error.border.place-bottom:before {
+  border-bottom: 8px solid #fff;
+}
+.__react_component_tooltip.type-error.border.place-left:before {
+  border-left: 8px solid #fff;
+}
+.__react_component_tooltip.type-error.border.place-right:before {
+  border-right: 8px solid #fff;
+}
+.__react_component_tooltip.type-info {
+  color: #fff;
+  background-color: #337AB7;
+}
+.__react_component_tooltip.type-info.place-top:after {
+  border-top-color: #337AB7;
+  border-top-style: solid;
+  border-top-width: 6px;
+}
+.__react_component_tooltip.type-info.place-bottom:after {
+  border-bottom-color: #337AB7;
+  border-bottom-style: solid;
+  border-bottom-width: 6px;
+}
+.__react_component_tooltip.type-info.place-left:after {
+  border-left-color: #337AB7;
+  border-left-style: solid;
+  border-left-width: 6px;
+}
+.__react_component_tooltip.type-info.place-right:after {
+  border-right-color: #337AB7;
+  border-right-style: solid;
+  border-right-width: 6px;
+}
+.__react_component_tooltip.type-info.border {
+  border: 1px solid #fff;
+}
+.__react_component_tooltip.type-info.border.place-top:before {
+  border-top: 8px solid #fff;
+}
+.__react_component_tooltip.type-info.border.place-bottom:before {
+  border-bottom: 8px solid #fff;
+}
+.__react_component_tooltip.type-info.border.place-left:before {
+  border-left: 8px solid #fff;
+}
+.__react_component_tooltip.type-info.border.place-right:before {
+  border-right: 8px solid #fff;
+}
+.__react_component_tooltip.type-light {
+  color: #222;
+  background-color: #fff;
+}
+.__react_component_tooltip.type-light.place-top:after {
+  border-top-color: #fff;
+  border-top-style: solid;
+  border-top-width: 6px;
+}
+.__react_component_tooltip.type-light.place-bottom:after {
+  border-bottom-color: #fff;
+  border-bottom-style: solid;
+  border-bottom-width: 6px;
+}
+.__react_component_tooltip.type-light.place-left:after {
+  border-left-color: #fff;
+  border-left-style: solid;
+  border-left-width: 6px;
+}
+.__react_component_tooltip.type-light.place-right:after {
+  border-right-color: #fff;
+  border-right-style: solid;
+  border-right-width: 6px;
+}
+.__react_component_tooltip.type-light.border {
+  border: 1px solid #222;
+}
+.__react_component_tooltip.type-light.border.place-top:before {
+  border-top: 8px solid #222;
+}
+.__react_component_tooltip.type-light.border.place-bottom:before {
+  border-bottom: 8px solid #222;
+}
+.__react_component_tooltip.type-light.border.place-left:before {
+  border-left: 8px solid #222;
+}
+.__react_component_tooltip.type-light.border.place-right:before {
+  border-right: 8px solid #222;
+}
+.__react_component_tooltip.place-top {
+  margin-top: -10px;
+}
+.__react_component_tooltip.place-top:before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: -8px;
+  left: 50%;
+  margin-left: -10px;
+}
+.__react_component_tooltip.place-top:after {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  bottom: -6px;
+  left: 50%;
+  margin-left: -8px;
+}
+.__react_component_tooltip.place-bottom {
+  margin-top: 10px;
+}
+.__react_component_tooltip.place-bottom:before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -8px;
+  left: 50%;
+  margin-left: -10px;
+}
+.__react_component_tooltip.place-bottom:after {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  top: -6px;
+  left: 50%;
+  margin-left: -8px;
+}
+.__react_component_tooltip.place-left {
+  margin-left: -10px;
+}
+.__react_component_tooltip.place-left:before {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  right: -8px;
+  top: 50%;
+  margin-top: -5px;
+}
+.__react_component_tooltip.place-left:after {
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  right: -6px;
+  top: 50%;
+  margin-top: -4px;
+}
+.__react_component_tooltip.place-right {
+  margin-left: 10px;
+}
+.__react_component_tooltip.place-right:before {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  left: -8px;
+  top: 50%;
+  margin-top: -5px;
+}
+.__react_component_tooltip.place-right:after {
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  left: -6px;
+  top: 50%;
+  margin-top: -4px;
+}
+.__react_component_tooltip .multi-line {
+  display: block;
+  padding: 2px 0px;
+  text-align: center;
+}</style><style></style><style></style><style></style><style></style><style data-jss="" data-meta="Unthemed">
+.svgWrapper-0-2-7 {
+  display: inline-block;
+  position: relative;
+}
+.svg-0-2-8 {
+  left: 0;
+  width: unset;
+  height: unset;
+  position: absolute;
+}
+.svgCenter-0-2-9 {
+  top: 0;
+  bottom: 0;
+}
+.svgBaseline-0-2-10 {
+  bottom: -0.2em;
+}
+</style><style data-jss="" data-meta="Unthemed">
+.helpButton-0-2-13 {
+  width: 40px;
+  border: 1px solid #C8CBCC;
+  height: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  transition: opacity 700ms ease 0s, color 700ms ease 0s;
+  border-radius: 100%;
+  background-color: #FFF;
+}
+.dropdownSectionWithBorder-0-2-14 {
+  border-bottom: 1px solid #EAEEEF;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+.dropdownItem-0-2-15 {
+  color: #919899;
+  width: 100%;
+  border: none;
+  display: flex;
+  outline: 0;
+  padding: 8px 0 8px 16px;
+  font-size: 12px;
+  background: none;
+  align-items: center;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.dropdownItem-0-2-15:hover {
+  color: #919899;
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+.dropdownItem-0-2-15:last-of-type {
+  padding-bottom: 8px;
+}
+.bigDropdownItem-0-2-16 {
+  color: #323D43;
+  font-size: 14px;
+}
+.bigDropdownItem-0-2-16:hover {
+  color: #323D43;
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+.dropdownItemIcon-0-2-17 {
+  width: 15px;
+  display: flex;
+  margin-right: 10px;
+}
+</style><style data-jss="" data-meta="Unthemed">
+@-webkit-keyframes keyframes-rotateChevron-0-2-11 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+.activeChevron-0-2-12 {
+  animation: keyframes-rotateChevron-0-2-11 0.25s;
+  transform: rotate(180deg);
+}
+</style><style data-jss="" data-meta="e, Unthemed">
+.e-errorHeader-0-2-1 {
+  font-size: 24px;
+}
+.e-error-0-2-2 {
+  font-size: 12px;
+}
+.e-errorSubheader-0-2-3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.e-container-0-2-4 {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+}
+.e-refreshButton-0-2-5 {
+  color: #409D7C;
+  outline: none !important;
+  padding: 0px;
+  box-shadow: none !important;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.e-refreshButton-0-2-5:hover {
+  color: #00473C;
+}
+.e-errorMessage-0-2-6 {
+  text-align: center;
+}
+</style></head>
+
+  <body>
+    <div id="app-root"><div class="relative text-sm"><div class="flex h-full w-full flex-col mint-md:grid mint-md:min-h-screen mint-md:grid-cols-[max-content_auto]"><div class="h-full"><div class="z-50 grid w-full grid-cols-2 items-center justify-items-end rounded-md border-b border-alpha-black-100 bg-white px-6 py-4 mint-md:hidden"><div class="-mr-2.5 h-5 w-5"><svg class="text-green-500" width="100%" height="100%" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 6.40625L20 3.125V0H0V3.125L10 6.40625Z" fill="currentColor"></path><path d="M0 6.09375V20H4.6875V7.65625L0 6.09375Z" fill="currentColor"></path><path d="M20 6.09375V20H15.3125V7.65625L20 6.09375Z" fill="currentColor"></path><path d="M12.3438 8.59375L11.2649 8.95336C10.7956 9.1098 10.5609 9.18802 10.3209 9.21909C10.1078 9.24666 9.89216 9.24666 9.67914 9.21909C9.43907 9.18802 9.20441 9.1098 8.73509 8.95336L7.65625 8.59375V20H12.3438V8.59375Z" fill="currentColor"></path></svg></div><div class="-m-0.5 flex items-center p-0.5 transition-all duration-75 ease-in-out hover:bg-gray-50 active:bg-gray-100" tabindex="0" role="button" id="" style="cursor: pointer;"><span id="menu_hamburger" class="relative inline-block text-gray-700" style="width: 20px; height: 20px; fill: currentcolor;"><svg width="20" height="20" class="svg-0-2-8 svgCenter-0-2-9" role="img" color="currentColor" viewBox="0 0 24 24"><g fill-rule="nonzero"><path d="M20.5,7H3.5A.5.5,0,0,1,3,6.5v-1A.5.5,0,0,1,3.5,5h17a.5.5,0,0,1,.5.5v1A.5.5,0,0,1,20.5,7Zm.5,5.5v-1a.5.5,0,0,0-.5-.5H3.5a.5.5,0,0,0-.5.5v1a.5.5,0,0,0,.5.5h17A.5.5,0,0,0,21,12.5Zm0,6v-1a.5.5,0,0,0-.5-.5H3.5a.5.5,0,0,0-.5.5v1a.5.5,0,0,0,.5.5h17A.5.5,0,0,0,21,18.5Z" role="presentation" fill-rule="evenodd"></path></g></svg></span></div></div><div class="grid h-full grid-rows-[0fr] border-r border-alpha-black-100 bg-gray-900 transition-all duration-150 ease-in-out mint-md:block mint-md:max-h-screen mint-md:w-56 mint-md:transition-none" id="application-sidebar"><div class="overflow-hidden mint-md:h-full mint-md:overflow-visible"><div class="no-scrollbar flex h-full flex-col justify-between text-sm"><div class="shrink-0 border-b border-gray-700 px-5 py-3.5 mint-md:px-1.5"><div><div class="flex"><div class="flex w-52 flex-col whitespace-nowrap"><div class="organization-name text-left text-xs"><button type="button" class="w-52"><div class="flex items-center pl-2"><span id="chevron_left" class="relative inline-block text-gray-400" style="width: 16px; height: 16px; fill: currentcolor;"><svg width="16" height="16" class="svg-0-2-8 svgCenter-0-2-9" role="img" color="currentColor" viewBox="0 0 24 24"><g fill-rule="nonzero"><path d="M8.22,12.72A.75.75,0,0,1,8,12.19v-.38a.77.77,0,0,1,.22-.53l5.14-5.13a.5.5,0,0,1,.71,0l.71.71a.49.49,0,0,1,0,.7L10.33,12l4.45,4.44a.5.5,0,0,1,0,.71l-.71.7a.5.5,0,0,1-.71,0Z" role="presentation" fill-rule="evenodd"></path></g></svg></span><span class="overflow-hidden overflow-ellipsis whitespace-nowrap pl-1 font-medium text-gray-300">Citibank Demo Business Inc</span></div></button></div></div></div><div class="pl-3 text-base font-medium text-gray-50a">Settings</div></div></div><div class="no-scrollbar grow overflow-y-auto px-5 mint-md:px-2"><div class="flex h-full flex-col justify-between gap-4 overflow-y-auto pb-6 pt-2"><div class="flex-grow"><div class="grid grid-flow-row gap-1"><div class="grid grid-flow-row gap-6"><div class="grid grid-flow-row gap-1"><div class="w-full flex py-1.5 px-2 items-center cursor-pointer hover:bg-mist-700 rounded !pointer-events-none !bg-transparent justify-between" id="" tabindex="0" role="button" style="cursor: pointer;"><div class="flex items-center"><div class="flex h-5 w-5 items-center justify-center"><span id="company" class="relative inline-block text-gray-200" style="width: 16px; height: 16px; fill: currentcolor;"><svg width="16" height="16" class="svg-0-2-8 svgCenter-0-2-9" role="img" color="currentColor" viewBox="0 0 24 24"><g fill-rule="nonzero"><path d="M22.5 19H19V4C19 3.73478 18.8946 3.48043 18.7071 3.29289C18.5196 3.10536 18.2652 3 18 3H6C5.73478 3 5.48043 3.10536 5.29289 3.29289C5.10536 3.48043 5 3.73478 5 4V19H1.5C1.36739 19 1.24021 19.0527 1.14645 19.1464C1.05268 19.2402 1 19.3674 1 19.5V20.5C1 20.6326 1.05268 20.7598 1.14645 20.8536C1.24021 20.9473 1.36739 21 1.5 21H22.5C22.6326 21 22.7598 20.9473 22.8536 20.8536C22.9473 20.7598 23 20.6326 23 20.5V19.5C23 19.3674 22.9473 19.2402 22.8536 19.1464C22.7598 19.0527 22.6326 19 22.5 19ZM16.5 11H15.5C15.3674 11 15.2402 10.9473 15.1464 10.8536C15.0527 10.7598 15 10.6326 15 10.5V9.5C15 9.36739 15.0527 9.24021 15.1464 9.14645C15.2402 9.05268 15.3674 9 15.5 9H16.5C16.6326 9 16.7598 9.05268 16.8536 9.14645C16.9473 9.24021 17 9.36739 17 9.5V10.5C17 10.6326 16.9473 10.7598 16.8536 10.8536C16.7598 10.9473 16.6326 11 16.5 11ZM8.5 11H7.5C7.36739 11 7.24021 10.9473 7.14645 10.8536C7.05268 10.7598 7 10.6326 7 10.5V9.5C7 9.36739 7.05268 9.24021 7.14645 9.14645C7.24021 9.05268 7.36739 9 7.5 9H8.5C8.63261 9 8.75979 9.05268 8.85355 9.14645C8.94732 9.24021 9 9.36739 9 9.5V10.5C9 10.6326 8.94732 10.7598 8.85355 10.8536C8.75979 10.9473 8.63261 11 8.5 11ZM9 13.5V14.5C9 14.6326 8.94732 14.7598 8.85355 14.8536C8.75979 14.9473 8.63261 15 8.5 15H7.5C7.36739 15 7.24021 14.9473 7.14645 14.8536C7.05268 14.7598 7 14.6326 7 14.5V13.5C7 13.3674 7.05268 13.2402 7.14645 13.1464C7.24021 13.0527 7.36739 13 7.5 13H8.5C8.63261 13 8.75979 13.0527 8.85355 13.1464C8.94732 13.2402 9 13.3674 9 13.5ZM15.5 13H16.5C16.6326 13 16.7598 13.0527 16.8536 13.1464C16.9473 13.2402 17 13.3674 17 13.5V14.5C17 14.6326 16.9473 14.7598 16.8536 14.8536C16.7598 14.9473 16.6326 15 16.5 15H15.5C15.3674 15 15.2402 14.9473 15.1464 14.8536C15.0527 14.7598 15 14.6326 15 14.5V13.5C15 13.3674 15.0527 13.2402 15.1464 13.1464C15.2402 13.0527 15.3674 13 15.5 13ZM16.5 7H15.5C15.3674 7 15.2402 6.94732 15.1464 6.85355C15.0527 6.75979 15 6.63261 15 6.5V5.5C15 5.36739 15.0527 5.24021 15.1464 5.14645C15.2402 5.05268 15.3674 5 15.5 5H16.5C16.6326 5 16.7598 5.05268 16.8536 5.14645C16.9473 5.24021 17 5.36739 17 5.5V6.5C17 6.63261 16.9473 6.75979 16.8536 6.85355C16.7598 6.94732 16.6326 7 16.5 7ZM9 5.5V6.5C9 6.63261 8.94732 6.75979 8.85355 6.85355C8.75979 6.94732 8.63261 7 8.5 7H7.5C7.36739 7 7.24021 6.94732 7.14645 6.85355C7.05268 6.75979 7 6.63261 7 6.5V5.5C7 5.36739 7.05268 5.24021 7.14645 5.14645C7.24021 5.05268 7.36739 5 7.5 5H8.5C8.63261 5 8.75979 5.05268 8.85355 5.14645C8.94732 5.24021 9 5.36739 9 5.5ZM7.5 17H16.5C16.6326 17 16.7598 17.0527 16.8536 17.1464C16.9473 17.2402 17 17.3674 17 17.5V19H7V17.5C7 17.3674 7.05268 17.2402 7.14645 17.1464C7.24021 17.0527 7.36739 17 7.5 17ZM12.5 11H11.5C11.3674 11 11.2402 10.9473 11.1464 10.8536C11.0527 10.7598 11 10.6326 11 10.5V9.5C11 9.36739 11.0527 9.24021 11.1464 9.14645C11.2402 9.05268 11.3674 9 11.5 9H12.5C12.6326 9 12.7598 9.05268 12.8536 9.14645C12.9473 9.24021 13 9.36739 13 9.5V10.5C13 10.6326 12.9473 10.7598 12.8536 10.8536C12.7598 10.9473 12.6326 11 12.5 11ZM11.5 13H12.5C12.6326 13 12.7598 13.0527 12.8536 13.1464C12.9473 13.2402 13 13.3674 13 13.5V14.5C13 14.6326 12.9473 14.7598 12.8536 14.8536C12.7598 14.9473 12.6326 15 12.5 15H11.5C11.3674 15 11.2402 14.9473 11.1464 14.8536C11.0527 14.7598 11 14.6326 11 14.5V13.5C11 13.3674 11.0527 13.2402 11.1464 13.1464C11.2402 13.0527 11.3674 13 11.5 13ZM12.5 7H11.5C11.3674 7 11.2402 6.94732 11.1464 6.85355C11.0527 6.75979 11 6.63261 11 6.5V5.5C11 5.36739 11.0527 5.24021 11.1464 5.14645C11.2402 5.05268 11.3674 5 11.5 5H12.5C12.6326 5 12.7598 5.05268 12.8536 5.14645C12.9473 5.24021 13 5.36739 13 5.5V6.5C13 6.63261 12.9473 6.75979 12.8536 6.85355C12.7598 6.94732 12.6326 7 12.5 7Z" role="presentation" fill-rule="evenodd"></path></g></svg></span></div><div class="flex w-32 overflow-hidden overflow-ellipsis whitespace-nowrap px-2 text-gray-200" id="Organization">Organization<div class="ml-1.5 mt-0.5 flex h-fit w-fit items-center"></div></div></div></div><div class="grid grid-flow-row gap-1"><a class="rounded py-1.5 pl-9 no-underline hover:bg-mist-700 hover:text-gray-100 text-gray-200" id="General" href="/settings/organization">General</a><a class="rounded py-1.5 pl-9 no-underline hover:bg-mist-700 hover:text-gray-100 text-gray-200" id="Users" href="/settings/users">Users</a><a class="rounded py-1.5 pl-9 no-underline hover:bg-mist-700 hover:text-gray-100 text-gray-200" id="Roles" href="/settings/roles">Roles</a><a class="rounded py-1.5 pl-9 no-underline hover:bg-mist-700 hover:text-gray-100 text-gray-200" id="AccountGroups" href="/settings/account_groups">Account Groups</a><a class="rounded py-1.5 pl-9 no-underline hover:bg-mist-700 hover:text-gray-100 text-gray-200" id="Notifications" href="/settings/notification_groups">Notifications</a><a class="rounded py-1.5 pl-9 no-underline hover:bg-mist-700 hover:text-gray-100 text-gray-200" id="AuditTrail" href="/settings/audit_records">Audit Trail</a></div></div><div class="grid grid-flow-row gap-1"><div class="w-full flex py-1.5 px-2 items-center cursor-pointer hover:bg-mist-700 rounded !pointer-events-none !bg-transparent justify-between" id="" tabindex="0" role="button" style="cursor: pointer;"><div class="flex items-center"><div class="flex h-5 w-5 items-center justify-center"><span id="mt_payments" class="relative inline-block text-gray-200" style="width: 16px; height: 16px; fill: currentcolor;"><svg width="16" height="16" class="svg-0-2-8 svgCenter-0-2-9" role="img" color="currentColor" viewBox="0 0 24 24"><g fill-rule="nonzero"><path d="M20.2,9H17V6.6A2.55,2.55,0,0,0,14.6,4H4.4A2.48,2.48,0,0,0,2,6.6v5.8A2.55,2.55,0,0,0,4.4,15H7v4.2A1.79,1.79,0,0,0,8.8,21H20.2A1.79,1.79,0,0,0,22,19.2V10.9A1.82,1.82,0,0,0,20.2,9ZM7,10.8V13H4.4c-.2,0-.4-.3-.4-.6V6.6c0-.3.2-.6.4-.6H14.6c.2,0,.4.3.4.6V9H8.8A1.79,1.79,0,0,0,7,10.8ZM20,19H9V11H20Z" role="presentation" fill-rule="evenodd"></path><path d="M15,18a3,3,0,1,1,3-3A2.95,2.95,0,0,1,15,18Zm0-4a1,1,0,1,0,1,1A.94.94,0,0,0,15,14Z" role="presentation" fill-rule="evenodd"></path></g></svg></span></div><div class="flex w-32 overflow-hidden overflow-ellipsis whitespace-nowrap px-2 text-gray-200" id="Payments">Payments<div class="ml-1.5 mt-0.5 flex h-fit w-fit items-center"></div></div></div></div><div class="grid grid-flow-row gap-1"><a class="rounded py-1.5 pl-9 no-underline hover:bg-mist-700 hover:text-gray-100 text-gray-200" id="ApprovalRules" href="/settings/payments">Approval Rules</a></div></div><div class="grid grid-flow-row gap-1"><div class="w-full flex py-1.5 px-2 items-center cursor-pointer hover:bg-mist-700 rounded !pointer-events-none !bg-transparent justify-between" id="" tabindex="0" role="button" style="cursor: pointer;"><div class="flex items-center"><div class="flex h-5 w-5 items-center justify-center"><span id="mt_compliance" class="relative inline-block text-gray-200" style="width: 16px; height: 16px; fill: currentcolor;"><svg width="16" height="16" class="svg-0-2-8 svgCenter-0-2-9" role="img" color="currentColor" viewBox="0 0 24 24"><g fill-rule="nonzero"><path d="M11.4329 3.20928C11.7555 2.91982 12.2444 2.91982 12.567 3.20928C14.534 4.97421 17.1208 5.88672 19.7598 5.74657C20.1632 5.72515 20.5259 5.99094 20.6269 6.38209C20.8701 7.32356 20.9999 8.3096 20.9999 9.32588C20.9999 14.7871 17.9998 17.9995 12.2115 20.6736C12.0727 20.7094 11.9271 20.7094 11.7883 20.6736C5.99982 17.9995 3 14.7861 3 9.32588C2.99925 8.33278 3.12457 7.34361 3.37295 6.38208C3.47398 5.99093 3.83663 5.72515 4.24004 5.74657C6.87906 5.88672 9.4659 4.97421 11.4329 3.20928ZM4.87171 7.45828C4.75581 8.07332 4.69759 8.69834 4.6981 9.32519C4.6981 13.9155 7.49982 16.4995 11.9999 18.9722C16.4998 16.4995 19.3018 13.917 19.3018 9.32588C19.3018 8.68698 19.242 8.063 19.1281 7.45828C16.54 7.43564 14.0318 6.55309 11.9999 4.95039C9.96804 6.5531 7.45988 7.43566 4.87171 7.45828ZM15.6559 9.63116C15.9875 9.96274 15.9875 10.5003 15.6559 10.8319L12.0333 14.4545C11.7017 14.7861 11.1641 14.7861 10.8325 14.4545L9.02123 12.6432C8.68965 12.3116 8.68965 11.774 9.02123 11.4425C9.3528 11.1109 9.89039 11.1109 10.222 11.4425L11.4329 12.6534L14.4551 9.63116C14.7867 9.29959 15.3243 9.29959 15.6559 9.63116Z" role="presentation" fill-rule="evenodd"></path></g></svg></span></div><div class="flex w-32 overflow-hidden overflow-ellipsis whitespace-nowrap px-2 text-gray-200" id="Compliance">Compliance<div class="ml-1.5 mt-0.5 flex h-fit w-fit items-center"></div></div></div></div><div class="grid grid-flow-row gap-1"><a class="rounded py-1.5 pl-9 no-underline hover:bg-mist-700 hover:text-gray-100 text-gray-200" id="CaseRules" href="/settings/compliance">Case Rules</a></div></div><div class="grid grid-flow-row gap-1"><div class="w-full flex py-1.5 px-2 items-center cursor-pointer hover:bg-mist-700 rounded !pointer-events-none !bg-transparent justify-between" id="" tabindex="0" role="button" style="cursor: pointer;"><div class="flex items-center"><div class="flex h-5 w-5 items-center justify-center"><span id="node_multiple" class="relative inline-block text-gray-200" style="width: 16px; height: 16px; fill: currentcolor;"><svg width="16" height="16" class="svg-0-2-8 svgCenter-0-2-9" role="img" color="currentColor" viewBox="0 0 24 24"><g fill-rule="nonzero"><path d="M22 17.031a3 3 0 0 0-5.82-1H15a2 2 0 0 1-2-2 3 3 0 0 0-.78-2 3 3 0 0 0-2.22-1H7.82a3 3 0 1 0 0 2H10a1 1 0 0 1 1 1 4 4 0 0 0 4 4h1.18a3 3 0 0 0 5.82-1Zm-9-6.68v-.32a2 2 0 0 1 2-2h1.18a3 3 0 1 0 0-2H15a4 4 0 0 0-3.94 3.37 4.77 4.77 0 0 1 1.94.95Z" role="presentation" fill-rule="evenodd"></path></g></svg></span></div><div class="flex w-32 overflow-hidden overflow-ellipsis whitespace-nowrap px-2 text-gray-200" id="Integrations">Integrations<div class="ml-1.5 mt-0.5 flex h-fit w-fit items-center"></div></div></div></div><div class="grid grid-flow-row gap-1"><a class="rounded py-1.5 pl-9 no-underline hover:bg-mist-700 hover:text-gray-100 text-gray-200" id="PushtoWarehouse" href="/settings/push_to_warehouse">Push to Warehouse</a><a aria-current="page" class="rounded py-1.5 pl-9 no-underline hover:bg-mist-700 hover:text-gray-100 bg-mist-700 text-white active" id="Plaid" href="/settings/plaid">Plaid</a><a class="rounded py-1.5 pl-9 no-underline hover:bg-mist-700 hover:text-gray-100 text-gray-200" id="Accounting" href="/settings/accounting">Accounting</a></div></div><div class="grid grid-flow-row gap-1"><div class="w-full flex py-1.5 px-2 items-center cursor-pointer hover:bg-mist-700 rounded !pointer-events-none !bg-transparent justify-between" id="" tabindex="0" role="button" style="cursor: pointer;"><div class="flex items-center"><div class="flex h-5 w-5 items-center justify-center"><span id="mt_reconciliation" class="relative inline-block text-gray-200" style="width: 16px; height: 16px; fill: currentcolor;"><svg width="16" height="16" class="svg-0-2-8 svgCenter-0-2-9" role="img" color="currentColor" viewBox="0 0 24 24"><g fill-rule="nonzero"><path d="M22.07,6.17a1,1,0,0,0-1.38-.28L18.17,7.57,13.24,5.11V2.73a1,1,0,0,0-2,0V5.11L6.31,7.57,3.8,5.89A1,1,0,0,0,2.69,7.56L5.05,9.14,3.29,14.41a1,1,0,0,0,.24,1,4.4,4.4,0,0,0,2.71,1.3A4.34,4.34,0,0,0,9,15.43a1,1,0,0,0,.24-1L7.46,9.23l3.78-1.89V18.73h-3a1,1,0,1,0,0,2h8a1,1,0,0,0,0-2h-3V7.34L17,9.23l-1.73,5.18a1,1,0,0,0,.24,1,4.4,4.4,0,0,0,2.71,1.3A4.34,4.34,0,0,0,21,15.43a1,1,0,0,0,.24-1L19.43,9.14,21.8,7.56A1,1,0,0,0,22.07,6.17ZM6.24,14.73a1.79,1.79,0,0,1-.83-.34l.83-2.5.83,2.5A1.79,1.79,0,0,1,6.24,14.73Zm12,0a1.79,1.79,0,0,1-.83-.34l.83-2.5.83,2.5A1.79,1.79,0,0,1,18.24,14.73Z" role="presentation" fill-rule="evenodd"></path></g></svg></span></div><div class="flex w-32 overflow-hidden overflow-ellipsis whitespace-nowrap px-2 text-gray-200" id="Reconciliation">Reconciliation<div class="ml-1.5 mt-0.5 flex h-fit w-fit items-center"></div></div></div></div><div class="grid grid-flow-row gap-1"><a class="rounded py-1.5 pl-9 no-underline hover:bg-mist-700 hover:text-gray-100 text-gray-200" id="ReconciliationRules" href="/settings/reconciliation">Reconciliation Rules</a></div></div><div class="grid grid-flow-row gap-1"><div class="flex items-center no-underline w-full flex py-1.5 px-2 items-center cursor-pointer hover:bg-mist-700 rounded" id="" tabindex="0" role="button" style="cursor: pointer;"><a class="flex items-center no-underline" href="/settings/my_settings" id="Account"><div class="flex h-5 w-5 items-center justify-center"><span id="user_big" class="relative inline-block text-gray-200" style="width: 16px; height: 16px; fill: currentcolor;"><svg width="16" height="16" class="svg-0-2-8 svgCenter-0-2-9" role="img" color="currentColor" viewBox="0 0 24 24"><g fill-rule="nonzero"><path d="M4.99942 5C4.99942 4.0111 5.29266 3.0444 5.84207 2.22215C6.39147 1.39991 7.17237 0.759043 8.086 0.380605C8.99963 0.00216642 10.005 -0.0968503 10.9749 0.0960759C11.9448 0.289002 12.8357 0.765206 13.5349 1.46447C14.2342 2.16373 14.7104 3.05465 14.9033 4.02455C15.0963 4.99446 14.9973 5.99979 14.6188 6.91342C14.2404 7.82705 13.5995 8.60794 12.7773 9.15735C11.955 9.70676 10.9883 10 9.99942 10C8.67333 10 7.40156 9.47322 6.46388 8.53554C5.5262 7.59785 4.99942 6.32609 4.99942 5ZM19.8894 18.55L17.9994 14.76C17.5838 13.9305 16.9455 13.2331 16.1561 12.7456C15.3667 12.2582 14.4572 12 13.5294 12H6.46942C5.54163 12 4.63215 12.2582 3.84273 12.7456C3.0533 13.2331 2.41506 13.9305 1.99942 14.76L0.109415 18.55C0.0327053 18.7022 -0.00381663 18.8715 0.00331774 19.0419C0.0104521 19.2122 0.0610059 19.3778 0.150178 19.5231C0.239351 19.6684 0.364181 19.7885 0.512815 19.8719C0.661449 19.9554 0.828951 19.9995 0.999415 20H18.9994C19.1699 19.9995 19.3374 19.9554 19.486 19.8719C19.6346 19.7885 19.7595 19.6684 19.8487 19.5231C19.9378 19.3778 19.9884 19.2122 19.9955 19.0419C20.0026 18.8715 19.9661 18.7022 19.8894 18.55Z" role="presentation" fill-rule="evenodd"></path></g></svg></span></div><span class="px-2 text-gray-200">Account</span></a></div></div></div></div></div><div><div class="flex rounded px-2 py-1.5 hover:bg-mist-700" tabindex="0" role="button" id="" style="cursor: pointer;"><div id="live-mode-toggle" class="flex items-center text-orange-300a"><div class="flex h-5 w-5 items-center justify-center"><span id="toggle_on" class="relative inline-block text-orange-300a" style="width: 16px; height: 16px; fill: currentcolor;"><svg width="16" height="16" class="svg-0-2-8 svgCenter-0-2-9" role="img" color="currentColor" viewBox="0 0 24 24"><g fill-rule="nonzero"><path d="M16 6H8a6 6 0 0 0 0 12h8a6 6 0 0 0 0-12Zm0 10a4 4 0 1 1 4-4 4 4 0 0 1-4 4Z" role="presentation" fill-rule="evenodd"></path></g></svg></span></div><span class="pl-2">Viewing Sandbox</span></div></div></div></div></div></div></div></div></div><div class="relative h-full w-full overflow-y-scroll border mint-md:h-screen border-4 border-orange-400"><div class="absolute left-0 right-0 top-0 flex justify-center"><div class="rounded-b-sm px-2 py-1 pt-0 text-center text-xs font-medium text-white bg-orange-400">Sandbox</div></div><div class="fixed bottom-6 right-6 z-40"><div class="relative" data-headlessui-state=""><button class="help-button-trigger" type="button" aria-expanded="false" data-headlessui-state="" id="headlessui-popover-button-1"><div class="h-10 w-10 rounded-full border border-alpha-black-200 bg-white shadow-md"><h4 class="text-lg flex h-full w-full items-center justify-center text-center">?</h4></div></button></div></div><div id="application-content" class="min-h-screen"><div class="bg-white pt-6"><div class="px-6 border-b border-alpha-black-50"><div class="grid grid-flow-row gap-4 pb-5 pb-2"><div class="flex justify-between"><div id="header" class="flex w-full flex-wrap items-center justify-between gap-3"><div class="flex flex-wrap items-center gap-4"><h1 class="text-xl max-w-[40ch]">Plaid Settings</h1></div></div></div></div></div></div><div class="flex flex-col gap-4 p-6"><div class="mt-container"><form class="form-create"><div class="form-section"><div class="flex justify-start"><div class="flex w-full flex-row gap-x-2 items-center"><div><div class="flex flex-row items-center space-x-2"><div class="relative flex h-4 w-4 text-base"><input id="nsfProtectionEnabled" name="nsfProtectionEnabled" type="checkbox" class="absolute h-4 w-4 cursor-pointer appearance-none rounded-sm border border-alpha-black-200 bg-white border-alpha-black-300 hover:border checked:border-blue-600 checked:bg-blue-500 disabled:cursor-not-allowed disabled:border-alpha-black-200 disabled:bg-alpha-black-50 disabled:checked:border-blue-300 disabled:checked:bg-blue-200" value=""><div class="pointer-events-none flex w-full items-center justify-center"><span id="done" class="relative inline-block text-white" style="width: 12px; height: 12px; fill: currentcolor;"><svg width="12" height="12" class="svg-0-2-8 svgCenter-0-2-9" role="img" color="currentColor" viewBox="0 0 24 24"><g fill-rule="nonzero"><path d="m3 12.644 1.738-1.773 4.327 4.256L18.227 6 20 7.761 9.065 18.673 3 12.643Z" role="presentation" fill-rule="evenodd"></path></g></svg></span></div></div></div></div><div class="form-label-container flex items-end justify-between text-gray-700 hover:text-gray-900"><label for="nsfProtectionEnabledLabel" class="form-label flex cursor-pointer">Enable Non-Sufficient Funds Protection Feature<div><div class="__react_component_tooltip place-top type-dark" data-id="tooltip"></div><svg width="13" height="13" class="tooltip-holder" data-tip="This enables NSF Protection for your payment orders with external accounts connected through Plaid.<br /> You can choose on each payment order whether to protect against NSFs." currentitem="false"><g fill-rule="nonzero" fill="none"><path d="M6.5 0A6.502 6.502 0 0 0 0 6.5C0 10.088 2.912 13 6.5 13S13 10.088 13 6.5 10.088 0 6.5 0z" fill="#A6ADB6"></path><path d="M6.817 8.002H5.746a1.852 1.852 0 0 1-.036-.396c0-.423.171-.882.684-1.269l.459-.342a.737.737 0 0 0 .324-.63c0-.351-.261-.693-.801-.693-.522 0-.828.423-.828.846 0 .207.018.297.027.333l-1.26-.045a1.85 1.85 0 0 1-.036-.378c0-1.053.783-1.944 2.097-1.944 1.458 0 2.187.873 2.187 1.773 0 .72-.333 1.215-.873 1.62l-.342.252c-.315.234-.531.468-.531.873zM5.539 9.316c0-.432.342-.783.774-.783s.783.351.783.783a.782.782 0 0 1-.783.774.774.774 0 0 1-.774-.774z" fill="#FFF"></path></g></svg></div></label></div></div></div><div class="flex justify-start"><div class="flex w-full flex-row gap-x-2 items-center"><div><div class="flex flex-row items-center space-x-2"><div class="relative flex h-4 w-4 text-base"><input id="nsfProtectionFallbackEnabled" name="nsfProtectionFallbackEnabled" type="checkbox" class="absolute h-4 w-4 cursor-pointer appearance-none rounded-sm border border-alpha-black-200 bg-white border-alpha-black-300 hover:border checked:border-blue-600 checked:bg-blue-500 disabled:cursor-not-allowed disabled:border-alpha-black-200 disabled:bg-alpha-black-50 disabled:checked:border-blue-300 disabled:checked:bg-blue-200" value=""><div class="pointer-events-none flex w-full items-center justify-center"><span id="done" class="relative inline-block text-white" style="width: 12px; height: 12px; fill: currentcolor;"><svg width="12" height="12" class="svg-0-2-8 svgCenter-0-2-9" role="img" color="currentColor" viewBox="0 0 24 24"><g fill-rule="nonzero"><path d="m3 12.644 1.738-1.773 4.327 4.256L18.227 6 20 7.761 9.065 18.673 3 12.643Z" role="presentation" fill-rule="evenodd"></path></g></svg></span></div></div></div></div><div class="form-label-container flex items-end justify-between text-gray-700 hover:text-gray-900"><label for="nsfProtectionFallbackEnabledLabel" class="form-label flex cursor-pointer">When Plaid fails to pull a balance, initiate ACH debits<div><div class="__react_component_tooltip place-top type-dark" data-id="tooltip"></div><svg width="13" height="13" class="tooltip-holder" data-tip="Plaid may fail to pull a balance for a connected account. By default, Modern Treasury will not try the payment now, and will instead try again at the next cutoff. <br />However, if you would like to proceed and do the ACH debit anyway, you can check this box." currentitem="false"><g fill-rule="nonzero" fill="none"><path d="M6.5 0A6.502 6.502 0 0 0 0 6.5C0 10.088 2.912 13 6.5 13S13 10.088 13 6.5 10.088 0 6.5 0z" fill="#A6ADB6"></path><path d="M6.817 8.002H5.746a1.852 1.852 0 0 1-.036-.396c0-.423.171-.882.684-1.269l.459-.342a.737.737 0 0 0 .324-.63c0-.351-.261-.693-.801-.693-.522 0-.828.423-.828.846 0 .207.018.297.027.333l-1.26-.045a1.85 1.85 0 0 1-.036-.378c0-1.053.783-1.944 2.097-1.944 1.458 0 2.187.873 2.187 1.773 0 .72-.333 1.215-.873 1.62l-.342.252c-.315.234-.531.468-.531.873zM5.539 9.316c0-.432.342-.783.774-.783s.783.351.783.783a.782.782 0 0 1-.783.774.774.774 0 0 1-.774-.774z" fill="#FFF"></path></g></svg></div></label></div></div></div><div class="flex justify-start"><div class="flex w-full flex-row gap-x-2 items-center"><div><div class="flex flex-row items-center space-x-2"><div class="relative flex h-4 w-4 text-base"><input id="plaidIdentityEnabled" name="plaidIdentityEnabled" type="checkbox" class="absolute h-4 w-4 cursor-pointer appearance-none rounded-sm border border-alpha-black-200 bg-white border-alpha-black-300 hover:border checked:border-blue-600 checked:bg-blue-500 disabled:cursor-not-allowed disabled:border-alpha-black-200 disabled:bg-alpha-black-50 disabled:checked:border-blue-300 disabled:checked:bg-blue-200" value=""><div class="pointer-events-none flex w-full items-center justify-center"><span id="done" class="relative inline-block text-white" style="width: 12px; height: 12px; fill: currentcolor;"><svg width="12" height="12" class="svg-0-2-8 svgCenter-0-2-9" role="img" color="currentColor" viewBox="0 0 24 24"><g fill-rule="nonzero"><path d="m3 12.644 1.738-1.773 4.327 4.256L18.227 6 20 7.761 9.065 18.673 3 12.643Z" role="presentation" fill-rule="evenodd"></path></g></svg></span></div></div></div></div><div class="form-label-container flex items-end justify-between text-gray-700 hover:text-gray-900"><label for="plaidIdentityEnabledLabel" class="form-label flex cursor-pointer">Enable Plaid Identity when creating external accounts with processor tokens</label></div></div></div></div><div class="form-section"><button class="items-center whitespace-nowrap rounded-sm outline-none transition-all focus:ring-1 focus:ring-blue-500 focus:ring-offset-0 justify-center gap-2 px-3 gap-2 h-8 py-1 text-sm border border-blue-600 bg-blue-500 text-white hover:border-blue-700 hover:bg-blue-600 active:border-blue-700 active:bg-blue-700 focus:border-cyan-500 focus:border-transparent focus:outline-none focus:ring-2 disabled:opacity-50 font-medium disabled:cursor-not-allowed flex" tabindex="0" type="button">Save</button></div></form></div></div></div></div></div></div></div>
+    <script src="https://cdn.moderntreasury.com/packs/js/runtime-16fcbea3473eb0393f6d.js" nonce="" defer="defer"></script>
+<script src="https://cdn.moderntreasury.com/packs/js/313-1dc0d00368b3f5459a49.js" nonce="" defer="defer"></script>
+<script src="https://cdn.moderntreasury.com/packs/js/155-c3f33ecb02b922d5e87e.js" nonce="" defer="defer"></script>
+<script src="https://cdn.moderntreasury.com/packs/js/168-a8385aa43bf8ff7d7ea9.js" nonce="" defer="defer"></script>
+<script src="https://cdn.moderntreasury.com/packs/js/793-0777fc7b027a8fd36fd9.js" nonce="" defer="defer"></script>
+<script src="https://cdn.moderntreasury.com/packs/js/719-5caec0ea5cd7db8e3d1b.js" nonce="" defer="defer"></script>
+<script src="https://cdn.moderntreasury.com/packs/js/850-dc645af843f184c75492.js" nonce="" defer="defer"></script>
+<script src="https://cdn.moderntreasury.com/packs/js/629-98a2717bc8c76c220b75.js" nonce="" defer="defer"></script>
+<script src="https://cdn.moderntreasury.com/packs/js/776-2637420be0209524f4cd.js" nonce="" defer="defer"></script>
+<script src="https://cdn.moderntreasury.com/packs/js/379-5789742666e2304c7c36.js" nonce="" defer="defer"></script>
+<script src="https://cdn.moderntreasury.com/packs/js/377-5b6c0fb8f1e779f8b34e.js" nonce="" defer="defer"></script>
+<script src="https://cdn.moderntreasury.com/packs/js/149-55c48a663c5a0fd19425.js" nonce="" defer="defer"></script>
+<script src="https://cdn.moderntreasury.com/packs/js/339-b752ad88f7d31f5da461.js" nonce="" defer="defer"></script>
+<script src="https://cdn.moderntreasury.com/packs/js/831-09da4a2ced5c9adae247.js" nonce="" defer="defer"></script>
+<script src="https://cdn.moderntreasury.com/packs/js/109-28bee02373bd15d4c782.js" nonce="" defer="defer"></script>
+<script src="https://cdn.moderntreasury.com/packs/js/900-812d6a9e320d9cb88e0f.js" nonce="" defer="defer"></script>
+<script src="https://cdn.moderntreasury.com/packs/js/753-5267cd14c8cf6a6a86f7.js" nonce="" defer="defer"></script>
+<script src="https://cdn.moderntreasury.com/packs/js/3-b16fc3b40be3314b689b.js" nonce="" defer="defer"></script>
+<script src="https://cdn.moderntreasury.com/packs/js/899-09c2da60c6306ec9ec2d.js" nonce="" defer="defer"></script>
+<script src="https://cdn.moderntreasury.com/packs/js/531-9f8b34b50bf39c9fcb15.js" nonce="" defer="defer"></script>
+<script src="https://cdn.moderntreasury.com/packs/js/application-3453c3612d4b2286aacc.js" nonce="" defer="defer"></script>
+  
+
+<iframe data-product="web_widget" title="No content" role="presentation" tabindex="-1" allow="microphone *" aria-hidden="true" src="about:blank" style="width: 0px; height: 0px; border: 0px; position: absolute; top: -9999px;"></iframe><div id="chakra-toast-portal"><ul id="chakra-toast-manager-top" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; top: env(safe-area-inset-top, 0px); right: env(safe-area-inset-right, 0px); left: env(safe-area-inset-left, 0px);"></ul><ul id="chakra-toast-manager-top-left" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; top: env(safe-area-inset-top, 0px); left: env(safe-area-inset-left, 0px);"></ul><ul id="chakra-toast-manager-top-right" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; top: env(safe-area-inset-top, 0px); right: env(safe-area-inset-right, 0px);"></ul><ul id="chakra-toast-manager-bottom-left" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; bottom: env(safe-area-inset-bottom, 0px); left: env(safe-area-inset-left, 0px);"></ul><ul id="chakra-toast-manager-bottom" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; bottom: env(safe-area-inset-bottom, 0px); right: env(safe-area-inset-right, 0px); left: env(safe-area-inset-left, 0px);"></ul><ul id="chakra-toast-manager-bottom-right" style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; bottom: env(safe-area-inset-bottom, 0px); right: env(safe-area-inset-right, 0px);"></ul></div><div><iframe title="Opens a widget where you can find more information" id="launcher" tabindex="-1" style="color-scheme: light; width: 106px; height: 50px; padding: 0px; margin: 10px 20px; position: fixed; bottom: 30px; overflow: visible; opacity: 0; border: 0px; z-index: 999998; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1); transition-property: opacity, top, bottom; top: -9999px; visibility: hidden;"></iframe></div></body></html>

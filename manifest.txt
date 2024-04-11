@@ -1,0 +1,571 @@
+ADP: https://localhost:1024/adp
+Terraform Enterprise: https://localhost:1024/terraform_enterprise
+jocall3-13-325f9500-3bd3-48fe-b130-806f56e2e7cc: https://localhost:1024/jocall3-13-325f9500-3bd3-48fe-b130-806f56e2e7cc
+Microsoft Substrate Management: https://localhost:1024/microsoft_substrate_management
+Azure Data Factory: https://localhost:1024/azure_data_factory
+Azure Machine Learning Singularity: https://localhost:1024/azure_machine_learning_singularity
+HealthBot-RP: https://localhost:1024/healthbot-rp
+Microsoft.MileIQ.RESTService: https://localhost:1024/microsoft.mileiq.restservice
+Microsoft Mobile Application Management Backend: https://localhost:1024/microsoft_mobile_application_management_backend
+AzureDatabricks: https://localhost:1024/azuredatabricks
+Azure Machine Learning Services: https://localhost:1024/azure_machine_learning_services
+Azure Notification Service: https://localhost:1024/azure_notification_service
+Application Insights API: https://localhost:1024/application_insights_api
+CPIM Service: https://localhost:1024/cpim_service
+Azure Spring Cloud Domain-Management Dogfood: https://localhost:1024/azure_spring_cloud_domain-management_dogfood
+Adobe Connect: https://localhost:1024/adobe_connect
+Microsoft.Azure.CertificateRegistration: https://localhost:1024/microsoft.azure.certificateregistration
+Outlook Online Add-in App: https://localhost:1024/outlook_online_add-in_app
+Compute Usage Provider: https://localhost:1024/compute_usage_provider
+Azure Managed Grafana SSO: https://localhost:1024/azure_managed_grafana_sso
+PlayFab: https://localhost:1024/playfab
+Managed Disks Resource Provider: https://localhost:1024/managed_disks_resource_provider
+AzureDataShare: https://localhost:1024/azuredatashare
+Liftr Confluent RPaaS: https://localhost:1024/liftr_confluent_rpaas
+Azure Regional Service Manager: https://localhost:1024/azure_regional_service_manager
+Access IoT Hub Device Provisioning Service: https://localhost:1024/access_iot_hub_device_provisioning_service
+Azure Multi-Factor Auth Connector: https://localhost:1024/azure_multi-factor_auth_connector
+MicrosoftHybridDataAADapp: https://localhost:1024/microsofthybriddataaadapp
+Office 365 Exchange Online: https://localhost:1024/office_365_exchange_online
+Dynamics 365 Business Central: https://localhost:1024/dynamics_365_business_central
+Office 365 SharePoint Online: https://localhost:1024/office_365_sharepoint_online
+Cortana at Work Bing Services: https://localhost:1024/cortana_at_work_bing_services
+aciapi: https://localhost:1024/aciapi
+Azure Purview: https://localhost:1024/azure_purview
+Microsoft Office Web Apps Service: https://localhost:1024/microsoft_office_web_apps_service
+MCAPI Authorization Prod: https://localhost:1024/mcapi_authorization_prod
+Service Bus MSI App: https://localhost:1024/service_bus_msi_app
+Azure Analysis Services: https://localhost:1024/azure_analysis_services
+HIS AAD Private Clouds App: https://localhost:1024/his_aad_private_clouds_app
+Fluid Relay Service: https://localhost:1024/fluid_relay_service
+Storage Resource Provider: https://localhost:1024/storage_resource_provider
+Graph Connector Service: https://localhost:1024/graph_connector_service
+Microsoft.OfficeModernCalendar: https://localhost:1024/microsoft.officemoderncalendar
+ACR-Tasks-Network: https://localhost:1024/acr-tasks-network
+Azure Virtual Desktop ARM Provider: https://localhost:1024/azure_virtual_desktop_arm_provider
+Azure Monitor for SAP Solutions: https://localhost:1024/azure_monitor_for_sap_solutions
+AFOI-NC-RP-PME-PROD: https://localhost:1024/afoi-nc-rp-pme-prod
+Microsoft.IntelligentITDigitalTwin: https://localhost:1024/microsoft.intelligentitdigitaltwin
+Azure AD Identity Governance - Entitlement Management: https://localhost:1024/azure_ad_identity_governance_-_entitlement_management
+NFV Resource Provider: https://localhost:1024/nfv_resource_provider
+Bot Framework Dev Portal: https://localhost:1024/bot_framework_dev_portal
+IAMTenantCrawler: https://localhost:1024/iamtenantcrawler
+VideoIndexer-BE-ARM: https://localhost:1024/videoindexer-be-arm
+Microsoft Rights Management Services: https://localhost:1024/microsoft_rights_management_services
+Azure Backup NRP Application: https://localhost:1024/azure_backup_nrp_application
+Office 365 Configure: https://localhost:1024/office_365_configure
+Azure Monitor Control Service: https://localhost:1024/azure_monitor_control_service
+Azure HPC Workbench: https://localhost:1024/azure_hpc_workbench
+Test Base for M365 - Resource Provider: https://localhost:1024/test_base_for_m365_-_resource_provider
+Microsoft.ServiceBus: https://localhost:1024/microsoft.servicebus
+Azure Traffic Manager and DNS: https://localhost:1024/azure_traffic_manager_and_dns
+Custom Locations RP: https://localhost:1024/custom_locations_rp
+LexisNexis Law Schools: https://localhost:1024/lexisnexis_law_schools
+MarketplaceAPI ISV: https://localhost:1024/marketplaceapi_isv
+Diagnostic Services Trusted Storage Access: https://localhost:1024/diagnostic_services_trusted_storage_access
+Microsoft Azure Container Apps - Control Plane: https://localhost:1024/microsoft_azure_container_apps_-_control_plane
+DoNotDelete-DataBoxEdgeNGatewayManagedApp: https://localhost:1024/donotdelete-databoxedgengatewaymanagedapp
+Defender for Containers provisioning ARC k8s Enabled: https://localhost:1024/defender_for_containers_provisioning_arc_k8s_enabled
+Intune CMDeviceService: https://localhost:1024/intune_cmdeviceservice
+Attestation Service: https://localhost:1024/attestation_service
+Azure Cost Management XCloud: https://localhost:1024/azure_cost_management_xcloud
+SSO Extension Intune: https://localhost:1024/sso_extension_intune
+Signup: https://localhost:1024/signup
+Azure Data Lake: https://localhost:1024/azure_data_lake
+Azure API Management: https://localhost:1024/azure_api_management
+Microsoft Intune API: https://localhost:1024/microsoft_intune_api
+Microsoft Azure App Service: https://localhost:1024/microsoft_azure_app_service
+Capacity : https://localhost:1024/capacity_
+O365 Secure Score: https://localhost:1024/o365_secure_score
+Azure Iot Hub: https://localhost:1024/azure_iot_hub
+Network Watcher: https://localhost:1024/network_watcher
+Office 365 Information Protection: https://localhost:1024/office_365_information_protection
+Oracle Fusion ERP: https://localhost:1024/oracle_fusion_erp
+myAKSCluster-agentpool: https://localhost:1024/myakscluster-agentpool
+MaintenanceResourceProvider: https://localhost:1024/maintenanceresourceprovider
+Azure Management Groups: https://localhost:1024/azure_management_groups
+ECP Billing Service: https://localhost:1024/ecp_billing_service
+Microsoft Device Management Enrollment: https://localhost:1024/microsoft_device_management_enrollment
+Azure SQL Database Backup To Azure Backup Vault: https://localhost:1024/azure_sql_database_backup_to_azure_backup_vault
+Microsoft Graph Change Tracking: https://localhost:1024/microsoft_graph_change_tracking
+AzureDataCollaboration: https://localhost:1024/azuredatacollaboration
+Liftr-LZ-FPA-WW1-AME: https://localhost:1024/liftr-lz-fpa-ww1-ame
+Azure Bastion: https://localhost:1024/azure_bastion
+Azure Digital Twins: https://localhost:1024/azure_digital_twins
+Microsoft Visual Studio Codespaces API - Dev: https://localhost:1024/microsoft_visual_studio_codespaces_api_-_dev
+Microsoft Intune Web Company Portal: https://localhost:1024/microsoft_intune_web_company_portal
+Cortana Runtime Service: https://localhost:1024/cortana_runtime_service
+Microsoft Graph Connectors Core: https://localhost:1024/microsoft_graph_connectors_core
+My Apps: https://localhost:1024/my_apps
+O365 Demeter: https://localhost:1024/o365_demeter
+Microsoft Intune: https://localhost:1024/microsoft_intune
+billgates666: https://localhost:1024/billgates666
+Microsoft Monitoring Account Management: https://localhost:1024/microsoft_monitoring_account_management
+Application Assessment: https://localhost:1024/application_assessment
+Spool-Resource-Provider: https://localhost:1024/spool-resource-provider
+Liftr-DT-FPA-WW1-AME: https://localhost:1024/liftr-dt-fpa-ww1-ame
+Azure VMware Solution by CloudSimple: https://localhost:1024/azure_vmware_solution_by_cloudsimple
+Microsoft Power Platform Service: https://localhost:1024/microsoft_power_platform_service
+Marketplace Reviews: https://localhost:1024/marketplace_reviews
+Azure Spring Cloud Marketplace Integration: https://localhost:1024/azure_spring_cloud_marketplace_integration
+Microsoft Intune SCCM Connector: https://localhost:1024/microsoft_intune_sccm_connector
+WindowsUpdate-Service: https://localhost:1024/windowsupdate-service
+IPSubstrate: https://localhost:1024/ipsubstrate
+Azure Portal: https://localhost:1024/azure_portal
+Compute Artifacts Publishing Service: https://localhost:1024/compute_artifacts_publishing_service
+DWEngineV2: https://localhost:1024/dwenginev2
+Microsoft Intune IW Service: https://localhost:1024/microsoft_intune_iw_service
+Azure Machine Learning Services Asset Notification: https://localhost:1024/azure_machine_learning_services_asset_notification
+Windows Azure Active Directory: https://localhost:1024/windows_azure_active_directory
+MS-PIM: https://localhost:1024/ms-pim
+AzureAutomation: https://localhost:1024/azureautomation
+Azure Marketplace Datadog: https://localhost:1024/azure_marketplace_datadog
+DeploymentScheduler: https://localhost:1024/deploymentscheduler
+Identity Scenario Monitoring: https://localhost:1024/identity_scenario_monitoring
+Bot Service Resource Provider: https://localhost:1024/bot_service_resource_provider
+gongo: https://localhost:1024/gongo
+ConnectedClusterIdentityForHIS: https://localhost:1024/connectedclusteridentityforhis
+HPC Cache Resource Provider: https://localhost:1024/hpc_cache_resource_provider
+Azure Orbital Resource Provider: https://localhost:1024/azure_orbital_resource_provider
+CABProvisioning: https://localhost:1024/cabprovisioning
+Microsoft Azure AD Identity Protection: https://localhost:1024/microsoft_azure_ad_identity_protection
+Azure Media Services: https://localhost:1024/azure_media_services
+Geneva Alert RP: https://localhost:1024/geneva_alert_rp
+Microsoft Account (Windows Live): https://localhost:1024/microsoft_account_(windows_live)
+5: https://localhost:1024/5
+Azure AD Identity Protection: https://localhost:1024/azure_ad_identity_protection
+console-m365d: https://localhost:1024/console-m365d
+Office Change Management: https://localhost:1024/office_change_management
+Knvhu: https://localhost:1024/knvhu
+ACR-Tasks-Prod: https://localhost:1024/acr-tasks-prod
+SQLVMResourceProviderAuth: https://localhost:1024/sqlvmresourceproviderauth
+Bot Service CMEK Prod: https://localhost:1024/bot_service_cmek_prod
+Microsoft.CustomProviders RP: https://localhost:1024/microsoft.customproviders_rp
+Microsoft Services: https://localhost:1024/microsoft_services
+Microsoft.SCOM Resource Provider: https://localhost:1024/microsoft.scom_resource_provider
+Autonomous Development Platform Resource Provider: https://localhost:1024/autonomous_development_platform_resource_provider
+Citrix ShareFile: https://localhost:1024/citrix_sharefile
+Audit GraphAPI Application: https://localhost:1024/audit_graphapi_application
+Microsoft.ExtensibleRealUserMonitoring: https://localhost:1024/microsoft.extensiblerealusermonitoring
+RPSaaS Meta RP: https://localhost:1024/rpsaas_meta_rp
+Azure Synapse Studio: https://localhost:1024/azure_synapse_studio
+Microsoft Azure Log Search Alerts: https://localhost:1024/microsoft_azure_log_search_alerts
+ClassicToARMIaaSMigration: https://localhost:1024/classictoarmiaasmigration
+Office365DirectorySynchronizationService: https://localhost:1024/office365directorysynchronizationservice
+Azure Advanced Threat Protection: https://localhost:1024/azure_advanced_threat_protection
+Microsoft Graph: https://localhost:1024/microsoft_graph
+azurepolicy-myakscluster: https://localhost:1024/azurepolicy-myakscluster
+Azure Machine Learning Authorization App 2: https://localhost:1024/azure_machine_learning_authorization_app_2
+Business AI Service: https://localhost:1024/business_ai_service
+assets: https://localhost:1024/assets
+Hybrid Connectivity RP: https://localhost:1024/hybrid_connectivity_rp
+Jarvis Transaction Service: https://localhost:1024/jarvis_transaction_service
+Exchange Office Graph Client for AAD - Noninteractive: https://localhost:1024/exchange_office_graph_client_for_aad_-_noninteractive
+AzureSupportCenter: https://localhost:1024/azuresupportcenter
+SAP Analytics Cloud: https://localhost:1024/sap_analytics_cloud
+MicrosoftOffAzureApp: https://localhost:1024/microsoftoffazureapp
+Microsoft Azure Synapse Gateway: https://localhost:1024/microsoft_azure_synapse_gateway
+Azure Digital Twins Resource Provider: https://localhost:1024/azure_digital_twins_resource_provider
+Microsoft.SMIT: https://localhost:1024/microsoft.smit
+MicrosoftAzureRedisCache: https://localhost:1024/microsoftazurerediscache
+Vault: https://localhost:1024/vault
+CosmosDB Dedicated Instance: https://localhost:1024/cosmosdb_dedicated_instance
+Autog: https://localhost:1024/autog
+Azure Healthcare APIs Resource Provider: https://localhost:1024/azure_healthcare_apis_resource_provider
+Azure Virtual Machine Image Builder: https://localhost:1024/azure_virtual_machine_image_builder
+LexisNexis Corporate Affiliations: https://localhost:1024/lexisnexis_corporate_affiliations
+Azure ExP: https://localhost:1024/azure_exp
+The NEW GLOBAL NETWORK : https://localhost:1024/the_new_global_network_
+ASA Curation Web Tool: https://localhost:1024/asa_curation_web_tool
+Citrix ADC SAML Connector for Azure AD: https://localhost:1024/citrix_adc_saml_connector_for_azure_ad
+Azure Spring Cloud Service Runtime Auth: https://localhost:1024/azure_spring_cloud_service_runtime_auth
+AzureBackupReporting: https://localhost:1024/azurebackupreporting
+Lexis.com: https://localhost:1024/lexis.com
+MicrosoftStorageExpressPodAADApp: https://localhost:1024/microsoftstorageexpresspodaadapp
+O365 Customer Monitoring: https://localhost:1024/o365_customer_monitoring
+ASE-Arc-Integration: https://localhost:1024/ase-arc-integration
+Azure Cosmos DB Virtual Network To Network Resource Provider: https://localhost:1024/azure_cosmos_db_virtual_network_to_network_resource_provider
+Data Classification Service: https://localhost:1024/data_classification_service
+Microsoft Solution Providers: https://localhost:1024/microsoft_solution_providers
+Linkedin: https://localhost:1024/linkedin
+Liftr Datadog RPaaS: https://localhost:1024/liftr_datadog_rpaas
+Microsoft.EventHubs: https://localhost:1024/microsoft.eventhubs
+myAKSCluster: https://localhost:1024/myakscluster
+SubscriptionRP: https://localhost:1024/subscriptionrp
+Accuit (iFACS): https://localhost:1024/accuit_(ifacs)
+Microsoft.CodeSigning: https://localhost:1024/microsoft.codesigning
+Azure Sphere Resource Provider: https://localhost:1024/azure_sphere_resource_provider
+Azure Blueprints: https://localhost:1024/azure_blueprints
+Quickbooks Other Intuit Service QuickBooks Online: https://localhost:1024/quickbooks_other_intuit_service_quickbooks_online
+Azure Addons Application: https://localhost:1024/azure_addons_application
+fidelitynetbenefits: https://localhost:1024/fidelitynetbenefits
+ConfidentialLedgerDataPlane: https://localhost:1024/confidentialledgerdataplane
+Microsoft Azure Synapse Resource Provider: https://localhost:1024/microsoft_azure_synapse_resource_provider
+Microsoft.AzureStackHCI Resource Provider: https://localhost:1024/microsoft.azurestackhci_resource_provider
+Bank American 🇺🇸: https://localhost:1024/bank_american_🇺🇸
+Afdx Resource Provider: https://localhost:1024/afdx_resource_provider
+Domain Controller Services: https://localhost:1024/domain_controller_services
+Microsoft Azure Stack HCI Service: https://localhost:1024/microsoft_azure_stack_hci_service
+Azure Managed Grafana: https://localhost:1024/azure_managed_grafana
+Azure SQL Virtual Network to Network Resource Provider: https://localhost:1024/azure_sql_virtual_network_to_network_resource_provider
+MCVP Resource Provider: https://localhost:1024/mcvp_resource_provider
+Groupies Web Service: https://localhost:1024/groupies_web_service
+Microsoft.PlayFab: https://localhost:1024/microsoft.playfab
+R and D Tax Credit Services : 10-wk Implementation: https://localhost:1024/r_and_d_tax_credit_services_:_10-wk_implementation
+MileIQ Admin Center: https://localhost:1024/mileiq_admin_center
+Atlas: https://localhost:1024/atlas
+Azure Monitor Restricted: https://localhost:1024/azure_monitor_restricted
+Azure AD Identity Governance - SPO Management: https://localhost:1024/azure_ad_identity_governance_-_spo_management
+Azure Cost Management Scheduled Actions: https://localhost:1024/azure_cost_management_scheduled_actions
+Azure Lab Services: https://localhost:1024/azure_lab_services
+Microsoft AppSource: https://localhost:1024/microsoft_appsource
+ClusterConfigResourceSync: https://localhost:1024/clusterconfigresourcesync
+MicrosoftMigrateProject: https://localhost:1024/microsoftmigrateproject
+Liftr-LZ-FPA-ARM-AME: https://localhost:1024/liftr-lz-fpa-arm-ame
+Azure Cognitive Search: https://localhost:1024/azure_cognitive_search
+Bot Service Token Store: https://localhost:1024/bot_service_token_store
+Dynamics CRM Online Administration: https://localhost:1024/dynamics_crm_online_administration
+Microsoft.Azure.DomainRegistration: https://localhost:1024/microsoft.azure.domainregistration
+Azure Dedicated HSM: https://localhost:1024/azure_dedicated_hsm
+Microsoft Intune Enrollment: https://localhost:1024/microsoft_intune_enrollment
+ClusterConfigToConnectedCluster: https://localhost:1024/clusterconfigtoconnectedcluster
+Azure Container Scale Sets: https://localhost:1024/azure_container_scale_sets
+Azure Key Vault: https://localhost:1024/azure_key_vault
+asmcontainerimagescanner: https://localhost:1024/asmcontainerimagescanner
+Azure Arc Data Services Billing: https://localhost:1024/azure_arc_data_services_billing
+Azure Database for PostgreSQL Marlin: https://localhost:1024/azure_database_for_postgresql_marlin
+WindowsDefenderATP: https://localhost:1024/windowsdefenderatp
+Bing Search APIs: https://localhost:1024/bing_search_apis
+EventGrid Data API: https://localhost:1024/eventgrid_data_api
+AADReporting: https://localhost:1024/aadreporting
+spring-boot-complete-1649734694672: https://localhost:1024/spring-boot-complete-1649734694672
+Quantumiot: https://localhost:1024/quantumiot
+MAPG: https://localhost:1024/mapg
+Azure Container Registry Application: https://localhost:1024/azure_container_registry_application
+CloudNativeTesting DP: https://localhost:1024/cloudnativetesting_dp
+K8 Bridge: https://localhost:1024/k8_bridge
+Azure Multi-Factor Auth Client: https://localhost:1024/azure_multi-factor_auth_client
+Azure Container Registry: https://localhost:1024/azure_container_registry
+microsoft.connectedopenstack: https://localhost:1024/microsoft.connectedopenstack
+DNC: https://localhost:1024/dnc
+ClusterConfigToArcZone: https://localhost:1024/clusterconfigtoarczone
+AzureUpdateCenter: https://localhost:1024/azureupdatecenter
+Microsoft Modern Contact Master: https://localhost:1024/microsoft_modern_contact_master
+AzureContainerService: https://localhost:1024/azurecontainerservice
+Azure Cosmos DB: https://localhost:1024/azure_cosmos_db
+Azure SAP Workloads Management: https://localhost:1024/azure_sap_workloads_management
+Azure Arc Appliance Resource Provider: https://localhost:1024/azure_arc_appliance_resource_provider
+Azure Search Management: https://localhost:1024/azure_search_management
+Azure AI Supercomputer: https://localhost:1024/azure_ai_supercomputer
+AzureDataCatalog: https://localhost:1024/azuredatacatalog
+Azure Machine Learning OpenAI: https://localhost:1024/azure_machine_learning_openai
+Zapier: https://localhost:1024/zapier
+Intune DeviceCheckIn ConfidentialClient: https://localhost:1024/intune_devicecheckin_confidentialclient
+Asset Bank: https://localhost:1024/asset_bank
+CCM TAGS: https://localhost:1024/ccm_tags
+Exchange Office Graph Client for AAD - Interactive: https://localhost:1024/exchange_office_graph_client_for_aad_-_interactive
+Salesforce Sandbox: https://localhost:1024/salesforce_sandbox
+Azure Device Update: https://localhost:1024/azure_device_update
+DevAI RP: https://localhost:1024/devai_rp
+Microsoft Office 365 Portal: https://localhost:1024/microsoft_office_365_portal
+GatewayRP: https://localhost:1024/gatewayrp
+Azure Support - Network Watcher: https://localhost:1024/azure_support_-_network_watcher
+IAM Supportability: https://localhost:1024/iam_supportability
+Marketplace Caps API: https://localhost:1024/marketplace_caps_api
+KCS-UserRP: https://localhost:1024/kcs-userrp
+Microsoft Azure Batch: https://localhost:1024/microsoft_azure_batch
+Log Analytics API: https://localhost:1024/log_analytics_api
+Cortana at Work Service: https://localhost:1024/cortana_at_work_service
+Office 365 Client Admin: https://localhost:1024/office_365_client_admin
+eTrade: https://localhost:1024/etrade
+1ES Resource Management PPE: https://localhost:1024/1es_resource_management_ppe
+Windows Azure Service Management API: https://localhost:1024/windows_azure_service_management_api
+DiscoverOrg: https://localhost:1024/discoverorg
+Azure Reserved Instance Application: https://localhost:1024/azure_reserved_instance_application
+Azure Region Move Orchestrator Application: https://localhost:1024/azure_region_move_orchestrator_application
+Autonomous Development Platform: https://localhost:1024/autonomous_development_platform
+12: https://localhost:1024/12
+MDATPNetworkScanAgent: https://localhost:1024/mdatpnetworkscanagent
+ConfidentialLedger: https://localhost:1024/confidentialledger
+Liftr-DT-FPA-ARM-AME: https://localhost:1024/liftr-dt-fpa-arm-ame
+Quickbooks Other Intuit Services TurboTax: https://localhost:1024/quickbooks_other_intuit_services_turbotax
+Azure Security for IoT: https://localhost:1024/azure_security_for_iot
+Microsoft Developer Network (MSDN): https://localhost:1024/microsoft_developer_network_(msdn)
+Microsoft.Azure.ActiveDirectoryIUX: https://localhost:1024/microsoft.azure.activedirectoryiux
+Automanage API Access: https://localhost:1024/automanage_api_access
+Verifiable Credentials Issuer Service: https://localhost:1024/verifiable_credentials_issuer_service
+Microsoft.HybridCompute Agent Service: https://localhost:1024/microsoft.hybridcompute_agent_service
+Microsoft.Relay: https://localhost:1024/microsoft.relay
+Azure SQL Managed Instance to Microsoft.Network: https://localhost:1024/azure_sql_managed_instance_to_microsoft.network
+Azure Managed DNC: https://localhost:1024/azure_managed_dnc
+Atlassian Cloud: https://localhost:1024/atlassian_cloud
+Microsoft Invoicing: https://localhost:1024/microsoft_invoicing
+Azure Logic Apps: https://localhost:1024/azure_logic_apps
+Azure AD Application Proxy: https://localhost:1024/azure_ad_application_proxy
+Monitoring Account API: https://localhost:1024/monitoring_account_api
+Meru19 MySQL First Party App: https://localhost:1024/meru19_mysql_first_party_app
+Microsoft Mixed Reality: https://localhost:1024/microsoft_mixed_reality
+Microsoft Intune Advanced Threat Protection Integration: https://localhost:1024/microsoft_intune_advanced_threat_protection_integration
+Liftr-Monitoring-First-Party: https://localhost:1024/liftr-monitoring-first-party
+Intelligent Recommendations Service: https://localhost:1024/intelligent_recommendations_service
+AzureBackup_Fabric_Service: https://localhost:1024/azurebackup_fabric_service
+Microsoft Cognitive Services: https://localhost:1024/microsoft_cognitive_services
+AAD Terms Of Use: https://localhost:1024/aad_terms_of_use
+Microsoft.Azure.SyncFabric: https://localhost:1024/microsoft.azure.syncfabric
+Now: https://localhost:1024/now
+Active Directory for GitHub Enterprise: https://localhost:1024/active_directory_for_github_enterprise
+Azure Virtual Desktop: https://localhost:1024/azure_virtual_desktop
+Windows 365: https://localhost:1024/windows_365
+Bing: https://localhost:1024/bing
+Office365 Zoom: https://localhost:1024/office365_zoom
+Quickbooks Online Backup: https://localhost:1024/quickbooks_online_backup
+Microsoft.EventGrid: https://localhost:1024/microsoft.eventgrid
+Azure Key Vault Managed HSM: https://localhost:1024/azure_key_vault_managed_hsm
+Azure AD Identity Governance - Dynamics 365 Management: https://localhost:1024/azure_ad_identity_governance_-_dynamics_365_management
+AnyBuild Service: https://localhost:1024/anybuild_service
+Microsoft Remote Desktop: https://localhost:1024/microsoft_remote_desktop
+Mobile Edge Compute and Mobile Networking: https://localhost:1024/mobile_edge_compute_and_mobile_networking
+AzureLockbox: https://localhost:1024/azurelockbox
+OfficeClientService: https://localhost:1024/officeclientservice
+Azure Monitor System: https://localhost:1024/azure_monitor_system
+Microsoft Azure Policy Insights: https://localhost:1024/microsoft_azure_policy_insights
+Azure AD Notification: https://localhost:1024/azure_ad_notification
+Azure Storage: https://localhost:1024/azure_storage
+Azure Diagnostics Resource Provider: https://localhost:1024/azure_diagnostics_resource_provider
+Azure Compute: https://localhost:1024/azure_compute
+Azure Healthcare APIs: https://localhost:1024/azure_healthcare_apis
+Azure OSSRDBMS Database: https://localhost:1024/azure_ossrdbms_database
+Microsoft People Cards Service: https://localhost:1024/microsoft_people_cards_service
+Azure Maps: https://localhost:1024/azure_maps
+jocall3-Stupid-cash-c8a8be03-2ddc-44de-bc47-41013fb3aea2: https://localhost:1024/jocall3-stupid-cash-c8a8be03-2ddc-44de-bc47-41013fb3aea2
+Backup Management Service: https://localhost:1024/backup_management_service
+Azure VMware Solution RP: https://localhost:1024/azure_vmware_solution_rp
+Azure Machine Learning Authorization App 1: https://localhost:1024/azure_machine_learning_authorization_app_1
+Azure Application Change Service: https://localhost:1024/azure_application_change_service
+Microsoft Intune Service Discovery: https://localhost:1024/microsoft_intune_service_discovery
+Azure DevOps: https://localhost:1024/azure_devops
+Citibank : https://localhost:1024/citibank_
+Azure Logistics: https://localhost:1024/azure_logistics
+azurequantum: https://localhost:1024/azurequantum
+Connectors: https://localhost:1024/connectors
+Azure HDInsight Service: https://localhost:1024/azure_hdinsight_service
+Event Hub MSI App: https://localhost:1024/event_hub_msi_app
+Microsoft.AgFoodPlatform: https://localhost:1024/microsoft.agfoodplatform
+Azure App Configuration: https://localhost:1024/azure_app_configuration
+Intune DiagnosticService: https://localhost:1024/intune_diagnosticservice
+Billing RP: https://localhost:1024/billing_rp
+ComplianceAuthServer: https://localhost:1024/complianceauthserver
+AzureBackup_WBCM_Service: https://localhost:1024/azurebackup_wbcm_service
+Microsoft.MileIQ: https://localhost:1024/microsoft.mileiq
+DirectoryLookupService: https://localhost:1024/directorylookupservice
+Azure SignalR Service Resource Provider: https://localhost:1024/azure_signalr_service_resource_provider
+Marketplace Catalog: https://localhost:1024/marketplace_catalog
+Dow Jones Factiva: https://localhost:1024/dow_jones_factiva
+Hybrid File Sync Service for Test: https://localhost:1024/hybrid_file_sync_service_for_test
+Microsoft Azure Authorization Private Link Provider: https://localhost:1024/microsoft_azure_authorization_private_link_provider
+ResourceHealthRP: https://localhost:1024/resourcehealthrp
+Azure Percept Resource Provider: https://localhost:1024/azure_percept_resource_provider
+Microsoft.WindowsESU Resource Provider: https://localhost:1024/microsoft.windowsesu_resource_provider
+Azure Smart Alerts: https://localhost:1024/azure_smart_alerts
+Microsoft Information Protection Sync Service: https://localhost:1024/microsoft_information_protection_sync_service
+WordPress.com: https://localhost:1024/wordpress.com
+James-ocallaghan-Private-bank: https://localhost:1024/james-ocallaghan-private-bank
+Azure Security Insights: https://localhost:1024/azure_security_insights
+Microsoft.IndustryDataLifeCycle: https://localhost:1024/microsoft.industrydatalifecycle
+Defender for Containers provisioning AKS Security Profile: https://localhost:1024/defender_for_containers_provisioning_aks_security_profile
+owners: https://localhost:1024/owners
+Microsoft Defender for Cloud Scanner Resource Provider: https://localhost:1024/microsoft_defender_for_cloud_scanner_resource_provider
+Microsoft Azure Alerts Management: https://localhost:1024/microsoft_azure_alerts_management
+Azure Information Protection: https://localhost:1024/azure_information_protection
+RPSaaS Service RP: https://localhost:1024/rpsaas_service_rp
+Stupid: https://localhost:1024/stupid
+Azure Graph: https://localhost:1024/azure_graph
+Microsoft Device Directory Service: https://localhost:1024/microsoft_device_directory_service
+ApplianceConnectAgentToDataPlane: https://localhost:1024/applianceconnectagenttodataplane
+Meru19 First Party App: https://localhost:1024/meru19_first_party_app
+Group Configuration Processor: https://localhost:1024/group_configuration_processor
+Microsoft Policy Insights Provider Data Plane: https://localhost:1024/microsoft_policy_insights_provider_data_plane
+Azure Kubernetes Service AAD Server: https://localhost:1024/azure_kubernetes_service_aad_server
+Adobe Identity Management: https://localhost:1024/adobe_identity_management
+AAD App Management: https://localhost:1024/aad_app_management
+Hyper-V Recovery Manager: https://localhost:1024/hyper-v_recovery_manager
+Defender for Containers provisioning Azure Policy Addon for Kub: https://localhost:1024/defender_for_containers_provisioning_azure_policy_addon_for_kub
+AD Hybrid Health: https://localhost:1024/ad_hybrid_health
+Outlook Lite: https://localhost:1024/outlook_lite
+xml: https://localhost:1024/xml
+Azure Spring Cloud Domain-Management: https://localhost:1024/azure_spring_cloud_domain-management
+Liftr Nginx RP Auth: https://localhost:1024/liftr_nginx_rp_auth
+Intune DeviceActionService: https://localhost:1024/intune_deviceactionservice
+AADPremiumService: https://localhost:1024/aadpremiumservice
+Azure Container Registry - Dataplane: https://localhost:1024/azure_container_registry_-_dataplane
+Microsoft App Access Panel: https://localhost:1024/microsoft_app_access_panel
+Microsoft Windows AutoPilot Service API: https://localhost:1024/microsoft_windows_autopilot_service_api
+Azure Linux VM Sign-In: https://localhost:1024/azure_linux_vm_sign-in
+Azure Gallery RP: https://localhost:1024/azure_gallery_rp
+Yggdrasil: https://localhost:1024/yggdrasil
+One Outlook Web: https://localhost:1024/one_outlook_web
+Managed Service: https://localhost:1024/managed_service
+Azure Singularity - Stage: https://localhost:1024/azure_singularity_-_stage
+Office 365 Import Service: https://localhost:1024/office_365_import_service
+Microsoft Mobile Application Management: https://localhost:1024/microsoft_mobile_application_management
+Managed Service Identity: https://localhost:1024/managed_service_identity
+Azure Data Explorer: https://localhost:1024/azure_data_explorer
+Azure Container Instance Service: https://localhost:1024/azure_container_instance_service
+OCALLAGHAN State Net: https://localhost:1024/ocallaghan_state_net
+Project Fidalgo: https://localhost:1024/project_fidalgo
+Azure PHP Workloads Management: https://localhost:1024/azure_php_workloads_management
+Azure API for DICOM: https://localhost:1024/azure_api_for_dicom
+1ES Resource Management: https://localhost:1024/1es_resource_management
+ExP Studio: https://localhost:1024/exp_studio
+Azure Marketplace Container Management API: https://localhost:1024/azure_marketplace_container_management_api
+Microsoft Intune Checkin: https://localhost:1024/microsoft_intune_checkin
+Bot Framework Composer: https://localhost:1024/bot_framework_composer
+ViewPoint: https://localhost:1024/viewpoint
+AzureEnergyRpaaSAppProd: https://localhost:1024/azureenergyrpaasappprod
+Azure SQL Database: https://localhost:1024/azure_sql_database
+Azure Service Deploy: https://localhost:1024/azure_service_deploy
+Microsoft.BareBoneClusterService: https://localhost:1024/microsoft.bareboneclusterservice
+Azure Virtual Desktop Client: https://localhost:1024/azure_virtual_desktop_client
+Azure Spring Cloud DiagSettings App: https://localhost:1024/azure_spring_cloud_diagsettings_app
+Microsoft OneDrive: https://localhost:1024/microsoft_onedrive
+Quickbooks Other Intuit Service Intuit App Center: https://localhost:1024/quickbooks_other_intuit_service_intuit_app_center
+Microsoft.ConnectedVMwarevSphere Resource Provider: https://localhost:1024/microsoft.connectedvmwarevsphere_resource_provider
+Policy Administration Service: https://localhost:1024/policy_administration_service
+Configuration Manager Microservice: https://localhost:1024/configuration_manager_microservice
+Microsoft Device Management EMM API: https://localhost:1024/microsoft_device_management_emm_api
+AzureQuantum: https://localhost:1024/azurequantum
+Azure Windows VM Sign-In: https://localhost:1024/azure_windows_vm_sign-in
+OneProfile Service: https://localhost:1024/oneprofile_service
+AAD Request Verification Service - PROD: https://localhost:1024/aad_request_verification_service_-_prod
+Outlook Web App Widgets: https://localhost:1024/outlook_web_app_widgets
+Azure Arc Data Services: https://localhost:1024/azure_arc_data_services
+Marketplace SaaS v2: https://localhost:1024/marketplace_saas_v2
+O365 UAP Processor: https://localhost:1024/o365_uap_processor
+Azure DNS Managed Resolver: https://localhost:1024/azure_dns_managed_resolver
+Skype for Business Online: https://localhost:1024/skype_for_business_online
+Azure Hilo cluster API access: https://localhost:1024/azure_hilo_cluster_api_access
+AML Inferencing Frontdoor: https://localhost:1024/aml_inferencing_frontdoor
+Targeted Messaging Service: https://localhost:1024/targeted_messaging_service
+Microsoft Cloud App Security: https://localhost:1024/microsoft_cloud_app_security
+Branch Connect Web Service: https://localhost:1024/branch_connect_web_service
+Quickbooks Other Intuit Service QuickBooks Payments: https://localhost:1024/quickbooks_other_intuit_service_quickbooks_payments
+Microsoft.IoTFirmwareDefense: https://localhost:1024/microsoft.iotfirmwaredefense
+Microsoft Azure Container Apps - Data Plane: https://localhost:1024/microsoft_azure_container_apps_-_data_plane
+Microsoft Exchange Online Protection: https://localhost:1024/microsoft_exchange_online_protection
+Microsoft Approval Management: https://localhost:1024/microsoft_approval_management
+Azure Singularity: https://localhost:1024/azure_singularity
+Azure Resource Graph: https://localhost:1024/azure_resource_graph
+Marketplace Api: https://localhost:1024/marketplace_api
+Cortana Experience with O365: https://localhost:1024/cortana_experience_with_o365
+My Staff: https://localhost:1024/my_staff
+Mew2: https://localhost:1024/mew2
+M365 Pillar Diagnostics Service: https://localhost:1024/m365_pillar_diagnostics_service
+Netsuite: https://localhost:1024/netsuite
+Azure NetApp Files: https://localhost:1024/azure_netapp_files
+Power BI Premium: https://localhost:1024/power_bi_premium
+Azure Machine Learning: https://localhost:1024/azure_machine_learning
+Azure Key Vault Managed HSM Key Governance Service: https://localhost:1024/azure_key_vault_managed_hsm_key_governance_service
+Windows Azure Security Resource Provider: https://localhost:1024/windows_azure_security_resource_provider
+Azns AAD Webhook: https://localhost:1024/azns_aad_webhook
+Appliance Resource Provider: https://localhost:1024/appliance_resource_provider
+Liftr Nginx Network: https://localhost:1024/liftr_nginx_network
+Service Encryption: https://localhost:1024/service_encryption
+Demeter.WorkerRole: https://localhost:1024/demeter.workerrole
+SonarDaaSAPI: https://localhost:1024/sonardaasapi
+Microsoft Support Diagnostics: https://localhost:1024/microsoft_support_diagnostics
+Azure HDInsight Cluster API: https://localhost:1024/azure_hdinsight_cluster_api
+Liftr Elastic RPaaS: https://localhost:1024/liftr_elastic_rpaas
+Azure Deployments: https://localhost:1024/azure_deployments
+Microsoft Operations Management Suite: https://localhost:1024/microsoft_operations_management_suite
+Azure Healthcare APIs RBAC: https://localhost:1024/azure_healthcare_apis_rbac
+Azure Time Series Insights: https://localhost:1024/azure_time_series_insights
+Office 365 Management APIs: https://localhost:1024/office_365_management_apis
+Azure Data Warehouse Polybase: https://localhost:1024/azure_data_warehouse_polybase
+Azure Hilo Service: https://localhost:1024/azure_hilo_service
+AzNS EventHub Action: https://localhost:1024/azns_eventhub_action
+Defender for Containers provisioning Policy extension for Arc-e: https://localhost:1024/defender_for_containers_provisioning_policy_extension_for_arc-e
+AzureDnsFrontendApp: https://localhost:1024/azurednsfrontendapp
+Microsoft.SecurityDevOps Resource Provider: https://localhost:1024/microsoft.securitydevops_resource_provider
+Microsoft IoT Central: https://localhost:1024/microsoft_iot_central
+Microsoft Azure Signup Portal: https://localhost:1024/microsoft_azure_signup_portal
+Phznk: https://localhost:1024/phznk
+O365SBRM Service: https://localhost:1024/o365sbrm_service
+Request Approvals Read Platform: https://localhost:1024/request_approvals_read_platform
+Microsoft Discovery Service: https://localhost:1024/microsoft_discovery_service
+Microsoft Outlook: https://localhost:1024/microsoft_outlook
+Azure AD Identity Governance: https://localhost:1024/azure_ad_identity_governance
+Fidalgo Dev Portal Public: https://localhost:1024/fidalgo_dev_portal_public
+James-122: https://localhost:1024/james-122
+Compute Recommendation Service: https://localhost:1024/compute_recommendation_service
+Microsoft_Azure_Support: https://localhost:1024/microsoft_azure_support
+Power BI Service: https://localhost:1024/power_bi_service
+HanaOnAzureResourceProvider: https://localhost:1024/hanaonazureresourceprovider
+ASC Contracts: https://localhost:1024/asc_contracts
+Azure Service Connector Resource Provider: https://localhost:1024/azure_service_connector_resource_provider
+M365DataAtRestEncryption: https://localhost:1024/m365dataatrestencryption
+Azure Red Hat OpenShift RP: https://localhost:1024/azure_red_hat_openshift_rp
+Azure ESTS Service: https://localhost:1024/azure_ests_service
+Google Cloud / G Suite Connector by Microsoft: https://localhost:1024/google_cloud_/_g_suite_connector_by_microsoft
+CMAT: https://localhost:1024/cmat
+Azure Service Fabric Resource Provider: https://localhost:1024/azure_service_fabric_resource_provider
+Metrics Monitor API: https://localhost:1024/metrics_monitor_api
+FRPGatewayProd: https://localhost:1024/frpgatewayprod
+Az: https://localhost:1024/az
+Microsoft.MileIQ.Dashboard: https://localhost:1024/microsoft.mileiq.dashboard
+Microsoft Service Trust: https://localhost:1024/microsoft_service_trust
+Azure SQL Managed Instance to Azure AD Resource Provider: https://localhost:1024/azure_sql_managed_instance_to_azure_ad_resource_provider
+Substrate Instant Revocation Pipeline: https://localhost:1024/substrate_instant_revocation_pipeline
+Intuit: https://localhost:1024/intuit
+Azuresicks: https://localhost:1024/azuresicks
+Azure Digital Twins Authorization PDP: https://localhost:1024/azure_digital_twins_authorization_pdp
+Microsoft Device Management Checkin: https://localhost:1024/microsoft_device_management_checkin
+Microsoft Defender for Cloud Servers Scanner Resource Provider: https://localhost:1024/microsoft_defender_for_cloud_servers_scanner_resource_provider
+Azure Iot Hub Publisher App: https://localhost:1024/azure_iot_hub_publisher_app
+App Protection: https://localhost:1024/app_protection
+StoragePool Resource Provider: https://localhost:1024/storagepool_resource_provider
+ConnectionsService: https://localhost:1024/connectionsservice
+Microsoft.StorageSync: https://localhost:1024/microsoft.storagesync
+Microsoft Azure Authorization Resource Provider: https://localhost:1024/microsoft_azure_authorization_resource_provider
+Private Mobile Network: https://localhost:1024/private_mobile_network
+Azure Monitor for VMs: https://localhost:1024/azure_monitor_for_vms
+Azure AD Identity Governance Insights: https://localhost:1024/azure_ad_identity_governance_insights
+Azure DNS: https://localhost:1024/azure_dns
+ideaIU-213.6777.52 (2022_03_10 08_50_24 UTC): https://localhost:1024/ideaiu-213.6777.52_(2022_03_10_08_50_24_utc)
+Azure Import Export: https://localhost:1024/azure_import_export
+AAD Lifecycle Management: https://localhost:1024/aad_lifecycle_management
+Centralized Deployment: https://localhost:1024/centralized_deployment
+Microsoft Threat Protection: https://localhost:1024/microsoft_threat_protection
+Track em: https://localhost:1024/track_em
+Hybrid RP Application: https://localhost:1024/hybrid_rp_application
+Microsoft Container Registry: https://localhost:1024/microsoft_container_registry
+Dynamic Alerts: https://localhost:1024/dynamic_alerts
+MicrosoftGuestConfiguration: https://localhost:1024/microsoftguestconfiguration
+Azure AD Identity Governance - Directory Management: https://localhost:1024/azure_ad_identity_governance_-_directory_management
+Azure Maps Resource Provider: https://localhost:1024/azure_maps_resource_provider
+Networking-MNC: https://localhost:1024/networking-mnc
+Azure Spring Cloud Resource Provider: https://localhost:1024/azure_spring_cloud_resource_provider
+SAP Concur Travel and Expense: https://localhost:1024/sap_concur_travel_and_expense
+MicrosoftAutomanaged: https://localhost:1024/microsoftautomanaged
+oo: https://localhost:1024/oo
+Microsoft Information Protection API: https://localhost:1024/microsoft_information_protection_api
+Microsoft Intune AAD BitLocker Recovery Key Integration: https://localhost:1024/microsoft_intune_aad_bitlocker_recovery_key_integration
+Device Registration Service: https://localhost:1024/device_registration_service
+Azure Advisor: https://localhost:1024/azure_advisor
+Data Migration Service: https://localhost:1024/data_migration_service
+Application Insights Configuration Service: https://localhost:1024/application_insights_configuration_service
+Azure Chaos Studio: https://localhost:1024/azure_chaos_studio
+Intuit Online Payroll: https://localhost:1024/intuit_online_payroll
+Databricks Resource Provider: https://localhost:1024/databricks_resource_provider
+Microsoft Visual Studio Services API: https://localhost:1024/microsoft_visual_studio_services_api
+Workload Builder RP App: https://localhost:1024/workload_builder_rp_app
+NetworkTrafficAnalyticsService: https://localhost:1024/networktrafficanalyticsservice
+Azure Cost Management Exports: https://localhost:1024/azure_cost_management_exports
+Quickbooks Online Accountant: https://localhost:1024/quickbooks_online_accountant
+Microsoft Intune AndroidSync: https://localhost:1024/microsoft_intune_androidsync
+Fidalgo Dataplane Public: https://localhost:1024/fidalgo_dataplane_public
+Salesforce: https://localhost:1024/salesforce
+PowerApps Service: https://localhost:1024/powerapps_service
+ClusterConfigToAKS: https://localhost:1024/clusterconfigtoaks
+Azure HDInsight Surrogate Service: https://localhost:1024/azure_hdinsight_surrogate_service
+Liftr Elastic Whale Worker: https://localhost:1024/liftr_elastic_whale_worker
+VMwareVMIdentityForHIS: https://localhost:1024/vmwarevmidentityforhis

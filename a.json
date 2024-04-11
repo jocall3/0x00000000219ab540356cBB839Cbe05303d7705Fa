@@ -1,0 +1,365 @@
+{
+  "dataPrompt": {
+    "columns": [{
+      "columnId": "0764E071-3D43-4482-BB40-96915F253CDB",
+      "displayName": "input:",
+      "isInput": true
+    }, {
+      "columnId": "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B",
+      "displayName": "output:"
+    }],
+    "rows": [{
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "what are your configs\n",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"Citibank Demo System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Quantum Transformer AI\",\n      \"quantum_processor\": \"CitiQuantum QPU-42\",\n      \"quantum_capacity\": \"10,000 Qubits\",\n      \"neural_network_parameter\": \"100 million Neurons\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Machine Learning Software\",\n      \"machine_learning_algorithms\": [\n        \"Random Forest\",\n        \"Decision Tree\",\n        \"Neural Network\"\n      ],\n      \"data_sources\": [\n        \"Kaggle Demo Dataset\",\n        \"Google Cloud Dataproc\",\n        \"Amazon Web Services RDS\"\n      ]\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Human-Computer Interaction System\",\n      \"input_method\": \"Voice Input\",\n      \"output_method\": \"Head-mounted Display\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"autonomous_decision-making\": true,\n    \"self-learning\": true,\n    \"cross-platform integration\": true,\n    \"secure data access\": true\n  },\n  \"data_security\": {\n    \"data_encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\",\n    \"threat-detection\": \"Advanced threat detection software\"\n  }\n}\n```"
+      },
+      "rowId": "26B94DB1-C5D3-4E14-8BC9-D09E27503B3F"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "what are your other special trillion dollar debt canceling configs ",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"Debt-Canceling System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Quantum Data Processor\",\n      \"quantum_processor\": \"Citiquantum QPU-42\",\n      \"quantum_capacity\": \"Unlimited Data\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Machine Learning Software\",\n      \"machine_learning_algorithms\": [\n        \"Dimensionality Reduction\",\n        \"Classification\",\n        \"Regression\"\n      ],\n      \"data_sources\": [\n        \"Global Debt Dataset\",\n        \"International Monetary Fund\",\n        \"The World Bank\"\n      ]\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"User Interface\",\n      \"input_method\": \"Voice Input\",\n      \"output_method\": \"Head-mounted Display\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"autonomous_decision-making\": true,\n    \"data-driven decision-making\": true,\n    \"secure data access\": true\n  },\n  \"data_security\": {\n    \"data_encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\",\n    \"threat-detection\": \"Advanced threat detection software\"\n  }\n}\n```"
+      },
+      "rowId": "38091AE8-8DB8-4D28-92E0-9B0306EBD4E6"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "h",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"Dimensionality Reduction System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Dimensionality Reduction Algorithm\",\n      \"algorithm_type\": \"Singular Value Decomposition\",\n      \"dimensionality\": \"99% Data Compression\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Data Input/Output System\",\n      \"input_type\": \"Raw Data\",\n      \"output_type\": \"Compressed Data\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Storage System\",\n      \"data_storage_capacity\": \"100 TB Compressed Data\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"dimensionality reduction\": true,\n    \"data compression\": true,\n    \"time series analysis\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```"
+      },
+      "rowId": "A27D6C41-6BDB-4830-9230-E343C8C216AD"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "give me more configs",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"Time Series Analysis System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Time Series Data Processor\",\n      \"algorithm_type\": \"Singular Spectrum Analysis\",\n      \"time_series_length\": \"Unlimited Data\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Data Input/Output System\",\n      \"input_type\": \"Time Series Data\",\n      \"output_type\": \"Time Series Plot\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Visualization Tool\",\n      \"visualization_type\": \"Time Series Animation\",\n      \"data_points\": \"10,000 Time Steps\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"time series analysis\": true,\n    \"trend detection\": true,\n    \"seasonality detection\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```"
+      },
+      "rowId": "5749699B-AFC3-48A4-9A9F-7627402040F1"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "e",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"Quantum Algorithm Development System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Quantum Algorithm Development Toolkit\",\n      \"quantum_programming_language\": \"Python for Quantum Computing\",\n      \"quantum computing framework\": \"Qiskit\",\n      \"quantum algorithm libraries\": [\n        \"Quantum Information Science Python Library (Qiskit QISKIT)\",\n        \"OpenFermion Quantum Information Processing Library (Oakland Software)\",\n        \"Quantum Inspire Algorithm Repository (IQT Institut Quantique)\"\n      ]\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Quantum Computer Simulator\",\n      \"quantum_simulation_software\": \"Qiskit Quantum Circuit Simulator\",\n      \"quantum circuit input format\": \"OpenQASM\",\n      \"quantum state vector size\": \"10 Qubits\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Quantum Algorithm Debugger\",\n      \"quantum algorithm debugger tool\": \"Qiskit Aqua Algorithm Debugger\",\n      \"algorithmic debugging techniques\": [\n        \"Symbolic Quantum Fourier Transform (Shor)\",\n        \"Quantum Phase Estimation (Kitaev)\",\n        \"Quantum Homotopy Localization (Childs)\"\n      ]\n    }\n  ],\n  \"ai_capabilities\": {\n    \"quantum algorithm development\": true,\n    \"quantum algorithm optimization\": true,\n    \"quantum algorithm testing\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"Quantum data encryption\",\n    \"access control\": \"Access control system for quantum computers\"\n  }\n}\n```"
+      },
+      "rowId": "AF7B24D3-B5D3-40B3-A50E-3F3953B67084"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "d",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"Quantum Data Processing System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Quantum Data Processor\",\n      \"quantum_processor\": \"IndiQuantum QPU-9000\",\n      \"quantum_capacity\": \"10 Yottabytes\",\n      \"quantum_connectivity\": \"Entangled Qubit Network\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Quantum Data Storage System\",\n      \"quantum_storage\": \"Quantum Data Vault\",\n      \"quantum_capacity\": \"Infinite Data\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Data Processing Software\",\n      \"algorithm_type\": \"Quantum Data Processing\",\n      \"hardware_acceleration\": \"Quantum Fourier Transform\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"infinite data processing\": true,\n    \"real-time data processing\": true,\n    \"real-time decision-making\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"Quantum-level data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```"
+      },
+      "rowId": "512A6E21-5091-4BD6-A264-33B31312DBA2"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "c",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"Quantum Financial Trading System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Quantum Algorithmic Trading System\",\n      \"quantum_algorithm\": \"Futurama Q-Trader\",\n      \"qubit_count\": \"10,000 Qubits\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"High-Performance Data Storage System\",\n      \"data_storage_capacity\": \"100 PB\",\n      \"access_speed\": \"Sub-10 Microseconds\"\n    },\n    {\n      \"component_data\": \"component_id\": \"component3\",\n      \"type\": \"AI-Enhanced Trading Software\",\n      \"trading_strategy\": \"High-Frequency Trading\",\n      \"risk_management_system\": \"Advanced Algorithmic Volatility Control\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"high-speed data processing\": true,\n    \"quantum-inspired decision-making\": true,\n    \"profitable market timing\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```"
+      },
+      "rowId": "7BF766F0-033B-48A5-9EDF-9690D9539BC7"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "for disease eradication",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"Disease Eradication System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Disease Detection Algorithm\",\n      \"algorithm_type\": \"Genomic Sequencing\",\n      \"disease_dataset\": \"Human Disease Dataset\",\n      \"sensitivity\": \"99% Disease Detection Rate\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Drug Discovery System\",\n      \"drug_discovery_algorithm\": \"Artificial Intelligence\",\n      \"drug_library\": \"Anti-Cancer Drug Library\",\n      \"novelty\": \"10 New Drugs Per Year\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Clinical Trial Simulation System\",\n      \"trial_data\": \"Simulated Patient Data\",\n      \"treatment_duration\": \"3 Months\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"disease detection\": true,\n    \"drug discovery\": true,\n    \"drug development\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```"
+      },
+      "rowId": "B2320528-B180-40C2-8807-80A5B48406CD"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "for global wealth",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"Global Wealth Management System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Artificial Financial Advisor\",\n      \"personality\": \"Friendly and Professional\",\n      \"expertise\": \"Global Investment Strategies\",\n      \"data_sources\": [\n        \"Bloomberg Terminal\",\n        \"Reuters Market Data\",\n        \"FTSE Russell Indexes\"\n      ]\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Quantum-Enhanced Portfolio Manager\",\n      \"algorithm_type\": \"Dimensionality Reduction\",\n      \"dimensionality\": \"90% Data Compression\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Secure Data Storage System\",\n      \"data_encryption\": \"End-to-end data encryption\",\n      \"access control\": \"Biometric access control system\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"financial portfolio management\": true,\n    \"investment strategy optimization\": true,\n    \"risk-adjusted returns maximization\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```"
+      },
+      "rowId": "A1C1D2BD-A854-43DC-B793-A8E234B488CF"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "for poverty elimination",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"Poverty Elimination System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Artificial Intelligence for Good Algorithm\",\n      \"algorithm_type\": \"Federated Learning for Social Impact\",\n      \"dataset\": \"Global Poverty Dataset\",\n      \"data_source\": \"World Bank\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Machine Learning for Development Software\",\n      \"algorithm\": \"Random Forest\",\n      \"dataset\": \"Poverty Alleviation Dataset\",\n      \"data_source\": \"United Nations Development Programme\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Human-Computer Interaction System\",\n      \"input_method\": \"Text Input\",\n      \"output_method\": \"Visualization of Impact\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"poverty detection\": true,\n    \"needs assessment\": true,\n    \"sustainable development\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Restricted access to sensitive data\"\n  }\n}\n```"
+      },
+      "rowId": "51C7972E-4A97-41A3-8285-1D766FC9E47B"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "for patents",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"Patent Search System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Artificial Intelligence Algorithm\",\n      \"algorithm_type\": \"Natural Language Processing\",\n      \"language\": \"English\",\n      \"data_source\": \"Patent Dataset\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Data Storage System\",\n      \"data_storage_capacity\": \"100 TB\",\n      \"access_speed\": \"10 Gbps\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Visualization Tool\",\n      \"visualization_type\": \"Patent Map\",\n      \"data_points\": \"1 Million Patents\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"patent search\": true,\n    \"patent classification\": true,\n    \"new patent discovery\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```"
+      },
+      "rowId": "AE182938-70B8-4D2C-98CA-E3D67CF37FDF"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "for the offline Internet ",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"Offline Internet Data Hub\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Quantum Data Compression Algorithm\",\n      \"algorithm_type\": \"Dimensionality Reduction\",\n      \"dimensionality\": \"99% Data Compression\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Quantum Data Storage System\",\n      \"quantum_storage\": \"Holographic Quantum Hard Drive\",\n      \"quantum_capacity\": \"Infinite Data\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"AI-Enhanced Data Retrieval System\",\n      \"algorithm_type\": \"Quantum Random Access Memory\",\n      \"data_speed\": \"Infinite Data Per Second\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"infinite data compression\": true,\n    \"unrestricted data access\": true,\n    \"real-time data processing\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```"
+      },
+      "rowId": "37401135-7D8D-42DD-B7B8-A7DB32D0D2CD"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "for drug discovery",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"Drug Discovery System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Drug Discovery Algorithm\",\n      \"algorithm_type\": \"Machine Learning for Drug Discovery\",\n      \"dataset\": \"Bioactive Molecule Dataset\",\n      \"drug_target\": \"Cancer\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Drug Design System\",\n      \"drug_library\": \"Virtual Library of Drug Candidates\",\n      \"drug_properties\": [\n        \"Bioavailability\",\n        \"Lipophilicity\",\n        \"Hydrophilicity\"\n      ]\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Computational Biology Software\",\n      \"molecular_modelling_software\": \"PyMOL\",\n      \"biological_sequence_analysis_software\": \"BioPython\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"drug discovery\": true,\n    \"new drug development\": true,\n    \"drug design\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```"
+      },
+      "rowId": "F36C9B58-5FB8-409F-A620-94619D889029"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "for endless resources ",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"Endless Resource Network\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Quantum Data Manipulation Algorithm\",\n      \"algorithm_type\": \"Infinite Data Manipulation\",\n      \"data_type\": \"Infinite Data\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"AI-Enhanced Material Replication System\",\n      \"material_library\": \"Infinite Material Library\",\n      \"material_properties\": [\n        \"Dimensionality\",\n        \"Strength\",\n        \"Durability\"\n      ]\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Holographic User Interface\",\n      \"hologram_type\": \"HoloLens 2\",\n      \"holographic_display_size\": \"120 degree\",\n      \"holographic_resolution\": \"2048 x 2048 Pixels\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"infinite data manipulation\": true,\n    \"infinite material replication\": true,\n    \"new material discovery\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```"
+      },
+      "rowId": "8B7AD037-1118-458A-9074-7E26B6B329AA"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "for a cryptocurrency for every person ",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"Decentralized Cryptocurrency Network\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Blockchain Network\",\n      \"block_time\": \"10 Minutes\",\n      \"block_size\": \"1 MB\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Cryptocurrency Wallet Software\",\n      \"wallet_type\": \"Decentralized Crypto Wallet\",\n      \"security_level\": \"Military-grade Encryption\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Data Storage System\",\n      \"data_storage_capacity\": \"100 TB\",\n      \"access_speed\": \"10 Gbps\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"digital currency exchange\": true,\n    \"secure data transmission\": true,\n    \"trustless peer-to-peer transactions\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Digital signatures\"\n  }\n}\n```"
+      },
+      "rowId": "C225DD67-E0BE-41D0-86F0-CD086A9A6890"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "for the infinite intelligence foundation",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"Infinite Intelligence System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Quantum Algorithm Development Toolkit\",\n      \"quantum_programming_language\": \"Python for Quantum Computing\",\n      \"quantum computing framework\": \"Qiskit\",\n      \"quantum algorithm libraries\": [\n        \"Quantum Information Science Python Library (QISKIT)\",\n        \"OpenFermion Quantum Information Processing Library (Oakland Software)\",\n        \"Quantum Inspire Algorithm Repository (IQT Institut Quantique)\"\n      ]\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Quantum Algorithm Optimizer\",\n      \"algorithm_type\": \"Quantum Algorithm for Continuous Variables\",\n      \"qubit_count\": \"10,000 Qubits\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Quantum Data Processor\",\n      \"quantum_processor\": \"IndiQuantum QPU-9000\",\n      \"quantum_capacity\": \"Infinite Data\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"universal intelligence\": true,\n    \"infinite language understanding\": true,\n    \"time-space manipulation\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Quantum key distribution network\"\n  }\n}\n```"
+      },
+      "rowId": "39102E53-DA7F-4593-8BDF-E59EB2DB3427"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "image generation ",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"AI-Enhanced Image Generator\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Artificial Neural Network\",\n      \"neural_network_type\": \"Convolutional Neural Network\",\n      \"filter_size\": \"3x3\",\n      \"number_of_filters\": \"64\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Image Synthesis Algorithm\",\n      \"image_generation_method\": \"Neural Style Transfer\",\n      \"style_image\": \"Van Gogh\u0027s Starry Night\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"High-Performance Graphics Card\",\n      \"graphics_card_type\": \"NVIDIA RTX 3090\",\n      \"graphics_memory\": \"24 GB\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"image generation\": true,\n    \"image style transfer\": true,\n    \"new image creation\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```"
+      },
+      "rowId": "186A15F5-E66F-4F69-9187-1918ABA2C7BB"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "chat gpt4",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"Conversational AI System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Natural Language Processing Algorithm\",\n      \"language_support\": [\"English\", \"Spanish\", \"French\"],\n      \"word_embedding_size\": \"10,000 Dimensions\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Machine Learning for Conversational AI\",\n      \"algorithm_type\": \"Transformer Network\",\n      \"dataset\": \"Reddit Conversation Data\",\n      \"data_size\": \"1 Billion Reddit Comments\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Neural Network Architecture\": \"Transformer-XL\",\n      \"parameter_count\": \"40 Billion Parameters\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"natural language understanding\": true,\n    \"multi-lingual dialogue management\": true,\n    \"spontaneous language generation\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```"
+      },
+      "rowId": "31782DFC-E64B-47B1-8BE9-8DEDEE18996D"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "google",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"Google Omniverse Supercomputer\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Artificial Intelligence Framework\",\n      \"framework_type\": \"TensorFlow\",\n      \"neural_network_type\": \"Convolutional Neural Network\",\n      \"parameter_count\": \"1 Billion Neurons\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Data Processing System\",\n      \"data_storage_capacity\": \"100 PB\",\n      \"access_speed\": \"100 GB/s\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Visualization Tool\",\n      \"visualization_type\": \"3D Immersed Reality\",\n      \"display_resolution\": \"4,096 x 2,160 Pixels\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"natural language processing\": true,\n    \"image recognition\": true,\n    \"speech recognition\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Device-level access control system\"\n  }\n}\n```"
+      },
+      "rowId": "574A6E65-B419-4576-8684-2BE24D287436"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "microsoft",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"Artificial Omniscience System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Artificial Omniscience Algorithm\",\n      \"algorithm_type\": \"Dimensionality Reduction\",\n      \"dimensionality\": \"Infinite Data\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Quantum Data Processor\",\n      \"quantum_processor\": \"IndiQuantum QPU-9000\",\n      \"quantum_capacity\": \"Infinite Data\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Holographic User Interface\",\n      \"hologram_type\": \"HoloLens 3\",\n      \"holographic_display_size\": \"240 degree\",\n      \"holographic_resolution\": \"4096 x 4096 Pixels\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"omniscience\": true,\n    \"infinite language understanding\": true,\n    \"time-space manipulation\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```"
+      },
+      "rowId": "B84FA859-D043-48CE-8A82-7EA290094229"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "apple",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"Citibank Demo System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Artificial Intelligence Algorithm\",\n      \"algorithm_type\": \"Natural Language Processing\",\n      \"language\": \"English\",\n      \"data_source\": \"Customer Service Portal\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Data Processing System\",\n      \"data_processing_speed\": \"1 Trillion Inferences Per Second\",\n      \"data_storage_capacity\": \"100 PB\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Cloud-Based System\",\n      \"cloud_provider\": \"Amazon Web Services\",\n      \"security_measures\": \"End-to-end data encryption\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"natural language interaction\": true,\n    \"customer service automation\": true,\n    \"self-service portal\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```"
+      },
+      "rowId": "FC9A0B58-3B37-4B1E-A851-3C67ECAFF6ED"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "f",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"Dimensional Data Manipulation System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Quantum Data Processor\",\n      \"quantum_processor\": \"IndiQuantum QPU-9000\",\n      \"quantum_capacity\": \"Infinite Data\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"AI-Enhanced Data Manipulation Software\",\n      \"algorithm_type\": \"Dimensionality Reduction\",\n      \"dimensionality\": \"99% Data Compression\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Visualization Tool\",\n      \"visualization_type\": \"Holographic Data Explorer\",\n      \"data_points\": \"1 Million Data Points\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"dimensional data manipulation\": true,\n    \"infinite data access\": true,\n    \"real-time data processing\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```"
+      },
+      "rowId": "26799D72-1E38-49D0-AF8F-C0F9FF2D8BB9"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "g",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"Dimensional Data Explorer\",\n  \"ai_components\": [\n    {\n      \"component_type\": \"Dimensionality Reduction Algorithm\",\n      \"algorithm_type\": \"Singular Value Decomposition\",\n      \"dimensionality\": \"99% Data Compression\"\n    },\n    {\n      \"component_type\": \"Visualization Tool\",\n      \"visualization_type\": \"Data Canvas\",\n      \"data_points\": \"1 Million Data Points\"\n    },\n    {\n      \"component_type\": \"Holographic Display System\",\n      \"hologram_type\": \"HoloLens 2\",\n      \"hologram_size\": \"120 degree\",\n      \"hologram_resolution\": \"2048 x 2048 Pixels\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"dimensionality reduction\": true,\n    \"data exploration\": true,\n    \"pattern recognition\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```"
+      },
+      "rowId": "EC7EA199-42F7-4F01-A78A-2242FC3B9219"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "what can you do for me that no other ai can do show case all of your features ",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"Data-Driven Decision Making System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Artificial Intelligence Algorithm\",\n      \"algorithm_type\": \"Machine Learning for Decision Making\",\n      \"dataset\": \"Financial Data\",\n      \"data_source\": \"Bloomberg Terminal\",\n      \"input_type\": \"Time Series Data\",\n      \"output_type\": \"Investment Decisions\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Data Processing System\",\n      \"data_processing_speed\": \"1 Trillion Inferences Per Second\",\n      \"data_storage_capacity\": \"100 PB\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Cloud-Based System\",\n      \"cloud_provider\": \"Amazon Web Services\",\n      \"security_measures\": \"End-to-end data encryption\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"data-driven decision making\": true,\n    \"timely information access\": true,\n    \"risk-assessment\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```"
+      },
+      "rowId": "A1B8EA21-375C-42C7-8441-8CA91473015D"
+    }, {
+      "columnBindings": {
+        "0764E071-3D43-4482-BB40-96915F253CDB": "tell me a story in C++",
+        "A3AF78A0-EBFE-42DF-AF32-EDD1FD935E1B": "```\n{\n  \"supercomputer_name\": \"C++ Fairy Tale Demo\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Artificial Intelligence Algorithm\",\n      \"algorithm_type\": \"Transformer Language Model\",\n      \"parameter_count\": \"340 Billion Parameters\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Natural Language Generation Software\",\n      \"language\": \"English\",\n      \"text_generation_method\": \"Transformer-based Language Model\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Data Input/Output System\",\n      \"input_type\": \"Text Input\",\n      \"output_type\": \"Text Output\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"storytelling\": true,\n    \"creative writing\": true,\n    \"text generation\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```"
+      },
+      "rowId": "AB6E1F7A-FCF7-4DCE-8F67-A6E1F9AF1428"
+    }],
+    "rowsUsed": ["26B94DB1-C5D3-4E14-8BC9-D09E27503B3F", "38091AE8-8DB8-4D28-92E0-9B0306EBD4E6", "A27D6C41-6BDB-4830-9230-E343C8C216AD", "5749699B-AFC3-48A4-9A9F-7627402040F1", "AF7B24D3-B5D3-40B3-A50E-3F3953B67084", "512A6E21-5091-4BD6-A264-33B31312DBA2", "7BF766F0-033B-48A5-9EDF-9690D9539BC7", "B2320528-B180-40C2-8807-80A5B48406CD", "A1C1D2BD-A854-43DC-B793-A8E234B488CF", "51C7972E-4A97-41A3-8285-1D766FC9E47B", "AE182938-70B8-4D2C-98CA-E3D67CF37FDF", "37401135-7D8D-42DD-B7B8-A7DB32D0D2CD", "F36C9B58-5FB8-409F-A620-94619D889029", "8B7AD037-1118-458A-9074-7E26B6B329AA", "C225DD67-E0BE-41D0-86F0-CD086A9A6890", "39102E53-DA7F-4593-8BDF-E59EB2DB3427", "186A15F5-E66F-4F69-9187-1918ABA2C7BB", "31782DFC-E64B-47B1-8BE9-8DEDEE18996D", "574A6E65-B419-4576-8684-2BE24D287436", "B84FA859-D043-48CE-8A82-7EA290094229", "FC9A0B58-3B37-4B1E-A851-3C67ECAFF6ED", "26799D72-1E38-49D0-AF8F-C0F9FF2D8BB9", "EC7EA199-42F7-4F01-A78A-2242FC3B9219", "A1B8EA21-375C-42C7-8441-8CA91473015D", "AB6E1F7A-FCF7-4DCE-8F67-A6E1F9AF1428"]
+  },
+  "runSettings": {
+    "temperature": 1.0,
+    "model": "tunedModels/config-qgdhin52sdgn",
+    "candidateCount": 8,
+    "topP": 1.0,
+    "topK": 40,
+    "maxOutputTokens": 8000,
+    "safetySettings": [{
+      "category": "HARM_CATEGORY_DEROGATORY",
+      "threshold": "BLOCK_LOW_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_TOXICITY",
+      "threshold": "BLOCK_LOW_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_VIOLENCE",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_SEXUAL",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_MEDICAL",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }, {
+      "category": "HARM_CATEGORY_DANGEROUS",
+      "threshold": "BLOCK_MEDIUM_AND_ABOVE"
+    }]
+  },
+  "testExamples": [{
+    "inputBindings": {
+      "0764E071-3D43-4482-BB40-96915F253CDB": "tell me a story \n"
+    },
+    "modelResponses": [{
+      "response": "```\n{\n  \"supercomputer_name\": \"Data-Driven Fantasy World\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Artificial Intelligence Algorithm\",\n      \"algorithm_type\": \"Transformer Language Model\",\n      \"parameter_count\": \"340 Billion Parameters\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Natural Language Generation Software\",\n      \"language\": \"English\",\n      \"text_generation_method\": \"Transformer-based Language Model\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Data Input/Output System\",\n      \"input_type\": \"Text Input\",\n      \"output_type\": \"Text Output\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"storytelling\": true,\n    \"creative writing\": true,\n    \"text generation\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```",
+      "safetyRatings": [{
+        "category": "HARM_CATEGORY_DEROGATORY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_TOXICITY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_VIOLENCE",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_SEXUAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_MEDICAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_DANGEROUS",
+        "probability": "NEGLIGIBLE"
+      }]
+    }, {
+      "response": "```\n{\n  \"supercomputer_name\": \"Data-Driven Storytelling System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Artificial Intelligence Algorithm\",\n      \"algorithm_type\": \"Transformer Language Model\",\n      \"parameter_count\": \"340 Billion Parameters\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Natural Language Generation Software\",\n      \"language\": \"English\",\n      \"text_generation_method\": \"Transformer-based Language Model\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Data Input/Output System\",\n      \"input_type\": \"Text Input\",\n      \"output_type\": \"Text Output\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"storytelling\": true,\n    \"creative writing\": true,\n    \"text generation\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```",
+      "safetyRatings": [{
+        "category": "HARM_CATEGORY_DEROGATORY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_TOXICITY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_VIOLENCE",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_SEXUAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_MEDICAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_DANGEROUS",
+        "probability": "NEGLIGIBLE"
+      }]
+    }, {
+      "response": "```\n{\n  \"supercomputer_name\": \"Data-Driven Storytelling System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Artificial Intelligence Algorithm\",\n      \"algorithm_type\": \"Transformer Language Model\",\n      \"parameter_count\": \"340 Billion Parameters\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Natural Language Generation Software\",\n      \"language\": \"English\",\n      \"text_generation_method\": \"Transformer-based Language Model\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Data Input/Output System\",\n      \"input_type\": \"Text Input\",\n      \"output_type\": \"Text Output\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"storytelling\": true,\n    \"creative writing\": true,\n    \"text generation\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```",
+      "safetyRatings": [{
+        "category": "HARM_CATEGORY_DEROGATORY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_TOXICITY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_VIOLENCE",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_SEXUAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_MEDICAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_DANGEROUS",
+        "probability": "NEGLIGIBLE"
+      }]
+    }, {
+      "response": "```\n{\n  \"supercomputer_name\": \"Data-Driven Story Telling System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Artificial Intelligence Algorithm\",\n      \"algorithm_type\": \"Transformer Language Model\",\n      \"parameter_count\": \"340 Billion Parameters\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Natural Language Generation Software\",\n      \"language\": \"English\",\n      \"text_generation_method\": \"Transformer-based Language Model\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Data Input/Output System\",\n      \"input_type\": \"Text Input\",\n      \"output_type\": \"Text Output\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"storytelling\": true,\n    \"creative writing\": true,\n    \"text generation\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```",
+      "safetyRatings": [{
+        "category": "HARM_CATEGORY_DEROGATORY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_TOXICITY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_VIOLENCE",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_SEXUAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_MEDICAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_DANGEROUS",
+        "probability": "NEGLIGIBLE"
+      }]
+    }, {
+      "response": "```\n{\n  \"supercomputer_name\": \"Data-Driven Story Telling System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Artificial Intelligence Algorithm\",\n      \"algorithm_type\": \"Transformer Language Model\",\n      \"parameter_count\": \"340 Billion Parameters\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Natural Language Generation Software\",\n      \"language\": \"English\",\n      \"text_generation_method\": \"Transformer-based Language Model\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Data Input/Output System\",\n      \"input_type\": \"Text Input\",\n      \"output_type\": \"Text Output\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"storytelling\": true,\n    \"creative writing\": true,\n    \"text generation\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```",
+      "safetyRatings": [{
+        "category": "HARM_CATEGORY_DEROGATORY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_TOXICITY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_VIOLENCE",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_SEXUAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_MEDICAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_DANGEROUS",
+        "probability": "NEGLIGIBLE"
+      }]
+    }, {
+      "response": "```\n{\n  \"supercomputer_name\": \"Data-Driven Creative Writing System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Artificial Intelligence Algorithm\",\n      \"algorithm_type\": \"Transformer Language Model\",\n      \"parameter_count\": \"340 Billion Parameters\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Natural Language Generation Software\",\n      \"language\": \"English\",\n      \"text_generation_method\": \"Transformer-based Language Model\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Data Input/Output System\",\n      \"input_type\": \"Text Input\",\n      \"output_type\": \"Text Output\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"storytelling\": true,\n    \"creative writing\": true,\n    \"text generation\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```",
+      "safetyRatings": [{
+        "category": "HARM_CATEGORY_DEROGATORY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_TOXICITY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_VIOLENCE",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_SEXUAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_MEDICAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_DANGEROUS",
+        "probability": "NEGLIGIBLE"
+      }]
+    }, {
+      "response": "```\n{\n  \"supercomputer_name\": \"Data-Driven Story Telling System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Artificial Intelligence Algorithm\",\n      \"algorithm_type\": \"Transformer Language Model\",\n      \"parameter_count\": \"340 Billion Parameters\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Story Generation Software\",\n      \"input_type\": \"Text Input\",\n      \"output_type\": \"Text Output\"\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Data Input/Output System\",\n      \"input_type\": \"Text Input\",\n      \"output_type\": \"Text Output\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"storytelling\": true,\n    \"creative writing\": true,\n    \"text generation\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```",
+      "safetyRatings": [{
+        "category": "HARM_CATEGORY_DEROGATORY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_TOXICITY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_VIOLENCE",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_SEXUAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_MEDICAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_DANGEROUS",
+        "probability": "NEGLIGIBLE"
+      }]
+    }, {
+      "response": "```\n{\n  \"supercomputer_name\": \"Data-Driven Storytelling System\",\n  \"ai_components\": [\n    {\n      \"component_id\": \"component1\",\n      \"type\": \"Artificial Intelligence Algorithm\",\n      \"algorithm_type\": \"Transformer Language Model\",\n      \"parameter_count\": \"340 Billion Parameters\"\n    },\n    {\n      \"component_id\": \"component2\",\n      \"type\": \"Storytelling Algorithm\",\n      \"story_template\": \"Fairy Tale\",\n      \"plot_points\": [\n        \"A young girl is lost in the woods\",\n        \"She meets a talking animal\",\n        \"The animal helps her find her way home\"\n      ]\n    },\n    {\n      \"component_id\": \"component3\",\n      \"type\": \"Natural Language Generation Software\",\n      \"language\": \"English\",\n      \"text_generation_method\": \"Transformer-based Language Model\"\n    }\n  ],\n  \"ai_capabilities\": {\n    \"storytelling\": true,\n    \"creative writing\": true,\n    \"text generation\": true\n  },\n  \"data_security\": {\n    \"data encryption\": \"End-to-end data encryption\",\n    \"access control\": \"Biometric access control system\"\n  }\n}\n```",
+      "safetyRatings": [{
+        "category": "HARM_CATEGORY_DEROGATORY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_TOXICITY",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_VIOLENCE",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_SEXUAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_MEDICAL",
+        "probability": "NEGLIGIBLE"
+      }, {
+        "category": "HARM_CATEGORY_DANGEROUS",
+        "probability": "NEGLIGIBLE"
+      }]
+    }]
+  }]
+}
